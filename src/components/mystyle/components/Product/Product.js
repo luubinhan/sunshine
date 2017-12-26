@@ -16,8 +16,9 @@ class Product extends Component {
     const currentPrice = salePrice ? salePrice : price;
     if (salePrice !== '') {
       salePrice = parseInt(salePrice, 10);
-    }
+    }    
     price = parseInt(price, 10);
+    
     // caculate percent
     const downPrice = Math.round((salePrice / price) * 100);
     return (

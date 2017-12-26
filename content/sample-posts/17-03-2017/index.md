@@ -1,8 +1,10 @@
 ---
 title: "The Butterfly of the Edge"
 cover: "https://unsplash.it/1152/300/?random?TheButterflyoftheEdge"
-category: "tech"
+category: "be-trai"
 date: "17/03/2017"
+price: "120000"
+salePrice: "150000"
 tags:
     - programming
     - more tags

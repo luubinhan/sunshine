@@ -53,24 +53,21 @@
         font-style: italic;
       }
       .product_title{
-        padding-top: 20px;
+        @include heading2();
         border-bottom: 1px solid $border-color;
         padding-bottom: 10px;
         margin-bottom: 10px;
-        font-size: 34px;
-        line-height: 40px;
-        color: rgba(0,0,0,.54);
-        margin: 0 0 6px;
-      }
-      .price {        
+      }        
+      .price-amount {
         del {
-          padding-right: 10px;
-          color: #969696;
+          .amount {
+            color: $muted;
+            font-size: 17px;
+          }
         }
-        b {
-          padding-right: 10px;
+        .amount {
+          color: $primary-color;
           font-size: 27px;
-          color: $red;
         }
       }
       .product-description {
@@ -121,7 +118,6 @@
   }
   .product_meta {
     padding-top: 15px;
-    padding-bottom: 15px;
     color: $muted;
     a {      
       text-decoration: underline;
@@ -130,8 +126,62 @@
       font-style: italic;
     }
   }
-}  
-
+}
+@media (max-width: $breakpoint-sm){
+  .single-product{
+    .product.type-product{
+      display: block;
+      .images{
+        display: block;
+        max-width: 30vh;
+        margin-left: auto;
+        margin-right: auto;
+        .thumbnails {
+          display: flex;
+          width: auto;
+          padding: 0;
+          justify-content: space-between;
+          a {
+            display: block;
+            max-width: 70px;
+          }
+        }
+      }
+      .summary {
+        min-width: 100%;
+        border-left: 0;
+        padding-left: 0;
+        margin-left: 0;
+      }
+    }
+  }
+}
+  
+@media (max-width: $breakpoint-xxs) {
+  
+  .single-product{
+    .product.type-product{
+      .summary{
+        .cart {
+          display: block;
+          .quantity {
+            display: block;
+            padding-right: 0;
+            margin-bottom: 15px;
+            .input-text {
+              display: block;
+              width: 100%;
+            }
+          }
+          .single_add_to_cart_button.button {
+            display: block;
+            width: 100%;
+          }
+        }  
+      }        
+    }
+  }
+}
 .block-contact {
   padding-top: 25px;
   background: #fafafa;

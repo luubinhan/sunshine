@@ -6,7 +6,7 @@ import config from "../../data/SiteConfig";
 import {PRIMARY_NAVIGATION} from "../../data/data";
 import "../scss/main.scss";
 
-import {Search, Container, Navbar} from '../components/mystyle'
+import {Search, Container, Navbar, Master} from '../components/mystyle'
 
 import logoImg from './logo-shop-mat-troi-nho.png';
 
@@ -86,7 +86,9 @@ export default class MainLayout extends React.Component {
             </div>
           </div>
         </div>
-        {children()}
+        <Master>
+          {children()}
+        </Master>
       </div>
     );
   }

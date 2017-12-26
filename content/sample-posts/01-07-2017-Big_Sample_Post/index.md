@@ -4,6 +4,8 @@ cover: "https://unsplash.it/400/300/?random?BigTest"
 category: "moar"
 date: "01/03/2018"
 slug: "Big-Sample_Test"
+price: "120000"
+salePrice: "150000"
 tags:
     - test
     - huge

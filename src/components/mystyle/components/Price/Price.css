@@ -1,1 +1,19 @@
-.price-currency-symbol {padding-left: 5px;}
+.price-currency-symbol {
+  padding-left: 2px;
+}
+
+.price-amount del {
+  padding-right: 10px;
+  color: #596377;
+}
+.price-amount del .amount {
+  font-weight: normal;
+}
+.price-amount .amount {
+  font-size: 17px;
+  font-weight: bold;
+}
+.price-amount .sale-tag {
+  color: #e41919;
+  padding-left: 10px;
+}

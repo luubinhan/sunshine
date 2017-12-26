@@ -3,16 +3,21 @@ import Helmet from "react-helmet";
 import PostListing from "../components/PostListing/PostListing";
 import config from "../../data/SiteConfig";
 
+import {Container, Product} from '../components/mystyle'
+import ProductListing from "../components/ProductListing";
+
 export default class CategoryTemplate extends React.Component {
   render() {
     const category = this.props.pathContext.category;
     const postEdges = this.props.data.allMarkdownRemark.edges;
     return (
-      <div className="category-container">
+      <div className="category-container">        
         <Helmet
           title={`Posts in category "${category}" | ${config.siteTitle}`}
         />
-        <PostListing postEdges={postEdges} />
+        <Container>
+          <ProductListing postEdges={postEdges} />
+        </Container>
       </div>
     );
   }
@@ -39,6 +44,8 @@ export const pageQuery = graphql`
             tags
             cover
             date
+            price
+            salePrice
           }
         }
       }
