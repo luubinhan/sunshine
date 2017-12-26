@@ -9,7 +9,7 @@ import PostListing from "../components/PostListing/PostListing";
 import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
 import {PRIMARY_NAVIGATION} from "../../data/data";
-
+import ProductListing from "../components/ProductListing";
 const PRODUCTS_LIST = [
   {
     title: '#1 Nồi Thủy Tinh Luminarc Amberline C6317 – 1 Lít',
@@ -194,8 +194,8 @@ class Index extends React.Component {
                 </Col>
               </Row>
             </div>
-          </div>
-          <PostListing postEdges={postEdges} />
+          </div>          
+          <ProductListing postEdges={postEdges} />
         </Container>
       </div>
     );
@@ -223,6 +223,8 @@ export const pageQuery = graphql`
             tags
             cover
             date
+            price
+            salePrice
           }
         }
       }
