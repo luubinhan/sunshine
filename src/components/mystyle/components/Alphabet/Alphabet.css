@@ -1,0 +1,21 @@
+.alphabet-component {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between
+}
+.alphabet-component .character,
+.alphabet-component .all-character {
+    display: inline-block;
+    padding: 7px 7px;
+    width: 35px;
+    cursor: pointer;
+    border-radius: .25rem;    
+    line-height: 1;
+    text-align: center;    
+    background: #f2f2f2;
+}
+.alphabet-component .character.active,
+.alphabet-component .all-character.active {
+    background: #000;
+    color: #ffffff;
+}

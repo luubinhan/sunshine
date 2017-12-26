@@ -1,0 +1,6 @@
+.input-wrapper {
+  flex-grow: 1;  
+} 
+.input-group  .input-wrapper .form-control {
+  width: 100%;
+}

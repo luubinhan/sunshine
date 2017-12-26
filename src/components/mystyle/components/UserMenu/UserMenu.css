@@ -1,0 +1,89 @@
+.my-account-nav{
+  text-align: right;
+}
+.my-account-nav .nav-link i {
+  font-size: 18px;
+  padding-right: 0;
+}
+.my-account-nav .dropdown.show .dropdown-toggle:after {
+  content: '\f3d8';
+}
+.my-account-nav .dropdown-toggle {
+  position: relative;
+}
+.my-account-nav .dropdown-toggle:after {
+  content: "\f3d0";
+  border: none;
+  display: inline-block;
+  font-family: "Ionicons";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-rendering: auto;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  position: absolute;
+  right: 1rem;
+  top: 12px;
+}
+.my-account-nav > li > .nav-link {
+  padding-right: 20px !important;
+  cursor: pointer;
+  line-height: 40px;
+  padding-bottom: 0;
+  padding-top: 0;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+.my-account-nav > li > button  .um-avatar {
+  display: inline-block;
+  overflow: hidden;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 7px;
+  border: 1px solid #ccc;
+}
+.um-avatar .user-avatar-holder {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.my-account-nav > li {
+  position: relative;
+}
+.my-account-nav .dropdown-menu{
+  margin-top: 0;
+  position: absolute;
+  top: 100%;
+  left: auto !important;
+  right: 3px;
+  border: none;
+  box-shadow: 1px 0px 15px rgba(0, 0, 0, 0.07);
+}
+@media (max-width: 991px) {
+  .my-account-nav {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .my-account-nav.navbar-nav .dropdown .dropdown-menu  {
+    height: auto;
+    opacity: 1;
+    top: auto;
+    position: relative;
+    box-shadow: none;
+  }
+  .my-account-nav.navbar-nav .dropdown:hover .dropdown-menu {
+    top: auto;
+    box-shadow: none;
+  }
+}
+ 

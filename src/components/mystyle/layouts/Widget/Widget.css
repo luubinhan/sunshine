@@ -1,0 +1,56 @@
+/* Widget
+-------------------------------------------------------------- */
+.widget {
+  box-sizing: border-box;
+  margin-bottom: 25px;
+}
+.widget .widget-title {
+  position: relative;
+  padding: 10px 0px 10px 0px;
+  color: #1E2749;
+  font-weight: 600;
+  line-height: 1.33333;
+  text-transform: uppercase;
+}
+
+.widget .wiget-toggle-control {
+  font-style: italic;
+  cursor: pointer;
+  position: absolute;  
+  right: 0;
+  top: 8px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  font-size: 12px;
+}
+.widget .wiget-toggle-control.collapsed {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.widget .widget-body {
+}
+.widget .widget-body ul {
+  list-style: outside none none;
+  margin: 0;
+}
+.widget .widget-body ul li {
+  padding-bottom: 11px;
+}
+
+@media (max-width: 560px) {
+  .widget {
+    padding: 15px;
+    border: none;
+  }
+}
+/* Widget -------------------------------------------- */

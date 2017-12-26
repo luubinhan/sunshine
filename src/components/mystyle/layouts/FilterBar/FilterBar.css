@@ -1,0 +1,20 @@
+.filterbar {
+  margin-bottom: 20px;
+  border-top: 1px solid #c8c8c8;
+  border-bottom: 1px solid #c8c8c8;
+  padding: 7px 0;
+}
+.filterbar .filterbar-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.filterbar .filterbar-form .filter-group {
+  display: flex;
+  align-items: center;
+}
+
+.filterbar .filterbar-form .search-form {
+ 
+}

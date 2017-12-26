@@ -1,0 +1,92 @@
+.section-signup {
+  background: #f2f2f2;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mystyle-signup-box {
+  width: 500px;
+  text-align: center;
+}
+.mystyle-signup-box a {
+  color: #fff;
+}
+.mystyle-signup-box .white-box {
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(5, 15, 44, 0.1);
+  padding: 30px 50px;
+  color: #3f465e;
+  text-align: left;
+}
+.mystyle-signup-box .white-box a {
+  color: #5ab8f8;
+}
+.mystyle-signup-box .login-title {
+  margin-top: 0;
+}
+.mystyle-signup-box .login-desc {
+  margin-bottom: 50px;
+}
+.mystyle-signup-box .signup-form {
+  padding-top: 10px;
+  margin-bottom: 15px;
+}
+.mystyle-signup-box .signup-form a {
+  color: #5ab8f8;
+}
+.mystyle-signup-box .signup-form .form-group {
+  text-align: left;
+}
+.mystyle-signup-box .signup-form label {
+  font-weight: normal;
+}
+.mystyle-signup-box .btn-signup {
+  font-weight: bold;
+  border: 1px solid #5ab8f8;
+  background: #5ab8f8;
+  padding: 7px 15px;
+  display: block;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+}
+.mystyle-signup-box .get-sign-up {
+  padding-top: 50px;
+  font-size: 18px;
+}
+.mystyle-signup-box .get-sign-up a {
+  color: #5ab8f8;
+}
+
+@media (max-width: 560px) {
+  .section-signup {
+    position: relative;
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    display: block;
+  }
+
+  .mystyle-signup-box {
+    width: auto;
+    max-width: 400px;
+    margin: 20px 15px 0;
+  }
+  .mystyle-signup-box .login-title {
+    text-align: center;
+    font-size: 18px;
+  }
+}
+/* MYSTYLE: Login Form -------------------------------------------- */

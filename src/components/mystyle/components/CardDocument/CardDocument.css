@@ -1,0 +1,33 @@
+.file-block {
+  display: flex;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #eaeaea;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+.file-block:hover {
+  -webkit-box-shadow: 0 0 0 2px #eaeaea;
+  box-shadow: 0 0 0 1px #eaeaea;
+}
+.file-block .file-icon {
+  flex-basis: 50px;
+  min-width: 50px;
+  font-size: 30px;
+  text-align: center;
+  border-right: 1px solid #eaeaea;
+}
+.file-block .file-info {
+  padding: 10px;
+  flex-grow: 1;
+}
+.file-block .badge {
+  margin-left: 7px;
+}
+.file-block .file-action {
+  display: flex;
+}
+.file-block .file-action .btn i {
+  padding-right: 7px;
+}

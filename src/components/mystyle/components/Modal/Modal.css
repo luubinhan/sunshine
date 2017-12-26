@@ -1,0 +1,15 @@
+.modal.show{
+  display: block;
+  background: rgba(0, 0, 0, 0.5);
+}
+.modal-dialog{
+  margin-top: 60px;
+}
+.modal .close{
+  float: none;
+  position: absolute;
+  right: -25px;
+  top: -23px;
+  color: #fff;  
+  cursor: pointer;
+}

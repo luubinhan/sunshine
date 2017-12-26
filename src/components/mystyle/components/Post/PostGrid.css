@@ -1,0 +1,30 @@
+/* CONTENT POST GRID
+-------------------------------------------------------------- */
+.item-post-grid {
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+.item-post-grid .heading-post {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+.item-post-grid .the-post-thumbnail {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.item-post-grid .the-post-content {
+  padding: 15px 20px;
+}
+
+@media (max-width: 480px) {
+  .item-post-grid .the-post-thumbnail {
+    float: none;
+    width: auto;
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
+/* CONTENT POST GRID -------------------------------------------- */

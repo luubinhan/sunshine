@@ -1,0 +1,26 @@
+.nav-link i {
+  padding-right: 7px;
+}
+
+.nav.hover-top-open .dropdown .dropdown-menu {
+  display: block;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+      transition-duration: 0.2s;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  top: 120%;
+}
+.nav.hover-top-open .dropdown:hover .dropdown-menu{
+  top: 100%;
+  opacity: 1;
+  height: auto;
+  overflow: visible;
+  transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}

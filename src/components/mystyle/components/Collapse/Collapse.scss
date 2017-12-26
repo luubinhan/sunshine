@@ -1,0 +1,15 @@
+.collapse-component {
+  margin-bottom: 25px;
+  border: 1px solid #eee;
+  -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+  -moz-user-select: none; /* mozilla browsers */
+  -khtml-user-select: none; /* webkit (konqueror) browsers */
+  -ms-user-select: none; /* IE10+ */
+}
+.collase-title {
+  font-size: 17px;
+  background: #eee;
+  padding: 10px;
+  border-bottom: 2px solid #ff8c00;
+}
+.collase-title:focus {outline: none;}

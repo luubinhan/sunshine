@@ -1,0 +1,106 @@
+.navbar.sidebar{
+  padding: 0;
+}
+.navbar.sidebar .navbar-nav {
+  flex-direction: column;
+  margin: 0;
+  flex-basis: 100%;
+}
+.navbar.sidebar .navbar-nav .nav-item.show {
+  background: rgba(0, 0, 0, 0.03);
+}
+.navbar.sidebar .navbar-nav .nav-item.active {
+  background: #008272;
+}
+.navbar.sidebar .navbar-nav .nav-item.active .nav-link{
+  color: #fff;
+}
+.navbar.sidebar .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  left: 100%;
+  top: 0;
+}
+.navbar.sidebar .navbar-nav .nav-item .dropdown-menu.show {
+  left: 100%;
+  top: 0;
+}
+.navbar.sidebar .navbar-nav .nav-link {
+  padding: .2rem 1rem;
+  position: relative;
+  color: #212121;
+  overflow: hidden;
+}
+.navbar.sidebar .dropdown-item {
+  color: #54667a;
+  font-size: 14px;
+}
+.navbar.sidebar .dropdown-item i {
+  padding-right: 7px;
+  font-size: 19px;
+}
+.navbar.sidebar .navbar-nav .nav-link i{
+  padding-right: 7px;
+  font-size: 19px;
+}
+.navbar.sidebar .navbar-nav .nav-link:hover {
+  color: #008272;
+}
+.navbar.sidebar .navbar-nav .nav-link:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background: rgba(229, 229, 229, 0.7);
+  opacity: 0;
+  border-radius: 100%;
+  transform: scale(1, 1) translate(-50%);
+  transform-origin: 50% 50%;
+}
+.navbar.sidebar .navbar-nav .nav-link:focus:not(:active):before {
+  animation: ripple 0.5s ease-out;
+}
+.navbar.sidebar .navbar-nav .nav-link .pull-right {
+  position: absolute;
+  right: 24px;
+  top: 16px;
+}
+.navbar.sidebar .dropdown-toggle:after {
+  content: "\f3d3";
+  border: none;
+  display: inline-block;
+  font-family: "Ionicons";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-rendering: auto;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  position: absolute;
+  right: 1rem;
+  top: 22px;
+}
+.navbar.sidebar .dropdown-item {
+  padding: 0.5rem 1rem;
+}
+.navbar.sidebar .dropdown-item:active, .navbar.sidebar .dropdown-item.active {
+  background: rgba(229, 229, 229, 0.7);
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0, 0);
+    opacity: 1;
+  }
+  20% {
+    transform: scale(15, 15);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(50, 50);
+  }
+}

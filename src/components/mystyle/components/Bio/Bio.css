@@ -1,0 +1,26 @@
+.bio .bio-wrapper {
+  display: block;
+}
+.bio .bio-wrapper:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.bio .bio-wrapper .bio-img {
+  display: block;
+  float: left;
+  width: 50px;
+  height: 50px;
+  border-radius: 999em;
+  overflow: hidden;
+  margin-right: 15px;
+}
+.bio .bio-wrapper .bio-content {
+  overflow: hidden;
+}
+.bio .bio-wrapper .bio-name {
+  font-size: 16px;
+}
+.bio .bio-wrapper .bio-desc {
+  color: #596377;
+}

@@ -1,0 +1,107 @@
+.star-cb-group {
+  /* remove inline-block whitespace */
+  font-size: 0;
+  display: inline-block;
+  /* flip the order so we can use the + and ~ combinators */
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  /* the hidden clearer */
+}
+
+.star-cb-group * {
+  font-size: 48px;
+}
+
+.star-cb-group > input {
+  display: none;
+}
+
+.star-cb-group > input + label {
+  /* only enough room for the star */
+  display: inline-block;
+  overflow: hidden;
+  text-indent: 9999px;
+  width: 1em;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.star-cb-group > input + label:before {
+  display: inline-block;
+  text-indent: -9999px;
+  content: "★";
+  color: #dddddd;
+}
+
+.star-cb-group > input:checked ~ label:before, .star-cb-group > input + label:hover ~ label:before, .star-cb-group > input + label:hover:before {
+  content: "★";
+  color: #ffce02;
+}
+
+.star-cb-group > .star-cb-clear + label {
+  text-indent: -9999px;
+  width: .5em;
+  margin-left: -.5em;
+}
+
+.star-cb-group > .star-cb-clear + label:before {
+  width: .5em;
+}
+
+.star-cb-group:hover > input + label:before {
+  content: "★";
+  color: #ddd;
+  text-shadow: none;
+}
+
+.star-cb-group:hover > input + label:hover ~ label:before, .star-cb-group:hover > input + label:hover:before {
+  content: "★";
+  color: #ffce02;
+}
+
+/*
+Star using percent value
+*/
+.star-ratings-css {
+  unicode-bidi: bidi-override;
+  color: #dddddd;
+  font-size: 18px;
+  line-height: 15px;
+  height: 15px;
+  width: 75px;
+  position: relative;
+  padding: 0;
+}
+.star-ratings-css .star-ratings-css-top {
+  color: #ffce02;
+  padding: 0;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  left: 0px;
+  right: 0;
+  overflow: hidden;
+}
+.star-ratings-css .star-ratings-css-top span {
+  width: 15px;
+  position: relative;
+}
+.star-ratings-css .star-ratings-css-top span:before {
+  content: "★";
+  display: block;
+  color: #ffce02;
+}
+.star-ratings-css .star-ratings-css-bottom {
+  z-index: 0;
+  display: flex;
+}
+.star-ratings-css .star-ratings-css-bottom span {
+  color: #ddd;
+  width: 15px;
+  position: relative;
+}
+.star-ratings-css .star-ratings-css-bottom span:before {
+  content: "★";
+  display: block;
+  color: #ddd;
+}

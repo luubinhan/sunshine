@@ -1,0 +1,122 @@
+.step-block {
+  margin-bottom: 100px;
+}
+.step-block .steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+.step-block .steps:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.step-block .steps li {
+  padding: 0 0 7px 10px;
+  align-items: bottom;
+  line-height: 16px;
+  line-height: 1.7;
+  cursor: pointer;
+  padding-top: 15px;
+  
+  position: relative;
+  float: left;
+  width: 25%;
+}
+.step-block .steps li:first-child:after {
+  display: none;
+}
+.step-block .steps li:after {
+  position: absolute;
+  left: -50%;
+  height: 7px;
+  width: 100%;
+  background: #f4f4f4;
+  top: 25px;
+  display: block;
+  content: "";
+}
+.step-block .steps li.step-over:after {
+  background: #004b50;
+}
+.step-block .steps li.step-over .step-link .step-count {
+  background: #004b50;
+  color: #fff;
+}
+.step-block .steps li.step-active:after {
+  background: #004b50;
+}
+.step-block .steps li.step-active .step-link .step-count {
+  background: #008272;
+  color: #fff;
+}
+.step-block .steps li.step-active .step-link .step-name, .step-block .steps li.step-over .step-link .step-name {
+  color: #000;
+}
+.step-block .steps li.step-over {
+  border-color: #004b50;
+}
+.step-block .steps li .step-link {
+  position: relative;
+  display: block;
+  z-index: 7;
+}
+.step-block .steps li .step-link .step-count {
+  display: block;
+  position: absolute;
+  top: -2px;
+  left: 50%;
+  margin-left: -15px;
+  background: #f2f2f2;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
+}
+.step-block .steps li .step-link .step-name {
+  display: block;
+  position: absolute;
+  color: #596377;
+  text-align: center;
+  top: 30px;
+  left: 50%;
+  width: 120px;
+  margin-left: -60px;
+}
+
+@media (max-width: 560px) {
+  .step-block {
+    margin-bottom: 30px;
+  }
+  .step-block .steps li {
+    float: none;
+    width: auto;
+  }
+  .step-block .steps li:after {
+    display: none;
+  }
+  .step-block .steps li .step-link {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+  }
+  .step-block .steps li .step-link .step-count {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin-left: 0;
+  }
+  .step-block .steps li .step-link .step-name {
+    position: relative;
+    left: auto;
+    margin-left: 0;
+    top: auto;
+    width: auto;
+    padding-left: 15px;
+  }
+}
