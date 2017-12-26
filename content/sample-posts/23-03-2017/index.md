@@ -2,7 +2,7 @@
 title: "Birch in the Roses"
 cover: "https://unsplash.it/1152/300/?random?BirchintheRoses"
 date: "01/03/2017"
-category: "tech"
+category: "be-trai"
 price: "120000"
 salePrice: "150000"
 tags:
