@@ -95,6 +95,9 @@ import {
 class Index extends React.Component {
   render() {
     const postEdges = this.props.data.allMarkdownRemark.edges;
+    const beTraiPosts = this.props.data.beTraiPosts.edges;
+    const beGaiPosts = this.props.data.beGaiPosts.edges;
+    
     return (
       <div className="index-container">
         <Helmet title={config.siteTitle} />
@@ -121,30 +124,8 @@ class Index extends React.Component {
               </div>
             </div>
             <div className="box-body">
-              <Row>
-                <Col sm={3}>
-                  <div className="title-slider">Hàng mới về</div>
-                  <Slider dots={false} slidesToShow={1}>
-                    {
-                      PRODUCTS_LIST.map((item, id) => <div key={id}><Product {...item} /></div> )
-                    }
-                  </Slider>
-                  <div className="title-slider">Giảm giá</div>
-                  <Slider dots={false}>
-                    {
-                      PRODUCTS_LIST.map((item, id) => <div key={id}><Product {...item} /></div> )
-                    }
-                  </Slider>
-
-                </Col>
-                <Col sm={9}>
-                  <div className="mystyle-products">
-                    {
-                      PRODUCTS_LIST.map((item, id) => <Product key={id} {...item} />)
-                    }
-                  </div>
-                </Col>
-              </Row>
+              <ProductListing postEdges={beTraiPosts} />
+             
             </div>
           </div>
           <div className="box box-be-gai">
@@ -169,30 +150,7 @@ class Index extends React.Component {
               </div>
             </div>
             <div className="box-body">
-              <Row>
-                <Col sm={3}>
-                  <div className="title-slider">Hàng mới về</div>
-                  <Slider dots={false}>
-                    {
-                      PRODUCTS_LIST.map((item, id) => <div key={id}><Product {...item} /></div> )
-                    }
-
-                  </Slider>
-                  <div className="title-slider">Giảm giá</div>
-                  <Slider dots={false}>
-                    {
-                      PRODUCTS_LIST.map((item, id) => <div key={id}><Product {...item} /></div> )
-                    }
-                  </Slider>
-                </Col>
-                <Col sm={9}>
-                  <div className="mystyle-products">
-                    {
-                      PRODUCTS_LIST.map((item, id) => <Product key={id} {...item} />)
-                    }
-                  </div>
-                </Col>
-              </Row>
+              <ProductListing postEdges={beGaiPosts} />
             </div>
           </div>          
           <ProductListing postEdges={postEdges} />
@@ -208,7 +166,7 @@ export default Index;
 export const pageQuery = graphql`
   query IndexQuery {
     allMarkdownRemark(
-      limit: 2000
+      limit: 10
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {
@@ -223,6 +181,50 @@ export const pageQuery = graphql`
             tags
             cover
             date
+            price
+            salePrice
+          }
+        }
+      }
+    }
+    beTraiPosts: allMarkdownRemark(
+      limit: 20
+      filter: {frontmatter: {category: {eq: "be-trai"}}}
+      sort: {fields: [frontmatter___date], order: DESC}
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            tags
+            cover
+            date
+            category
+            price
+            salePrice
+          }
+        }
+      }
+    }
+    beGaiPosts: allMarkdownRemark(
+      limit: 20
+      filter: {frontmatter: {category: {eq: "be-gai"}}}
+      sort: {fields: [frontmatter___date], order: DESC}
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            tags
+            cover
+            date
+            category
             price
             salePrice
           }

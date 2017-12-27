@@ -3,7 +3,7 @@ import Helmet from "react-helmet";
 import PostListing from "../components/PostListing/PostListing";
 import config from "../../data/SiteConfig";
 
-import {Container, Product} from '../components/mystyle'
+import {Container, Product, Row, Col} from '../components/mystyle'
 import ProductListing from "../components/ProductListing";
 
 export default class CategoryTemplate extends React.Component {
@@ -16,7 +16,14 @@ export default class CategoryTemplate extends React.Component {
           title={`Posts in category "${category}" | ${config.siteTitle}`}
         />
         <Container>
-          <ProductListing postEdges={postEdges} />
+          <Row>
+            <Col sm={3}>
+              Filter
+            </Col>
+            <Col sm={9}>
+              <ProductListing postEdges={postEdges} />
+            </Col>
+          </Row>
         </Container>
       </div>
     );

@@ -3,7 +3,7 @@ export const PRIMARY_NAVIGATION = [
     post_id: 1,
     slug: 'be-trai',
     name: 'Bé Trai',
-    href: '/tags/be-trai',
+    href: '/categories/be-trai',
     isActive: false,
     icon: '',
     childrens: [
@@ -48,7 +48,7 @@ export const PRIMARY_NAVIGATION = [
     post_id: 2,
     slug: 'be-gai',
     name: 'Bé Gái',
-    href: '/tags/be-gai',
+    href: '/categories/be-gai',
     isActive: false,
     icon: '',
     childrens: [
@@ -138,7 +138,7 @@ export const PRIMARY_NAVIGATION = [
     post_id: 4,
     slug: 'khan-mu',
     name: 'Khăn Mũ',
-    href: '/tags/khan-mu',
+    href: '/categories/khan-mu',
     isActive: false,
     icon: ''
   },
@@ -146,7 +146,7 @@ export const PRIMARY_NAVIGATION = [
     post_id: 5,
     slug: 'ba-lo',
     name: 'Ba lô',
-    href: '/tags/ba-lo',
+    href: '/categories/ba-lo',
     isActive: false,
     icon: ''
   },
@@ -154,7 +154,7 @@ export const PRIMARY_NAVIGATION = [
     post_id: 6,
     slug: 'giay-dep',
     name: 'Giày dép',
-    href: '/tags/giay-dep',
+    href: '/categories/giay-dep',
     isActive: false,
     icon: ''
   },
@@ -162,7 +162,7 @@ export const PRIMARY_NAVIGATION = [
     post_id: 7,
     slug: 'do-choi',
     name: 'Đồ chơi',
-    href: '/tags/do-choi',
+    href: '/categories/do-choi',
     isActive: false,
     icon: ''
   },
@@ -170,7 +170,7 @@ export const PRIMARY_NAVIGATION = [
     post_id: 8,
     slug: 'khuyen-mai',
     name: 'Khuyến Mãi',
-    href: '/tags/khuyen-mai',
+    href: '/categories/khuyen-mai',
     isActive: false,
     icon: ''
   },

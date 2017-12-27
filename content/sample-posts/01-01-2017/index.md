@@ -2,7 +2,7 @@
 title: "Bold Mage"
 cover: "https://unsplash.it/400/300/?random?BoldMage"
 date: "01/01/2017"
-category: "tech"
+category: "be-gai"
 price: "120000"
 salePrice: "150000"
 tags:

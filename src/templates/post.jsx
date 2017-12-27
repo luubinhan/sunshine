@@ -9,8 +9,10 @@ import PostTags from "../components/PostTags/PostTags";
 import SocialLinks from "../components/SocialLinks/SocialLinks";
 import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
-import "./b16-tomorrow-dark.css";
+
 import "../scss/single-product.scss";
+
+import {getCategoryName} from '../Utils'
 
 export default class PostTemplate extends React.Component {
   render() {
@@ -39,6 +41,9 @@ export default class PostTemplate extends React.Component {
     
             <div className="summary entry-summary">
                 <h1 className="product_title entry-title">{post.title}</h1>              
+                <div className="category-product">
+                  {getCategoryName(post.category)}
+                </div>
                 <Price price={post.price} salePrice={post.salePrice}/> 
                 <div className="block-contact">
                   <div className="d-flex">
@@ -65,11 +70,6 @@ export default class PostTemplate extends React.Component {
               </div>
             </div>
           </div>
-          <div className="post-meta">
-            <SocialLinks postPath={slug} postNode={postNode} />
-          </div>
-          <UserInfo config={config} />
-          <Disqus postNode={postNode} />
         </Container>
       </div>
     );
