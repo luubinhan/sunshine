@@ -1,6 +1,6 @@
 export const PRIMARY_NAVIGATION = [
   {
-    post_id: 1,
+    key: 'be-trai',
     slug: 'be-trai',
     name: 'Bé Trai',
     href: '/categories/be-trai',
@@ -8,44 +8,51 @@ export const PRIMARY_NAVIGATION = [
     icon: '',
     childrens: [
       {
+        key: 'do-bo',
         name: 'Đồ Bộ',
         icon: '',
-        href: '/tags/be-trai/do-bo',
+        href: '/tags/do-bo',
       },
       {
+        key: 'ao',
         name: 'Áo',
         icon: '',
-        href: '/tags/be-trai/ao',
+        href: '/tags/ao',
       },
       {
+        key: 'ao-khoac',
         name: 'Áo khoác',
         icon: '',
-        href: '/tags/be-trai/ao-khoac',
+        href: '/tags/ao-khoac',
       },
       {
+        key: 'ao-lien-quan',
         name: 'Áo liền quần',
         icon: '',
-        href: '/tags/be-trai/ao-lien-quan',
+        href: '/tags/ao-lien-quan',
       },
       {
+        key: 'quan',
         name: 'Quần',
         icon: '',
-        href: '/tags/be-trai/quan',
+        href: '/tags/quan',
       },
       {
+        key: 'do-ngu',
         name: 'Đồ ngủ',
         icon: '',
-        href: '/tags/be-trai/do-ngu',
+        href: '/tags/do-ngu',
       },
       {
+        key: 'giay-dep',
         name: 'Giày dép',
         icon: '',
-        href: '/tags/be-trai/giay-dep',
+        href: '/tags/giay-dep',
       },
     ]
   },
   {
-    post_id: 2,
+    key: 'be-gai',
     slug: 'be-gai',
     name: 'Bé Gái',
     href: '/categories/be-gai',
@@ -53,49 +60,57 @@ export const PRIMARY_NAVIGATION = [
     icon: '',
     childrens: [
       {
+        key: 'do-bo',
         name: 'Đồ bộ',
         icon: '',
-        href: '/tags/be-gai/do-bo',
+        href: '/tags/do-bo',
       },
       {
+        key: 'ao',
         name: 'Áo',
         icon: '',
-        href: '/tags/be-gai/ao',
+        href: '/tags/ao',
       },
       {
+        key: 'ao-khoac',
         name: 'Áo khoác',
         icon: '',
-        href: '/tags/be-gai/ao-khoac',
+        href: '/tags/ao-khoac',
       },
       {
+        key: 'ao-lien-quan',
         name: 'Áo liền quần',
         icon: '',
-        href: '/tags/be-gai/ao-lien-quan',
+        href: '/tags/ao-lien-quan',
       },
       {
+        key: 'quan',
         name: 'Quần',
         icon: '',
-        href: '/tags/be-gai/quan',
+        href: '/tags/quan',
       },
       {
+        key: 'dam-vay',
         name: 'Đầm váy',
         icon: '',
-        href: '/tags/be-gai/dam-vay',
+        href: '/tags/dam-vay',
       },
       {
+        key: 'do-ngu',
         name: 'Đồ ngủ',
         icon: '',
-        href: '/tags/be-gai/do-ngu',
+        href: '/tags/do-ngu',
       },
       {
+        key: 'giay-dep',
         name: 'Giày dép',
         icon: '',
-        href: '/tags/be-gai/giay-dep',
+        href: '/tags/giay-dep',
       },
     ]
   },
   {
-    post_id: 3,
+    key: 'do-tuoi',
     slug: 'do-tuoi',
     name: 'Độ Tuổi',
     href: '/tags/do-tuoi',
@@ -103,39 +118,27 @@ export const PRIMARY_NAVIGATION = [
     icon: '',
     childrens: [
       {
-        name: 'Bé gái từ 0 - 24 tháng',
+        key: 'duoi-2-tuoi',
+        name: 'Bé từ 0 - 24 tháng',
         icon: '',
-        href: '/tags/be-gai/duoi-2-tuoi',
+        href: '/tags/duoi-2-tuoi',
       },
       {
-        name: 'Bé gái từ 2 - 5 tuổi',
+        key: 'duoi-5-tuoi',
+        name: 'Bé từ 2 - 5 tuổi',
         icon: '',
-        href: '/tags/be-gai/duoi-5-tuoi',
+        href: '/tags/duoi-5-tuoi',
       },
       {
-        name: 'Bé gái từ 6 - 12 tuổi',
+        key: 'duoi-12-tuoi',
+        name: 'Bé từ 6 - 12 tuổi',
         icon: '',
-        href: '/tags/be-gai/duoi-12-tuoi',
-      },
-      {
-        name: 'Bé trai từ 0 - 24 tháng',
-        icon: '',
-        href: '/tags/be-trai/duoi-2-tuoi',
-      },
-      {
-        name: 'Bé trai từ 2 - 5 tuổi',
-        icon: '',
-        href: '/tags/be-trai/duoi-5-tuoi',
-      },
-      {
-        name: 'Bé trai từ 6 - 12 tuổi',
-        icon: '',
-        href: '/tags/be-trai/duoi-12-tuoi',
-      },
+        href: '/tags/duoi-12-tuoi',
+      },      
     ]
   },
   {
-    post_id: 4,
+    key: 'khan-mu',
     slug: 'khan-mu',
     name: 'Khăn Mũ',
     href: '/categories/khan-mu',
@@ -143,7 +146,7 @@ export const PRIMARY_NAVIGATION = [
     icon: ''
   },
   {
-    post_id: 5,
+    key: 'ba-lo',
     slug: 'ba-lo',
     name: 'Ba lô',
     href: '/categories/ba-lo',
@@ -151,7 +154,7 @@ export const PRIMARY_NAVIGATION = [
     icon: ''
   },
   {
-    post_id: 6,
+    key: 'giay-dep',
     slug: 'giay-dep',
     name: 'Giày dép',
     href: '/categories/giay-dep',
@@ -159,7 +162,7 @@ export const PRIMARY_NAVIGATION = [
     icon: ''
   },
   {
-    post_id: 7,
+    key: 'do-choi',
     slug: 'do-choi',
     name: 'Đồ chơi',
     href: '/categories/do-choi',
@@ -167,7 +170,7 @@ export const PRIMARY_NAVIGATION = [
     icon: ''
   },
   {
-    post_id: 8,
+    key: 'khuyen-mai',
     slug: 'khuyen-mai',
     name: 'Khuyến Mãi',
     href: '/categories/khuyen-mai',
@@ -175,7 +178,7 @@ export const PRIMARY_NAVIGATION = [
     icon: ''
   },
   {
-    post_id: 9,
+    key: 'lien-he',
     slug: 'lien-he',
     name: 'Liên hệ',
     href: '/lien-he',

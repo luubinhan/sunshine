@@ -1,14 +1,13 @@
 ---
-title: "Big Test"
-cover: "https://unsplash.it/400/300/?random?BigTest"
-category: "moar"
+title: "Áo phông (thun) trơn ngắn tay cho bé trai 8kg - 26kg"
+cover: "https://babi.vn/images/thumbnails/315/315/detailed/46/ao-phong-thun-tron-ngan-tay-cho-be-trai-8kg-26kg.jpg?t=1507480642"
+category: "be-trai"
 date: "01/03/2018"
-slug: "Big-Sample_Test"
-price: "120000"
+price: "58000"
 salePrice: "150000"
 tags:
-    - test
-    - huge
+    - ao
+    - ao khoac
 ---
 
 # NOTE: This "post" is based on [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) and is meant to test styling of Markdown generated documents.

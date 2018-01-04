@@ -1,17 +1,13 @@
 ---
-title: "The Butterfly of the Edge"
-cover: "https://unsplash.it/1152/300/?random?TheButterflyoftheEdge"
+title: "Đồ bộ bé trai in chữ sống động (7-11 tuổi)"
+cover: "https://babi.vn/images/thumbnails/600/600/variant_image/51/bo-be-trai-in-chu_(3).jpg?t=1514428769"
 category: "be-trai"
 date: "17/03/2017"
 price: "120000"
 salePrice: "150000"
 tags:
-    - programming
-    - more tags
-    - testing
-    - another one
-    - stuff
-    - other
+    - do bo
+    - duoi 12 tuoi
 ---
 # Hanc indeploratum seram Amphitryoniadae tremulis pauperque manum
 

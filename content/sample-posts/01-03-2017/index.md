@@ -1,13 +1,14 @@
 ---
-title: "Angels of Mist"
-cover: "https://unsplash.it/400/300/?random?AngelsofMist"
-category: "test3"
+title: "Áo khoác gió cho bé trai sọc caro tay phối màu (4-9 tuổi)"
+cover: "https://babi.vn/images/thumbnails/315/315/detailed/49/ao-khoac-gio-caro-tay-phoi-mau-cho-be-trai_(7).jpg"
+category: "be-trai"
 date: "01/03/2017"
 price: "120000"
 salePrice: "150000"
 tags:
-    - cheese
-    - other
+    - ao
+    - ao khoac
+    - duoi 12 tuoi
 ---
 # Ab dicemur cura
 

@@ -103,6 +103,14 @@ class Index extends React.Component {
         <Helmet title={config.siteTitle} />
         <SEO postEdges={postEdges} />
         <Container>
+          <div className="box">
+            <div className="box-header">
+              Khuyến mãi
+            </div>
+            <div className="box-body">
+              <ProductListing postEdges={beTraiPosts} />
+            </div>
+          </div>
           <div className="box box-be-trai">
             <div className="box-header">
               <div className="header-left">
@@ -152,8 +160,7 @@ class Index extends React.Component {
             <div className="box-body">
               <ProductListing postEdges={beGaiPosts} />
             </div>
-          </div>          
-          <ProductListing postEdges={postEdges} />
+          </div>
         </Container>
       </div>
     );
@@ -188,7 +195,7 @@ export const pageQuery = graphql`
       }
     }
     beTraiPosts: allMarkdownRemark(
-      limit: 20
+      limit: 8
       filter: {frontmatter: {category: {eq: "be-trai"}}}
       sort: {fields: [frontmatter___date], order: DESC}
     ) {

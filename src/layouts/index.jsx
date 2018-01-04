@@ -64,9 +64,6 @@ export default class MainLayout extends React.Component {
                   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon" />
                   </button>
-                  <div className="form-inline search-block">
-                    <Search placeholder="Tên sản phẩm, thương hiệu..." />
-                  </div>
                   <div className="top-info-block">
                     <a href="facebook.com/" className="link-facebook">
                       <i className="ion-social-facebook" />

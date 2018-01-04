@@ -9,6 +9,12 @@ export {default as Badge} from './components/Badge'
 
 export { default as Button } from './components/Button'
 
+export { default as CustomRadio } from './components/CustomRadio'
+
+export { default as CustomCheckbox } from './components/CustomCheckbox'
+
+export { default as CardPerson } from './components/CardPerson'
+
 export { default as Card } from './components/Card'
 export { default as CardHeader } from './components/Card/CardHeader'
 export { default as CardBody } from './components/Card/CardBody'
@@ -21,7 +27,7 @@ export { default as ModalHeader } from './components/Modal/ModalHeader'
 export { default as ModalBody } from './components/Modal/ModalBody'
 export { default as ModalFooter } from './components/Modal/ModalFooter'
 
-export { default as Progress } from './components/Progress'
+export { default as Progress} from './components/Progress'
 
 export { default as InputNumber } from './components/Input/InputNumber'
 
@@ -69,7 +75,13 @@ export { default as Master } from './layouts/Master'
 export { default as Section } from './layouts/Section'
 
 // Pages
+export {default as FiveHundred} from './pages/FiveHundred'
+
 export {default as FourZeroFour} from './pages/FourZeroFour'
+
+export {default as FourZeroThree} from './pages/FourZeroThree'
+
+export {default as Login} from './pages/Login'
 
 export {default as ResetPassword} from './pages/ResetPassword'
 

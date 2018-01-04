@@ -1,12 +1,13 @@
 ---
-title: "Random project 4 With Super Long Title Phase One"
-cover: "https://unsplash.it/1152/300/?random?SuperLong"
-category: "random"
+title: "Áo sơ mi bé trai ngắn tay phối cà vạt (1 - 7 tuổi)"
+cover: "https://babi.vn/images/thumbnails/315/315/detailed/51/ao-so-mi-be-trai-ngan-tay-phoi-ca-vat_(1).jpg?t=1514942106"
+category: "be-trai"
 date: "02/03/2017"
-price: "120000"
+price: "105000"
 salePrice: "150000"
 tags:
-    - say hi
+    - ao
+    - ao so mi
 ---
 # Artificem honorati ore temperat Lycus quam antiquum
 

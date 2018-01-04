@@ -1,9 +1,9 @@
 ---
-title: "The Fairy's Witches"
-cover: "https://unsplash.it/1152/300/?random?FaityWitch"
-category: "something"
+title: "Áo dài bé trai họa tiết rồng (1 tuổi - 8 tuổi)s"
+cover: "https://babi.vn/images/thumbnails/315/315/detailed/51/ao-dai-be-trai-hoa-tiet-rong_(3).jpg"
+category: "be-trai"
 date: "02/04/2017"
-price: "120000"
+price: "168000"
 salePrice: "150000"
 ---
 # Eram mora tuas in inter ferens caterva

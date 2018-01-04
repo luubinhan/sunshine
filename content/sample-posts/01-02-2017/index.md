@@ -1,14 +1,13 @@
 ---
-title: "The Fallen Time"
-cover: "https://unsplash.it/400/300/?random?TheFallenTime"
+title: "Quần jeans cho bé trai thêu hình đại bàng có dây đeo (1-5 tuổi)"
+cover: "https://babi.vn/images/thumbnails/315/315/detailed/50/quan-jeans-theu-hinh-dai-bang-co-day-deo-cho-be-trai_(3).jpg?t=1515028746"
 date: "01/02/2017"
-category: "be-gai"
+category: "be-trai"
 price: "120000"
 salePrice: "150000"
 tags:
-    - test
-    - something
-    - tagging
+    - quan
+    - duoi 5 tuoi
 ---
 # Autolyci eminus retenta
 

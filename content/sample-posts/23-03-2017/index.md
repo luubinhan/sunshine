@@ -1,12 +1,12 @@
 ---
-title: "Birch in the Roses"
-cover: "https://unsplash.it/1152/300/?random?BirchintheRoses"
+title: "Bộ đồ bé trai tay dài kèm mặt nạ trùm siêu nhân"
+cover: "https://babi.vn/images/thumbnails/315/315/detailed/50/bo-do-be-trai-tay-dai-kem-mat-na-trum-sieu-nhan_(1).jpg?t=1514250837"
 date: "01/03/2017"
 category: "be-trai"
-price: "120000"
+price: "145000"
 salePrice: "150000"
 tags:
-    - tag
+    - do bo
 ---
 # Domos primus caelum taedia
 

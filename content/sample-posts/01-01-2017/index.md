@@ -1,14 +1,12 @@
 ---
-title: "Bold Mage"
-cover: "https://unsplash.it/400/300/?random?BoldMage"
+title: "Áo dài gấm bé trai in hạc (2 - 8 tuổi)"
+cover: "https://babi.vn/images/thumbnails/315/315/detailed/51/ao-dai-gam-be-trai-in-hac_(3).jpg?t=1515031689"
 date: "01/01/2017"
-category: "be-gai"
+category: "be-trai"
 price: "120000"
 salePrice: "150000"
 tags:
-    - programming
-    - stuff
-    - other
+    - ao
 ---
 # Quanto et ius coniunctis urbes
 

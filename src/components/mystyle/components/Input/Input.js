@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames';
 
-import {isEmpty} from '../../utils'
+import {isEmpty, mapToCssModules} from '../../utils'
 import {runValidate, ruleRunner} from '../../utils/validations'
 import {checkRequired, checkEmail} from '../../utils/rules'
 
@@ -15,9 +16,6 @@ const propTypes = {
   sizing input, accepted value 'lg' | 'sm'
    */
   size: PropTypes.string,
-
-  // is field valid
-  isValid: PropTypes.bool,
 
   innerRef: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   addon: PropTypes.bool,
@@ -34,18 +32,18 @@ const propTypes = {
 
   // callback after validate
   aftervalidate: PropTypes.func,
-  helpTxt: PropTypes.string,
+  desc: PropTypes.string,
 };
 
 const defaultProps = {
+  children: null,
   type: 'text',
   label: '',
-  children: null,
+  size: '',
   message: 'Please provide a value',
-  isValid: true,
   required: false,
   aftervalidate: null,
-  helpTxt: ''
+  desc: ''
 };
 
 class Input extends React.Component {
@@ -53,7 +51,7 @@ class Input extends React.Component {
     super(props);
     this.validations = [];
     this.state = {
-      isError: !props.isValid,
+      isError: false,
       messageToDisplay: {}
     }
 
@@ -96,11 +94,11 @@ class Input extends React.Component {
       innerRef,
       label,
       required,
+      desc,
       ...attributes
     } = this.props;
 
     const {
-      helpTxt,
       isError,
       messageToDisplay
     } = this.state;
@@ -142,7 +140,6 @@ class Input extends React.Component {
     if (Tag === 'input') {
       attributes.type = type;
     }
-
     return (
       !isEmpty(label) ?
         <div className="form-group">
@@ -160,10 +157,10 @@ class Input extends React.Component {
             onChange={this._handleChange}
             onKeyUp={this._handleKeyUp}
           />
-          {helpTxt &&
-            <small className="form-text text-muted">
-              {helpTxt}
-            </small>
+          {desc &&
+            <div className="form-text text-muted">
+              {desc}
+            </div>
           }
 
           {isError &&
@@ -174,16 +171,17 @@ class Input extends React.Component {
         </div>
         :
         <div className="input-wrapper">
-          <Tag {...attributes}
+          <Tag
             ref={innerRef}
             className={formControlClass}
             onChange={this._handleChange}
             onKeyUp={this._handleKeyUp}
+            {...attributes}
           />
-          {helpTxt &&
-            <small className="form-text text-muted">
-              {helpTxt}
-            </small>
+          {desc &&
+            <div className="form-text text-muted">
+              {desc}
+            </div>
           }
           {isError &&
           <div className="invalid-feedback">

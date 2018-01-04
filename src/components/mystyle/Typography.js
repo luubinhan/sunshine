@@ -92,7 +92,7 @@ const DESC = styled.div`
 const CAPTION = styled.div`
   font-size: 13px;
   line-height: 20px;
-  color: rgba(0,0,0,.54);
+  color: rgba(0,0,0,.6);
   font-weight: 400;
   letter-spacing: 0.2px;
 `
