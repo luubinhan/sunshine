@@ -25,15 +25,14 @@ class ProductListing extends React.Component {
     const postList = this.getPostList();
     return (
       <div className="mystyle-products">
-        {
-        postList.map(post =>
+        {postList.map(post => (
           <Product 
             key={post.title}
             title={post.title}
             img={post.cover}
             {...post}
           />
-        )}
+        ))}
       </div>
     );
   }

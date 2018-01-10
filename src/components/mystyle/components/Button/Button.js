@@ -21,20 +21,15 @@ const propTypes = {
 };
 
 const defaultProps = {
-  color: 'secondary',
+  color: '',
   tag: 'button',
   primary: false,
-  icon: ''
+  icon: '',
+  className: ''
 };
 
 class Button extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.onClick = this.onClick.bind(this);
-  }
-
-  onClick(e) {
+  onClick = e => {
     if (this.props.disabled) {
       e.preventDefault();
       return;
