@@ -53,7 +53,9 @@ class Filter extends Component {
     this.setState({filterOn: ((this.filterBy.category !== undefined && this.filterBy.category.length !== 0) || (this.filterBy.tag !== undefined && this.filterBy.tag.length !== 0))})
   }
   render() {
-    const {filterOn} = this.state
+    const {filterOn} = this.state;
+    const {cate} = this.props;
+    console.log('dev', cate.key);
     return (
       <div className="filter">
         <Card>
@@ -68,10 +70,10 @@ class Filter extends Component {
                 <CustomCheckbox className="filter-checkbox" value="khuyen-mai" data-filter="tag" label="Khuyến mãi" onChange={this._changeFilter} />
               </div>
               <div className="filter-item">
-                <CustomCheckbox className="filter-checkbox" value="be-trai" label="Bé Trai" data-filter="category" onChange={this._changeFilter} />
+                <CustomCheckbox className="filter-checkbox" checked={(cate.key === 'be-trai')} value="be-trai" label="Bé Trai" data-filter="category" onChange={this._changeFilter} />
               </div>
               <div className="filter-item">
-                <CustomCheckbox className="filter-checkbox" value="be-gai" label="Bé Gái" data-filter="category" onChange={this._changeFilter} />
+                <CustomCheckbox className="filter-checkbox" checked={(cate.key === 'be-gai')} value="be-gai" label="Bé Gái" data-filter="category" onChange={this._changeFilter} />
               </div>
             </div>
             <Widget title="Bạn muốn mua gì" className="widget-filter">
@@ -117,7 +119,13 @@ class Filter extends Component {
 }
 
 Filter.propTypes = {
-  onFilter: PropTypes.func.isRequired
+  onFilter: PropTypes.func.isRequired,
+  // current selected cate
+  cate: PropTypes.object
 };
+
+Filter.defaultProps = {
+  cate: {}
+}
 
 export default Filter;

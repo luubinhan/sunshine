@@ -1,4 +1,5 @@
 ---
+slug: 'ao-dai-gam-be-trai-in-hac-9'
 title: "Đồ bộ bé trai in chữ sống động (7-11 tuổi)"
 cover: "https://babi.vn/images/thumbnails/600/600/variant_image/51/bo-be-trai-in-chu_(3).jpg?t=1514428769"
 category: "be-trai"

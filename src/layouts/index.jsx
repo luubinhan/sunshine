@@ -1,12 +1,12 @@
-import React from "react";
-import Helmet from "react-helmet";
+import React from 'react';
+import Helmet from 'react-helmet';
 import GatsbyLink from 'gatsby-link';
 
-import config from "../../data/SiteConfig";
-import {PRIMARY_NAVIGATION} from "../../data/data";
-import "../scss/main.scss";
+import config from '../../data/SiteConfig';
+import {PRIMARY_NAVIGATION, RIGHT_NAV} from '../../data/data';
+import '../scss/main.scss';
 
-import {Search, Container, Navbar, Master} from '../components/mystyle'
+import {Search, Container, Navbar, Master, Nav} from '../components/mystyle'
 
 import logoImg from './logo-shop-mat-troi-nho.png';
 
@@ -15,38 +15,40 @@ export default class MainLayout extends React.Component {
     function capitalize(string) {
       return string.charAt(0).toUpperCase() + string.slice(1);
     }
-    const pathPrefix = config.pathPrefix ? config.pathPrefix : "/";
+    const pathPrefix = config.pathPrefix ? config.pathPrefix : '/';
     const currentPath = this.props.location.pathname
-      .replace(pathPrefix, "")
-      .replace("/", "");
-    let title = "";
-    if (currentPath === "") {
-      title = "Home";
-    } else if (currentPath === "tags/") {
-      title = "Tags";
-    } else if (currentPath === "categories/") {
-      title = "Categories";
-    } else if (currentPath === "about/") {
-      title = "About";
-    } else if (currentPath.includes("posts")) {
-      title = "Article";
-    } else if (currentPath.includes("tags/")) {
+      .replace(pathPrefix, '')
+      .replace('/', '');
+    let title = '';
+    if (currentPath === '') {
+      title = 'Home';
+    } else if (currentPath === 'tags/') {
+      title = 'Tags';
+    } else if (currentPath === 'categories/') {
+      title = 'Categories';
+    } else if (currentPath === 'about/') {
+      title = 'About';
+    } else if (currentPath.includes('posts')) {
+      title = 'Article';
+    } else if (currentPath.includes('tags/')) {
       const tag = currentPath
-        .replace("tags/", "")
-        .replace("/", "")
-        .replace("-", " ");
+        .replace('tags/', '')
+        .replace('/', '')
+        .replace('-', ' ');
       title = `Tagged in ${capitalize(tag)}`;
-    } else if (currentPath.includes("categories/")) {
+    } else if (currentPath.includes('categories/')) {
       const category = currentPath
-        .replace("categories/", "")
-        .replace("/", "")
-        .replace("-", " ");
+        .replace('categories/', '')
+        .replace('/', '')
+        .replace('-', ' ');
       title = `${capitalize(category)}`;
     }
     return title;
   }
   render() {
     const { children } = this.props;
+    const pathArray = this.props.location.pathname;
+    const selecatedKey = pathArray.split('/').slice(-1);
     return (
       <div className="mystyle">
         <Helmet>
@@ -58,7 +60,7 @@ export default class MainLayout extends React.Component {
             <div className="header-inner">
               <Container>
                 <div className="navbar navbar-expand-lg navbar-light">
-                  <GatsbyLink to={'/'} className="navbar-brand">
+                  <GatsbyLink to="/" className="navbar-brand">
                     <img src={logoImg} height="40" alt="" />
                   </GatsbyLink>
                   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -77,7 +79,10 @@ export default class MainLayout extends React.Component {
               </Container>
               <div className="primary-nav-block">
                 <Container>
-                  <Navbar items={PRIMARY_NAVIGATION} cssClass="primary-nav" />
+                  <div className="d-flex">
+                    <Nav selecatedKey={selecatedKey[0]} items={PRIMARY_NAVIGATION} className="primary-nav mr-auto" />
+                    <Nav selecatedKey={selecatedKey[0]} items={RIGHT_NAV} className="right-nav" />
+                  </div>
                 </Container>
               </div>
             </div>

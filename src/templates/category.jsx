@@ -62,7 +62,7 @@ export default class CategoryTemplate extends React.Component {
         <Container>
           <Row>
             <Col sm={3}>
-              <FilterSidebar onFilter={this._onFilter} />
+              <FilterSidebar onFilter={this._onFilter} cate={cateObj} />
             </Col>
             <Col sm={9}>
               <div className="mb-4">

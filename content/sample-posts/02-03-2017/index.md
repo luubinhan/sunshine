@@ -1,4 +1,5 @@
 ---
+slug: 'ao-dai-gam-be-trai-in-hac-5'
 title: "Áo sơ mi bé trai ngắn tay phối cà vạt (1 - 7 tuổi)"
 cover: "https://babi.vn/images/thumbnails/315/315/detailed/51/ao-so-mi-be-trai-ngan-tay-phoi-ca-vat_(1).jpg?t=1514942106"
 category: "be-trai"

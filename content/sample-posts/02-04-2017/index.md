@@ -1,4 +1,5 @@
 ---
+slug: 'ao-dai-gam-be-trai-in-hac-6'
 title: "Áo dài bé trai họa tiết rồng (1 tuổi - 8 tuổi)s"
 cover: "https://babi.vn/images/thumbnails/315/315/detailed/51/ao-dai-be-trai-hoa-tiet-rong_(3).jpg"
 category: "be-trai"

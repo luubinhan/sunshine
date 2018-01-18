@@ -1,81 +1,14 @@
-import React from "react";
+import React from 'react';
 import GatsbyLink from 'gatsby-link';
-import Helmet from "react-helmet";
+import Helmet from 'react-helmet';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import Slider from 'react-slick';
 import _ from 'lodash';
 
-import PostListing from "../components/PostListing/PostListing";
-import SEO from "../components/SEO/SEO";
-import config from "../../data/SiteConfig";
-import {PRIMARY_NAVIGATION} from "../../data/data";
-import ProductListing from "../components/ProductListing";
-const PRODUCTS_LIST = [
-  {
-    title: '#1 Nồi Thủy Tinh Luminarc Amberline C6317 – 1 Lít',
-    img: 'http://dpegb9ebondhq.cloudfront.net/product_photos/52778003/Little_20Mermaid_202_medium.jpg',
-    path: '/product/1',
-    tag: 'be-trai',
-    salePrice: '269000',
-    price: '399000',
-  },
-  {
-    title: '#2 Bộ Dao Cao Cấp 8 Món GoodLife',
-    img: 'http://d310a9hpolx59w.cloudfront.net/product_photos/52777889/Alice_20in_20Wonderland_medium.jpg',
-    path: '/product/1',
-    tag: 'be-trai',
-    salePrice: '350000',
-    price: '399000',
-  },
-  {
-    title: '#3 Khuôn Bánh Chống Dính Carlmann Hình Trái Tim SL4008 (26.5x24x8cm)',
-    img: 'http://dpegb9ebondhq.cloudfront.net/product_photos/56006861/IMG_7600_medium.JPG',
-    path: '/product/1',
-    tag: 'be-trai',
-    salePrice: '',
-    price: '269000',
-  },
-  {
-    title: '#4 Bộ Dao Muỗng Nĩa Data 24 Món Moriitalia IK008204',
-    img: 'http://dlp2gfjvaz867.cloudfront.net/product_photos/56007206/IMG_7146_medium.JPG',
-    path: '/product/1',
-    tag: 'be-trai',
-    salePrice: '',
-    price: '269000',
-  },
-  {
-    title: '#4 Đèn Diệt Muỗi Comet CM079',
-    img: 'http://dlp2gfjvaz867.cloudfront.net/product_photos/54732998/light_20denim_medium.jpg',
-    path: '/product/1',
-    tag: '0% Trả góp',
-    salePrice: '',
-    price: '269000',
-  },
-  {
-    title: '#4 Đèn Diệt Muỗi Comet CM079',
-    img: 'http://dpegb9ebondhq.cloudfront.net/product_photos/53476451/rapunzel_medium.jpg',
-    path: '/product/1',
-    tag: '0% Trả góp',
-    salePrice: '',
-    price: '269000',
-  },
-  {
-    title: '#4 Đèn Diệt Muỗi Comet CM079',
-    img: 'http://d1nr5wevwcuzuv.cloudfront.net/product_photos/56415116/geometric_medium.jpg',
-    path: '/product/1',
-    tag: '0% Trả góp',
-    salePrice: '',
-    price: '269000',
-  },
-  {
-    title: '#4 Đèn Diệt Muỗi Comet CM079',
-    img: 'http://d310a9hpolx59w.cloudfront.net/product_photos/57850502/christmas_20dress_204_medium.jpg',
-    path: '/product/1',
-    tag: '0% Trả góp',
-    salePrice: '',
-    price: '269000',
-  }
-]
+import SEO from '../components/SEO/SEO';
+import config from '../../data/SiteConfig';
+import {PRIMARY_NAVIGATION} from '../../data/data';
+import ProductListing from '../components/ProductListing';
 
 const sliderSettings = {
   dots: false,
@@ -97,7 +30,7 @@ class Index extends React.Component {
     const postEdges = this.props.data.allMarkdownRemark.edges;
     const beTraiPosts = this.props.data.beTraiPosts.edges;
     const beGaiPosts = this.props.data.beGaiPosts.edges;
-    
+
     return (
       <div className="index-container">
         <Helmet title={config.siteTitle} />
@@ -133,7 +66,7 @@ class Index extends React.Component {
             </div>
             <div className="box-body">
               <ProductListing postEdges={beTraiPosts} />
-             
+
             </div>
           </div>
           <div className="box box-be-gai">

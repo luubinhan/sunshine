@@ -1,4 +1,5 @@
 ---
+slug: 'ao-dai-gam-be-trai-in-hac-2'
 title: "Quần jeans cho bé trai thêu hình đại bàng có dây đeo (1-5 tuổi)"
 cover: "https://babi.vn/images/thumbnails/315/315/detailed/50/quan-jeans-theu-hinh-dai-bang-co-day-deo-cho-be-trai_(3).jpg?t=1515028746"
 date: "01/02/2017"

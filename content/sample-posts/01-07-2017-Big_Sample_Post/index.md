@@ -1,4 +1,5 @@
 ---
+slug: 'ao-dai-gam-be-trai-in-hac-4'
 title: "Áo phông (thun) trơn ngắn tay cho bé trai 8kg - 26kg"
 cover: "https://babi.vn/images/thumbnails/315/315/detailed/46/ao-phong-thun-tron-ngan-tay-cho-be-trai-8kg-26kg.jpg?t=1507480642"
 category: "be-trai"

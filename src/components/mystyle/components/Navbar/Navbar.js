@@ -21,6 +21,10 @@ export default class Navbar extends Component {
   static contextTypes = {
     router: PropTypes.object
   }
+  checkActive = (href) => {
+    console.log(this.context)
+    //return this.context.router.isActive(href);
+  }
 
   renderChildrenMenu = (props) => {
     return (
@@ -44,11 +48,6 @@ export default class Navbar extends Component {
         }
       </div>
     )
-  }
-
-  checkActive = (href) => {
-    console.log(this.context)
-    //return this.context.router.isActive(href);
   }
 
   render() {

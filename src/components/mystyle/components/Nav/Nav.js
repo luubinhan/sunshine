@@ -18,6 +18,7 @@ export default class Nav extends Component {
     Display in vertical mode
     */
     vertical: PropTypes.bool,
+    selectedKey: PropTypes.string,
   }
 
   static defaultProps = {
@@ -27,16 +28,7 @@ export default class Nav extends Component {
     fill: false,
     vertical: false,
     hoverToOpen: true,
-  }
-
-  static contextTypes = {
-    router: PropTypes.object
-  }
-
-  checkActive = (href) => {
-    /* const currentRoute = this.context.router.getCurrentLocation();
-    return currentRoute.pathname.toLowerCase() === href.toLowerCase(); */
-    return false;
+    selectedKey: ''
   }
   renderChildrenMenu = (props) => {
     return (
@@ -72,6 +64,7 @@ export default class Nav extends Component {
       fill,
       vertical,
       hoverToOpen,
+      selectedKey,
       ...attributes
     } = this.props;
     const classes = mapToCssModules(classNames(
@@ -87,7 +80,7 @@ export default class Nav extends Component {
       <ul className={classes} {...attributes}>
         {
           items.map((menu, index) => {
-            const isActive = (this.checkActive(menu.href)) ? 'active' : '';
+            const isActive = selectedKey.toString() === menu.key.toString() ? 'active' : '';
             const hasChildrens = !!((menu.childrens !== undefined && menu.childrens.length !== 0))
             const isDropdown = hasChildrens ? 'dropdown' : '';
             const isDropdownToggle = hasChildrens ? 'dropdown-toggle' : '';

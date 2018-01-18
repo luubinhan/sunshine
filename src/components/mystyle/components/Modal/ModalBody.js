@@ -8,6 +8,9 @@ const ModalBody = (props) => (
   </div>
 )
 ModalBody.propTypes = {
-  children: PropTypes.element
+  children: PropTypes.any
+}
+ModalBody.defaultProps = {
+  children: null
 }
 export default ModalBody

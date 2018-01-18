@@ -1,4 +1,5 @@
 ---
+slug: 'ao-dai-gam-be-trai-in-hac-3'
 title: "Áo khoác gió cho bé trai sọc caro tay phối màu (4-9 tuổi)"
 cover: "https://babi.vn/images/thumbnails/315/315/detailed/49/ao-khoac-gio-caro-tay-phoi-mau-cho-be-trai_(7).jpg"
 category: "be-trai"

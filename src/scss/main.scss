@@ -126,7 +126,7 @@ h6,
 ul,
 ol {
   padding: 0;
-  margin-left: 30px;
+  margin: 0;
 }
 ul ul,
 ul ol,
@@ -795,6 +795,16 @@ table.normal tr td {
       font-weight: bold;
       &:hover {
         color: $primary-color;
+      }
+    }
+  }
+}
+.right-nav {
+  li{
+    &:first-child{
+      background: $primary-color;
+      a.nav-link {
+        color: #fff;
       }
     }
   }

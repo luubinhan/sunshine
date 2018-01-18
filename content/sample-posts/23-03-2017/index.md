@@ -1,4 +1,5 @@
 ---
+slug: 'ao-dai-gam-be-trai-in-hac-10'
 title: "Bộ đồ bé trai tay dài kèm mặt nạ trùm siêu nhân"
 cover: "https://babi.vn/images/thumbnails/315/315/detailed/50/bo-do-be-trai-tay-dai-kem-mat-na-trum-sieu-nhan_(1).jpg?t=1514250837"
 date: "01/03/2017"

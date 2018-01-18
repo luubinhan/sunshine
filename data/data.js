@@ -134,7 +134,7 @@ export const PRIMARY_NAVIGATION = [
         name: 'Bé từ 6 - 12 tuổi',
         icon: '',
         href: '/tags/duoi-12-tuoi',
-      },      
+      },
     ]
   },
   {
@@ -169,6 +169,9 @@ export const PRIMARY_NAVIGATION = [
     isActive: false,
     icon: ''
   },
+]
+
+export const RIGHT_NAV = [
   {
     key: 'khuyen-mai',
     slug: 'khuyen-mai',
