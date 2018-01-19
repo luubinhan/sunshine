@@ -1463,6 +1463,22 @@ body .rc-select-dropdown {
   &.gray-bg{
     background: $bg-gray;
   }
+  &.blue-bg{
+    .mystyle-products .product .product-image{
+      border-bottom: 2px solid rgba(218,231,244,.5);
+    }
+  }
+  &.pink-bg{
+    .mystyle-products .product .product-image{
+      border-bottom: 2px solid hsla(2,100%,92%,.5);
+    }
+  }
+  &.yellow-bg{
+    .mystyle-products .product .product-image{
+      border-bottom: 2px solid hsla(45,92%,91%,.5);
+    }
+  }
+  
 }
 .home-hero {
   background: url('https://d3u67r7pp2lrq5.cloudfront.net/storenvy_features/features/2/original/lovejunkee_bg_copy.jpg') no-repeat center top;

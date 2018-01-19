@@ -24,13 +24,13 @@ color: rgba(0,0,0,.54);
 const H1 = styled.h1`
   font-size: 45px;
   line-height: 48px;
-  color: rgba(0,0,0,.54);
+  color: #333;
 `;
 
 const H2 = styled.h2`
   font-size: 34px;
   line-height: 40px;
-  color: rgba(0,0,0,.54);
+  color: #333;
 `;
 
 const H3 = styled.h3`

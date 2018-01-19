@@ -49,7 +49,7 @@ class Index extends React.Component {
             </Section.Body>
           </Container>
         </Section>
-        <Section className="gray-bg">
+        <Section className="yellow-bg">
           <Section.Header>
             <HEADLINE>Khuyến mãi</HEADLINE>
           </Section.Header>
@@ -59,7 +59,7 @@ class Index extends React.Component {
             </Container>
           </Section.Body>
         </Section>
-        <Section>
+        <Section className="gray-bg">
           <Section.Header>
             <HEADLINE>Bé Trai</HEADLINE>
             <div className="link-list">
@@ -79,7 +79,7 @@ class Index extends React.Component {
             </Container>
           </Section.Body>
         </Section>
-        <Section className="gray-bg">
+        <Section className="pink-bg">
           <Section.Header>
             <HEADLINE>Bé Gái</HEADLINE>
             <div className="link-list">
