@@ -9,34 +9,15 @@
     .footer-widgets {
         .widget-container{
             border: none;  
-            &:before{
-                border-top: 2px solid #000;
-                content: "";
-                display: block;
-                width: 50px;
-                margin-bottom: 7px;
-            } 
             .widget-title{
                 padding: 0;
                 margin-bottom: 15px;
-                        
             }
             .widget-body{
                 padding: 0;
             }
         }
-        .footer-widget-1 {
         
-        }
-        .footer-widget-2 {
-        
-        }
-        .footer-widget-3 {
-        
-        }
-        .footer-widget-4 {
-        
-        }
     }
 }
 /* SECTION: EXTRA ---------------------------------------*/

@@ -10,6 +10,8 @@ module.exports = {
   siteFBAppID: '', // FB Application ID for using app insights
   googleAnalyticsID: '', // GA tracking ID.
   disqusShortname: '', // Disqus shortname.
+  email: 'sunshine@gmail',
+  address: '123 HCM City',
   postDefaultCategoryID: 'be-trai', // Default category for posts.
   userName: '', // Username to display in the author segment.
   userTwitter: '', // Optionally renders "Follow Me" in the UserInfo segment.

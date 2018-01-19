@@ -25,87 +25,77 @@ class Footer extends Component {
             <div className="inner">
               <Container>
                 <div className="footer-widgets row">
-                  <div className="col-xs-12 col-md-3 col-sm-6 footer-widget-1">
+                  <div className="col-xs-12 col-md-2 footer-widget-1">
                     <div className="widget widget-container">
-                      <div className="widget-title">Liên hệ</div>
                       <div className="widget-body">
                         <div className="textwidget">
                           <div className="group-icons">
                             <p className="home-icon">
                               <span className="pr-10">
-                                <i className="ion-android-pin"></i>
+                                <i className="ion-android-pin"/>
                               </span>
-                              198 West 21th Street, Suite 721 New York NY 10010
+                              {config.address}
                             </p>
                             <p className="phone-icon">
                               <span className="pr-10">
-                                <i className="ion-android-call"></i>
+                                <i className="ion-android-call"/>
                               </span>
                               <a href="tel:0988 990 168">
-                              0988 990 168</a> - <a href="tel:01699 163 056">01699 163 056</a>
-                              
+                              0988 990 168
+                              </a>
+                              -
+                              <a href="tel:01699 163 056">01699 163 056</a>
                             </p>
                             <p className="email-icon">
                               <span className="pr-10">
-                                <i className="ion-android-mail"></i>
+                                <i className="ion-android-mail"/>
                               </span>
-                              <a href="mailto:youremail@yourdomain.com" target="_blank">youremail@yourdomain.com</a>
+                              <a href={`mailto:${config.email}`} target="_blank">{config.email}</a>
                             </p>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div className="col-xs-12 col-md-3 col-sm-6 footer-widget-2">
+                  <div className="col-xs-12 col-md-2 footer-widget-2">
                     <div className="widget widget-container">
-                      <div className="widget-title">GIỚI THIỆU</div>
-                      <div className="widget-body">  
+                      <div className="widget-body">
                         <div className="menu">
                           <ul className="menu">
                             <li className="menu-item">
-                              <a href="">Giới thiệu</a>
+                              <Link to="/huong-dan-mua-hang">Hướng dẫn mua hàng</Link>
                             </li>
                             <li className="menu-item">
-                              <a href="">Hướng dẫn mua hàng</a>
+                              <Link to="/hinh-thuc-thanh-toan">Hình thức thanh toán</Link>
                             </li>
                             <li className="menu-item">
-                              <a href="">Hình thức thanh toán</a>
-                            </li>
-                            <li className="menu-item">
-                              <a href="">Bản giá ship EMS theo bưu điện</a>
+                              <Link to="/bang-gia-ship-ems-theo-buu-dien">Bảng giá ship EMS theo bưu điện</Link>
                             </li>
                           </ul>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div className="col-xs-12 col-md-3 col-sm-6 footer-widget-3">
+                  <div className="col-xs-12 col-md-2 footer-widget-3">
                     <div className="widget widget-container">
-                      <div className="widget-title">Tài khoản Vietcombank</div>
                       <div className="widget-body">
                         <div className="menu">
                           <dl>
-                            <dt>Chủ tài khoản:</dt>
+                            <dt>Vietcombank</dt>
                             <dd>Lưu Bình An</dd>
-                            <dt>Số tài khoản:</dt>
                             <dd>0181-003-023-502</dd>
                           </dl>
-                          <div className="widget-title">
-                            Tài khoản ACB
-                          </div>
-                          <dl >
-                            <dt>Chủ tài khoản:</dt>
+                          <dl>
+                            <dt>ACB</dt>
                             <dd>Trương Thị Tố Mi</dd>
-                            <dt>Số tài khoản:</dt>
                             <dd>0181-003-023-502</dd>
                           </dl>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div className="col-xs-12 col-md-3 col-sm-6 footer-widget-4">
+                  <div className="col-xs-12 col-md-3 col-sm-6 footer-widget-4 ml-auto">
                     <div className="widget widget-container">
-                      <div className="widget-title">KẾT NỐI VỚI CHÚNG TÔI</div>
                       <div className="widget-body">
                         <div className="menu">
                           <ul className="menu">
