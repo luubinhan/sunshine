@@ -4,7 +4,10 @@ import _ from 'lodash';
 
 import PostTags from '../PostTags';
 import {
-  Price
+  Price,
+  Row,
+  Col,
+  TITLE
 } from '../mystyle'
 
 import './ProductContent.scss'
@@ -19,15 +22,14 @@ class ProductContent extends Component {
     return (
       <div className="product type-product has-post-thumbnail">
         {!_.isEmpty(post) && post !== null &&
-          <div>
-            <div className="images">
+          <Row>
+            <Col sm={7}>
               <a href={post.title} className="woocommerce-main-image">
                 <img src={post.cover} className="attachment-shop_single size-shop_single wp-post-image" alt={post.title} />
               </a>
-            </div>
-
-            <div className="summary entry-summary">
-              <h1 className="product_title entry-title">{post.title}</h1>
+            </Col>
+            <Col sm={5}>
+              <TITLE>{post.title}</TITLE>
               <div className="category-product">
                 {getCategoryName(post.category)}
               </div>
@@ -50,8 +52,8 @@ class ProductContent extends Component {
               <div className="product_meta">
                 <PostTags tags={post.tags} />
               </div>
-            </div>
-          </div>
+            </Col>
+          </Row>
         }
       </div>
     );

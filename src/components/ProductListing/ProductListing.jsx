@@ -46,7 +46,7 @@ class ProductListing extends React.Component {
       <div className="mystyle-products">
         <Modal isOpen={this.state.showModal} size="lg" toggle={this._toggleModal}>
           <Modal.Header toggle={this._toggleModal}>
-            Product Name
+            {this.state.selectedProduct && this.state.selectedProduct.title}
           </Modal.Header>
           <Modal.Body>
             <ProductContent post={this.state.selectedProduct} />
