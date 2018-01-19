@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import {Price} from '../mystyle'
 
-import './Product.css'
+import './Product.scss'
 
 class Product extends Component {
   render() {
@@ -25,28 +25,28 @@ class Product extends Component {
     return (
       <div className="product" {...attributes}>
         <div className="product-inner">
-          <div>
-            { salePrice &&
-            <span className="onsale">Giảm giá</span>
-            }
-            { img &&
-              <span className="product-image">
-                <img src={img} alt={title} />
-              </span>
-            }
-            <h3>{title}</h3>
-            <span className="price">
-              {salePrice &&
-                <del>
-                  <Price price={price} />
-                </del>
-              }
-              <ins><Price price={parseInt(currentPrice, 10)} /></ins>
-              { salePrice &&
-                <span className="sale-tag sale-tag-square">-{downPrice}%</span>
-              }
+          { salePrice &&
+          <span className="onsale">Giảm giá</span>
+          }
+          { img &&
+            <span className="product-image">
+              <img src={img} alt={title} />
             </span>
+          }
+          <div className="p-2">
+            <h3>{title}</h3>
           </div>
+          <span className="price-block">
+            {salePrice &&
+              <del>
+                <Price price={price} />
+              </del>
+            }
+            <ins><Price price={parseInt(currentPrice, 10)} /></ins>
+            { salePrice &&
+              <span className="sale-tag sale-tag-square">-{downPrice}%</span>
+            }
+          </span>
           <a className="button add_to_cart_button product_type_simple" rel="nofollow" href="">Mua ngay</a>
         </div>
       </div>

@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 
 import Price from '../Price'
 
-import './Product.css'
 
 class Product extends Component {
   render() {

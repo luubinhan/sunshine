@@ -1,39 +1,61 @@
+@import '../../scss/_variables';
+
 .mystyle-products {
   list-style: none;
   margin: 0;
   padding: 0;  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .mystyle-products:after {
     clear: both;
     content: "";
     display: block;
 }
-.product-inner {
-  
-}
 .mystyle-products.slider-products .product {
   float: none;
   width: auto;
   margin-bottom: 0;
 }
-.mystyle-products .product {
-  float: left;
-  width: 25%;
-  margin-bottom: 20px;
-  position: relative;
-  padding: 20px;
-  background: #fff;
-  border-left: 1px solid #eee;
-  margin-left: -1px;
+.mystyle-products  {
+  .product {
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    position: relative;
+    background: #fff;
+    flex-basis: 19%;
+    min-width: 19%;
+    box-shadow: 0 1px 5px -2px rgba(0,0,0,0.52);
+  }
+  .product-image{
+    display: block;
+    border-radius: 4px 4px 0 0;
+    overflow: hidden;
+  }
+  .price-block {
+    border-top: 1px dashed #e6e8ec;
+    display: block;
+    padding: 5px;
+    text-align: right;
+    text-decoration: none;
+    ins {
+      text-decoration: none;
+    }
+    .price-amount {
+      color: $primary-color;
+    }
+  }
 }
-.mystyle-products .product:nth-child(4n+1) {
-  clear: left;
-}
+
 .mystyle-products .product h3 {
-  font-size: 14px;
-  line-height: 20px;
-  margin-top: 10px;
+  font-size: 11px;
+  line-height: 16px;
+  margin-top: 0;
   height: 39px;
+  font-weight: bold;
+  color: #5f677d;
   overflow: hidden;
 }
 .mystyle-products .product:hover {
@@ -54,25 +76,19 @@
   display: block;
   margin: 0 auto;
 }
-.mystyle-products .product .price {
-  font-size: 14px;
-}
-.mystyle-products .product .price ins {
-  text-decoration: none;
-  font-weight: 700;
-  white-space: nowrap;
-}
-.mystyle-products .product .price del {
+.mystyle-products .product del {
   color: #969696;
   font-size: 11px;
   padding-right: 7px;
   white-space: nowrap;
+  display: none;
 }
-.mystyle-products .product .price .sale-tag {
+.mystyle-products .product .sale-tag {
   color: red;
   font-size: 12px;
   padding-left: 7px;
   font-weight: 700;
+  display: none;
 }
 
 .onsale {

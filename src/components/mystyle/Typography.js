@@ -43,6 +43,8 @@ const HEADLINE = styled.h3`
   font-size: 24px;
   line-height: 32px;
   color: rgba(0,0,0,.85);
+  text-transform: uppercase;
+  font-weight: 600;
 `;
 
 const H4 = styled.h4`
@@ -56,7 +58,7 @@ const TITLE = styled.h4`
   font-size: 21px;
   font-weight: 400;
   color: rgba(0,0,0,.85);
-  letter-spacing: 0.05px;  
+  letter-spacing: 0.05px;
 `;
 
 const H5 = styled.h5`
@@ -98,10 +100,10 @@ const CAPTION = styled.div`
 `
 
 const Enable = styled.span`
-  color: #008272;  
+  color: #008272;
 `
 const Disable = styled.span`
-  color: #e81123;  
+  color: #e81123;
 `
 
 const PageTitle = styled.div`
