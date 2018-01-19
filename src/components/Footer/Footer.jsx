@@ -7,7 +7,8 @@ import './Footer.scss';
 import {
   Container,
   Row,
-  Col
+  Col,
+  Button
 } from '../mystyle'
 
 class Footer extends Component {
@@ -100,9 +101,9 @@ class Footer extends Component {
                         <div className="menu">
                           <ul className="menu">
                             <li className="menu-item">
-                              <Link to={url}>
+                              <Button href={url} outline color="secondary" icon="ion-social-rss">
                                 Subscribe
-                              </Link>
+                              </Button>
                             </li>
                           </ul>
                           <UserLinks config={config} labeled />

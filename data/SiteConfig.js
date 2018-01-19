@@ -23,22 +23,12 @@ module.exports = {
     {
       label: 'Facebook',
       url: '',
-      iconClassName: 'fa fa-github'
+      iconClassName: 'ion-social-facebook'
     },
     {
       label: 'Instagram',
       url: '',
-      iconClassName: 'fa fa-twitter'
-    },
-    {
-      label: 'Email',
-      url: '',
-      iconClassName: 'fa fa-envelope'
-    },
-    {
-      label: 'Hotline',
-      url: '',
-      iconClassName: 'fa fa-twitter'
+      iconClassName: 'ion-social-instagram'
     },
   ],
   copyright: '© 2018 Sunshine - Shop mặt trời tí hon. All Rights Reserved.', // Copyright string for the footer of the website and RSS feed.
