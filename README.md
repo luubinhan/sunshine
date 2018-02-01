@@ -161,3 +161,5 @@ module.exports = {
  ```
 
  WARNING: Make sure to edit `static/robots.txt` to include your domain for the sitemap!
+
+http://festivefolks.com/shop?artwork=12&variant=&numchars=6&size=medium

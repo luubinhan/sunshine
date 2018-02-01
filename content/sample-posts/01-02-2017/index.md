@@ -6,6 +6,7 @@ date: "01/02/2017"
 category: "be-trai"
 price: "120000"
 salePrice: "150000"
+taolaomialao: "Dung Beo"
 tags:
     - quan
     - duoi 5 tuoi

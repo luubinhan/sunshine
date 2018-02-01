@@ -1,7 +1,7 @@
 ---
 slug: 'ao-dai-gam-be-trai-in-hac-1'
 title: "Áo dài gấm bé trai in hạc (2 - 8 tuổi)"
-cover: "https://babi.vn/images/thumbnails/315/315/detailed/51/ao-dai-gam-be-trai-in-hac_(3).jpg?t=1515031689"
+cover: "https://babi.vn/images/thumbnails/315/315/detailed/50/quan-jeans-theu-hinh-dai-bang-co-day-deo-cho-be-trai_(3).jpg"
 date: "01/01/2017"
 category: "be-trai"
 price: "120000"

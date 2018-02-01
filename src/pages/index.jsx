@@ -51,7 +51,7 @@ class Index extends React.Component {
         </Section>
         <Section className="yellow-bg">
           <Section.Header>
-            <HEADLINE>Khuyến mãi</HEADLINE>
+            <div className="h2">Khuyến mãi</div>
           </Section.Header>
           <Section.Body>
             <Container>
@@ -61,7 +61,7 @@ class Index extends React.Component {
         </Section>
         <Section className="gray-bg">
           <Section.Header>
-            <HEADLINE>Bé Trai</HEADLINE>
+            <div className="h2">Bé Trai</div>
             <div className="link-list">
               {
                 PRIMARY_NAVIGATION[0].childrens.map((nav, index) => {
@@ -81,7 +81,7 @@ class Index extends React.Component {
         </Section>
         <Section className="pink-bg">
           <Section.Header>
-            <HEADLINE>Bé Gái</HEADLINE>
+            <div className="h2">Bé Gái</div>
             <div className="link-list">
               {
                 PRIMARY_NAVIGATION[1].childrens.map((nav, index) => {
