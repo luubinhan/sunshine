@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import _ from 'lodash';
 import { mapToCssModules } from '../../utils';
 
 import './CustomCheckbox.css'
@@ -9,20 +10,22 @@ const propTypes = {
   innerRef: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   className: PropTypes.string,
   cssModule: PropTypes.object,
-  helpTxt: PropTypes.string,
+  desc: PropTypes.string,
   label: PropTypes.string.isRequired,
 };
 
 const defaultProps = {
-  helpTxt: '',
-  className: ''
+  desc: '',
+  className: '',
 };
 
 class CustomCheckbox extends React.Component {
+  componentWillMount() {
+    this.id = _.uniqueId('checkbox_id_');
+  }
   render() {
     const {
-      innerRef,
-      helpTxt,
+      desc,
       label,
       className,
       cssModule,
@@ -34,23 +37,23 @@ class CustomCheckbox extends React.Component {
       'custom-control',
       'custom-checkbox',
     ), cssModule);
-
+    
     return (
-      <label className={classes} htmlFor={innerRef}>
+      <div className={classes} >
         <input {...attributes}
+          id={this.id}
           type="checkbox"
           className="custom-control-input"
         />
-        <span className="custom-control-indicator" />
-        <span className="custom-control-description">
+        <label className="custom-control-label" htmlFor={this.id}>
           {label}
-          {helpTxt &&
+          {desc &&
           <span className="form-text text-muted">
-            {helpTxt}
+            {desc}
           </span>
           }
-        </span>
-      </label>
+        </label>
+      </div>
     );
   }
 }

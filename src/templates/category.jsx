@@ -65,7 +65,7 @@ export default class CategoryTemplate extends React.Component {
               <FilterSidebar onFilter={this._onFilter} cate={cateObj} />
             </Col>
             <Col sm={9}>
-              <div className="mb-4">
+              <div className="mb-4 mt-4">
                 <HEADLINE style={{marginBottom: 25}}>
                   { cateObj.name } ({filteredUnpagedData.length})
                 </HEADLINE>
@@ -75,7 +75,7 @@ export default class CategoryTemplate extends React.Component {
                   Mặt Trời Nhỏ là nơi chọn mua đồ bé trai tin cậy nhất tại Tp.HCM.
                 </CAPTION>
               </div>
-              <div style={{width: 200}}>
+              <div style={{width: 200}} className="mb-4">
                 <Select placeholder="Sếp theo">
                   <Option value="gia-dam-dan">Giá giảm dần</Option>
                   <Option value="gia-tang-dan">Giá tăng dần</Option>

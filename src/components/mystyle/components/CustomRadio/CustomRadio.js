@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import _ from 'lodash';
 import { mapToCssModules } from '../../utils';
 
 import './CustomRadio.css'
@@ -19,6 +20,10 @@ const defaultProps = {
 };
 
 class CustomRadio extends React.Component {
+  componentWillMount() {
+    const id = _.uniqueId('labelFor');
+    this.id = id;
+  }
   render() {
     const {
       innerRef,
@@ -31,26 +36,26 @@ class CustomRadio extends React.Component {
     const classes = mapToCssModules(classNames(
       className,
       'custom-control',
-      'custom-radio ',
+      'custom-radio',
     ), cssModule);
 
     return (
-      <label className={classes} htmlFor={innerRef}>
+      <div className={classes} htmlFor={innerRef}>
         <input {...attributes}
+          id={this.id}
           ref={innerRef}
           type="radio"
           className="custom-control-input"
         />
-        <span className="custom-control-indicator" />
-        <span className="custom-control-description">
+        <label className="custom-control-label" htmlFor={this.id}>
           {label}
           {helpTxt &&
           <span className="form-text text-muted">
             {helpTxt}
           </span>
           }
-        </span>
-      </label>
+        </label>
+      </div>
     );
   }
 }
