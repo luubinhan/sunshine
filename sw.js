@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["/sunshine/app-81c329e052b8410e9a07.js","3abf37ff51cd3c858b5d4cc6992de71c"],["/sunshine/commons-37f104401a6f85b8072e.js","e9b5586bf727d48a38e31fb56b54f134"],["/sunshine/index.html","c0d8ececfd1deafad56fe15a2ed47397"],["/sunshine/manifest.json","d26ae858c8e3ad312fd9cf4b1d022d11"],["/sunshine/offline-plugin-app-shell-fallback/index.html","542c4d43c62e056f4eb98ee7df2b1317"]];
+var precacheConfig = [["/sunshine/app-2746bb98af9a92d0a4ad.js","59d8a4e406cd9fe0842f02828ac7f015"],["/sunshine/commons-5d73bd8790724cf7b2ee.js","92f6190a56764fd58265e0f8fb4c17f7"],["/sunshine/index.html","58268c90f5433346ad9371f92256cf28"],["/sunshine/manifest.json","4f748e20306fb346e134dfdb97f49c01"],["/sunshine/offline-plugin-app-shell-fallback/index.html","c9c64516643f0c0f70d4b09296d7b68b"]];
 var cacheName = 'sw-precache-v3-gatsby-plugin-offline-' + (self.registration ? self.registration.scope : '');
 
 
