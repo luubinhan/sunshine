@@ -1508,6 +1508,7 @@ table.normal tr td {
 }
 body .rc-select-enabled  {
   .rc-select-selection--single {
+    &:active,
     &:hover,
     &:focus {
       @include defaultInputFocus;
@@ -1534,6 +1535,9 @@ body .rc-select-dropdown {
     white-space: nowrap;
     background: 0 0;
     border: 0;
+    &:hover {
+      color: $primary-color;
+    }
   }
 }
 .section{
