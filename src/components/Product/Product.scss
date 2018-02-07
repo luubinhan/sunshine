@@ -13,10 +13,11 @@
   margin-bottom: 0;
 }
 .mystyle-products  {
+  display: flex;
+  justify-content: space-between;
   .product {
     cursor: pointer;
     border-radius: 4px;
-    margin-right: 3.3%;
     margin-bottom: 40px;
     position: relative;
     background: #fff;

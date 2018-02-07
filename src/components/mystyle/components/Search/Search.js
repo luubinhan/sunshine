@@ -43,11 +43,8 @@ export default class Search extends Component {
     const {keywords} = this.state;
     return (
       <div className="input-group search-form">
-        <Input value={keywords}
-          onChange={this._changeKeywords}
-          placeholder={this.props.placeholder}
-        />
-        <span className="input-group-btn">
+        <input type="text" onChange={this._changeKeywords} className="form-control"placeholder={this.props.placeholder} />
+        <span className="input-group-append">
           <Button primary
             onClick={this._resetKeywords}
           >

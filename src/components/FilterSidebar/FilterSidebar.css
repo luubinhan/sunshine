@@ -1,5 +1,11 @@
 .filter {
   position: relative;
+  opacity: 1;
+  -webkit-transition: opacity 200ms 250ms;
+  -webkit-transition-delay: ease-in;
+  -moz-transition: opacity 200ms 250ms ease-in;
+  -o-transition: opacity 200ms 250ms ease-in;
+  transition: opacity 200ms 250ms ease-in;
 }
 .filter-reset {
   position: absolute;

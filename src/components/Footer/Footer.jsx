@@ -102,7 +102,7 @@ class Footer extends Component {
                           <ul className="menu">
                             <li className="menu-item">
                               <Button href={url} outline color="secondary" icon="ion-social-rss">
-                                Subscribe
+                                Đăng ký nhận tin
                               </Button>
                             </li>
                           </ul>
@@ -126,13 +126,10 @@ class Footer extends Component {
                 <div className="credit">
                   <ul className="footer-nav">
                     <li>
-                      <Link to="/support-and-faq">Support & FAQ</Link>
+                      <Link to="/support-and-faq">Câu hỏi thường gặp</Link>
                     </li>
                     <li>
-                      <Link to="/contact-us">Contact Us</Link>
-                    </li>
-                    <li>
-                      <Link to="/copyright">Copyright</Link>
+                      <Link to="/contact-us">Liên hệ</Link>
                     </li>
                   </ul>
                 </div>

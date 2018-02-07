@@ -10,7 +10,8 @@ import {
   Row,
   Col,
   HEADLINE,
-  CAPTION
+  CAPTION,
+  Button
 } from '../components/mystyle'
 import ProductListing from '../components/ProductListing';
 import FilterSidebar from '../components/FilterSidebar'
@@ -60,27 +61,36 @@ export default class CategoryTemplate extends React.Component {
           title={`Quần áo trẻ em trong mục "${category}" | ${config.siteTitle}`}
         />
         <Container>
-          <Row>
-            <Col sm={3}>
-              <FilterSidebar onFilter={this._onFilter} cate={cateObj} />
-            </Col>
-            <Col sm={9}>
-              <div className="mb-4 mt-4">
-                <HEADLINE style={{marginBottom: 25}}>
-                  { cateObj.name } ({filteredUnpagedData.length})
-                </HEADLINE>
-                <CAPTION>
-                  Quần áo { cateObj.name } đẹp, giá rẻ nhiều mẫu thời trang bé trai mới cập nhật thường xuyên mỗi ngày. 
-                  <br />
-                  Mặt Trời Nhỏ là nơi chọn mua đồ bé trai tin cậy nhất tại Tp.HCM.
-                </CAPTION>
-              </div>
-              <div style={{width: 200}} className="mb-4">
+          <div className="cate__header">
+            <Row>
+              <Col sm={2}>
+                <Button color="light">Hide Filter</Button>
+              </Col>
+              <Col>
+                <div className="align-center">
+                  <HEADLINE style={{marginBottom: 25}}>
+                    { cateObj.name } ({filteredUnpagedData.length} sản phẩm)
+                  </HEADLINE>
+                  <CAPTION style={{display: 'none'}}>
+                    Quần áo { cateObj.name } đẹp, giá rẻ nhiều mẫu thời trang bé trai mới cập nhật thường xuyên mỗi ngày. 
+                    <br />
+                    Mặt Trời Nhỏ là nơi chọn mua đồ bé trai tin cậy nhất tại Tp.HCM.
+                  </CAPTION>
+                </div>
+              </Col>
+              <Col sm={2}>
                 <Select placeholder="Sếp theo">
                   <Option value="gia-dam-dan">Giá giảm dần</Option>
                   <Option value="gia-tang-dan">Giá tăng dần</Option>
                 </Select>
-              </div>
+              </Col>
+            </Row>
+          </div>
+          <Row>
+            <Col sm={3} className="sidebar">
+              <FilterSidebar onFilter={this._onFilter} cate={cateObj} />
+            </Col>
+            <Col sm={9}>
               <ProductListing postEdges={filteredUnpagedData} />
             </Col>
           </Row>

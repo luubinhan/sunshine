@@ -83,9 +83,7 @@ export default class Widget extends Component {
         )}
 
         {!isCollapsed && (
-          <div className='widget-body'>
-            {this.props.children}
-          </div>
+          this.props.children
         )}
 
       </div>
