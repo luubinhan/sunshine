@@ -10,7 +10,7 @@ class NotFound extends Component {
           <p>Internet quá rộng lớn, đừng để lạc mất nhau!</p>
           <Link href="/" className="btn btn-light">
             <i className="ion-arrow-left-c"/> Quay lại trang chủ
-          </Link>          
+          </Link>
         </div>
       </div>
     )
