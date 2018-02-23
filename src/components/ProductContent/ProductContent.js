@@ -33,7 +33,9 @@ class ProductContent extends Component {
               <div className="category-product">
                 {getCategoryName(post.category)}
               </div>
-              <Price price={post.price} salePrice={post.salePrice}/>
+              <div className="product-form box">
+                <Price price={post.price} salePrice={post.salePrice}/>
+              </div>
               <div className="block-contact">
                 <div className="d-flex">
                   <a className="contact-facebook" href="#">

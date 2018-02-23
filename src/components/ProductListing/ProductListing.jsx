@@ -52,7 +52,7 @@ class ProductListing extends React.Component {
             <ProductContent post={this.state.selectedProduct} />
           </Modal.Body>
           <Modal.Footer>
-            <Button primary>Mua Ngay</Button>
+            <Button primary size="lg">Mua Ngay</Button>
           </Modal.Footer>
         </Modal>
         {postList.map(post => (
