@@ -3,3 +3,38 @@
   align-items: center;
   justify-content: center;
 }
+.product-form {
+  .price-amount {
+    display: flex;
+    justify-content: space-between;
+    .label {
+      font-weight: normal;
+      font-size: 12px;
+      display: block;
+    }
+    .current-price-block {
+      .amount {
+        font-size: 22px;
+        color: red;
+      }
+    }
+    .sale-price-block {
+      .current-price-block {
+        .amount {
+          font-size: 18px;
+          color: #000;
+          text-decoration: line-through;
+        }
+      }
+    }
+    .sale-tag {
+      padding-left: 0;
+    }
+  }
+}
+.contact-phone {
+  background: #fbfbfb;
+  padding: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
