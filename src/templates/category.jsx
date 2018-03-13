@@ -72,9 +72,9 @@ export default class CategoryTemplate extends React.Component {
                     { cateObj.name } ({filteredUnpagedData.length} sản phẩm)
                   </HEADLINE>
                   <CAPTION style={{display: 'none'}}>
-                    Quần áo { cateObj.name } đẹp, giá rẻ nhiều mẫu thời trang bé trai mới cập nhật thường xuyên mỗi ngày. 
+                    Quần áo { cateObj.name } đẹp, nhiều mẫu thời trang mới, cập nhật thường xuyên.
                     <br />
-                    Mặt Trời Nhỏ là nơi chọn mua đồ bé trai tin cậy nhất tại Tp.HCM.
+                    Mặt Trời Nhỏ là nơi chọn mua đồ cho bé tin cậy nhất tại Tp.HCM.
                   </CAPTION>
                 </div>
               </Col>
