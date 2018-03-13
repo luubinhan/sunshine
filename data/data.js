@@ -137,38 +137,6 @@ export const PRIMARY_NAVIGATION = [
       },
     ]
   },
-  {
-    key: 'khan-mu',
-    slug: 'khan-mu',
-    name: 'Khăn Mũ',
-    href: '/categories/khan-mu',
-    isActive: false,
-    icon: ''
-  },
-  {
-    key: 'ba-lo',
-    slug: 'ba-lo',
-    name: 'Ba lô',
-    href: '/categories/ba-lo',
-    isActive: false,
-    icon: ''
-  },
-  {
-    key: 'giay-dep',
-    slug: 'giay-dep',
-    name: 'Giày dép',
-    href: '/categories/giay-dep',
-    isActive: false,
-    icon: ''
-  },
-  {
-    key: 'do-choi',
-    slug: 'do-choi',
-    name: 'Đồ chơi',
-    href: '/categories/do-choi',
-    isActive: false,
-    icon: ''
-  },
 ]
 
 export const RIGHT_NAV = [
