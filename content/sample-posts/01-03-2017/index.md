@@ -2,6 +2,8 @@
 slug: 'ao-dai-gam-be-trai-in-hac-3'
 title: "Áo khoác gió cho bé trai sọc caro tay phối màu (4-9 tuổi)"
 cover: "https://babi.vn/images/thumbnails/315/315/detailed/49/ao-khoac-gio-caro-tay-phoi-mau-cho-be-trai_(7).jpg"
+thumb1: "https://s.tea-global.net/mas_assets/cache/image/2/8/8/a/800x-166055.Jpg"
+thumb2: "https://s.tea-global.net/mas_assets/cache/image/2/8/8/4/800x-165959.Jpg"
 category: "be-trai"
 date: "01/03/2017"
 price: "120000"
@@ -10,6 +12,14 @@ tags:
     - ao
     - ao khoac
     - duoi 12 tuoi
+mau:    
+    - tim
+    - vang
+sizes:
+    - 2
+    - 3
+    - 4    
+    - 8
 ---
 # Ab dicemur cura
 

@@ -341,6 +341,9 @@ img::-moz-selection {
 /* Select-------------------------------------------------------------- */
 /* MISC
 -------------------------------------------------------------- */
+.container {
+  max-width: 1000px;
+}
 .container:after,
 .clearfix:after {
   display: block;
@@ -802,9 +805,15 @@ body {
 
 .header {
   background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
 }
 .master {
   min-height: calc(100vh - 185px);
+  padding-top: 50px;
   .category-container {
     min-height: calc(100vh - 185px);
     background: #f7f7f7;

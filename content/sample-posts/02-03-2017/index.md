@@ -2,6 +2,10 @@
 slug: 'ao-dai-gam-be-trai-in-hac-5'
 title: "Áo sơ mi bé trai ngắn tay phối cà vạt (1 - 7 tuổi)"
 cover: "https://babi.vn/images/thumbnails/315/315/detailed/51/ao-so-mi-be-trai-ngan-tay-phoi-ca-vat_(1).jpg?t=1514942106"
+thumb1: "https://s.tea-global.net/mas_assets/cache/image/2/8/8/a/800x-166055.Jpg"
+thumb2: "https://s.tea-global.net/mas_assets/cache/image/2/8/8/4/800x-165959.Jpg"
+thumb3: "https://s.tea-global.net/mas_assets/cache/image/2/8/8/a/800x-166055.Jpg"
+thumb4: "https://s.tea-global.net/mas_assets/cache/image/2/8/8/4/800x-165959.Jpg"
 category: "be-trai"
 date: "02/03/2017"
 price: "150000"
@@ -9,6 +13,15 @@ salePrice: "105000"
 tags:
     - ao
     - ao so mi
+mau:
+    - xanh
+    - do
+    - tim
+    - vang
+sizes:
+    - 6
+    - 7
+    - 8
 ---
 # Artificem honorati ore temperat Lycus quam antiquum
 

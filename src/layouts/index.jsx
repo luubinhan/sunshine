@@ -64,6 +64,7 @@ export default class MainLayout extends React.Component {
                   <GatsbyLink to="/" className="navbar-brand">
                     <img src={logoImg} height="40" alt="" />
                   </GatsbyLink>
+                  <Nav selecatedKey={selecatedKey[0]} items={PRIMARY_NAVIGATION} className="primary-nav mr-auto" />
                   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon" />
                   </button>
@@ -78,14 +79,6 @@ export default class MainLayout extends React.Component {
                   </div>
                 </div>
               </Container>
-              <div className="primary-nav-block">
-                <Container>
-                  <div className="d-flex">
-                    <Nav selecatedKey={selecatedKey[0]} items={PRIMARY_NAVIGATION} className="primary-nav mr-auto" />
-                    <Nav selecatedKey={selecatedKey[0]} items={RIGHT_NAV} className="right-nav" />
-                  </div>
-                </Container>
-              </div>
             </div>
           </div>
         </div>

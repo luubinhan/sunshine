@@ -76,17 +76,23 @@ export default class Nav extends Component {
       vertical ? 'flex-column' : false,
       hoverToOpen ? 'hover-top-open' : false,
     ), cssModule);
+
+    
     return (
       <ul className={classes} {...attributes}>
         {
           items.map((menu, index) => {
-            const isActive = selectedKey.toString() === menu.key.toString() ? 'active' : '';
             const hasChildrens = !!((menu.childrens !== undefined && menu.childrens.length !== 0))
-            const isDropdown = hasChildrens ? 'dropdown' : '';
             const isDropdownToggle = hasChildrens ? 'dropdown-toggle' : '';
+            const classLi = classNames(
+              'nav-item',
+              hasChildrens ? 'dropdown' : false,
+              (selectedKey.toString() === menu.key.toString()) ? 'active' : false,
+              menu.className ? menu.className : false,
+            );
             return (
               <li key={index}
-                className={`nav-item ${isActive} ${isDropdown}`}
+                className={classLi}
               >
                 <a href={menu.href}
                   className={`nav-link ${isDropdownToggle}`}

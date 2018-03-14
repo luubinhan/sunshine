@@ -2,12 +2,25 @@
 slug: 'ao-dai-gam-be-trai-in-hac-10'
 title: "Bộ đồ bé trai tay dài kèm mặt nạ trùm siêu nhân"
 cover: "https://babi.vn/images/thumbnails/315/315/detailed/50/bo-do-be-trai-tay-dai-kem-mat-na-trum-sieu-nhan_(1).jpg?t=1514250837"
+thumb1: "https://s.tea-global.net/mas_assets/cache/image/2/8/8/a/800x-166055.Jpg"
+thumb2: "https://s.tea-global.net/mas_assets/cache/image/2/8/8/4/800x-165959.Jpg"
+thumb3: "https://s.tea-global.net/mas_assets/cache/image/2/8/8/a/800x-166055.Jpg"
+thumb4: "https://s.tea-global.net/mas_assets/cache/image/2/8/8/4/800x-165959.Jpg"
 date: "01/03/2017"
 category: "be-trai"
 price: "145000"
 salePrice: "150000"
 tags:
     - do bo
+mau:
+    - xanh
+    - do
+    - tim
+    - vang
+sizes:
+    - 2
+    - 3
+    - 4
 ---
 # Domos primus caelum taedia
 

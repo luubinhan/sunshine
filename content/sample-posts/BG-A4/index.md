@@ -10,6 +10,19 @@ tags:
     - ao khoac
     - ao
     - duoi 5 tuoi
+mau:
+    - xanh
+    - do
+    - tim
+    - vang
+sizes:
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
 ---
 
 Quần legging bé gái kèm chân váy chấm bi - Chất liệu thun cotton mềm mịn co giãn tốt vừa giữ ấm cho bé vừa thoải mái trong mọi hoạt động vui chơi.

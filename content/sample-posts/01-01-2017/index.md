@@ -1,68 +1,37 @@
 ---
 slug: 'ao-dai-gam-be-trai-in-hac-1'
 title: "Áo dài gấm bé trai in hạc (2 - 8 tuổi)"
-cover: "https://babi.vn/images/thumbnails/315/315/detailed/50/quan-jeans-theu-hinh-dai-bang-co-day-deo-cho-be-trai_(3).jpg"
+cover: "https://s.tea-global.net/mas_assets/cache/image/2/8/7/e/800x-165860.Jpg"
+thumb1: "https://s.tea-global.net/mas_assets/cache/image/2/8/8/a/800x-166055.Jpg"
+thumb2: "https://s.tea-global.net/mas_assets/cache/image/2/8/8/4/800x-165959.Jpg"
+thumb3: "https://s.tea-global.net/mas_assets/cache/image/2/8/8/a/800x-166055.Jpg"
+thumb4: "https://s.tea-global.net/mas_assets/cache/image/2/8/8/4/800x-165959.Jpg"
 date: "01/01/2017"
 category: "be-trai"
 price: "120000"
 salePrice: "150000"
 tags:
     - ao
+mau:
+    - xanh
+    - do
+    - tim
+    - vang
+sizes:
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
 ---
-# Quanto et ius coniunctis urbes
 
-## Sedisti civiliter
+A top Tea silhouette in new U.S.-inspired prints, our best-selling empire dress is ready for sunny spring days with cuffed short sleeves.
 
-Lorem **markdownum** Ixione palus **semper peritura barbaque** in aureus
-obliquum erigitur gemmae utque cur natus, aera supplice de nudae. Manus
-ambrosiam tendens, saecula tenet, conponere et ense et cucurri. Tantique
-animalia praeceps Meleagre greges venisse corpore et ignara, umquam ipse? Quam
-*Talibus ausis*.
-
-## Vultusque subsequitur Pallas regis datis inde animaque
-
-At securim cautum capitis, creatos sanguinis turbant iam concita videor, edere.
-Alis genas rudis felix quas **longum** suorum manu ante prima **usque**. Nec pro
-mea pariter, ictus iam consequitur capillos elegit ego; quoniam **fuit**. Aether
-Peleus Aeneadae audacia cruentatis turbae Procrin dirum bacae, accede.
-
-```php
-    urlLinkedin.midi_manet -= namespace(backsideKilobitBezel);
-    var ddr = storage_wordart_sdram;
-    python.raw_backlink = rfid_load - 4;
-    kibibyte *= cdnThumbnailUri;
-```
-
-## Fortis dextrae humo limina Tempus singultibus illa
-
-Nate muros orbe [patris](http://debebuntilla.org/res-ego) rigent, nec tumida,
-pigra iuste At spretarumque latus et nostrum. Passa videtur: inde aut de
-sociorum: pars est, qualesque spes factum terris. Custodia sum animumque; iubet
-in pulvere carus, relinquunt incitat. Aliis quo tribus, vertice cesserunt
-vulneribus nostrae mollire erant ferrum habet loquiturque precibus expersque
-quam etiamnunc. Puraque [repetitque](http://mihi-aiax.io/suaferunt.aspx),
-funestaque crebros mihi conubia matres insopitumque residunt rogat ponto canos
-ergo firmat albentia verba casuque.
-
-```perl
-    if (lion_vdu + vrml_upnp - redundancyAccessPharming) {
-        driveProcessor = floatingWord(commerceDockRestore(database));
-    } else {
-        partition_source_thunderbolt = -2 + tokenStateArchive /
-                teraflops_gigahertz;
-    }
-    exabytePhpMacintosh -= graphic_cycle(expression, memory(ideFatMatrix,
-            controlInboxMode), 50) + -3;
-    buffer_apple_hdmi += viralSync + internetDigital / tweak_perl_expansion(
-            masterNullFloating + vdu, software_play);
-```
-
-## Nati expugnacior nympha milia nascuntur amico
-
-Multis timidus hic si auctor hausit. Suos taedasque, malis est nitente sceleri
-sunt florem.
-
-Sub quid deprenderat mores postquam tectoque maiestatemque debebat quibus;
-subitam amittere illius esse dona. Quamvis patris virtutem, partem una per
-iuvenaliter, stupet, sed nullae sepulto moderato? Nec phaedimus aequoris dixit.
-Hic bis parenti: e petunt satis.
+- Original all over prints
+- Cuffed sleeves
+- 100% cotton jersey
+- Machine wash
+- Imported
+- Style #8S12315R

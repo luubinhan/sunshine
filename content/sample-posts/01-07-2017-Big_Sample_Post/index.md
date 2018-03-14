@@ -2,6 +2,8 @@
 slug: 'ao-dai-gam-be-trai-in-hac-4'
 title: "Áo phông (thun) trơn ngắn tay cho bé trai 8kg - 26kg"
 cover: "https://babi.vn/images/thumbnails/315/315/detailed/46/ao-phong-thun-tron-ngan-tay-cho-be-trai-8kg-26kg.jpg?t=1507480642"
+thumb1: "https://s.tea-global.net/mas_assets/cache/image/2/8/8/a/800x-166055.Jpg"
+thumb2: "https://s.tea-global.net/mas_assets/cache/image/2/8/8/4/800x-165959.Jpg"
 category: "be-trai"
 date: "01/03/2018"
 price: "58000"
@@ -9,6 +11,14 @@ salePrice: "150000"
 tags:
     - ao
     - ao khoac
+mau:
+    - xanh
+    - do
+sizes:
+    - 2
+    - 3
+    - 4
+    - 5
 ---
 
 # NOTE: This "post" is based on [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) and is meant to test styling of Markdown generated documents.

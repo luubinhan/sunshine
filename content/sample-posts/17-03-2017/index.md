@@ -2,6 +2,10 @@
 slug: 'ao-dai-gam-be-trai-in-hac-9'
 title: "Đồ bộ bé trai in chữ sống động (7-11 tuổi)"
 cover: "https://babi.vn/images/thumbnails/600/600/variant_image/51/bo-be-trai-in-chu_(3).jpg?t=1514428769"
+thumb1: "https://s.tea-global.net/mas_assets/cache/image/2/8/8/a/800x-166055.Jpg"
+thumb2: "https://s.tea-global.net/mas_assets/cache/image/2/8/8/4/800x-165959.Jpg"
+thumb3: "https://s.tea-global.net/mas_assets/cache/image/2/8/8/a/800x-166055.Jpg"
+thumb4: "https://s.tea-global.net/mas_assets/cache/image/2/8/8/4/800x-165959.Jpg"
 category: "be-trai"
 date: "17/03/2017"
 price: "120000"
@@ -9,6 +13,14 @@ salePrice: "150000"
 tags:
     - do bo
     - duoi 12 tuoi
+mau:
+    - xanh
+    - do
+sizes:
+    - 2
+    - 3
+    - 4
+    - 5
 ---
 # Hanc indeploratum seram Amphitryoniadae tremulis pauperque manum
 

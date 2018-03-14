@@ -2,10 +2,25 @@
 slug: 'ao-dai-gam-be-trai-in-hac-6'
 title: "Áo dài bé trai họa tiết rồng (1 tuổi - 8 tuổi)s"
 cover: "https://babi.vn/images/thumbnails/315/315/detailed/51/ao-dai-be-trai-hoa-tiet-rong_(3).jpg"
+thumb1: "https://s.tea-global.net/mas_assets/cache/image/2/8/8/a/800x-166055.Jpg"
+thumb2: "https://s.tea-global.net/mas_assets/cache/image/2/8/8/4/800x-165959.Jpg"
+thumb3: "https://s.tea-global.net/mas_assets/cache/image/2/8/8/a/800x-166055.Jpg"
+thumb4: "https://s.tea-global.net/mas_assets/cache/image/2/8/8/4/800x-165959.Jpg"
 category: "be-trai"
 date: "02/04/2017"
 price: "168000"
 salePrice: "150000"
+mau:
+    - xanh
+    - do
+    - tim
+    - vang
+sizes:
+    - 2
+    - 5
+    - 6
+    - 7
+    - 8
 ---
 # Eram mora tuas in inter ferens caterva
 
