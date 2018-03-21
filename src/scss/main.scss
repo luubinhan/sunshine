@@ -832,6 +832,11 @@ body {
     color: $primary-color;
     border-color: $primary-color;
     border-left: none;
+    border-top: none;
+    margin-top: 0;
+    &:hover {
+      color: #fff;
+    }
   }
 }
 .top-info-block {
