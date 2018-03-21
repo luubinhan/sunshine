@@ -61,7 +61,6 @@ class Filter extends Component {
   render() {
     const {filterOn} = this.state;
     const {cate} = this.props;
-    console.log('dev', cate.key);
     return (
       <div className="filter">
         {filterOn &&

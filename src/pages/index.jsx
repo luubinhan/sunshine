@@ -168,6 +168,12 @@ export const pageQuery = graphql`
             title
             tags
             cover
+            thumb1
+            thumb2
+            thumb3
+            thumb4
+            mau
+            sizes
             date
             category
             price

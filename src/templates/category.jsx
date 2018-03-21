@@ -15,38 +15,17 @@ import {
 } from '../components/mystyle'
 import ProductListing from '../components/ProductListing';
 import FilterSidebar from '../components/FilterSidebar'
+import {onFilter} from '../Utils/common'
 
 import {PRIMARY_NAVIGATION} from '../../data/data';
 
 export default class CategoryTemplate extends React.Component {
-  state = {
-    filteredUnpagedData: this.props.data.allMarkdownRemark.edges
-  }
-  //handle when filter been changed
-  _onFilter = filterBy => {
-    let newFilteredUnpagedData = [...this.props.data.allMarkdownRemark.edges];
-    //filter by tag
-    if (filterBy.tag.length !== 0) {
-      newFilteredUnpagedData = _.filter(newFilteredUnpagedData, item => {
-        //loop through the tag array to check with filterBy selected array
-        if (item.node.frontmatter.tags !== null) {
-          for (let i = 0; i < item.node.frontmatter.tags.length; i += 1) {
-            const checkTag = _.kebabCase(item.node.frontmatter.tags[i]);
-            if (filterBy.tag.indexOf(checkTag) !== -1) {
-              return true
-            }
-          }
-        }
-        return false
-      })
+  constructor(props) {
+    super(props);
+    this.state = {
+      filteredUnpagedData: this.props.data.allMarkdownRemark.edges
     }
-    // filter by category
-    if (filterBy.category.length !== 0) {
-      newFilteredUnpagedData = _.filter(newFilteredUnpagedData, item => {
-        return (filterBy.category.indexOf(item.node.frontmatter.category) !== -1)
-      })
-    }
-    this.setState({filteredUnpagedData: newFilteredUnpagedData})
+    this._onFilter = onFilter.bind(this)
   }
   render() {
     const category = this.props.pathContext.category;
@@ -64,7 +43,6 @@ export default class CategoryTemplate extends React.Component {
           <div className="cate__header">
             <Row>
               <Col sm={2}>
-                <Button color="light">Hide Filter</Button>
               </Col>
               <Col>
                 <div className="align-center">
@@ -120,6 +98,12 @@ export const pageQuery = graphql`
             title
             tags
             cover
+            thumb1
+            thumb2
+            thumb3
+            thumb4
+            mau
+            sizes
             date
             price
             salePrice

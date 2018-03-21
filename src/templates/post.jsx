@@ -86,6 +86,12 @@ export const pageQuery = graphql`
       frontmatter {
         title
         cover
+        thumb1
+        thumb2
+        thumb3
+        thumb4
+        mau
+        sizes
         date
         category
         tags
