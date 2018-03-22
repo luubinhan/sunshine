@@ -111,6 +111,7 @@ class AboutPage extends Component {
           <p>
             Dưới đây là bảng thông số size áo quần nam, nữ dành cho bé trên 5 tuổi.
           </p>
+          <small>Bảng thông số size áo quần cho bé  gái trên 5 tuổi</small>
           <table className="table">
             <tbody>
               <tr>
@@ -322,10 +323,245 @@ class AboutPage extends Component {
               </tr>
             </tbody>
           </table>
-          <small>Bảng thông số size áo quần cho bé  gái trên 5 tuổi</small>
+          
           <small>
           Bảng thông số size áo quần cho bé trai trên 5 tuổi
           </small>
+          <table className="table">
+            <tbody>
+              <tr>
+                <td>
+                  <p><strong>Tuổi</strong></p>
+                </td>
+                <td>
+                  <p><strong>Chiều cao(cm)</strong></p>
+                </td>
+                <td>
+                  <p><strong>Ngực(cm)</strong></p>
+                </td>
+                <td>
+                  <p><strong>Dài tay(cm)</strong></p>
+                </td>
+                <td>
+                  <p><strong>Eo (cm)</strong></p>
+                </td>
+                <td>
+                  <p><strong>Dài ống (đùi đến mắt cá)(cm)</strong></p>
+                </td>
+                <td>
+                  <p><strong>Size</strong></p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>5-6</p>
+                </td>
+                <td>
+                  <p>107 - 114</p>
+                </td>
+                <td>
+                  <p>57</p>
+                </td>
+                <td>
+                  <p>52</p>
+                </td>
+                <td>
+                  <p>57</p>
+                </td>
+                <td>
+                  <p>50</p>
+                </td>
+                <td>
+                  <p>XS (= 5T)</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>6 - 7</p>
+                </td>
+                <td>
+                  <p>114 - 122</p>
+                </td>
+                <td>
+                  <p>58</p>
+                </td>
+                <td>
+                  <p>55</p>
+                </td>
+                <td>
+                  <p>58</p>
+                </td>
+                <td>
+                  <p>53</p>
+                </td>
+                <td>
+                  <p>S (6)</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>7 - 8</p>
+                </td>
+                <td>
+                  <p>122 - 130</p>
+                </td>
+                <td>
+                  <p>60</p>
+                </td>
+                <td>
+                  <p>59</p>
+                </td>
+                <td>
+                  <p>60</p>
+                </td>
+                <td>
+                  <p>57</p>
+                </td>
+                <td>
+                  <p>S (7)</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>8 - 9</p>
+                </td>
+                <td>
+                  <p>130 - 137</p>
+                </td>
+                <td>
+                  <p>61</p>
+                </td>
+                <td>
+                  <p>62</p>
+                </td>
+                <td>
+                  <p>61</p>
+                </td>
+                <td>
+                  <p>61</p>
+                </td>
+                <td>
+                  <p>M (8)</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>10 - 11</p>
+                </td>
+                <td>
+                  <p>137 - 145</p>
+                </td>
+                <td>
+                  <p>64</p>
+                </td>
+                <td>
+                  <p>66</p>
+                </td>
+                <td>
+                  <p>64</p>
+                </td>
+                <td>
+                  <p>65</p>
+                </td>
+                <td>
+                  <p>L (10)</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>11 - 12</p>
+                </td>
+                <td>
+                  <p>145 - 152</p>
+                </td>
+                <td>
+                  <p>66</p>
+                </td>
+                <td>
+                  <p>70</p>
+                </td>
+                <td>
+                  <p>66</p>
+                </td>
+                <td>
+                  <p>69</p>
+                </td>
+                <td>
+                  <p>L (12)</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>12 - 13</p>
+                </td>
+                <td>
+                  <p>152 - 157</p>
+                </td>
+                <td>
+                  <p>69</p>
+                </td>
+                <td>
+                  <p>74</p>
+                </td>
+                <td>
+                  <p>69</p>
+                </td>
+                <td>
+                  <p>72</p>
+                </td>
+                <td>
+                  <p>XL (14)</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>13 - 14</p>
+                </td>
+                <td>
+                  <p>157 - 165</p>
+                </td>
+                <td>
+                  <p>71</p>
+                </td>
+                <td>
+                  <p>77</p>
+                </td>
+                <td>
+                  <p>71</p>
+                </td>
+                <td>
+                  <p>76</p>
+                </td>
+                <td>
+                  <p>XL (16)</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>14 - 15</p>
+                </td>
+                <td>
+                  <p>165 - 170</p>
+                </td>
+                <td>
+                  <p>74</p>
+                </td>
+                <td>
+                  <p>80</p>
+                </td>
+                <td>
+                  <p>74</p>
+                </td>
+                <td>
+                  <p>79</p>
+                </td>
+                <td>
+                  <p>XXL (18)</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          
         </Container>
       </div>
     );
