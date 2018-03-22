@@ -1,7 +1,8 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import GatsbyLink from 'gatsby-link'
 
-import {Container, Price} from '../components/mystyle'
+import {Container, Price, Button} from '../components/mystyle'
 
 import UserInfo from '../components/UserInfo/UserInfo';
 import Disqus from '../components/Disqus/Disqus';
@@ -15,6 +16,29 @@ import '../scss/single-product.scss';
 import {getCategoryName} from '../Utils'
 
 export default class PostTemplate extends React.Component {
+  _goBack = e => {
+    this.props.history.goBack();
+  }
+  renderSize = (size, index) => {
+    return (
+      <Button key={index} color="secondary" outline>
+        {size}
+      </Button>
+    )
+  }
+  renderSizes = (sizes) => {
+    return (
+      <div className="sizes-row">
+        <div className="d-flex justify-content-between">
+          <div>Size:</div>
+          <div><GatsbyLink to='size-chuan-kich-thuoc-quan-ao-tre-em'>Bảng kích thước chuẩn <i className="ion-arrow-right-c" /></GatsbyLink></div>
+        </div>
+        <div className="mt-3">
+          {sizes.map((size, index) => this.renderSize(size, index))}
+        </div>
+      </div>
+    )
+  }
   render() {
     const { slug } = this.props.pathContext;
     const postNode = this.props.data.markdownRemark;
@@ -31,6 +55,11 @@ export default class PostTemplate extends React.Component {
           <title>{`${post.title} | ${config.siteTitle}`}</title>
         </Helmet>
         <SEO postPath={slug} postNode={postNode} postSEO />
+        <div style={{ backgroundColor: '#f7f7f7', paddingTop: 10, paddingBottom: 10, marginBottom: 20 }}>
+          <Container>
+            <Button onClick={this._goBack} color="light">Quay lại</Button>
+          </Container>
+        </div>
         <Container>
           <div className="product type-product has-post-thumbnail">
             <div className="images">
@@ -45,6 +74,10 @@ export default class PostTemplate extends React.Component {
                 {getCategoryName(post.category)}
               </div>
               <Price price={post.price} salePrice={post.salePrice}/>
+              {post.sizes.length
+                ? this.renderSizes(post.sizes)
+                : null
+              }
               <div className="block-contact">
                 <div className="d-flex">
                   <a className="contact-facebook" href="#">
@@ -65,6 +98,12 @@ export default class PostTemplate extends React.Component {
               </div>
             </div>
             <div className="woocommerce-tabs wc-tabs-wrapper">
+              
+              {post.mau.length}
+              {post.thumb1 && <img src={post.thumb1} className="attachment-shop_single size-shop_single wp-post-image" alt={post.thumb1} />}
+              {post.thumb2 && <img src={post.thumb2} className="attachment-shop_single size-shop_single wp-post-image" alt={post.thumb1} />}
+              {post.thumb3 && <img src={post.thumb3} className="attachment-shop_single size-shop_single wp-post-image" alt={post.thumb1} />}
+              {post.thumb4 && <img src={post.thumb4} className="attachment-shop_single size-shop_single wp-post-image" alt={post.thumb1} />}
               <div className="p-30">
                 <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
               </div>

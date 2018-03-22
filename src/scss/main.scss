@@ -1659,3 +1659,12 @@ body .rc-select-dropdown {
   border: 1px solid #d8dae4;
   padding: 15px 25px;
 }
+.sizes-row {
+  margin-bottom: 20px;
+  .btn {
+    margin-right: 15px;
+    width: 40px;
+    border-radius: 0;
+    color: #000;
+  }
+}
