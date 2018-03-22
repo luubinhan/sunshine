@@ -30,11 +30,13 @@ class Product extends Component {
           }
           { img &&
             <span className="product-image">
-              <img src={img} alt={title} />
+              <a href={path}>
+                <img src={img} alt={title} />
+              </a>
             </span>
           }
           <div className="p-2">
-            <h3>{title}</h3>
+            <h3><a href={path}>{title}</a></h3>
           </div>
           <span className="price-block">
             {salePrice &&

@@ -60,7 +60,6 @@ class ProductListing extends React.Component {
             key={post.title}
             title={post.title}
             img={post.cover}
-            onClick={(e) => this._changeSelected(e, post)}
             {...post}
           />
         ))}

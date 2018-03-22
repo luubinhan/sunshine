@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames';
+import {navigateTo} from 'gatsby-link';
 import { mapToCssModules } from '../../utils';
 
 import './Nav.css'
@@ -77,7 +78,6 @@ export default class Nav extends Component {
       hoverToOpen ? 'hover-top-open' : false,
     ), cssModule);
 
-    
     return (
       <ul className={classes} {...attributes}>
         {
