@@ -59,6 +59,64 @@
         margin-bottom: 10px;
       }        
       .price-amount {
+        display: block;
+        .current-price-block {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border-bottom: 1px solid #ebebeb;
+          .label {
+            min-width: 50%;
+          }
+          .amount {
+            text-align: right;
+            flex: 1;
+          }
+        }
+        .sale-price-block{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border-bottom: 1px solid #ebebeb;
+          padding-top: 10px;
+          padding-bottom: 7px;
+          .label {
+            min-width: 50%;
+          }
+          .price-amount {
+            display: flex;
+            position: relative;
+            color: #727272;
+            .current-price-block {
+              border-bottom: none;
+            }
+            .amount {
+              color: #727272;
+              font-size: 18px;
+            }
+            &:after {
+              display: block;
+              content: "";
+              position: absolute;
+              left: 0;
+              right: 0;
+              top: 15px;
+              border: 1px solid #727272;
+            }
+          }
+        }
+        .discount-block {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border-bottom: 1px solid #ebebeb;
+          padding-top: 10px;
+          padding-bottom: 7px;
+          margin-bottom: 30px;
+          .label {
+            min-width: 50%;
+          }
+        }
         del {
           .amount {
             color: $muted;

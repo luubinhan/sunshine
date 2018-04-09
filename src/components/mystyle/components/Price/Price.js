@@ -37,7 +37,7 @@ const Price = ({price, symbol, salePrice}) => {
       </span>
       {salePrice ?
         <span className="sale-price-block">
-          <span className="label">Giá gốc:</span>
+          <span className="label">Giá chưa giảm:</span>
           <Price price={price} />
         </span>
         : null

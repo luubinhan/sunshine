@@ -1,6 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import GatsbyLink from 'gatsby-link';
+import 'antd/dist/antd.css'
 
 import config from '../../data/SiteConfig';
 import {PRIMARY_NAVIGATION, RIGHT_NAV} from '../../data/data';
