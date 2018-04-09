@@ -1,152 +1,168 @@
 {
   "assetsByChunkName": {
     "path---tags-duoi-12-tuoi": [
-      "path---tags-duoi-12-tuoi-76f9e88d5542f45b73fd.js",
-      "path---tags-duoi-12-tuoi-76f9e88d5542f45b73fd.js.map"
+      "path---tags-duoi-12-tuoi-e0c0da8403dce781b678.js",
+      "path---tags-duoi-12-tuoi-e0c0da8403dce781b678.js.map"
     ],
     "path---tags-ao-khoac": [
-      "path---tags-ao-khoac-0c0506cc4319f10c68c9.js",
-      "path---tags-ao-khoac-0c0506cc4319f10c68c9.js.map"
+      "path---tags-ao-khoac-d677fd767f3ef105f66b.js",
+      "path---tags-ao-khoac-d677fd767f3ef105f66b.js.map"
+    ],
+    "path---size-chuan-kich-thuoc-quan-ao-tre-em": [
+      "path---size-chuan-kich-thuoc-quan-ao-tre-em-a0e39f21c11f6a62c5ab.js",
+      "path---size-chuan-kich-thuoc-quan-ao-tre-em-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---categories-be-trai": [
-      "path---categories-be-trai-018ff977754db0fe0985.js",
-      "path---categories-be-trai-018ff977754db0fe0985.js.map"
+      "path---categories-be-trai-fb90a3290895e89f640a.js",
+      "path---categories-be-trai-fb90a3290895e89f640a.js.map"
     ],
     "path---quần-legging-kem-chan-vay-chấm-bi-cho-be-gai-10-26-kg": [
-      "path---quần-legging-kem-chan-vay-chấm-bi-cho-be-gai-10-26-kg-da07efaadd1270d66596.js",
-      "path---quần-legging-kem-chan-vay-chấm-bi-cho-be-gai-10-26-kg-da07efaadd1270d66596.js.map"
+      "path---quần-legging-kem-chan-vay-chấm-bi-cho-be-gai-10-26-kg-d984652173a528b18cbf.js",
+      "path---quần-legging-kem-chan-vay-chấm-bi-cho-be-gai-10-26-kg-d984652173a528b18cbf.js.map"
     ],
     "path---tags-quan": [
-      "path---tags-quan-575741b879e40bb92f0c.js",
-      "path---tags-quan-575741b879e40bb92f0c.js.map"
+      "path---tags-quan-d69fed84331137df5cba.js",
+      "path---tags-quan-d69fed84331137df5cba.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
       "path----557518bd178906f8d58a.js.map"
     ],
     "path---quần-legging-cho-be-gai-mau-trơn-bền-dẹp-23-45-kg": [
-      "path---quần-legging-cho-be-gai-mau-trơn-bền-dẹp-23-45-kg-1c0058f13c0a8853e3d1.js",
-      "path---quần-legging-cho-be-gai-mau-trơn-bền-dẹp-23-45-kg-1c0058f13c0a8853e3d1.js.map"
+      "path---quần-legging-cho-be-gai-mau-trơn-bền-dẹp-23-45-kg-583566b722c2f21f3efe.js",
+      "path---quần-legging-cho-be-gai-mau-trơn-bền-dẹp-23-45-kg-583566b722c2f21f3efe.js.map"
     ],
     "component---src-layouts-index-jsx": [
-      "component---src-layouts-index-jsx-da9616eca42554fd28d9.js",
-      "component---src-layouts-index-jsx-da9616eca42554fd28d9.js.map"
+      "component---src-layouts-index-jsx-f4deb5d12f1024a7758b.js",
+      "component---src-layouts-index-jsx-f4deb5d12f1024a7758b.js.map"
     ],
     "path---ao-khoac-gio-cho-be-trai-sọc-caro-tay-phối-mau-4-9-tuổi": [
-      "path---ao-khoac-gio-cho-be-trai-sọc-caro-tay-phối-mau-4-9-tuổi-6035df418aaf7e53a522.js",
-      "path---ao-khoac-gio-cho-be-trai-sọc-caro-tay-phối-mau-4-9-tuổi-6035df418aaf7e53a522.js.map"
+      "path---ao-khoac-gio-cho-be-trai-sọc-caro-tay-phối-mau-4-9-tuổi-c2e75949b0185c596036.js",
+      "path---ao-khoac-gio-cho-be-trai-sọc-caro-tay-phối-mau-4-9-tuổi-c2e75949b0185c596036.js.map"
     ],
     "component---node-modules-gatsby-plugin-offline-app-shell-js": [
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
     ],
     "path---tags-do-bo": [
-      "path---tags-do-bo-f35cb8691fad869d71d2.js",
-      "path---tags-do-bo-f35cb8691fad869d71d2.js.map"
+      "path---tags-do-bo-a3d4e4700334ed1c6681.js",
+      "path---tags-do-bo-a3d4e4700334ed1c6681.js.map"
     ],
     "path---tags-duoi-5-tuoi": [
-      "path---tags-duoi-5-tuoi-07c8961093c5d05e9974.js",
-      "path---tags-duoi-5-tuoi-07c8961093c5d05e9974.js.map"
+      "path---tags-duoi-5-tuoi-ef1248e01aa87970caa9.js",
+      "path---tags-duoi-5-tuoi-ef1248e01aa87970caa9.js.map"
     ],
     "path---categories-be-gai": [
-      "path---categories-be-gai-c66adbe83366f045233f.js",
-      "path---categories-be-gai-c66adbe83366f045233f.js.map"
+      "path---categories-be-gai-c55ca8841f49b16a4bf0.js",
+      "path---categories-be-gai-c55ca8841f49b16a4bf0.js.map"
     ],
     "path---quần-legging-kem-chan-vay-chấm-bi-cho-be-gai-10-26-kg-2": [
-      "path---quần-legging-kem-chan-vay-chấm-bi-cho-be-gai-10-26-kg-2-8a81196c089f41c5452d.js",
-      "path---quần-legging-kem-chan-vay-chấm-bi-cho-be-gai-10-26-kg-2-8a81196c089f41c5452d.js.map"
+      "path---quần-legging-kem-chan-vay-chấm-bi-cho-be-gai-10-26-kg-2-ba7e99b130d9cad00653.js",
+      "path---quần-legging-kem-chan-vay-chấm-bi-cho-be-gai-10-26-kg-2-ba7e99b130d9cad00653.js.map"
     ],
     "path---ao-dai-gấm-be-trai-in-hạc-2-8-tuổi": [
-      "path---ao-dai-gấm-be-trai-in-hạc-2-8-tuổi-b3dba94aaa4d068e616e.js",
-      "path---ao-dai-gấm-be-trai-in-hạc-2-8-tuổi-b3dba94aaa4d068e616e.js.map"
+      "path---ao-dai-gấm-be-trai-in-hạc-2-8-tuổi-c9e46187b738508ea3a2.js",
+      "path---ao-dai-gấm-be-trai-in-hạc-2-8-tuổi-c9e46187b738508ea3a2.js.map"
     ],
     "path---ao-nỉ-da-ca-be-gai-kiza-co-mu-theu-dầu-chu-thỏ-hồng": [
-      "path---ao-nỉ-da-ca-be-gai-kiza-co-mu-theu-dầu-chu-thỏ-hồng-52880a4a0613cf2e0562.js",
-      "path---ao-nỉ-da-ca-be-gai-kiza-co-mu-theu-dầu-chu-thỏ-hồng-52880a4a0613cf2e0562.js.map"
+      "path---ao-nỉ-da-ca-be-gai-kiza-co-mu-theu-dầu-chu-thỏ-hồng-4d4e0a5309e420eafb71.js",
+      "path---ao-nỉ-da-ca-be-gai-kiza-co-mu-theu-dầu-chu-thỏ-hồng-4d4e0a5309e420eafb71.js.map"
     ],
     "component---src-templates-category-jsx": [
-      "component---src-templates-category-jsx-693124e02c2960e75236.js",
-      "component---src-templates-category-jsx-693124e02c2960e75236.js.map"
+      "component---src-templates-category-jsx-ac6212895f909ac80600.js",
+      "component---src-templates-category-jsx-ac6212895f909ac80600.js.map"
+    ],
+    "path---lien-he": [
+      "path---lien-he-a0e39f21c11f6a62c5ab.js",
+      "path---lien-he-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---index": [
-      "path---index-2d145337bed48a0f6443.js",
-      "path---index-2d145337bed48a0f6443.js.map"
+      "path---index-c3fc3823240b5f4b0887.js",
+      "path---index-c3fc3823240b5f4b0887.js.map"
     ],
     "component---src-pages-about-jsx": [
       "component---src-pages-about-jsx-06a8c8dceba06f599859.js",
       "component---src-pages-about-jsx-06a8c8dceba06f599859.js.map"
     ],
     "path---dồ-bộ-be-trai-in-chữ-sống-dộng-7-11-tuổi": [
-      "path---dồ-bộ-be-trai-in-chữ-sống-dộng-7-11-tuổi-c6010366c87a1b5d1a05.js",
-      "path---dồ-bộ-be-trai-in-chữ-sống-dộng-7-11-tuổi-c6010366c87a1b5d1a05.js.map"
+      "path---dồ-bộ-be-trai-in-chữ-sống-dộng-7-11-tuổi-5490ff8cf075029f0919.js",
+      "path---dồ-bộ-be-trai-in-chữ-sống-dộng-7-11-tuổi-5490ff8cf075029f0919.js.map"
     ],
     "path---ao-dai-be-trai-họa-tiết-rồng-1-tuổi-8-tuổi-s": [
-      "path---ao-dai-be-trai-họa-tiết-rồng-1-tuổi-8-tuổi-s-0d8ee85a23e44b24b0e7.js",
-      "path---ao-dai-be-trai-họa-tiết-rồng-1-tuổi-8-tuổi-s-0d8ee85a23e44b24b0e7.js.map"
+      "path---ao-dai-be-trai-họa-tiết-rồng-1-tuổi-8-tuổi-s-d89273dd7d71e6eda219.js",
+      "path---ao-dai-be-trai-họa-tiết-rồng-1-tuổi-8-tuổi-s-d89273dd7d71e6eda219.js.map"
     ],
     "commons": [
-      "commons-1bb85ad2bfc4320c59f5.js",
+      "commons-0134648f8bd93355035a.js",
       "build-js-styles.css",
-      "commons-1bb85ad2bfc4320c59f5.js.map",
+      "commons-0134648f8bd93355035a.js.map",
       "build-js-styles.css.map"
     ],
     "path---ao-sơ-mi-be-trai-ngắn-tay-phối-ca-vạt-1-7-tuổi": [
-      "path---ao-sơ-mi-be-trai-ngắn-tay-phối-ca-vạt-1-7-tuổi-66a9193779c37e714d74.js",
-      "path---ao-sơ-mi-be-trai-ngắn-tay-phối-ca-vạt-1-7-tuổi-66a9193779c37e714d74.js.map"
+      "path---ao-sơ-mi-be-trai-ngắn-tay-phối-ca-vạt-1-7-tuổi-ee188b88f3dd57b18580.js",
+      "path---ao-sơ-mi-be-trai-ngắn-tay-phối-ca-vạt-1-7-tuổi-ee188b88f3dd57b18580.js.map"
+    ],
+    "component---src-pages-lien-he-jsx": [
+      "component---src-pages-lien-he-jsx-18b9316b7fbeb4f47348.js",
+      "component---src-pages-lien-he-jsx-18b9316b7fbeb4f47348.js.map"
     ],
     "path---404-html": [
       "path---404-html-a0e39f21c11f6a62c5ab.js",
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-size-chuan-kich-thuoc-quan-ao-tre-em-jsx": [
+      "component---src-pages-size-chuan-kich-thuoc-quan-ao-tre-em-jsx-a79384c55996263cc0de.js",
+      "component---src-pages-size-chuan-kich-thuoc-quan-ao-tre-em-jsx-a79384c55996263cc0de.js.map"
     ],
     "component---src-pages-404-jsx": [
       "component---src-pages-404-jsx-ac8d67d9e4856e9fc8a4.js",
       "component---src-pages-404-jsx-ac8d67d9e4856e9fc8a4.js.map"
     ],
     "component---src-templates-tag-jsx": [
-      "component---src-templates-tag-jsx-3a12c4ca6a14496432ee.js",
-      "component---src-templates-tag-jsx-3a12c4ca6a14496432ee.js.map"
+      "component---src-templates-tag-jsx-d74912d45b0ea1a479e1.js",
+      "component---src-templates-tag-jsx-d74912d45b0ea1a479e1.js.map"
     ],
     "path---bộ-dồ-be-trai-tay-dai-kem-mặt-nạ-trum-sieu-nhan": [
-      "path---bộ-dồ-be-trai-tay-dai-kem-mặt-nạ-trum-sieu-nhan-ea9fbaa218cc9f82c9ad.js",
-      "path---bộ-dồ-be-trai-tay-dai-kem-mặt-nạ-trum-sieu-nhan-ea9fbaa218cc9f82c9ad.js.map"
+      "path---bộ-dồ-be-trai-tay-dai-kem-mặt-nạ-trum-sieu-nhan-cf40089441b4ea0d0e43.js",
+      "path---bộ-dồ-be-trai-tay-dai-kem-mặt-nạ-trum-sieu-nhan-cf40089441b4ea0d0e43.js.map"
     ],
     "path---tags-ao-so-mi": [
-      "path---tags-ao-so-mi-f54b592d2cdd20127b07.js",
-      "path---tags-ao-so-mi-f54b592d2cdd20127b07.js.map"
+      "path---tags-ao-so-mi-35e0e2e14e98acb3d2dd.js",
+      "path---tags-ao-so-mi-35e0e2e14e98acb3d2dd.js.map"
     ],
     "path---offline-plugin-app-shell-fallback": [
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js",
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-templates-post-jsx": [
-      "component---src-templates-post-jsx-2eaa6be7dabd459e108f.js",
-      "component---src-templates-post-jsx-2eaa6be7dabd459e108f.js.map"
+      "component---src-templates-post-jsx-fd5b22f554b337023cfc.js",
+      "component---src-templates-post-jsx-fd5b22f554b337023cfc.js.map"
     ],
     "component---src-pages-index-jsx": [
-      "component---src-pages-index-jsx-9d45df3239d6b539d7d7.js",
-      "component---src-pages-index-jsx-9d45df3239d6b539d7d7.js.map"
+      "component---src-pages-index-jsx-b3d73c60825b11f4c6e2.js",
+      "component---src-pages-index-jsx-b3d73c60825b11f4c6e2.js.map"
     ],
     "path---tags-ao": [
-      "path---tags-ao-d8f20291fef6c838757b.js",
-      "path---tags-ao-d8f20291fef6c838757b.js.map"
+      "path---tags-ao-576726621a489613126e.js",
+      "path---tags-ao-576726621a489613126e.js.map"
     ],
     "app": [
-      "app-a2767468c6df8886d4f3.js",
+      "app-ebfab77d5e496cfe7743.js",
       "build-js-styles.css",
-      "app-a2767468c6df8886d4f3.js.map",
+      "app-ebfab77d5e496cfe7743.js.map",
       "build-js-styles.css.map"
     ],
     "path---ao-phong-thun-trơn-ngắn-tay-cho-be-trai-8-kg-26-kg": [
-      "path---ao-phong-thun-trơn-ngắn-tay-cho-be-trai-8-kg-26-kg-d720245ce9389fb19b62.js",
-      "path---ao-phong-thun-trơn-ngắn-tay-cho-be-trai-8-kg-26-kg-d720245ce9389fb19b62.js.map"
+      "path---ao-phong-thun-trơn-ngắn-tay-cho-be-trai-8-kg-26-kg-2db58e7caff54804c28b.js",
+      "path---ao-phong-thun-trơn-ngắn-tay-cho-be-trai-8-kg-26-kg-2db58e7caff54804c28b.js.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
       "path---404-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---quần-jeans-cho-be-trai-theu-hinh-dại-bang-co-day-deo-1-5-tuổi": [
-      "path---quần-jeans-cho-be-trai-theu-hinh-dại-bang-co-day-deo-1-5-tuổi-cb07b54203fe2b4cbf86.js",
-      "path---quần-jeans-cho-be-trai-theu-hinh-dại-bang-co-day-deo-1-5-tuổi-cb07b54203fe2b4cbf86.js.map"
+      "path---quần-jeans-cho-be-trai-theu-hinh-dại-bang-co-day-deo-1-5-tuổi-a15940c25394b8c9d7a8.js",
+      "path---quần-jeans-cho-be-trai-theu-hinh-dại-bang-co-day-deo-1-5-tuổi-a15940c25394b8c9d7a8.js.map"
     ],
     "path---about": [
       "path---about-a0e39f21c11f6a62c5ab.js",
