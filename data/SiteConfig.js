@@ -1,17 +1,17 @@
 module.exports = {
   blogPostDir: 'sample-posts', // The name of directory that contains your posts.
-  siteTitle: 'Sunshine - Mặt trời tí hon', // Site title.
-  siteTitleAlt: 'Sunshine - Mặt trời tí hon', // Alternative site title for SEO.
+  siteTitle: 'Shop chuyên cung cấp quần áo trẻ em - Mặt Trời Nhỏ', // Site title.
+  siteTitleAlt: 'Shop chuyên cung cấp quần áo trẻ em - Mặt Trời Nhỏ', // Alternative site title for SEO.
   siteLogo: '/logos/logo-1024.png', // Logo used for SEO and manifest.
   siteUrl: 'https://luubinhan.github.io/sunshine', // Domain of your website without pathPrefix.
   pathPrefix: '/sunshine', // Prefixes all links. For cases when deployed to example.github.io/sunshine/.
-  siteDescription: 'Sunshine', // Website description used for RSS feeds/meta description tag.
+  siteDescription: 'Shop chuyên cung cấp quần áo trẻ em - Mặt Trời Nhỏ', // Website description used for RSS feeds/meta description tag.
   siteRss: '/rss.xml', // Path to the RSS file.
   siteFBAppID: '', // FB Application ID for using app insights
   googleAnalyticsID: '', // GA tracking ID.
   disqusShortname: '', // Disqus shortname.
-  email: 'sunshine@gmail',
-  address: '123 HCM City',
+  email: 'truongtomi0708@gmail.com',
+  address: '100/35/5 Bùi Minh Trực, P.5, Quận 8, HCM',
   postDefaultCategoryID: 'be-trai', // Default category for posts.
   userName: '', // Username to display in the author segment.
   userTwitter: '', // Optionally renders "Follow Me" in the UserInfo segment.

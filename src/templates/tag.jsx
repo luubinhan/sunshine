@@ -49,10 +49,10 @@ export default class TagTemplate extends React.Component {
               <Col>
                 <div className="align-center">
                   <HEADLINE style={{marginBottom: 25}}>
-                    { tagObj.name } ({filteredUnpagedData.length} sản phẩm)
+                    ({filteredUnpagedData.length} sản phẩm)
                   </HEADLINE>
                   <CAPTION style={{display: 'none'}}>
-                    Quần áo { tagObj.name } đẹp, nhiều mẫu thời trang mới, cập nhật thường xuyên.
+                    Quần áo  đẹp, nhiều mẫu thời trang mới, cập nhật thường xuyên.
                     <br />
                     Mặt Trời Nhỏ là nơi chọn mua đồ cho bé tin cậy nhất tại Tp.HCM.
                   </CAPTION>

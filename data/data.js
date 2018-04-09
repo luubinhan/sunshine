@@ -146,14 +146,6 @@ export const PRIMARY_NAVIGATION = [
     isActive: false,
     icon: ''
   },
-  {
-    key: 'lien-he',
-    slug: 'lien-he',
-    name: 'Liên hệ',
-    href: '/lien-he',
-    isActive: false,
-    icon: ''
-  },
 ]
 
 export const RIGHT_NAV = [
