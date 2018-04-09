@@ -101,7 +101,7 @@ class Footer extends Component {
                         <div className="menu">
                           <ul className="menu">
                             <li className="menu-item">
-                              <Button href={url} outline color="secondary" icon="ion-social-rss">
+                              <Button href="#" outline color="secondary" icon="ion-social-rss">
                                 Đăng ký nhận tin
                               </Button>
                             </li>
@@ -127,9 +127,6 @@ class Footer extends Component {
                   <ul className="footer-nav">
                     <li>
                       <Link to="/support-and-faq">Câu hỏi thường gặp</Link>
-                    </li>
-                    <li>
-                      <Link to="/contact-us">Liên hệ</Link>
                     </li>
                   </ul>
                 </div>
