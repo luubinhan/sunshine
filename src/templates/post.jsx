@@ -2,7 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import GatsbyLink from 'gatsby-link'
 import _ from 'lodash'
-import {Popover, Tag, Menu, Dropdown, Button, Icon } from 'antd'
+import {Popover, Tag, Menu, Dropdown, Button, Icon, Collapse, Breadcrumb } from 'antd'
 
 
 import {Container, Price, Button as MyButton, Alert} from '../components/mystyle'
@@ -130,6 +130,7 @@ export default class PostTemplate extends React.Component {
     if (!post.id) {
       post.category_id = config.postDefaultCategoryID;
     }
+    console.log(this.props)
     const menu = (
       <Menu onClick={this.handleMenuClick}>
         <Menu.Item key="1">1st menu item</Menu.Item>
@@ -137,6 +138,7 @@ export default class PostTemplate extends React.Component {
         <Menu.Item key="3">3rd item</Menu.Item>
       </Menu>
     );
+    const cateName = getCategoryName(post.category)
     return (
       <div className="single-product">
         <Helmet>
@@ -145,7 +147,19 @@ export default class PostTemplate extends React.Component {
         <SEO postPath={slug} postNode={postNode} postSEO />
         <div style={{ backgroundColor: '#f7f7f7', paddingTop: 10, paddingBottom: 10, marginBottom: 20 }}>
           <Container>
-            <Button onClick={this._goBack} color="light">Quay lại</Button>
+            <div className="d-flex justify-content-between">
+              <span role="button" onClick={this._goBack}>
+                <i className="ion-android-arrow-back"/>
+                <u style={{paddingLeft: 5}}>
+                Quay lại
+                </u>
+              </span>
+              <Breadcrumb>
+                <Breadcrumb.Item>T<a href="/">rang Chủ</a></Breadcrumb.Item>
+                <Breadcrumb.Item><a href={`/${post.category}`}>{cateName}</a></Breadcrumb.Item>
+                <Breadcrumb.Item>{post.title}</Breadcrumb.Item>
+              </Breadcrumb>
+            </div>
           </Container>
         </div>
         <Container>
@@ -155,36 +169,39 @@ export default class PostTemplate extends React.Component {
                 <img src={post.cover} className="attachment-shop_single size-shop_single wp-post-image" alt={post.title} />
               </a>
             </div>
-
             <div className="summary entry-summary">
-              <Tag color="#f50">{getCategoryName(post.category)}</Tag>
+              <Tag color="#f50">{cateName}</Tag>
+              <div className="product_meta">
+                <PostTags tags={post.tags} />
+              </div>
               <h1 className="product_title entry-title">{post.title}</h1>
               <Price price={post.price} salePrice={post.salePrice}/>
-              <div className="well">
-                <h4>Tính chi phí vận chuyển</h4>
-                <Alert color="success">
-                  <b>Miễn Phí Vận Chuyển</b> cho đơn hàng có giá trị từ <b>300.000₫</b>
-                </Alert>
-                <div className="d-flex justify-content-between">
-                  <div>
-                    Vận Chuyển tới
+              <Collapse style={{marginBottom: 20}}>
+                <Collapse.Panel header="Tính chi phí vận chuyển" key="1">
+                  <Alert color="success">
+                    <b>Miễn Phí Vận Chuyển</b> cho đơn hàng có giá trị từ <b>300.000₫</b>
+                  </Alert>
+                  <div className="d-flex justify-content-between">
+                    <div>
+                      Vận Chuyển tới
+                    </div>
+                    <div>
+                      <Dropdown.Button overlay={menu}>
+                        Dropdown
+                      </Dropdown.Button>
+                    </div>
                   </div>
-                  <div>
-                    <Dropdown.Button overlay={menu}>
-                      Dropdown
-                    </Dropdown.Button>
+                  <hr/>
+                  <div className="d-flex justify-content-between">
+                    <div>
+                      Phí Vận Chuyển
+                    </div>
+                    <div>
+                      <h3>1.360.000</h3>
+                    </div>
                   </div>
-                </div>
-                <hr/>
-                <div className="d-flex justify-content-between">
-                  <div>
-                    Phí Vận Chuyển
-                  </div>
-                  <div>
-                    <h3>1.360.000</h3>
-                  </div>
-                </div>
-              </div>
+                </Collapse.Panel>
+              </Collapse>
               {!_.isEmpty(post.sizes)
                 ? this.renderSizes(post.sizes)
                 : null
@@ -212,9 +229,7 @@ export default class PostTemplate extends React.Component {
                   <span>Gọi đặt mua</span> <a href="">0943870301</a> (9h:00 - 21:00)
                 </div>
               </div>
-              <div className="product_meta">
-                <PostTags tags={post.tags} />
-              </div>
+              
             </div>
             <div className="woocommerce-tabs wc-tabs-wrapper">
               {post.thumb1 && <img src={post.thumb1} className="attachment-shop_single size-shop_single wp-post-image" alt={post.thumb1} />}
