@@ -23,7 +23,7 @@ export default class CategoryTemplate extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      filteredUnpagedData: this.props.data.allMarkdownRemark.edges
+      filteredUnpagedData: this.props.data.allMarkdownRemark.edges,
     }
     this._onFilter = onFilter.bind(this)
   }
@@ -32,7 +32,7 @@ export default class CategoryTemplate extends React.Component {
     const postEdges = this.props.data.allMarkdownRemark.edges;
     const cateObj = _.find(PRIMARY_NAVIGATION, (item) => { return item.key === category });
     const {
-      filteredUnpagedData
+      filteredUnpagedData,
     } = this.state;
     return (
       <div className="category-container">
@@ -52,7 +52,7 @@ export default class CategoryTemplate extends React.Component {
                   <CAPTION style={{display: 'none'}}>
                     Quần áo { cateObj.name } đẹp, nhiều mẫu thời trang mới, cập nhật thường xuyên.
                     <br />
-                    Mặt Trời Nhỏ là nơi chọn mua đồ cho bé tin cậy nhất tại Tp.HCM.
+                    Quần Áo Trẻ Em - Mặt Trời Nhỏ là nơi chọn mua đồ cho bé tin cậy nhất tại Tp.HCM.
                   </CAPTION>
                 </div>
               </Col>
@@ -66,7 +66,10 @@ export default class CategoryTemplate extends React.Component {
           </div>
           <Row>
             <Col sm={3} className="sidebar">
-              <FilterSidebar onFilter={this._onFilter} cate={cateObj} />
+              <FilterSidebar
+                onFilter={this._onFilter}
+                cate={cateObj}
+              />
             </Col>
             <Col sm={9}>
               <ProductListing postEdges={filteredUnpagedData} />

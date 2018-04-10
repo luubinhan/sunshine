@@ -155,7 +155,7 @@ export default class PostTemplate extends React.Component {
                 </u>
               </span>
               <Breadcrumb>
-                <Breadcrumb.Item>T<a href="/">rang Chủ</a></Breadcrumb.Item>
+                <Breadcrumb.Item><a href="/">Trang Chủ</a></Breadcrumb.Item>
                 <Breadcrumb.Item><a href={`/${post.category}`}>{cateName}</a></Breadcrumb.Item>
                 <Breadcrumb.Item>{post.title}</Breadcrumb.Item>
               </Breadcrumb>

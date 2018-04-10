@@ -2,17 +2,11 @@ import React from 'react';
 import Link from 'gatsby-link';
 import _ from 'lodash'
 
-import {
-  Modal,
-  Button
-} from '../mystyle'
-
-import ProductContent from '../ProductContent'
+import NoProduct from '../NoProduct'
 import Product from '../Product'
 
 class ProductListing extends React.Component {
   state = {
-    selectedProduct: null,
     showModal: false,
   }
   // TRANSFORM DATA
@@ -35,7 +29,6 @@ class ProductListing extends React.Component {
   }
   _changeSelected = (e, post) => {
     this.setState({
-      selectedProduct: post,
       showModal: true
     })
   }
@@ -44,25 +37,18 @@ class ProductListing extends React.Component {
     const postList = this.getPostList();
     return (
       <div className="mystyle-products">
-        <Modal isOpen={this.state.showModal} size="lg" toggle={this._toggleModal}>
-          <Modal.Header toggle={this._toggleModal}>
-            {this.state.selectedProduct && this.state.selectedProduct.title}
-          </Modal.Header>
-          <Modal.Body>
-            <ProductContent post={this.state.selectedProduct} />
-          </Modal.Body>
-          <Modal.Footer>
-            <Button primary size="lg">Mua Ngay</Button>
-          </Modal.Footer>
-        </Modal>
-        {postList.map(post => (
-          <Product
-            key={post.title}
-            title={post.title}
-            img={post.cover}
-            {...post}
-          />
-        ))}
+        {postList.length === 0 ?
+          <NoProduct />
+          :
+          postList.map((post, index) => (
+            <Product
+              key={index}
+              title={post.title}
+              img={post.cover}
+              {...post}
+            />
+          ))
+        }
       </div>
     );
   }

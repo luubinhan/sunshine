@@ -9,7 +9,6 @@ import config from '../../data/SiteConfig';
 
 import {
   Container,
-  Product,
   Row,
   Col,
   CustomCheckbox,
@@ -31,14 +30,29 @@ export default class TagTemplate extends React.Component {
     }
     this._onFilter = onFilter.bind(this);
   }
-  
+  getCategoryName = (search) => {
+    while (search.charAt(0) === '?') {
+      search = search.substr(1);
+    }
+    const arraySearch = search.split('=');
+    return _.find(PRIMARY_NAVIGATION, (item) => { return item.key === arraySearch[1] });
+  }
   render() {
     const tag = _.kebabCase(this.props.pathContext.tag);
     const postEdges = this.props.data.allMarkdownRemark.edges;
     const tagObj = _.find(PRIMARY_NAVIGATION[0].childrens, (item) => { return item.key === tag });
+    
     const {
       filteredUnpagedData
     } = this.state;
+    const {
+      location
+    } = this.props;
+    let cateObj = {};
+    if (location.search) {
+      cateObj = this.getCategoryName(location.search);
+      console.log(cateObj)
+    }
     return (
       <div className="tag-container">
         <Helmet title={`Quần áo trẻ em trong mục "${tag}" | ${config.siteTitle}`} />        
@@ -49,7 +63,7 @@ export default class TagTemplate extends React.Component {
               <Col>
                 <div className="align-center">
                   <HEADLINE style={{marginBottom: 25}}>
-                    ({filteredUnpagedData.length} sản phẩm)
+                    {cateObj && cateObj.name} ({filteredUnpagedData.length} sản phẩm)
                   </HEADLINE>
                   <CAPTION style={{display: 'none'}}>
                     Quần áo  đẹp, nhiều mẫu thời trang mới, cập nhật thường xuyên.
@@ -68,7 +82,7 @@ export default class TagTemplate extends React.Component {
           </div>
           <Row>
             <Col sm={3}>
-              <FilterSidebar onFilter={this._onFilter} tag={tagObj} />
+              <FilterSidebar onFilter={this._onFilter} selectedTags={[tagObj.key]} />
             </Col>
             <Col sm={9}>
               <ProductListing postEdges={filteredUnpagedData} />

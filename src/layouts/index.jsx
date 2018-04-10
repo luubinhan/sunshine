@@ -6,6 +6,7 @@ import 'antd/dist/antd.css'
 import config from '../../data/SiteConfig';
 import {PRIMARY_NAVIGATION, RIGHT_NAV} from '../../data/data';
 import '../scss/main.scss';
+import '../scss/antd.scss';
 
 import {Container, Master, Nav} from '../components/mystyle'
 import Footer from '../components/Footer'

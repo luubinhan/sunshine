@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import _ from 'lodash'
+import {Checkbox} from 'antd';
 
 import {
   CustomCheckbox,
@@ -10,17 +11,27 @@ import {
 } from '../mystyle'
 
 import {PRIMARY_NAVIGATION} from '../../../data/data';
-
 import './FilterSidebar.css'
 
-class Filter extends Component {
-  state = {
-    filterOn: false
+const ALL_TAGS = PRIMARY_NAVIGATION[1].childrens.map(item => {
+  return {
+    label: item.name,
+    value: item.key,
   }
-  filterBy = {
-    category: [],
-    tag: []
-  };
+})
+
+class Filter extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      filterOn: false
+    }
+    this.filterBy = {
+      category: [],
+      tag: [],
+      keywords: ''
+    };
+  }
   _resetFilter = (e) => {
     //reset value of input checkbox
     const checkboxs = document.getElementsByClassName('custom-control-input');
@@ -52,15 +63,23 @@ class Filter extends Component {
     this.props.onFilter(this.filterBy)
     this.setState({filterOn: ((this.filterBy.category !== undefined && this.filterBy.category.length !== 0) || (this.filterBy.tag !== undefined && this.filterBy.tag.length !== 0))})
   }
-  _handleSearch = (keywords) => {
-
+  _handleSearch = (newkeywords) => {
+    this.filterBy.keywords = newkeywords;
+    this.props.onFilter(this.filterBy)
+    this.setState({filterOn: true})
   }
   _handleReset = () => {
-
+    this.filterBy.keywords = '';
+    this.props.onFilter(this.filterBy)
+  }
+  _changeTag = e => {
+    this.filterBy.tag = e;
+    this.props.onFilter(this.filterBy)
+    this.setState({filterOn: ((this.filterBy.category !== undefined && this.filterBy.category.length !== 0) || (this.filterBy.tag !== undefined && this.filterBy.tag.length !== 0))})
   }
   render() {
     const {filterOn} = this.state;
-    const {cate} = this.props;
+    const {cate, selectedTags} = this.props;
     return (
       <div className="filter">
         {filterOn &&
@@ -73,45 +92,18 @@ class Filter extends Component {
             Tìm sản phẩm
           </Widget.Header>
           <Widget.Body>
-            <Search handleSearch={this._handleSearch} handleReset={this._handleReset} placeholder='Tên sản phẩm' />
-          </Widget.Body>
-          <Widget.Header>
-            Chỉ hiện thị
-          </Widget.Header>
-          <Widget.Body>
-            <div className="filters-group">
-              <div className="filter-item">
-                <CustomCheckbox className="filter-checkbox" value="khuyen-mai" data-filter="tag" label="Khuyến mãi" onChange={this._changeFilter} />
-              </div>
-              <div className="filter-item">
-                <CustomCheckbox className="filter-checkbox" checked={(cate.key === 'be-trai')} value="be-trai" label="Bé Trai" data-filter="category" onChange={this._changeFilter} />
-              </div>
-              <div className="filter-item">
-                <CustomCheckbox className="filter-checkbox" checked={(cate.key === 'be-gai')} value="be-gai" label="Bé Gái" data-filter="category" onChange={this._changeFilter} />
-              </div>
-            </div>
+            <Search
+              handleSearch={this._handleSearch}
+              handleReset={this._handleReset}
+              placeholder='Tên sản phẩm'
+            />
           </Widget.Body>
           <Widget.Header>
           Bạn muốn mua gì
           </Widget.Header>
           <Widget.Body>
             <div className="filters-group">
-              {PRIMARY_NAVIGATION[1].childrens.map((item, index) => {
-                return (
-                  <div className="filter-item" key={index}>
-                    <CustomCheckbox value={item.key} label={item.name} data-filter="tag" onChange={this._changeFilter} />
-                  </div>
-                )
-              })}
-              <div className="filter-item">
-                <CustomCheckbox value="khan-mu" label="Khăn mũ" data-filter="tag" onChange={this._changeFilter} />
-              </div>
-              <div className="filter-item">
-                <CustomCheckbox value="ba-lo" label="Ba Lô" data-filter="tag" onChange={this._changeFilter} />
-              </div>
-              <div className="filter-item">
-                <CustomCheckbox value="do-choi" label="Đồ chơi" data-filter="tag" onChange={this._changeFilter} />
-              </div>
+              <Checkbox.Group options={ALL_TAGS} defaultValue={selectedTags} onChange={this._changeTag} />
             </div>
           </Widget.Body>
           <Widget.Header>
@@ -126,6 +118,7 @@ class Filter extends Component {
                   </div>
                 )
               })}
+              
             </div>
           </Widget.Body>
         </Widget>
@@ -137,11 +130,14 @@ class Filter extends Component {
 Filter.propTypes = {
   onFilter: PropTypes.func.isRequired,
   // current selected cate
-  cate: PropTypes.object
+  cate: PropTypes.object,
+  // current selected tags,
+  selectedTags: PropTypes.array
 };
 
 Filter.defaultProps = {
-  cate: {}
+  cate: {},
+  selectedTags: []
 }
 
 export default Filter;
