@@ -4,25 +4,33 @@
       "path---tags-duoi-12-tuoi-e0c0da8403dce781b678.js",
       "path---tags-duoi-12-tuoi-e0c0da8403dce781b678.js.map"
     ],
+    "component---src-pages-huong-dan-mua-hang-jsx": [
+      "component---src-pages-huong-dan-mua-hang-jsx-f113ea0e89b4fa0cd42f.js",
+      "component---src-pages-huong-dan-mua-hang-jsx-f113ea0e89b4fa0cd42f.js.map"
+    ],
+    "component---src-pages-hinh-thuc-thanh-toan-jsx": [
+      "component---src-pages-hinh-thuc-thanh-toan-jsx-d529941ee60248024734.js",
+      "component---src-pages-hinh-thuc-thanh-toan-jsx-d529941ee60248024734.js.map"
+    ],
     "path---tags-ao-khoac": [
-      "path---tags-ao-khoac-d677fd767f3ef105f66b.js",
-      "path---tags-ao-khoac-d677fd767f3ef105f66b.js.map"
+      "path---tags-ao-khoac-26a5f0bbb156b8cce6eb.js",
+      "path---tags-ao-khoac-26a5f0bbb156b8cce6eb.js.map"
     ],
     "path---size-chuan-kich-thuoc-quan-ao-tre-em": [
       "path---size-chuan-kich-thuoc-quan-ao-tre-em-a0e39f21c11f6a62c5ab.js",
       "path---size-chuan-kich-thuoc-quan-ao-tre-em-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---categories-be-trai": [
-      "path---categories-be-trai-fb90a3290895e89f640a.js",
-      "path---categories-be-trai-fb90a3290895e89f640a.js.map"
+      "path---categories-be-trai-a19ee32cdaf06aa06dc5.js",
+      "path---categories-be-trai-a19ee32cdaf06aa06dc5.js.map"
     ],
     "path---quần-legging-kem-chan-vay-chấm-bi-cho-be-gai-10-26-kg": [
       "path---quần-legging-kem-chan-vay-chấm-bi-cho-be-gai-10-26-kg-d984652173a528b18cbf.js",
       "path---quần-legging-kem-chan-vay-chấm-bi-cho-be-gai-10-26-kg-d984652173a528b18cbf.js.map"
     ],
     "path---tags-quan": [
-      "path---tags-quan-d69fed84331137df5cba.js",
-      "path---tags-quan-d69fed84331137df5cba.js.map"
+      "path---tags-quan-c5655d2e0740ceb0bb57.js",
+      "path---tags-quan-c5655d2e0740ceb0bb57.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
@@ -33,12 +41,16 @@
       "path---quần-legging-cho-be-gai-mau-trơn-bền-dẹp-23-45-kg-583566b722c2f21f3efe.js.map"
     ],
     "component---src-layouts-index-jsx": [
-      "component---src-layouts-index-jsx-f4deb5d12f1024a7758b.js",
-      "component---src-layouts-index-jsx-f4deb5d12f1024a7758b.js.map"
+      "component---src-layouts-index-jsx-702db3f7ac9efc43f300.js",
+      "component---src-layouts-index-jsx-702db3f7ac9efc43f300.js.map"
     ],
     "path---ao-khoac-gio-cho-be-trai-sọc-caro-tay-phối-mau-4-9-tuổi": [
       "path---ao-khoac-gio-cho-be-trai-sọc-caro-tay-phối-mau-4-9-tuổi-c2e75949b0185c596036.js",
       "path---ao-khoac-gio-cho-be-trai-sọc-caro-tay-phối-mau-4-9-tuổi-c2e75949b0185c596036.js.map"
+    ],
+    "path---bang-gia-ship-ems-theo-buu-dien": [
+      "path---bang-gia-ship-ems-theo-buu-dien-a0e39f21c11f6a62c5ab.js",
+      "path---bang-gia-ship-ems-theo-buu-dien-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---node-modules-gatsby-plugin-offline-app-shell-js": [
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
@@ -49,8 +61,8 @@
       "path---tags-do-bo-a3d4e4700334ed1c6681.js.map"
     ],
     "path---tags-duoi-5-tuoi": [
-      "path---tags-duoi-5-tuoi-ef1248e01aa87970caa9.js",
-      "path---tags-duoi-5-tuoi-ef1248e01aa87970caa9.js.map"
+      "path---tags-duoi-5-tuoi-932bb7ddead017217e72.js",
+      "path---tags-duoi-5-tuoi-932bb7ddead017217e72.js.map"
     ],
     "path---categories-be-gai": [
       "path---categories-be-gai-c55ca8841f49b16a4bf0.js",
@@ -65,20 +77,20 @@
       "path---ao-dai-gấm-be-trai-in-hạc-2-8-tuổi-c9e46187b738508ea3a2.js.map"
     ],
     "path---ao-nỉ-da-ca-be-gai-kiza-co-mu-theu-dầu-chu-thỏ-hồng": [
-      "path---ao-nỉ-da-ca-be-gai-kiza-co-mu-theu-dầu-chu-thỏ-hồng-4d4e0a5309e420eafb71.js",
-      "path---ao-nỉ-da-ca-be-gai-kiza-co-mu-theu-dầu-chu-thỏ-hồng-4d4e0a5309e420eafb71.js.map"
+      "path---ao-nỉ-da-ca-be-gai-kiza-co-mu-theu-dầu-chu-thỏ-hồng-00bdcdf5072095ab1b57.js",
+      "path---ao-nỉ-da-ca-be-gai-kiza-co-mu-theu-dầu-chu-thỏ-hồng-00bdcdf5072095ab1b57.js.map"
     ],
     "component---src-templates-category-jsx": [
-      "component---src-templates-category-jsx-ac6212895f909ac80600.js",
-      "component---src-templates-category-jsx-ac6212895f909ac80600.js.map"
+      "component---src-templates-category-jsx-89f2c9af9cfc2481d58e.js",
+      "component---src-templates-category-jsx-89f2c9af9cfc2481d58e.js.map"
     ],
     "path---lien-he": [
       "path---lien-he-a0e39f21c11f6a62c5ab.js",
       "path---lien-he-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---index": [
-      "path---index-c3fc3823240b5f4b0887.js",
-      "path---index-c3fc3823240b5f4b0887.js.map"
+      "path---index-0fae493f205e637f22f4.js",
+      "path---index-0fae493f205e637f22f4.js.map"
     ],
     "component---src-pages-about-jsx": [
       "component---src-pages-about-jsx-06a8c8dceba06f599859.js",
@@ -88,23 +100,27 @@
       "path---dồ-bộ-be-trai-in-chữ-sống-dộng-7-11-tuổi-5490ff8cf075029f0919.js",
       "path---dồ-bộ-be-trai-in-chữ-sống-dộng-7-11-tuổi-5490ff8cf075029f0919.js.map"
     ],
+    "path---huong-dan-mua-hang": [
+      "path---huong-dan-mua-hang-a0e39f21c11f6a62c5ab.js",
+      "path---huong-dan-mua-hang-a0e39f21c11f6a62c5ab.js.map"
+    ],
     "path---ao-dai-be-trai-họa-tiết-rồng-1-tuổi-8-tuổi-s": [
       "path---ao-dai-be-trai-họa-tiết-rồng-1-tuổi-8-tuổi-s-d89273dd7d71e6eda219.js",
       "path---ao-dai-be-trai-họa-tiết-rồng-1-tuổi-8-tuổi-s-d89273dd7d71e6eda219.js.map"
     ],
     "commons": [
-      "commons-14df80a6ef43fe1fbd3a.js",
+      "commons-13c27f860335df3a720c.js",
       "build-js-styles.css",
-      "commons-14df80a6ef43fe1fbd3a.js.map",
+      "commons-13c27f860335df3a720c.js.map",
       "build-js-styles.css.map"
     ],
     "path---ao-sơ-mi-be-trai-ngắn-tay-phối-ca-vạt-1-7-tuổi": [
-      "path---ao-sơ-mi-be-trai-ngắn-tay-phối-ca-vạt-1-7-tuổi-ee188b88f3dd57b18580.js",
-      "path---ao-sơ-mi-be-trai-ngắn-tay-phối-ca-vạt-1-7-tuổi-ee188b88f3dd57b18580.js.map"
+      "path---ao-sơ-mi-be-trai-ngắn-tay-phối-ca-vạt-1-7-tuổi-bb78d7ee80de48929c06.js",
+      "path---ao-sơ-mi-be-trai-ngắn-tay-phối-ca-vạt-1-7-tuổi-bb78d7ee80de48929c06.js.map"
     ],
     "component---src-pages-lien-he-jsx": [
-      "component---src-pages-lien-he-jsx-18b9316b7fbeb4f47348.js",
-      "component---src-pages-lien-he-jsx-18b9316b7fbeb4f47348.js.map"
+      "component---src-pages-lien-he-jsx-814afc69c8c041fe9499.js",
+      "component---src-pages-lien-he-jsx-814afc69c8c041fe9499.js.map"
     ],
     "path---404-html": [
       "path---404-html-a0e39f21c11f6a62c5ab.js",
@@ -119,50 +135,58 @@
       "component---src-pages-404-jsx-ac8d67d9e4856e9fc8a4.js.map"
     ],
     "component---src-templates-tag-jsx": [
-      "component---src-templates-tag-jsx-d74912d45b0ea1a479e1.js",
-      "component---src-templates-tag-jsx-d74912d45b0ea1a479e1.js.map"
+      "component---src-templates-tag-jsx-dedd6c649a5745f17613.js",
+      "component---src-templates-tag-jsx-dedd6c649a5745f17613.js.map"
     ],
     "path---bộ-dồ-be-trai-tay-dai-kem-mặt-nạ-trum-sieu-nhan": [
       "path---bộ-dồ-be-trai-tay-dai-kem-mặt-nạ-trum-sieu-nhan-cf40089441b4ea0d0e43.js",
       "path---bộ-dồ-be-trai-tay-dai-kem-mặt-nạ-trum-sieu-nhan-cf40089441b4ea0d0e43.js.map"
     ],
     "path---tags-ao-so-mi": [
-      "path---tags-ao-so-mi-35e0e2e14e98acb3d2dd.js",
-      "path---tags-ao-so-mi-35e0e2e14e98acb3d2dd.js.map"
+      "path---tags-ao-so-mi-c75dc1bfcf48fa3f9a34.js",
+      "path---tags-ao-so-mi-c75dc1bfcf48fa3f9a34.js.map"
+    ],
+    "path---hinh-thuc-thanh-toan": [
+      "path---hinh-thuc-thanh-toan-a0e39f21c11f6a62c5ab.js",
+      "path---hinh-thuc-thanh-toan-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---offline-plugin-app-shell-fallback": [
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js",
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-templates-post-jsx": [
-      "component---src-templates-post-jsx-fd5b22f554b337023cfc.js",
-      "component---src-templates-post-jsx-fd5b22f554b337023cfc.js.map"
+      "component---src-templates-post-jsx-7cb41538fedef2e3b7c6.js",
+      "component---src-templates-post-jsx-7cb41538fedef2e3b7c6.js.map"
     ],
     "component---src-pages-index-jsx": [
-      "component---src-pages-index-jsx-b3d73c60825b11f4c6e2.js",
-      "component---src-pages-index-jsx-b3d73c60825b11f4c6e2.js.map"
+      "component---src-pages-index-jsx-ec647f4e2ddd1ac491fd.js",
+      "component---src-pages-index-jsx-ec647f4e2ddd1ac491fd.js.map"
     ],
     "path---tags-ao": [
-      "path---tags-ao-576726621a489613126e.js",
-      "path---tags-ao-576726621a489613126e.js.map"
+      "path---tags-ao-8758d4d732fc71bc4c0c.js",
+      "path---tags-ao-8758d4d732fc71bc4c0c.js.map"
     ],
     "app": [
-      "app-0fba76c6d3bb2ff435b4.js",
+      "app-3991b9204ff41432e5f7.js",
       "build-js-styles.css",
-      "app-0fba76c6d3bb2ff435b4.js.map",
+      "app-3991b9204ff41432e5f7.js.map",
       "build-js-styles.css.map"
     ],
     "path---ao-phong-thun-trơn-ngắn-tay-cho-be-trai-8-kg-26-kg": [
-      "path---ao-phong-thun-trơn-ngắn-tay-cho-be-trai-8-kg-26-kg-2db58e7caff54804c28b.js",
-      "path---ao-phong-thun-trơn-ngắn-tay-cho-be-trai-8-kg-26-kg-2db58e7caff54804c28b.js.map"
+      "path---ao-phong-thun-trơn-ngắn-tay-cho-be-trai-8-kg-26-kg-0442308af8f14e5c14fe.js",
+      "path---ao-phong-thun-trơn-ngắn-tay-cho-be-trai-8-kg-26-kg-0442308af8f14e5c14fe.js.map"
+    ],
+    "component---src-pages-bang-gia-ship-ems-theo-buu-dien-jsx": [
+      "component---src-pages-bang-gia-ship-ems-theo-buu-dien-jsx-acc511494833524d6b86.js",
+      "component---src-pages-bang-gia-ship-ems-theo-buu-dien-jsx-acc511494833524d6b86.js.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
       "path---404-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---quần-jeans-cho-be-trai-theu-hinh-dại-bang-co-day-deo-1-5-tuổi": [
-      "path---quần-jeans-cho-be-trai-theu-hinh-dại-bang-co-day-deo-1-5-tuổi-a15940c25394b8c9d7a8.js",
-      "path---quần-jeans-cho-be-trai-theu-hinh-dại-bang-co-day-deo-1-5-tuổi-a15940c25394b8c9d7a8.js.map"
+      "path---quần-jeans-cho-be-trai-theu-hinh-dại-bang-co-day-deo-1-5-tuổi-b7f075cf55f88c954518.js",
+      "path---quần-jeans-cho-be-trai-theu-hinh-dại-bang-co-day-deo-1-5-tuổi-b7f075cf55f88c954518.js.map"
     ],
     "path---about": [
       "path---about-a0e39f21c11f6a62c5ab.js",
