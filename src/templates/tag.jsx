@@ -41,6 +41,10 @@ export default class TagTemplate extends React.Component {
     const tag = _.kebabCase(this.props.pathContext.tag);
     const postEdges = this.props.data.allMarkdownRemark.edges;
     const tagObj = _.find(PRIMARY_NAVIGATION[0].childrens, (item) => { return item.key === tag });
+    let tagKey = '';
+    if (tagObj) {
+      tagKey = tagObj.key;
+    }
     
     const {
       filteredUnpagedData
@@ -55,39 +59,24 @@ export default class TagTemplate extends React.Component {
     }
     return (
       <div className="tag-container">
-        <Helmet title={`Quần áo trẻ em trong mục "${tag}" | ${config.siteTitle}`} />        
-        <Container>
-          <div className="cate__header">
-            <Row>
-              <Col sm={2} />
-              <Col>
-                <div className="align-center">
-                  <HEADLINE style={{marginBottom: 25}}>
-                    {cateObj && cateObj.name} ({filteredUnpagedData.length} sản phẩm)
-                  </HEADLINE>
-                  <CAPTION style={{display: 'none'}}>
-                    Quần áo  đẹp, nhiều mẫu thời trang mới, cập nhật thường xuyên.
-                    <br />
-                    Mặt Trời Nhỏ là nơi chọn mua đồ cho bé tin cậy nhất tại Tp.HCM.
-                  </CAPTION>
-                </div>
-              </Col>
-              <Col sm={2}>
-                <Select placeholder="Sếp theo">
-                  <Option value="gia-dam-dan">Giá giảm dần</Option>
-                  <Option value="gia-tang-dan">Giá tăng dần</Option>
-                </Select>
-              </Col>
-            </Row>
-          </div>
-          <Row>
-            <Col sm={3}>
-              <FilterSidebar onFilter={this._onFilter} selectedTags={[tagObj.key]} />
-            </Col>
-            <Col sm={9}>
+        <Helmet title={`Quần áo trẻ em trong mục "${tag}" | ${config.siteTitle}`} />
+        <Container fluid>
+          <div className="container-sidebar">
+            <div className="sidebar">
+              <FilterSidebar onFilter={this._onFilter} selectedTags={[tagKey]} />
+            </div>
+            <div className="right-wrapper">
+              <div className="muted pt-30 pb-30">
+                Quần áo  {cateObj && cateObj.name} ({filteredUnpagedData.length} sản phẩm)
+              </div>
+              <CAPTION style={{display: 'none'}}>
+                Quần áo  đẹp, nhiều mẫu thời trang mới, cập nhật thường xuyên.
+                <br />
+                Mặt Trời Nhỏ là nơi chọn mua đồ cho bé tin cậy nhất tại Tp.HCM.
+              </CAPTION>
               <ProductListing postEdges={filteredUnpagedData} />
-            </Col>
-          </Row>
+            </div>
+          </div>
         </Container>
       </div>
     );

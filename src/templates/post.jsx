@@ -3,9 +3,11 @@ import Helmet from 'react-helmet';
 import GatsbyLink from 'gatsby-link'
 import _ from 'lodash'
 import {Popover, Tag, Menu, Dropdown, Button, Icon, Collapse, Breadcrumb } from 'antd'
+import PhotoGrid from 'react-photo-feed';
+import 'react-photo-feed/library/style.css';
 
 
-import {Container, Price, Button as MyButton, Alert} from '../components/mystyle'
+import {Container, Price, Button as MyButton, Alert, Row, Col} from '../components/mystyle'
 
 import UserInfo from '../components/UserInfo/UserInfo';
 import PostTags from '../components/PostTags/PostTags';
@@ -16,26 +18,6 @@ import config from '../../data/SiteConfig';
 import '../scss/single-product.scss';
 
 import {getCategoryName} from '../Utils'
-
-const dataSource = [{
-  title: 'Hồ Chí Minh',
-  children: [{
-    title: 'Quận 1',
-    count: 10000,
-  }, {
-    title: 'Quận 2',
-    count: 10600,
-  }],
-}, {
-  title: 'Hà Nội',
-  children: [{
-    title: 'Quận Tây Hồ',
-    count: 60100,
-  }, {
-    title: 'Quận Hoàn Kiến',
-    count: 30010,
-  }],
-}];
 
 export default class PostTemplate extends React.Component {
   _goBack = e => {
@@ -130,7 +112,13 @@ export default class PostTemplate extends React.Component {
     if (!post.id) {
       post.category_id = config.postDefaultCategoryID;
     }
-    console.log(this.props)
+    // ALL THE PHOTOS
+    const allPhotos = [];
+    if (post.cover) allPhotos.push({id: 1, src: post.cover, bigSrc: post.cover});
+    if (post.thumb1) allPhotos.push({id: 2, src: post.thumb1, bigSrc: post.thumb1});
+    if (post.thumb2) allPhotos.push({id: 3, src: post.thumb2, bigSrc: post.thumb2});
+    if (post.thumb3) allPhotos.push({id: 4, src: post.thumb3, bigSrc: post.thumb3});
+    if (post.thumb4) allPhotos.push({id: 5, src: post.thumb4, bigSrc: post.thumb4});
     const menu = (
       <Menu onClick={this.handleMenuClick}>
         <Menu.Item key="1">1st menu item</Menu.Item>
@@ -146,7 +134,7 @@ export default class PostTemplate extends React.Component {
         </Helmet>
         <SEO postPath={slug} postNode={postNode} postSEO />
         <div style={{ backgroundColor: '#f7f7f7', paddingTop: 10, paddingBottom: 10, marginBottom: 20 }}>
-          <Container>
+          <Container fluid>
             <div className="d-flex justify-content-between">
               <span role="button" onClick={this._goBack}>
                 <i className="ion-android-arrow-back"/>
@@ -156,92 +144,87 @@ export default class PostTemplate extends React.Component {
               </span>
               <Breadcrumb>
                 <Breadcrumb.Item><a href="/">Trang Chủ</a></Breadcrumb.Item>
-                <Breadcrumb.Item><a href={`/${post.category}`}>{cateName}</a></Breadcrumb.Item>
+                <Breadcrumb.Item><a href={`/category/${post.category}`}>{cateName}</a></Breadcrumb.Item>
                 <Breadcrumb.Item>{post.title}</Breadcrumb.Item>
               </Breadcrumb>
             </div>
           </Container>
         </div>
-        <Container>
-          <div className="product type-product has-post-thumbnail">
-            <div className="images">
-              <a href={post.title} className="woocommerce-main-image">
-                <img src={post.cover} className="attachment-shop_single size-shop_single wp-post-image" alt={post.title} />
-              </a>
-            </div>
-            <div className="summary entry-summary">
-              <Tag color="#f50">{cateName}</Tag>
-              <div className="product_meta">
-                <PostTags tags={post.tags} />
-              </div>
-              <h1 className="product_title entry-title">{post.title}</h1>
-              <Price price={post.price} salePrice={post.salePrice}/>
-              <Collapse style={{marginBottom: 20}}>
-                <Collapse.Panel header="Tính chi phí vận chuyển" key="1">
-                  <Alert color="success">
-                    <b>Miễn Phí Vận Chuyển</b> cho đơn hàng có giá trị từ <b>300.000₫</b>
-                  </Alert>
-                  <div className="d-flex justify-content-between">
-                    <div>
-                      Vận Chuyển tới
+        <div className="product type-product has-post-thumbnail">
+          <Container fluid>
+            <Row>
+              <Col sm={8}>
+                <PhotoGrid columns={3} photos={allPhotos} />
+              </Col>
+              <Col sm={4}>
+                <div className="summary entry-summary">
+                  <Tag color="#f50">{cateName}</Tag>
+                  <div className="product_meta">
+                    <PostTags tags={post.tags} />
+                  </div>
+                  <h1 className="product_title entry-title">{post.title}</h1>
+                  <Price price={post.price} salePrice={post.salePrice}/>
+                  <Collapse style={{marginBottom: 20}}>
+                    <Collapse.Panel header="Tính chi phí vận chuyển" key="1">
+                      <Alert color="success">
+                        <b>Miễn Phí Vận Chuyển</b> cho đơn hàng có giá trị từ <b>300.000₫</b>
+                      </Alert>
+                      <div className="d-flex justify-content-between">
+                        <div>
+                          Vận Chuyển tới
+                        </div>
+                        <div>
+                          <Dropdown.Button overlay={menu}>
+                            Dropdown
+                          </Dropdown.Button>
+                        </div>
+                      </div>
+                      <hr/>
+                      <div className="d-flex justify-content-between">
+                        <div>
+                          Phí Vận Chuyển
+                        </div>
+                        <div>
+                          <h3>1.360.000</h3>
+                        </div>
+                      </div>
+                    </Collapse.Panel>
+                  </Collapse>
+                  {!_.isEmpty(post.sizes)
+                    ? this.renderSizes(post.sizes)
+                    : null
+                  }
+                  <MyButton block size="lg" color="warning" style={{marginBottom: 30}}>
+                    <span style={{display: 'block', fontSize: 12}}>
+                      NHẮN TIN FACEBOOK
+                    </span>
+                    <span>
+                      ĐỂ MUA HÀNG
+                    </span>
+                  </MyButton>
+                  <div className="block-contact">
+                    <div className="d-flex">
+                      <a className="contact-facebook" href="#">
+                        <i className="ion-social-facebook" />
+                        <span>Chia sẽ Facebook</span>
+                      </a>
+                      <a className="contact-chat" href="#">
+                        <i className="ion-chatbubbles" />
+                        <span>Gởi tin nhắn</span>
+                      </a>
                     </div>
-                    <div>
-                      <Dropdown.Button overlay={menu}>
-                        Dropdown
-                      </Dropdown.Button>
+                    <div className="contact-phone">
+                      <span>Gọi đặt mua</span> <a href="">0943870301</a> (9h:00 - 21:00)
                     </div>
                   </div>
-                  <hr/>
-                  <div className="d-flex justify-content-between">
-                    <div>
-                      Phí Vận Chuyển
-                    </div>
-                    <div>
-                      <h3>1.360.000</h3>
-                    </div>
-                  </div>
-                </Collapse.Panel>
-              </Collapse>
-              {!_.isEmpty(post.sizes)
-                ? this.renderSizes(post.sizes)
-                : null
-              }
-              <MyButton block size="lg" color="warning" style={{marginBottom: 30}}>
-                <span style={{display: 'block', fontSize: 12}}>
-                  NHẮN TIN FACEBOOK
-                </span>
-                <span>
-                  ĐỂ MUA HÀNG
-                </span>
-              </MyButton>
-              <div className="block-contact">
-                <div className="d-flex">
-                  <a className="contact-facebook" href="#">
-                    <i className="ion-social-facebook" />
-                    <span>Chia sẽ Facebook</span>
-                  </a>
-                  <a className="contact-chat" href="#">
-                    <i className="ion-chatbubbles" />
-                    <span>Gởi tin nhắn</span>
-                  </a>
                 </div>
-                <div className="contact-phone">
-                  <span>Gọi đặt mua</span> <a href="">0943870301</a> (9h:00 - 21:00)
-                </div>
-              </div>
-              
-            </div>
-            <div className="woocommerce-tabs wc-tabs-wrapper">
-              {post.thumb1 && <img src={post.thumb1} className="attachment-shop_single size-shop_single wp-post-image" alt={post.thumb1} />}
-              {post.thumb2 && <img src={post.thumb2} className="attachment-shop_single size-shop_single wp-post-image" alt={post.thumb1} />}
-              {post.thumb3 && <img src={post.thumb3} className="attachment-shop_single size-shop_single wp-post-image" alt={post.thumb1} />}
-              {post.thumb4 && <img src={post.thumb4} className="attachment-shop_single size-shop_single wp-post-image" alt={post.thumb1} />}
-              <div className="p-30">
-                <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
-              </div>
-            </div>
-          </div>
-        </Container>
+              </Col>
+            </Row>
+          </Container>
+          <Container>
+            <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
+          </Container>
+        </div>
       </div>
     );
   }

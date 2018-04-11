@@ -26,7 +26,7 @@ class Footer extends Component {
             <div className="inner">
               <Container>
                 <div className="footer-widgets row">
-                  <div className="col-xs-12 col-md-2 footer-widget-1">
+                  <div className="col-xs-12 col-md-3 footer-widget-1">
                     <div className="widget widget-container">
                       <div className="widget-body">
                         <div className="textwidget">
@@ -58,7 +58,7 @@ class Footer extends Component {
                       </div>
                     </div>
                   </div>
-                  <div className="col-xs-12 col-md-2 footer-widget-2">
+                  <div className="col-xs-12 col-md-3 footer-widget-2">
                     <div className="widget widget-container">
                       <div className="widget-body">
                         <div className="menu">
@@ -77,7 +77,7 @@ class Footer extends Component {
                       </div>
                     </div>
                   </div>
-                  <div className="col-xs-12 col-md-2 footer-widget-3">
+                  <div className="col-xs-12 col-md-3 footer-widget-3">
                     <div className="widget widget-container">
                       <div className="widget-body">
                         <div className="menu">
@@ -95,17 +95,10 @@ class Footer extends Component {
                       </div>
                     </div>
                   </div>
-                  <div className="col-xs-12 col-md-3 col-sm-6 footer-widget-4 ml-auto">
+                  <div className="col-xs-12 col-md-3 footer-widget-4">
                     <div className="widget widget-container">
                       <div className="widget-body">
                         <div className="menu">
-                          <ul className="menu">
-                            <li className="menu-item">
-                              <Button href="#" outline color="secondary" icon="ion-social-rss">
-                                Đăng ký nhận tin
-                              </Button>
-                            </li>
-                          </ul>
                           <UserLinks config={config} labeled />
                         </div>
                       </div>

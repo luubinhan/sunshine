@@ -1,7 +1,6 @@
 import React from 'react';
 import GatsbyLink from 'gatsby-link';
 import Helmet from 'react-helmet';
-import _ from 'lodash';
 
 import SEO from '../components/SEO/SEO';
 import config from '../../data/SiteConfig';
@@ -11,10 +10,10 @@ import ProductListing from '../components/ProductListing';
 import {
   Container,
   Section,
-  HEADLINE,
   DISPLAY2,
   Row,
-  Col
+  Col,
+  Button
 } from '../components/mystyle'
 
 class Index extends React.Component {
@@ -27,28 +26,49 @@ class Index extends React.Component {
       <div className="index-container">
         <Helmet title={config.siteTitle} />
         <SEO postEdges={postEdges} />
-        <Section className="home-hero">
-          <Container>
-            <Section.Header>
-              <DISPLAY2>BUY DIRECTLY FROM THE WORLD'S MOST AWESOME INDIE BRANDS</DISPLAY2>
-            </Section.Header>
-            <Section.Body>
-              <Row>
-                <Col sm="6">
-                  <div className="mb-2"><img src="https://dpegb9ebondhq.cloudfront.net/storenvy_features/features/8/original/SE-20180105-FeaturedJellyBones_HomepageB.jpg" alt=""/></div>
-                  <div><img src="https://d1nr5wevwcuzuv.cloudfront.net/storenvy_features/features/11/original/SE-20180108_FeaturedCollection-cold_HomepageB.gif" alt=""/></div>
-                </Col>
-                <Col sm="3">
-                  <img src="https://d2a2wjuuf1c30f.cloudfront.net/storenvy_features/features/14/original/Top100under20_586x576.jpg" alt=""/>
-                  <img src="https://d2a2wjuuf1c30f.cloudfront.net/storenvy_features/features/17/original/OtherEnvy.png" alt=""/>
-                </Col>
-                <Col sm="3">
-                  <img src="https://d310a9hpolx59w.cloudfront.net/storenvy_features/features/20/original/SE-midwinterSale_homepageC.jpg" alt=""/>
-                </Col>
-              </Row>
-            </Section.Body>
-          </Container>
-        </Section>
+        <div className="awsome-features">
+          <div className="grid-item--primary">
+            <div className="text-holder">
+              MẶT TRỜI NHỎ
+            </div>
+            <div className="img-holder">
+              <img className="object-fit" src="https://images.unsplash.com/photo-1485277531869-f71504d462e5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c6a0444526f6da20a3492a305b19846e&auto=format&fit=crop&w=1350&q=80" class="object-fit" alt="chair" />
+            </div>
+          </div>
+          <div className="second-group">
+            <div className="second-feature">
+              <div className="text-holder">
+                <article className="article">
+                  <div className="transform">Collections</div>
+                  <p>Gợi ý trang phục cho mùa nắng nóng</p>
+                  <Button outline color="light" size="sm">Xem Ngay</Button>
+                </article>
+              </div>
+              <div className="img-holder">
+                <img className="object-fit" src="https://images.unsplash.com/photo-1496154077138-22d8a3b92e8b" alt=""/>
+              </div>
+            </div>
+            <div className="third-feature">
+              <div className="grid-feature-1">
+                <div className="text-holder">
+                  <Button color="primary" size="sm">Dành cho Bé Trai</Button>
+                </div>
+                <img className="object-fit" src="https://images.unsplash.com/photo-1503975817393-b3891b7a3b81" alt=""/>
+              </div>
+              <div className="grid-feature-2">
+                <div className="text-holder">
+                  Và rất nhiều sản phẩm khác cho bé
+                </div>
+              </div>
+              <div className="grid-feature-3">
+                <div className="text-holder">
+                  <Button color="secondary" size="sm">Dành cho Bé Gái</Button>
+                </div>
+                <img className="object-fit" src="https://images.unsplash.com/photo-1417976528056-3c9bbbb5456c" alt=""/>
+              </div>
+            </div>
+          </div>
+        </div>
         <Section className="yellow-bg">
           <Section.Header>
             <div className="h2">Khuyến mãi</div>

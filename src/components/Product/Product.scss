@@ -15,29 +15,25 @@
 .mystyle-products  {
   display: flex;
   justify-content: space-between;
-  
   .product {
     cursor: pointer;
-    border-radius: 4px;
-    margin-bottom: 40px;
     position: relative;
+    border-radius: 0;
     background: #fff;
-    flex-basis: 30%;
-    min-width: 30%;
-    box-shadow: 0 1px 5px -2px rgba(0,0,0,0.52);
+    flex-basis: 31.7%;
+    min-width: 31.7%;
   }
   .product-image{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 4px 4px 0 0;
     overflow: hidden;
   }
   .price-block {
-    border-top: 1px dashed #e6e8ec;
     display: block;
-    padding: 5px;
-    text-align: right;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
     text-decoration: none;
     ins {
       text-decoration: none;
@@ -49,13 +45,15 @@
 }
 
 .mystyle-products .product h3 {
-  font-size: 11px;
-  line-height: 16px;
+  font-size: 12px;
+  line-height: 20px;
   margin-top: 0;
-  height: 39px;
-  font-weight: bold;
-  color: #5f677d;
+  text-transform: uppercase;
+  color: #b1b1b3;
   overflow: hidden;
+  a {
+    color: #b1b1b3;
+  }
 }
 .mystyle-products .product:hover {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -63,7 +61,6 @@
 .mystyle-products .product > a {
   position: relative;
   display: block;
-  color: #474747;
 }
 .mystyle-products .product > a:hover {
   text-decoration: none;
@@ -119,7 +116,9 @@
   background: darken(#93c34a, 15%);
   border-radius: 5px 0 0 5px;
 }
-
+.mystyle-products .product .p-2 {
+  padding: 20px 20px 0 20px !important;
+}
 @media (max-width: 768px) {
   .mystyle-products .product {
     width: 50%;

@@ -110,39 +110,11 @@ export const PRIMARY_NAVIGATION = [
     ]
   },
   {
-    key: 'do-tuoi',
-    slug: 'do-tuoi',
-    name: 'Độ Tuổi',
-    href: '/tags/do-tuoi',
-    isActive: false,
-    icon: '',
-    childrens: [
-      {
-        key: 'duoi-2-tuoi',
-        name: 'Bé từ 0 - 24 tháng',
-        icon: '',
-        href: '/tags/duoi-2-tuoi',
-      },
-      {
-        key: 'duoi-5-tuoi',
-        name: 'Bé từ 2 - 5 tuổi',
-        icon: '',
-        href: '/tags/duoi-5-tuoi',
-      },
-      {
-        key: 'duoi-12-tuoi',
-        name: 'Bé từ 6 - 12 tuổi',
-        icon: '',
-        href: '/tags/duoi-12-tuoi',
-      },
-    ]
-  },
-  {
     key: 'khuyen-mai',
     slug: 'khuyen-mai',
     className: 'highlight',
     name: 'Khuyến Mãi',
-    href: '/categories/khuyen-mai',
+    href: '/khuyen-mai',
     isActive: false,
     icon: ''
   },

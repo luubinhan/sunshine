@@ -106,21 +106,6 @@ class Filter extends Component {
               <Checkbox.Group options={ALL_TAGS} defaultValue={selectedTags} onChange={this._changeTag} />
             </div>
           </Widget.Body>
-          <Widget.Header>
-          Theo độ tuổi
-          </Widget.Header>
-          <Widget.Body>
-            <div className="filters-group">
-              {PRIMARY_NAVIGATION[2].childrens.map((item, index) => {
-                return (
-                  <div className="filter-item" key={index}>
-                    <CustomCheckbox value={item.key} label={item.name} data-filter="tag" onChange={this._changeFilter} />
-                  </div>
-                )
-              })}
-              
-            </div>
-          </Widget.Body>
         </Widget>
       </div>
     );

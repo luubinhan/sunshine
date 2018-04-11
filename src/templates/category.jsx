@@ -1,8 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import Select, {Option} from 'rc-select';
 import _ from 'lodash'
-import 'rc-select/assets/index.css';
 import config from '../../data/SiteConfig';
 
 import {
@@ -39,42 +37,26 @@ export default class CategoryTemplate extends React.Component {
         <Helmet
           title={`Quần áo trẻ em trong mục "${category}" | ${config.siteTitle}`}
         />
-        <Container>
-          <div className="cate__header">
-            <Row>
-              <Col sm={2}>
-              </Col>
-              <Col>
-                <div className="align-center">
-                  <HEADLINE style={{marginBottom: 25}}>
-                    { cateObj.name } ({filteredUnpagedData.length} sản phẩm)
-                  </HEADLINE>
-                  <CAPTION style={{display: 'none'}}>
-                    Quần áo { cateObj.name } đẹp, nhiều mẫu thời trang mới, cập nhật thường xuyên.
-                    <br />
-                    Quần Áo Trẻ Em - Mặt Trời Nhỏ là nơi chọn mua đồ cho bé tin cậy nhất tại Tp.HCM.
-                  </CAPTION>
-                </div>
-              </Col>
-              <Col sm={2}>
-                <Select placeholder="Sếp theo">
-                  <Option value="gia-dam-dan">Giá giảm dần</Option>
-                  <Option value="gia-tang-dan">Giá tăng dần</Option>
-                </Select>
-              </Col>
-            </Row>
-          </div>
-          <Row>
-            <Col sm={3} className="sidebar">
+        <Container fluid>
+          <div className="container-sidebar">
+            <div className="sidebar">
               <FilterSidebar
                 onFilter={this._onFilter}
                 cate={cateObj}
               />
-            </Col>
-            <Col sm={9}>
+            </div>
+            <div className="right-wrapper">
+              <div className="muted pt-30 pb-30">
+                Quần áo { cateObj.name } (tìm thấy {filteredUnpagedData.length} sản phẩm)
+              </div>
+              <CAPTION style={{display: 'none'}}>
+                Quần áo { cateObj.name } đẹp, nhiều mẫu thời trang mới, cập nhật thường xuyên.
+                <br />
+                Quần Áo Trẻ Em - Mặt Trời Nhỏ là nơi chọn mua đồ cho bé tin cậy nhất tại Tp.HCM.
+              </CAPTION>
               <ProductListing postEdges={filteredUnpagedData} />
-            </Col>
-          </Row>
+            </div>
+          </div>
         </Container>
       </div>
     );
