@@ -77,9 +77,8 @@ export default class Nav extends Component {
       vertical ? 'flex-column' : false,
       hoverToOpen ? 'hover-top-open' : false,
     ), cssModule);
-
     return (
-      <ul className={classes} {...attributes}>
+      <ul className={classes}>
         {
           items.map((menu, index) => {
             const hasChildrens = !!((menu.childrens !== undefined && menu.childrens.length !== 0))

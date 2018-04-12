@@ -81,7 +81,7 @@ class Index extends React.Component {
         </Section>
         <Section className="gray-bg">
           <Section.Header>
-            <div className="h2">Bé Trai</div>
+            <div className="h2"><GatsbyLink to="/categories/be-trai">Bé Trai</GatsbyLink></div>
             <div className="link-list">
               {
                 PRIMARY_NAVIGATION[0].childrens.map((nav, index) => {
@@ -101,7 +101,7 @@ class Index extends React.Component {
         </Section>
         <Section className="pink-bg">
           <Section.Header>
-            <div className="h2">Bé Gái</div>
+            <div className="h2"><GatsbyLink to="/categories/be-gai">Bé Gái</GatsbyLink></div>
             <div className="link-list">
               {
                 PRIMARY_NAVIGATION[1].childrens.map((nav, index) => {
@@ -140,7 +140,6 @@ export const pageQuery = graphql`
             slug
           }
           excerpt
-          timeToRead
           frontmatter {
             title
             tags

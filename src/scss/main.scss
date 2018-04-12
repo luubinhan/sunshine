@@ -87,6 +87,7 @@ h6,
   .h2,
   .display1{
     font-size: 2rem;
+    margin-top: 0;
   }
 }
 @media(max-width: $breakpoint-xs) {
@@ -808,9 +809,6 @@ body {
 }
 
 /* RESET BOOTSTRAP -------------------------------------------- */
-.navbar-toggler{
-  display: none;
-}
 .header {
   background: #fff;
   position: fixed;
@@ -904,6 +902,11 @@ body {
     letter-spacing: 1px;
     padding: 23px 15px;
     &:hover {
+      color: $primary-color;
+    }
+  }
+  .active {
+    & > .nav-link {
       color: $primary-color;
     }
   }
@@ -2036,5 +2039,64 @@ body .rc-select-dropdown {
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
+  }
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 20px;
+  top: 20px;
+  display: none;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: $black;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #fff;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: $black;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  .nav {
+    display: block;
+  }
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(255, 255, 255, 0.3);
+}
+.menu-mobile{
+  padding-top: 40px;
+  .list-group-item-primary {
+    font-weight: bold;
+    background: transparent;
+    a {
+      color: #000;
+      font-size: 16px;
+    }
   }
 }

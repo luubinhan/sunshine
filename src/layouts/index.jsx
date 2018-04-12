@@ -1,15 +1,18 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import GatsbyLink from 'gatsby-link';
+import { push as MenuBuger } from 'react-burger-menu';
 import {BackTop} from 'antd';
 import 'antd/dist/antd.css'
 
 import config from '../../data/SiteConfig';
-import {PRIMARY_NAVIGATION, RIGHT_NAV} from '../../data/data';
-import '../scss/main.scss';
+import {PRIMARY_NAVIGATION} from '../../data/data';
 import '../scss/antd.scss';
+import '../scss/main.scss';
+import '../scss/responsive.scss';
 
-import {Container, Master, Nav, Row, Col} from '../components/mystyle'
+
+import {Container, Master, Nav, Row, Col, Button} from '../components/mystyle'
 import Footer from '../components/Footer'
 
 import logoImg from './logo-shop-mat-troi-nho.png';
@@ -49,53 +52,84 @@ export default class MainLayout extends React.Component {
     }
     return title;
   }
+  renderChildrenMenu = (props) => {
+    return (
+      <ul className="list-group list-group-flush">
+        {props.map((item, index) => {
+          return (
+            <li key={index} className="list-group-item">
+              <GatsbyLink to={item.href}>
+                {item.name}
+              </GatsbyLink>
+            </li>
+          )
+        })}
+      </ul>
+    )
+  }
   render() {
     const { children } = this.props;
     const pathArray = this.props.location.pathname;
-    const selecatedKey = pathArray.split('/').slice(-1);
+    const selectedKey = pathArray.split('/').slice(-1);
     return (
       <div className="mystyle">
         <Helmet>
           <title>{`${config.siteTitle} |  ${this.getLocalTitle()}`}</title>
           <meta name="description" content={config.siteDescription} />
         </Helmet>
-        <div id="header">
-          <div className="header">
-            <div className="header-inner">
-              <Container fluid>
-                <Row>
-                  <Col sm={5}>
-                    <Nav selecatedKey={selecatedKey[0]} items={PRIMARY_NAVIGATION} className="primary-nav" />
-                  </Col>
-                  <Col sm={3}>
-                    <GatsbyLink to="/" className="navbar-brand">
-                      <img src={logoImg} height="40" alt="" />
+        <div id="outer-container">
+          <MenuBuger pageWrapId="page-wrap" outerContainerId='outer-container' >
+            {PRIMARY_NAVIGATION.map((menu, index) => {
+              const hasChildrens = !!((menu.childrens !== undefined && menu.childrens.length !== 0))
+              return (
+                <ul className="menu-mobile list-group list-group-flush" key={index}>
+                  <li className="list-group-item list-group-item-primary">
+                    <GatsbyLink to={menu.href}>
+                      {menu.name}
                     </GatsbyLink>
-                  </Col>
-                  <Col sm={4}>
-                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span className="navbar-toggler-icon" />
-                    </button>
-                    <div className="top-info-block">
-                      <a href="facebook.com/" className="link-facebook">
-                        <i className="ion-social-facebook" />
-                      </a>
-                      <div className="hotline-badge">
-                        <i className="ion-ios-telephone" />
-                        <div className="hotline-number"><a href="tel:1900-6067">1900-6067</a></div>
-                      </div>
-                    </div>
-                  </Col>
-                </Row>
-              </Container>
+                  </li>
+                  { hasChildrens ? this.renderChildrenMenu(menu.childrens) : null }
+                </ul>
+              )
+            })}
+          </MenuBuger>
+          <main id="page-wrap">
+            <div id="header">
+              <div className="header">
+                <div className="header-inner">
+                  <Container fluid>
+                    <Row>
+                      <Col sm={5} xs={2}>
+                        <Nav selectedKey={selectedKey[0]} items={PRIMARY_NAVIGATION} className="primary-nav" />
+                      </Col>
+                      <Col sm={3} xs={8}>
+                        <GatsbyLink to="/" className="navbar-brand">
+                          <img src={logoImg} alt={config.siteTitle} />
+                        </GatsbyLink>
+                      </Col>
+                      <Col sm={4} xs={2}>
+                        <div className="top-info-block">
+                          <a href="facebook.com/" className="link-facebook">
+                            <i className="ion-social-facebook" />
+                          </a>
+                          <div className="hotline-badge hidden-xs">
+                            <i className="ion-ios-telephone" />
+                            <div className="hotline-number"><a href="tel:1900-6067">1900-6067</a></div>
+                          </div>
+                        </div>
+                      </Col>
+                    </Row>
+                  </Container>
+                </div>
+              </div>
             </div>
-          </div>
+            <Master>
+              {children()}
+            </Master>
+            <Footer config={config} />
+            <BackTop />
+          </main>
         </div>
-        <Master>
-          {children()}
-        </Master>
-        <Footer config={config} />
-        <BackTop />
       </div>
     );
   }

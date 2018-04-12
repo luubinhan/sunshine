@@ -1,0 +1,64 @@
+// Variables
+@import '_variables';
+@media(max-width: $breakpoint-laptop){
+}
+@media(max-width: $breakpoint-m){
+  .awsome-features {
+    .grid-item--primary {
+      flex-basis: 30%;
+      min-width: 30%;
+    }
+    .second-group {
+      flex-basis: 70%;
+      min-width: 70%;
+      display: flex;
+      .second-feature {
+        height: 60vh;
+      }
+      .third-feature {
+        height: 60vh;
+        flex-direction: column;
+        .grid-feature-1 {
+          height: 20vh;
+        }
+        .grid-feature-2 {
+          height: 20vh;
+        }
+        .grid-feature-3 {
+          height: 20vh;
+        }
+      }      
+    }
+  }
+}
+@media (max-width: $breakpoint-ipad){
+  .section {
+    .section-inner{
+      padding: 20px 0;
+    }
+    .h2 {
+      
+    }
+  }
+}
+@media (max-width: 855px) {
+  .bm-burger-button {
+    display: block;
+  }
+  .primary-nav {
+    display: none;
+    
+  } 
+  .awsome-features{
+    display: none;
+  }
+}
+@media(max-width: $breakpoint-sm){
+}
+@media(max-width: $breakpoint-xs){
+  .mystyle-products {
+    
+  }
+}
+@media(max-width: $breakpoint-xxs){
+}

@@ -137,7 +137,6 @@ module.exports = {
                   node {
                     excerpt
                     html
-                    timeToRead
                     fields { slug }
                     frontmatter {
                       title
