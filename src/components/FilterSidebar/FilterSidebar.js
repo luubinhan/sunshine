@@ -82,11 +82,6 @@ class Filter extends Component {
     const {cate, selectedTags} = this.props;
     return (
       <div className="filter">
-        {filterOn &&
-          <div className="filter-reset">
-            <Button color="light" size="sm" icon="ion-close-round" onClick={this._resetFilter}>Bỏ chọn</Button>
-          </div>
-        }
         <Widget className="widget-filter">
           <Widget.Header>
             Tìm sản phẩm
@@ -105,7 +100,13 @@ class Filter extends Component {
             <div className="filters-group">
               <Checkbox.Group options={ALL_TAGS} defaultValue={selectedTags} onChange={this._changeTag} />
             </div>
+            
           </Widget.Body>
+          <Widget.Footer>
+            <div className="filter-reset">
+              <Button outline size="sm" icon="ion-close-round" onClick={this._resetFilter}>Bỏ chọn</Button>
+            </div>
+          </Widget.Footer>
         </Widget>
       </div>
     );

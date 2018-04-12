@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames';
-import {navigateTo} from 'gatsby-link';
+import GatsbyLink, {navigateTo} from 'gatsby-link';
 import { mapToCssModules } from '../../utils';
 
 import './Nav.css'
@@ -39,15 +39,15 @@ export default class Nav extends Component {
         {
           props.map((item, index) => {
             return (
-              <a key={index}
-                href={item.href}
+              <GatsbyLink key={index}
+                to={item.href}
                 className='dropdown-item'
               >
                 {item.icon !== '' &&
                   <i className={item.icon} />
                 }
                 {item.name}
-              </a>
+              </GatsbyLink>
             )
           })
         }
@@ -94,14 +94,14 @@ export default class Nav extends Component {
               <li key={index}
                 className={classLi}
               >
-                <a href={menu.href}
+                <GatsbyLink to={menu.href}
                   className={`nav-link ${isDropdownToggle}`}
                 >
                   {menu.icon !== '' &&
                   <i className={menu.icon} />
                   }
                   {menu.name}
-                </a>
+                </GatsbyLink>
                 { hasChildrens ? this.renderChildrenMenu(menu.childrens) : null }
               </li>
             )
