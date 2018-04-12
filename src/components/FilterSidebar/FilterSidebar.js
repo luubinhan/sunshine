@@ -4,7 +4,6 @@ import _ from 'lodash'
 import {Checkbox} from 'antd';
 
 import {
-  CustomCheckbox,
   Widget,
   Button,
   Search
@@ -18,68 +17,27 @@ const ALL_TAGS = PRIMARY_NAVIGATION[1].childrens.map(item => {
     label: item.name,
     value: item.key,
   }
-})
+});
 
 class Filter extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      filterOn: false
-    }
     this.filterBy = {
-      category: [],
-      tag: [],
+      selectedCates: [],
+      selectedTags: [],
       keywords: ''
-    };
-  }
-  _resetFilter = (e) => {
-    //reset value of input checkbox
-    const checkboxs = document.getElementsByClassName('custom-control-input');
-    for (let i = 0; i < checkboxs.length; i += 1) {
-      checkboxs[i].checked = false;
     }
-    //reset filter values
-    this.filterBy = {
-      category: [],
-      tag: []
-    }
-    //callback
-    this.props.onFilter(this.filterBy)
-    this.setState({filterOn: false})
-  }
-  _changeFilter = (e) => {
-    // add to filterBy
-    const filterType = e.currentTarget.getAttribute('data-filter');
-    //add
-    if (e.currentTarget.checked) {
-      this.filterBy[filterType] = _.union([e.currentTarget.value], this.filterBy[filterType]);
-    } else {
-    // remove
-      this.filterBy[filterType] = this.filterBy[filterType].filter(value => {
-        return value !== e.currentTarget.value;
-      });
-    }
-    // callback to parent
-    this.props.onFilter(this.filterBy)
-    this.setState({filterOn: ((this.filterBy.category !== undefined && this.filterBy.category.length !== 0) || (this.filterBy.tag !== undefined && this.filterBy.tag.length !== 0))})
   }
   _handleSearch = (newkeywords) => {
     this.filterBy.keywords = newkeywords;
     this.props.onFilter(this.filterBy)
-    this.setState({filterOn: true})
-  }
-  _handleReset = () => {
-    this.filterBy.keywords = '';
-    this.props.onFilter(this.filterBy)
   }
   _changeTag = e => {
-    this.filterBy.tag = e;
+    this.filterBy.selectedTags = e;
     this.props.onFilter(this.filterBy)
-    this.setState({filterOn: ((this.filterBy.category !== undefined && this.filterBy.category.length !== 0) || (this.filterBy.tag !== undefined && this.filterBy.tag.length !== 0))})
   }
   render() {
-    const {filterOn} = this.state;
-    const {cate, selectedTags} = this.props;
+    const {defaultSelectedTags} = this.props;
     return (
       <div className="filter">
         <Widget className="widget-filter">
@@ -93,20 +51,16 @@ class Filter extends Component {
               placeholder='Tên sản phẩm'
             />
           </Widget.Body>
+        </Widget>
+        <Widget className="widget-categories">
           <Widget.Header>
-          Bạn muốn mua gì
+            Bạn muốn mua gì
           </Widget.Header>
           <Widget.Body>
             <div className="filters-group">
-              <Checkbox.Group options={ALL_TAGS} defaultValue={selectedTags} onChange={this._changeTag} />
+              <Checkbox.Group options={ALL_TAGS} defaultValue={defaultSelectedTags} onChange={this._changeTag} />
             </div>
-            
           </Widget.Body>
-          <Widget.Footer>
-            <div className="filter-reset">
-              <Button outline size="sm" icon="ion-close-round" onClick={this._resetFilter}>Bỏ chọn</Button>
-            </div>
-          </Widget.Footer>
         </Widget>
       </div>
     );
@@ -118,12 +72,12 @@ Filter.propTypes = {
   // current selected cate
   cate: PropTypes.object,
   // current selected tags,
-  selectedTags: PropTypes.array
+  defaultSelectedTags: PropTypes.array
 };
 
 Filter.defaultProps = {
   cate: {},
-  selectedTags: []
+  defaultSelectedTags: []
 }
 
 export default Filter;

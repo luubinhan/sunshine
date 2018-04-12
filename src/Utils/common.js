@@ -4,13 +4,13 @@ import _ from 'lodash'
 const onFilter = function (filterBy) {
   let newFilteredUnpagedData = [...this.props.data.allMarkdownRemark.edges];
   //filter by tag
-  if (filterBy.tag.length !== 0) {
+  if (filterBy.selectedTags.length !== 0) {
     newFilteredUnpagedData = _.filter(newFilteredUnpagedData, item => {
       //loop through the tag array to check with filterBy selected array
       if (item.node.frontmatter.tags !== null) {
         for (let i = 0; i < item.node.frontmatter.tags.length; i += 1) {
           const checkTag = _.kebabCase(item.node.frontmatter.tags[i]);
-          if (filterBy.tag.indexOf(checkTag) !== -1) {
+          if (filterBy.selectedTags.indexOf(checkTag) !== -1) {
             return true
           }
         }
@@ -19,9 +19,9 @@ const onFilter = function (filterBy) {
     })
   }
   // filter by category
-  if (filterBy.category.length !== 0) {
+  if (filterBy.selectedCates.length !== 0) {
     newFilteredUnpagedData = _.filter(newFilteredUnpagedData, item => {
-      return (filterBy.category.indexOf(item.node.frontmatter.category) !== -1)
+      return (filterBy.selectedCates.indexOf(item.node.frontmatter.category) !== -1)
     })
   }
   this.setState({filteredUnpagedData: newFilteredUnpagedData})

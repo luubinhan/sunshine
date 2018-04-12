@@ -36,8 +36,36 @@
     .section-inner{
       padding: 20px 0;
     }
-    .h2 {
-      
+  }
+  .container-sidebar {
+    padding-left: 0;
+    .sidebar {
+      padding: 0;
+      position: relative;
+      top: auto;
+      bottom: auto;
+      width: auto;
+      .filter {
+        display: flex;
+        .widget-filter {
+          flex-basis: 20%;
+          min-width: 20%;
+        }
+        .widget-categories {
+          flex-grow: 1;
+          padding-left: 20px;
+        }
+      }
+    }
+    .right-wrapper {
+      padding: 0 0 30px 0;
+      border: none;
+    }
+  }
+  .ant-checkbox-group {
+    .ant-checkbox-wrapper {
+      display: inline-block;
+      width: auto;
     }
   }
 }
@@ -54,11 +82,21 @@
   }
 }
 @media(max-width: $breakpoint-sm){
+  .ant-breadcrumb {
+    display: none;
+  }
+  .container-sidebar {
+    .sidebar {
+      .filter {
+        display: block;
+        .widget-filter {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
 @media(max-width: $breakpoint-xs){
-  .mystyle-products {
-    
-  }
 }
 @media(max-width: $breakpoint-xxs){
 }

@@ -55,7 +55,6 @@ export default class TagTemplate extends React.Component {
     let cateObj = {};
     if (location.search) {
       cateObj = this.getCategoryName(location.search);
-      console.log(cateObj)
     }
     return (
       <div className="tag-container">
@@ -63,7 +62,7 @@ export default class TagTemplate extends React.Component {
         <Container fluid>
           <div className="container-sidebar">
             <div className="sidebar">
-              <FilterSidebar onFilter={this._onFilter} selectedTags={[tagKey]} />
+              <FilterSidebar onFilter={this._onFilter} defaultSelectedTags={[tagKey]} />
             </div>
             <div className="right-wrapper">
               <div className="muted pt-30 pb-30">
