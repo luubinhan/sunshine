@@ -31,7 +31,7 @@ module.exports = {
       iconClassName: 'ion-social-instagram'
     },
   ],
-  copyright: '© 2018 Shop Mặt Trời Nhỏ.', // Copyright string for the footer of the website and RSS feed.
+  copyright: '© 2018 Sunshine - Shop mặt trời tí hon. All Rights Reserved.', // Copyright string for the footer of the website and RSS feed.
   themeColor: '#c62828', // Used for setting manifest and progress theme colors.
   backgroundColor: '#e0e0e0' // Used for setting manifest background color.
 };

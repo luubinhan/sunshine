@@ -136,15 +136,15 @@ export default class PostTemplate extends React.Component {
         <div style={{ backgroundColor: '#f7f7f7', paddingTop: 10, paddingBottom: 10, marginBottom: 20 }}>
           <Container fluid>
             <div className="d-flex justify-content-between">
-              <Button role="button" onClick={this._goBack}>
+              <span role="button" onClick={this._goBack}>
                 <i className="ion-android-arrow-back"/>
-                <span style={{paddingLeft: 5}}>
+                <u style={{paddingLeft: 5}}>
                 Quay lại
-                </span>
-              </Button>
+                </u>
+              </span>
               <Breadcrumb>
-                <Breadcrumb.Item><GatsbyLink to="/">Trang Chủ</GatsbyLink></Breadcrumb.Item>
-                <Breadcrumb.Item><GatsbyLink to={`/category/${post.category}`}>{cateName}</GatsbyLink></Breadcrumb.Item>
+                <Breadcrumb.Item><a href="/">Trang Chủ</a></Breadcrumb.Item>
+                <Breadcrumb.Item><a href={`/category/${post.category}`}>{cateName}</a></Breadcrumb.Item>
                 <Breadcrumb.Item>{post.title}</Breadcrumb.Item>
               </Breadcrumb>
             </div>
@@ -153,10 +153,10 @@ export default class PostTemplate extends React.Component {
         <div className="product type-product has-post-thumbnail">
           <Container fluid>
             <Row>
-              <Col sm={6} md={8} xs={12}>
+              <Col sm={8}>
                 <PhotoGrid columns={3} photos={allPhotos} />
               </Col>
-              <Col sm={6} md={4} xs={12}>
+              <Col sm={4}>
                 <div className="summary entry-summary">
                   <Tag color="#f50">{cateName}</Tag>
                   <div className="product_meta">
