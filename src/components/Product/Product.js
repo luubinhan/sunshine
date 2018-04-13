@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import GatsbyLink from 'gatsby-link';
 
 import {Price} from '../mystyle'
 
@@ -14,29 +15,29 @@ class Product extends Component {
       ...attributes
     } = this.props;
     let {price, salePrice} = this.props;
-    const currentPrice = salePrice ? salePrice : price;
+    const currentPrice = salePrice || price;
     if (salePrice !== '') {
       salePrice = parseInt(salePrice, 10);
-    }    
+    }
     price = parseInt(price, 10);
-    
+
     // caculate percent
     const downPrice = Math.round((salePrice / price) * 100);
     return (
-      <div className="product" {...attributes}>
+      <div className="product">
         <div className="product-inner">
           { salePrice &&
           <span className="onsale">Giảm giá</span>
           }
           { img &&
             <span className="product-image">
-              <a href={path}>
+              <GatsbyLink to={path}>
                 <img src={img} alt={title} />
-              </a>
+              </GatsbyLink>
             </span>
           }
           <div className="p-2">
-            <h3><a href={path}>{title}</a></h3>
+            <h3><GatsbyLink to={path}>{title}</GatsbyLink></h3>
           </div>
           <span className="price-block">
             {salePrice &&
