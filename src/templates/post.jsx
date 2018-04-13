@@ -136,15 +136,15 @@ export default class PostTemplate extends React.Component {
         <div style={{ backgroundColor: '#f7f7f7', paddingTop: 10, paddingBottom: 10, marginBottom: 20 }}>
           <Container fluid>
             <div className="d-flex justify-content-between">
-              <span role="button" onClick={this._goBack}>
+              <Button role="button" onClick={this._goBack}>
                 <i className="ion-android-arrow-back"/>
-                <u style={{paddingLeft: 5}}>
+                <span style={{paddingLeft: 5}}>
                 Quay lại
-                </u>
-              </span>
+                </span>
+              </Button>
               <Breadcrumb>
-                <Breadcrumb.Item><a href="/">Trang Chủ</a></Breadcrumb.Item>
-                <Breadcrumb.Item><a href={`/category/${post.category}`}>{cateName}</a></Breadcrumb.Item>
+                <Breadcrumb.Item><GatsbyLink href="/">Trang Chủ</GatsbyLink></Breadcrumb.Item>
+                <Breadcrumb.Item><GatsbyLink href={`/category/${post.category}`}>{cateName}</GatsbyLink></Breadcrumb.Item>
                 <Breadcrumb.Item>{post.title}</Breadcrumb.Item>
               </Breadcrumb>
             </div>
