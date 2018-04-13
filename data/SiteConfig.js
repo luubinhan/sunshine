@@ -3,7 +3,7 @@ module.exports = {
   siteTitle: 'Shop chuyên cung cấp quần áo trẻ em - Mặt Trời Nhỏ', // Site title.
   siteTitleAlt: 'Shop chuyên cung cấp quần áo trẻ em - Mặt Trời Nhỏ', // Alternative site title for SEO.
   siteLogo: '/logos/logo-1024.png', // Logo used for SEO and manifest.
-  siteUrl: 'https://luubinhan.github.io/sunshine', // Domain of your website without pathPrefix.
+  siteUrl: 'https://luubinhan.github.io', // Domain of your website without pathPrefix.
   pathPrefix: '/sunshine', // Prefixes all links. For cases when deployed to example.github.io/sunshine/.
   siteDescription: 'Shop chuyên cung cấp quần áo trẻ em - Mặt Trời Nhỏ', // Website description used for RSS feeds/meta description tag.
   siteRss: '/rss.xml', // Path to the RSS file.
