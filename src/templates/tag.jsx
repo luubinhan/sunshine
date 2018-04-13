@@ -82,7 +82,7 @@ export default class TagTemplate extends React.Component {
   }
 }
 
-/* eslint no-undef: "off"*/
+/* eslint no-undef: "off" */
 export const pageQuery = graphql`
   query TagPage($tag: String) {
     allMarkdownRemark(
@@ -97,6 +97,7 @@ export const pageQuery = graphql`
             slug
           }
           excerpt
+          timeToRead
           frontmatter {
             title
             tags

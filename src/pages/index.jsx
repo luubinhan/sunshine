@@ -18,6 +18,7 @@ import {
 
 class Index extends React.Component {
   render() {
+    console.log(this.props)
     const postEdges = this.props.data.allMarkdownRemark.edges;
     const beTraiPosts = this.props.data.beTraiPosts.edges;
     const beGaiPosts = this.props.data.beGaiPosts.edges;
@@ -107,7 +108,6 @@ class Index extends React.Component {
                 PRIMARY_NAVIGATION[1].childrens.map((nav, index) => {
                   return (
                     <GatsbyLink key={index} to={nav.href}>{nav.name}</GatsbyLink>
-
                   )
                 })
               }
@@ -140,6 +140,7 @@ export const pageQuery = graphql`
             slug
           }
           excerpt
+          timeToRead
           frontmatter {
             title
             tags

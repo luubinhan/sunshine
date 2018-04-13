@@ -1,2 +1,4 @@
-**/node_modules/
-lib
+public
+static
+.cache
+content

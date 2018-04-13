@@ -222,7 +222,9 @@ export default class PostTemplate extends React.Component {
             </Row>
           </Container>
           <Container>
-            <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
+            <div className="single-post-container">
+              <div className="post-content" dangerouslySetInnerHTML={{ __html: postNode.html }} />
+            </div>
           </Container>
         </div>
       </div>
@@ -235,6 +237,7 @@ export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
+      timeToRead
       excerpt
       frontmatter {
         title
@@ -252,6 +255,10 @@ export const pageQuery = graphql`
         salePrice
       }
       fields {
+        nextTitle
+        nextSlug
+        prevTitle
+        prevSlug
         slug
       }
     }
