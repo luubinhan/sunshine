@@ -43,12 +43,6 @@ export const PRIMARY_NAVIGATION = [
         icon: '',
         href: '/tags/do-ngu?categories=be-trai',
       },
-      {
-        key: 'giay-dep',
-        name: 'Giày dép',
-        icon: '',
-        href: '/tags/giay-dep?categories=be-trai',
-      },
     ]
   },
   {
@@ -100,12 +94,6 @@ export const PRIMARY_NAVIGATION = [
         name: 'Đồ ngủ',
         icon: '',
         href: '/tags/do-ngu?categories=be-gai',
-      },
-      {
-        key: 'giay-dep',
-        name: 'Giày dép',
-        icon: '',
-        href: '/tags/giay-dep?categories=be-gai',
       },
     ]
   },
