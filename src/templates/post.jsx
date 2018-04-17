@@ -214,7 +214,7 @@ export default class PostTemplate extends React.Component {
                       </a>
                     </div>
                     <div className="contact-phone">
-                      <span>Gọi đặt mua</span> <a href="">0943870301</a> (9h:00 - 21:00)
+                      <span>Gọi đặt mua</span> <a href="">{config.phone}</a> (9h:00 - 21:00)
                     </div>
                   </div>
                 </div>

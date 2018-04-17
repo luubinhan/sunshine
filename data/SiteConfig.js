@@ -11,6 +11,8 @@ module.exports = {
   googleAnalyticsID: '', // GA tracking ID.
   disqusShortname: '', // Disqus shortname.
   email: 'truongtomi0708@gmail.com',
+  facebook: "http://facebook.com/quanaotreem.mattroinho",
+  phone: '0939782728',
   address: '100/35/5 Bùi Minh Trực, P.5, Quận 8, HCM',
   postDefaultCategoryID: 'be-trai', // Default category for posts.
   userName: '', // Username to display in the author segment.
@@ -31,7 +33,7 @@ module.exports = {
       iconClassName: 'ion-social-instagram'
     },
   ],
-  copyright: '© 2018 Sunshine - Shop mặt trời tí hon. All Rights Reserved.', // Copyright string for the footer of the website and RSS feed.
+  copyright: '© 2018 Quần Áo Trẻ Em - Mặt Trời Nhỏ.', // Copyright string for the footer of the website and RSS feed.
   themeColor: '#c62828', // Used for setting manifest and progress theme colors.
   backgroundColor: '#e0e0e0' // Used for setting manifest background color.
 };

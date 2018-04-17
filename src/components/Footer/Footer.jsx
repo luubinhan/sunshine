@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Link from 'gatsby-link';
+import GatsbyLink from 'gatsby-link'
 import UserLinks from '../UserLinks/UserLinks';
 
 import './Footer.scss';
@@ -8,14 +8,12 @@ import {
   Container,
   Row,
   Col,
-  Button
 } from '../mystyle'
 
 class Footer extends Component {
   render() {
     const { config } = this.props;
-    const url = config.siteRss;
-    const copyright = config.copyright;
+    const {copyright, phone} = config;
     if (!copyright) {
       return null;
     }
@@ -42,10 +40,8 @@ class Footer extends Component {
                                 <i className="ion-android-call"/>
                               </span>
                               <a href="tel:0988 990 168">
-                              0988 990 168
+                                {phone}
                               </a>
-                              -
-                              <a href="tel:01699 163 056">01699 163 056</a>
                             </p>
                             <p className="email-icon">
                               <span className="pr-10">
@@ -64,13 +60,13 @@ class Footer extends Component {
                         <div className="menu">
                           <ul className="menu">
                             <li className="menu-item">
-                              <Link to="/huong-dan-mua-hang">Hướng dẫn mua hàng</Link>
+                              <GatsbyLink to="/huong-dan-mua-hang">Hướng dẫn mua hàng</GatsbyLink>
                             </li>
                             <li className="menu-item">
-                              <Link to="/hinh-thuc-thanh-toan">Hình thức thanh toán</Link>
+                              <GatsbyLink to="/hinh-thuc-thanh-toan">Hình thức thanh toán</GatsbyLink>
                             </li>
                             <li className="menu-item">
-                              <Link to="/bang-gia-ship-ems-theo-buu-dien">Bảng giá ship EMS theo bưu điện</Link>
+                              <GatsbyLink to="/bang-gia-ship-ems-theo-buu-dien">Bảng giá ship EMS theo bưu điện</GatsbyLink>
                             </li>
                           </ul>
                         </div>
@@ -119,7 +115,7 @@ class Footer extends Component {
                 <div className="credit">
                   <ul className="footer-nav">
                     <li>
-                      <Link to="/support-and-faq">Câu hỏi thường gặp</Link>
+                      <GatsbyLink to="/support-and-faq">Câu hỏi thường gặp</GatsbyLink>
                     </li>
                   </ul>
                 </div>
