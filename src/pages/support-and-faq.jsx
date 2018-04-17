@@ -7,7 +7,8 @@ import {
   Container,
   Row,
   Col,
-  DISPLAY4
+  DISPLAY4,
+  Button
 } from '../components/mystyle'
 
 import '../scss/lien-he.scss'
@@ -52,13 +53,11 @@ class FAQs extends Component {
                       <i className="ion-chatboxes" />
                     </DISPLAY4>
                     <h3>
-                      Không tìm thấy câu trả lời của bạn
+                      Bạn có câu hỏi khác ?
                     </h3>
-                    <p>
-                      Gọi hoặc nhắn tin qua Facebook của Shop
-                      <br />
-                      <a href={config.facebook}>quanaotreem.mattroinho</a>
-                    </p>
+                    <Button size="lg" href={config.facebook}>
+                      Gọi hoặc nhắn tin qua Facebook
+                    </Button>
                     <p>
                         Từ thứ 2 đến thứ 6: 9 sáng đến 9 giờ tối
                     </p>
