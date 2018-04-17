@@ -1,10 +1,10 @@
 ---
 slug: '2018-04-04-b004145-bo-be-trai-yoyo-thun-cotton-hang-vn'
 title: "Đồ bộ bé trai Yoyo thun cotton hàng VN"
-cover: "/images/30124634_579165499143130_1598271205957473373_n.jpg"
-thumb1: "/images/29597380_579165502476463_9064079448216122812_n.jpg"
-thumb2: "/images/29792762_579165509143129_8210272432672958862_n.jpg"
-thumb3: "/images/29793165_579165505809796_5335263886559312039_n.jpg"
+cover: "http://i429.photobucket.com/albums/qq12/liu_zango_ne/Mat%20Troi%20Nho/quan-ao-tre-em-mat-troi-nho-b004145-13.jpg"
+thumb1: "http://i429.photobucket.com/albums/qq12/liu_zango_ne/Mat%20Troi%20Nho/quan-ao-tre-em-mat-troi-nho-b004145-13.jpg"
+thumb2: "http://i429.photobucket.com/albums/qq12/liu_zango_ne/Mat%20Troi%20Nho/quan-ao-tre-em-mat-troi-nho-b004145-14.jpg"
+thumb3: "http://i429.photobucket.com/albums/qq12/liu_zango_ne/Mat%20Troi%20Nho/quan-ao-tre-em-mat-troi-nho-b004145-10%202.jpg"
 date: "04/04/2018"
 category: "be-trai"
 price: "145000"
