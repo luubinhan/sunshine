@@ -1,7 +1,7 @@
 ---
 slug: '2018-04-04-b004145-bo-be-trai-yoyo-thun-cotton-hang-vn'
 title: "Đồ bộ bé trai Yoyo thun cotton hàng VN"
-cover: "http://i429.photobucket.com/albums/qq12/liu_zango_ne/Mat%20Troi%20Nho/quan-ao-tre-em-mat-troi-nho-b004145-13.jpg"
+cover: "https://i.imgur.com/cPQ498b.png"
 thumb1: "http://i429.photobucket.com/albums/qq12/liu_zango_ne/Mat%20Troi%20Nho/quan-ao-tre-em-mat-troi-nho-b004145-13.jpg"
 thumb2: "http://i429.photobucket.com/albums/qq12/liu_zango_ne/Mat%20Troi%20Nho/quan-ao-tre-em-mat-troi-nho-b004145-14.jpg"
 thumb3: "http://i429.photobucket.com/albums/qq12/liu_zango_ne/Mat%20Troi%20Nho/quan-ao-tre-em-mat-troi-nho-b004145-10%202.jpg"
