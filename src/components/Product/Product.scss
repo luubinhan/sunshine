@@ -14,14 +14,14 @@
 }
 .mystyle-products  {
   display: flex;
-  justify-content: space-between;
+  margin-left: -2%;
   .product {
-    cursor: pointer;
+    margin-left: 2%;
     position: relative;
     border-radius: 0;
     background: #fff;
-    flex-basis: 31.7%;
-    min-width: 31.7%;
+    flex-basis:30%;
+    min-width: 30%;
   }
   .product-image{
     display: flex;

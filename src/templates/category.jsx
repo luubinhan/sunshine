@@ -5,11 +5,7 @@ import config from '../../data/SiteConfig';
 
 import {
   Container,
-  Row,
-  Col,
-  HEADLINE,
   CAPTION,
-  Button
 } from '../components/mystyle'
 import ProductListing from '../components/ProductListing';
 import FilterSidebar from '../components/FilterSidebar'

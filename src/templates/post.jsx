@@ -7,19 +7,29 @@ import PhotoGrid from 'react-photo-feed';
 import 'react-photo-feed/library/style.css';
 
 
-import {Container, Price, Button as MyButton, Alert, Row, Col} from '../components/mystyle'
+import {Container, Price, Button as MyButton, Alert, Row, Col, H3} from '../components/mystyle'
 
-import UserInfo from '../components/UserInfo/UserInfo';
 import PostTags from '../components/PostTags/PostTags';
 import SocialLinks from '../components/SocialLinks/SocialLinks';
 import SEO from '../components/SEO/SEO';
 import config from '../../data/SiteConfig';
+import Product from '../components/Product';
 
 import '../scss/single-product.scss';
 
 import {getCategoryName} from '../Utils'
+import {LOCAL_STORAGE_KEY_VIEWED} from '../Utils/common'
 
 export default class PostTemplate extends React.Component {
+  componentDidMount() {
+    const postNode = this.props.data.markdownRemark;
+    const post = postNode.frontmatter;
+    // Save to recent View
+    const {title, cover, id, price, salePrice, tags, path, date, excerpt} = post;
+    const RecentViewedProducts = JSON.parse(window.localStorage.getItem(LOCAL_STORAGE_KEY_VIEWED));
+    const newRecentViewdProducts = _.unionBy(RecentViewedProducts, [{title, cover, id, price, salePrice, tags, path, date, excerpt}], 'id' );
+    window.localStorage.setItem(LOCAL_STORAGE_KEY_VIEWED, JSON.stringify(newRecentViewdProducts));
+  }
   _goBack = e => {
     this.props.history.goBack();
   }
@@ -79,8 +89,8 @@ export default class PostTemplate extends React.Component {
   }
   renderSize = (size, index) => {
     return (
-      <Popover placement="top" title="Dành cho bé" content={this.renderSizeContent(size)} trigger="hover">
-        <MyButton key={index} color="secondary" outline>
+      <Popover key={index} placement="top" title="Dành cho bé" content={this.renderSizeContent(size)} trigger="hover">
+        <MyButton color="secondary" outline>
           {size}
         </MyButton>
       </Popover>
@@ -126,7 +136,11 @@ export default class PostTemplate extends React.Component {
         <Menu.Item key="3">3rd item</Menu.Item>
       </Menu>
     );
-    const cateName = getCategoryName(post.category)
+    const cateName = getCategoryName(post.category);
+    let RecentViewedProducts = JSON.parse(window.localStorage.getItem(LOCAL_STORAGE_KEY_VIEWED));
+    RecentViewedProducts = _.filter(RecentViewedProducts, item => {
+      return item.id.toString() !== post.id;
+    })
     return (
       <div className="single-product">
         <Helmet>
@@ -143,8 +157,8 @@ export default class PostTemplate extends React.Component {
                 </span>
               </Button>
               <Breadcrumb>
-                <Breadcrumb.Item><GatsbyLink href="/">Trang Chủ</GatsbyLink></Breadcrumb.Item>
-                <Breadcrumb.Item><GatsbyLink href={`/category/${post.category}`}>{cateName}</GatsbyLink></Breadcrumb.Item>
+                <Breadcrumb.Item><GatsbyLink to="/">Trang Chủ</GatsbyLink></Breadcrumb.Item>
+                <Breadcrumb.Item><GatsbyLink to={`/categories/${post.category}`}>{cateName}</GatsbyLink></Breadcrumb.Item>
                 <Breadcrumb.Item>{post.title}</Breadcrumb.Item>
               </Breadcrumb>
             </div>
@@ -225,6 +239,23 @@ export default class PostTemplate extends React.Component {
             <div className="single-post-container">
               <div className="post-content" dangerouslySetInnerHTML={{ __html: postNode.html }} />
             </div>
+             {!_.isEmpty(RecentViewedProducts) &&
+              <div>
+                <H3>Sản phẩm bạn đã xem</H3>
+                <div className="mystyle-products">
+                  {
+                    RecentViewedProducts.map((post, index) => (
+                      <Product
+                        key={index}
+                        title={post.title}
+                        img={post.cover}
+                        {...post}
+                      />
+                    ))
+                  }
+                </div>
+              </div>
+             }
           </Container>
         </div>
       </div>

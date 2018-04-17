@@ -1,14 +1,9 @@
 import React from 'react';
-import Link from 'gatsby-link';
-import _ from 'lodash'
 
 import NoProduct from '../NoProduct'
 import Product from '../Product'
 
 class ProductListing extends React.Component {
-  state = {
-    showModal: false,
-  }
   // TRANSFORM DATA
   getPostList() {
     const postList = [];
@@ -26,12 +21,6 @@ class ProductListing extends React.Component {
     });
     return postList;
   }
-  _changeSelected = (e, post) => {
-    this.setState({
-      showModal: true
-    })
-  }
-  _toggleModal = e => this.setState({showModal: !this.state.showModal})
   render() {
     const postList = this.getPostList();
     return (

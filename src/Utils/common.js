@@ -39,3 +39,5 @@ export const DEFAULT_SEARCH_OPTIONS = {
   minMatchCharLength: 1,
   shouldSort: false,
 }
+
+export const LOCAL_STORAGE_KEY_VIEWED = 'RECENT_VIEWED_PRODUCTS';

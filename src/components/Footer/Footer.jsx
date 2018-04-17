@@ -60,13 +60,10 @@ class Footer extends Component {
                         <div className="menu">
                           <ul className="menu">
                             <li className="menu-item">
-                              <GatsbyLink to="/huong-dan-mua-hang">Hướng dẫn mua hàng</GatsbyLink>
+                              <GatsbyLink to="/support-and-faq">Hướng dẫn mua hàng</GatsbyLink>
                             </li>
                             <li className="menu-item">
-                              <GatsbyLink to="/hinh-thuc-thanh-toan">Hình thức thanh toán</GatsbyLink>
-                            </li>
-                            <li className="menu-item">
-                              <GatsbyLink to="/bang-gia-ship-ems-theo-buu-dien">Bảng giá ship EMS theo bưu điện</GatsbyLink>
+                              <GatsbyLink to="/support-and-faq">Hình thức thanh toán</GatsbyLink>
                             </li>
                           </ul>
                         </div>
