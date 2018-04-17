@@ -55,9 +55,11 @@ class FAQs extends Component {
                     <h3>
                       Bạn có câu hỏi khác ?
                     </h3>
-                    <Button size="lg" href={config.facebook}>
-                      Gọi hoặc nhắn tin qua Facebook
+                    <Button primary size="lg" href={config.facebook}>
+                      Nhắn qua Facebook
                     </Button>
+                    <br />
+                    <br />
                     <p>
                         Từ thứ 2 đến thứ 6: 9 sáng đến 9 giờ tối
                     </p>
