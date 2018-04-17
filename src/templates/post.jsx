@@ -137,12 +137,6 @@ export default class PostTemplate extends React.Component {
       </Menu>
     );
     const cateName = getCategoryName(post.category);
-    if (typeof window !== 'undefined') {
-      let RecentViewedProducts = JSON.parse(window.localStorage.getItem(LOCAL_STORAGE_KEY_VIEWED));
-      RecentViewedProducts = _.filter(RecentViewedProducts, item => {
-        return item.id.toString() !== post.id;
-      })
-    }
     return (
       <div className="single-product">
         <Helmet>
@@ -241,23 +235,6 @@ export default class PostTemplate extends React.Component {
             <div className="single-post-container">
               <div className="post-content" dangerouslySetInnerHTML={{ __html: postNode.html }} />
             </div>
-             {(typeof window !== 'undefined') && !_.isEmpty(RecentViewedProducts) &&
-              <div>
-                <H3>Sản phẩm bạn đã xem</H3>
-                <div className="mystyle-products">
-                  {
-                    RecentViewedProducts.map((post, index) => (
-                      <Product
-                        key={index}
-                        title={post.title}
-                        img={post.cover}
-                        {...post}
-                      />
-                    ))
-                  }
-                </div>
-              </div>
-             }
           </Container>
         </div>
       </div>
