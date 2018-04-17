@@ -4,14 +4,6 @@
       "path---tags-duoi-12-tuoi-7f15519ca2d8de546ed5.js",
       "path---tags-duoi-12-tuoi-7f15519ca2d8de546ed5.js.map"
     ],
-    "component---src-pages-huong-dan-mua-hang-jsx": [
-      "component---src-pages-huong-dan-mua-hang-jsx-f113ea0e89b4fa0cd42f.js",
-      "component---src-pages-huong-dan-mua-hang-jsx-f113ea0e89b4fa0cd42f.js.map"
-    ],
-    "component---src-pages-hinh-thuc-thanh-toan-jsx": [
-      "component---src-pages-hinh-thuc-thanh-toan-jsx-d529941ee60248024734.js",
-      "component---src-pages-hinh-thuc-thanh-toan-jsx-d529941ee60248024734.js.map"
-    ],
     "path---tags-ao-khoac": [
       "path---tags-ao-khoac-2d824cbee18230085706.js",
       "path---tags-ao-khoac-2d824cbee18230085706.js.map"
@@ -21,8 +13,8 @@
       "path---size-chuan-kich-thuoc-quan-ao-tre-em-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---categories-be-trai": [
-      "path---categories-be-trai-586ee4372b1990a0beb2.js",
-      "path---categories-be-trai-586ee4372b1990a0beb2.js.map"
+      "path---categories-be-trai-26b4a19039742b783226.js",
+      "path---categories-be-trai-26b4a19039742b783226.js.map"
     ],
     "path---2018-04-04-b-004145-bo-be-trai-yoyo-thun-cotton-hang-vn": [
       "path---2018-04-04-b-004145-bo-be-trai-yoyo-thun-cotton-hang-vn-0e923d7b850166948d2f.js",
@@ -41,16 +33,16 @@
       "path---ao-dai-gam-be-trai-in-hac-9-e3ae18e689a7e5627d6d.js.map"
     ],
     "path---ao-dai-gam-be-trai-in-hac-1": [
-      "path---ao-dai-gam-be-trai-in-hac-1-b59d915069701fe64337.js",
-      "path---ao-dai-gam-be-trai-in-hac-1-b59d915069701fe64337.js.map"
+      "path---ao-dai-gam-be-trai-in-hac-1-a48e35ea482bdd928098.js",
+      "path---ao-dai-gam-be-trai-in-hac-1-a48e35ea482bdd928098.js.map"
+    ],
+    "path---support-and-faq": [
+      "path---support-and-faq-a0e39f21c11f6a62c5ab.js",
+      "path---support-and-faq-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-layouts-index-jsx": [
-      "component---src-layouts-index-jsx-47a3b534e47c7446f217.js",
-      "component---src-layouts-index-jsx-47a3b534e47c7446f217.js.map"
-    ],
-    "path---bang-gia-ship-ems-theo-buu-dien": [
-      "path---bang-gia-ship-ems-theo-buu-dien-a0e39f21c11f6a62c5ab.js",
-      "path---bang-gia-ship-ems-theo-buu-dien-a0e39f21c11f6a62c5ab.js.map"
+      "component---src-layouts-index-jsx-f4706b69b6070601fd45.js",
+      "component---src-layouts-index-jsx-f4706b69b6070601fd45.js.map"
     ],
     "component---node-modules-gatsby-plugin-offline-app-shell-js": [
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
@@ -73,34 +65,30 @@
       "path---categories-be-gai-38af8db4c56406b4e0ad.js.map"
     ],
     "component---src-templates-category-jsx": [
-      "component---src-templates-category-jsx-aebf5e9e81d22b6d5058.js",
-      "component---src-templates-category-jsx-aebf5e9e81d22b6d5058.js.map"
+      "component---src-templates-category-jsx-e016be58fae85090d456.js",
+      "component---src-templates-category-jsx-e016be58fae85090d456.js.map"
     ],
     "path---lien-he": [
       "path---lien-he-a0e39f21c11f6a62c5ab.js",
       "path---lien-he-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---index": [
-      "path---index-c89fc33ed7fdde13458e.js",
-      "path---index-c89fc33ed7fdde13458e.js.map"
+      "path---index-e8bcd409cd54bc8b722e.js",
+      "path---index-e8bcd409cd54bc8b722e.js.map"
     ],
     "component---src-pages-about-jsx": [
       "component---src-pages-about-jsx-06a8c8dceba06f599859.js",
       "component---src-pages-about-jsx-06a8c8dceba06f599859.js.map"
     ],
-    "path---huong-dan-mua-hang": [
-      "path---huong-dan-mua-hang-a0e39f21c11f6a62c5ab.js",
-      "path---huong-dan-mua-hang-a0e39f21c11f6a62c5ab.js.map"
-    ],
     "commons": [
-      "commons-1e50d37d442e2333eb79.js",
+      "commons-e2af5d87409051cc6885.js",
       "build-js-styles.css",
-      "commons-1e50d37d442e2333eb79.js.map",
+      "commons-e2af5d87409051cc6885.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-pages-lien-he-jsx": [
-      "component---src-pages-lien-he-jsx-814afc69c8c041fe9499.js",
-      "component---src-pages-lien-he-jsx-814afc69c8c041fe9499.js.map"
+      "component---src-pages-lien-he-jsx-18b9316b7fbeb4f47348.js",
+      "component---src-pages-lien-he-jsx-18b9316b7fbeb4f47348.js.map"
     ],
     "path---404-html": [
       "path---404-html-a0e39f21c11f6a62c5ab.js",
@@ -115,12 +103,8 @@
       "component---src-pages-404-jsx-ac8d67d9e4856e9fc8a4.js.map"
     ],
     "component---src-templates-tag-jsx": [
-      "component---src-templates-tag-jsx-f03af8fac3d5e409f0b4.js",
-      "component---src-templates-tag-jsx-f03af8fac3d5e409f0b4.js.map"
-    ],
-    "path---hinh-thuc-thanh-toan": [
-      "path---hinh-thuc-thanh-toan-a0e39f21c11f6a62c5ab.js",
-      "path---hinh-thuc-thanh-toan-a0e39f21c11f6a62c5ab.js.map"
+      "component---src-templates-tag-jsx-be46f6759abed64332d3.js",
+      "component---src-templates-tag-jsx-be46f6759abed64332d3.js.map"
     ],
     "path---offline-plugin-app-shell-fallback": [
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js",
@@ -131,30 +115,30 @@
       "path---2018-04-06-b-005125-do-bo-be-trai-batman-mau-xanh-500b649016a092a1d659.js.map"
     ],
     "component---src-templates-post-jsx": [
-      "component---src-templates-post-jsx-a42ae7da72513c0cfaf5.js",
-      "component---src-templates-post-jsx-a42ae7da72513c0cfaf5.js.map"
+      "component---src-templates-post-jsx-a51125bac1dddc9cef02.js",
+      "component---src-templates-post-jsx-a51125bac1dddc9cef02.js.map"
     ],
     "component---src-pages-index-jsx": [
-      "component---src-pages-index-jsx-125f6eb907d6eaaea20a.js",
-      "component---src-pages-index-jsx-125f6eb907d6eaaea20a.js.map"
+      "component---src-pages-index-jsx-7d1db460fd9968fff65a.js",
+      "component---src-pages-index-jsx-7d1db460fd9968fff65a.js.map"
     ],
     "path---tags-ao": [
-      "path---tags-ao-5ddb3dd7551c87cbaf59.js",
-      "path---tags-ao-5ddb3dd7551c87cbaf59.js.map"
+      "path---tags-ao-68d39d5823e9b70d4784.js",
+      "path---tags-ao-68d39d5823e9b70d4784.js.map"
     ],
     "app": [
-      "app-7359b9d580a288c97573.js",
+      "app-4d4090c2da27dce21225.js",
       "build-js-styles.css",
-      "app-7359b9d580a288c97573.js.map",
+      "app-4d4090c2da27dce21225.js.map",
       "build-js-styles.css.map"
     ],
     "path---ao-dai-gam-be-trai-in-hac-2": [
       "path---ao-dai-gam-be-trai-in-hac-2-015d9af4ca7bf1aac569.js",
       "path---ao-dai-gam-be-trai-in-hac-2-015d9af4ca7bf1aac569.js.map"
     ],
-    "component---src-pages-bang-gia-ship-ems-theo-buu-dien-jsx": [
-      "component---src-pages-bang-gia-ship-ems-theo-buu-dien-jsx-acc511494833524d6b86.js",
-      "component---src-pages-bang-gia-ship-ems-theo-buu-dien-jsx-acc511494833524d6b86.js.map"
+    "component---src-pages-support-and-faq-jsx": [
+      "component---src-pages-support-and-faq-jsx-f71a75a0c9337657f50c.js",
+      "component---src-pages-support-and-faq-jsx-f71a75a0c9337657f50c.js.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
