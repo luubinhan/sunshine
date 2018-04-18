@@ -10,15 +10,11 @@ import ProductListing from '../components/ProductListing';
 import {
   Container,
   Section,
-  DISPLAY2,
-  Row,
-  Col,
   Button
 } from '../components/mystyle'
 
 class Index extends React.Component {
   render() {
-    console.log(this.props)
     const postEdges = this.props.data.allMarkdownRemark.edges;
     const beTraiPosts = this.props.data.beTraiPosts.edges;
     const beGaiPosts = this.props.data.beGaiPosts.edges;
@@ -33,7 +29,7 @@ class Index extends React.Component {
               MẶT TRỜI NHỎ
             </div>
             <div className="img-holder">
-              <img className="object-fit" src="https://images.unsplash.com/photo-1485277531869-f71504d462e5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c6a0444526f6da20a3492a305b19846e&auto=format&fit=crop&w=1350&q=80" class="object-fit" alt="chair" />
+              <img className="object-fit" src="https://images.unsplash.com/photo-1485277531869-f71504d462e5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c6a0444526f6da20a3492a305b19846e&auto=format&fit=crop&w=1350&q=80" alt="chair" />
             </div>
           </div>
           <div className="second-group">
@@ -46,7 +42,7 @@ class Index extends React.Component {
                 </article>
               </div>
               <div className="img-holder">
-                <img className="object-fit" src="https://images.unsplash.com/photo-1496154077138-22d8a3b92e8b" alt=""/>
+                <img className="object-fit" src="https://images.unsplash.com/photo-1496154077138-22d8a3b92e8b" alt="" />
               </div>
             </div>
             <div className="third-feature">
@@ -54,7 +50,7 @@ class Index extends React.Component {
                 <div className="text-holder">
                   <Button color="primary" size="sm">Dành cho Bé Trai</Button>
                 </div>
-                <img className="object-fit" src="https://images.unsplash.com/photo-1503975817393-b3891b7a3b81" alt=""/>
+                <img className="object-fit" src="https://images.unsplash.com/photo-1503975817393-b3891b7a3b81" alt="" />
               </div>
               <div className="grid-feature-2">
                 <div className="text-holder">

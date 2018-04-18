@@ -114,7 +114,7 @@ export default class MainLayout extends React.Component {
                           </a>
                           <div className="hotline-badge hidden-xs">
                             <i className="ion-ios-telephone" />
-                            <div className="hotline-number"><a href="tel:1900-6067">1900-6067</a></div>
+                            <div className="hotline-number"><a href={`tel:${config.phone}`}>{config.phone}</a></div>
                           </div>
                         </div>
                       </Col>
