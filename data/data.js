@@ -97,15 +97,6 @@ export const PRIMARY_NAVIGATION = [
       },
     ]
   },
-  {
-    key: 'khuyen-mai',
-    slug: 'khuyen-mai',
-    className: 'highlight',
-    name: 'Khuyến Mãi',
-    href: '/khuyen-mai',
-    isActive: false,
-    icon: ''
-  },
 ]
 
 export const RIGHT_NAV = [

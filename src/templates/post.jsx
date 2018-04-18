@@ -21,6 +21,14 @@ import {getCategoryName} from '../Utils'
 import {LOCAL_STORAGE_KEY_VIEWED} from '../Utils/common'
 
 export default class PostTemplate extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      phiGiaoHang: 0,
+      vitri: '--- Chọn ---'
+    }
+  }
+  
   componentDidMount() {
     const postNode = this.props.data.markdownRemark;
     const post = postNode.frontmatter;
@@ -110,7 +118,23 @@ export default class PostTemplate extends React.Component {
     )
   }
   handleMenuClick = e => {
-
+    let phiGiaoHang = 0;
+    let vitri = '--- Chọn ---';
+    switch (e.key) {
+    case '1':
+      phiGiaoHang = 20000;
+      vitri = "Quận 1,3,5,6,8,10,11";
+      break;
+    case '2':
+      phiGiaoHang = 30000;
+      vitri = "Quận khác";
+      break;
+    default:
+      phiGiaoHang = 30000;
+      vitri = "Tỉnh khác";
+      break;
+    }
+    this.setState({phiGiaoHang, vitri})
   }
   render() {
     const { slug } = this.props.pathContext;
@@ -131,9 +155,9 @@ export default class PostTemplate extends React.Component {
     if (post.thumb4) allPhotos.push({id: 5, src: post.thumb4, bigSrc: post.thumb4});
     const menu = (
       <Menu onClick={this.handleMenuClick}>
-        <Menu.Item key="1">1st menu item</Menu.Item>
-        <Menu.Item key="2">2nd menu item</Menu.Item>
-        <Menu.Item key="3">3rd item</Menu.Item>
+        <Menu.Item key="1">Quận 1, 3, 5, 6, 8, 10, 11 - TP.HCM</Menu.Item>
+        <Menu.Item key="2">Các quận khác của TP.HCM</Menu.Item>
+        <Menu.Item key="3">Các tỉnh khác</Menu.Item>
       </Menu>
     );
     const cateName = getCategoryName(post.category);
@@ -177,16 +201,18 @@ export default class PostTemplate extends React.Component {
                   <Collapse style={{marginBottom: 20}}>
                     <Collapse.Panel header="Tính chi phí vận chuyển" key="1">
                       <Alert color="success">
-                        <b>Miễn Phí Vận Chuyển</b> cho đơn hàng có giá trị từ <b>300.000₫</b>
+                        <b>Miễn phí giao hàng</b> cho đơn hàng có giá trị từ <b>500.000₫</b>
                       </Alert>
                       <div className="d-flex justify-content-between">
                         <div>
-                          Vận Chuyển tới
+                          Giao hàng tới
                         </div>
                         <div>
-                          <Dropdown.Button overlay={menu}>
-                            Dropdown
-                          </Dropdown.Button>
+                          <Dropdown overlay={menu}>
+                            <Button>
+                            {this.state.vitri}<Icon type="down" />
+                            </Button>
+                          </Dropdown>
                         </div>
                       </div>
                       <hr/>
@@ -195,7 +221,7 @@ export default class PostTemplate extends React.Component {
                           Phí Vận Chuyển
                         </div>
                         <div>
-                          <h3>1.360.000</h3>
+                          <h3>{this.state.phiGiaoHang.toLocaleString()} đ</h3>
                         </div>
                       </div>
                     </Collapse.Panel>

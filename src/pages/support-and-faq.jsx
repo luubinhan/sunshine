@@ -30,20 +30,46 @@ class FAQs extends Component {
                       <p>
                         Thời gian giao hàng dự kiến sẽ khác nhau đối với địa chỉ giao hàng:
                       </p>
+                      <div className="pl-30">
+                        <ul>
+                          <li>
+                          Khu vực nội thành TP.HCM từ 1 đến 2 ngày
+                          </li>
+                          <li>
+                          Các tỉnh khác, mình sẽ gởi qua Bưu Điện, thời gian từ 2 đến 3 ngày làm việc
+                          </li>
+                        </ul>
+                      </div>
                     </Panel>
                     <Panel header="Chi phí giao hàng" key="2">
                       <p>
                         Shop cam kết giao sản phẩm đến bạn sớm nhất có thể với mức phí hợp lý.
                       </p>
+                      <p>Miễn phí giao hàng cho hóa đơn trên 500.000 đ</p>
+                      <div className="pl-30">
+                        <ul>
+                          <li>Quận 1, 3, 5 , 6, 8 , 10, 11 TP.HCM phí là 20.000 đ</li>
+                          <li>Các quận khác và tỉnh 30.000 đ</li>
+                        </ul>
+                      </div>
                     </Panel>
-                    <Panel header="Chính sách đổi trả" key="444">
-                      <p>Chính sách đổi trả</p>
-                    </Panel>
-                    <Panel header="Chọn kích cỡ phù hợp" key="5">
-                      <p>Chính sách đổi trả</p>
+                    <Panel header="Chính sách đổi trả" key="4">
+                      <p>Shop chỉ chấp nhận đổi trả hàng trong các trường hợp sau</p>
+                      <div className="pl-30">
+                        <ul>
+                          <li>Sản phẩm bị lỗi do sản xuất</li>
+                          <li>Không vừa, shop sẽ đổi lại size khác.</li>
+                        </ul>
+                      </div>
+                      <p>
+                        Đổi hàng trong 5 ngày kể từ ngày nhận hàng, các quận nộ thành, các mom cứ báo lại size mình sẽ mang đến đổi size cho các mom
+                      </p>
                     </Panel>
                     <Panel header="Hình thức thanh toán" key="6">
-                      <p>Chính sách đổi trả</p>
+                      <p>Chuyển khoản ( chuyển khoản ít nhất 50% đối với khu vực ngoại thành).</p>
+                      <p>
+                        Thanh toán khi nhận hàng đối với các quận TP.HCM
+                      </p>
                     </Panel>
                   </Collapse>
                 </Col>

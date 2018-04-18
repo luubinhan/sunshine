@@ -9,11 +9,12 @@ import './Search.css'
 export default class Search extends Component {
   static propTypes = {
     handleSearch: PropTypes.func.isRequired,
-    handleReset: PropTypes.func.isRequired,
+    handleReset: PropTypes.func,
     placeholder: PropTypes.string,
   }
   static defaultProps = {
-    placeholder: ''
+    placeholder: '',
+    handleReset: null
   }
   constructor(props) {
     super(props);
