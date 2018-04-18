@@ -79,7 +79,7 @@ export default class MainLayout extends React.Component {
     this.setState({showBugger: false})
   }
   toggleMenu = (e) => {
-    this.setState({showBugger: !this.state.showBugger})
+    this.setState({showBugger: true})
   }
   render() {
     const { children } = this.props;
