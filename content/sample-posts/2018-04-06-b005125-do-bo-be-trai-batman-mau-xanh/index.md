@@ -1,7 +1,7 @@
 ---
 slug: '2018-04-06-b005125-do-bo-be-trai-batman-mau-xanh'
 title: "Đồ bộ bé trai Batman cotton màu xanh"
-cover: "/images/29790397_579182399141440_41068597058432883_n.jpg"
+cover: "https://c1.staticflickr.com/1/858/41488628402_978cb30920_b.jpg"
 thumb1: "/images/29695298_579182432474770_4782233394719006608_n.jpg"
 thumb2: "/images/29790192_579182395808107_7927050672715674961_n.jpg"
 date: "04/05/2018"
