@@ -30,6 +30,20 @@ class Filter extends Component {
   }
   _handleSearch = (newkeywords) => {
     this.filterBy.keywords = newkeywords;
+    switch (true) {
+      case newkeywords.length > 2:
+        this.props.onFilter(this.filterBy);
+        break;
+      case newkeywords.length === 0:
+        this.props.onFilter(this.filterBy);
+        break;
+      default:
+        break;
+    }
+    
+  }
+  _handleReset = () => {
+    this.filterBy.keywords = '';
     this.props.onFilter(this.filterBy)
   }
   _changeTag = e => {

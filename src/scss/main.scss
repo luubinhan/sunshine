@@ -730,6 +730,7 @@ table.normal tr td {
 }
 .form-control:focus {
   border-color: $primary-color;
+  box-shadow: none;
 }
 .custom-control-input{
   &:checked ~ .custom-control-indicator {
@@ -829,20 +830,25 @@ body {
 .search-form {
   .form-control {
     border-radius: 4px 0 0 4px;
-    border-color: $primary-color;
+    border-color: $secondary-color;
     border-right: none;
   }
   .btn {
     padding-left: 10px;
     padding-right: 15px;
     background: transparent;
-    color: $primary-color;
-    border-color: $primary-color;
+    color: $secondary-color;
+    border-color: $secondary-color;
     border-left: none;
-    border-top: none;
     margin-top: 0;
-    &:hover {
+    box-shadow: none;
+    &:hover,
+    &:focus,
+    &:active {
       color: #fff;
+      background: $secondary-color !important;
+      border-color: $secondary-color !important;
+      box-shadow: none !important;
     }
   }
 }
@@ -2055,6 +2061,7 @@ body .rc-select-dropdown {
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
   background: $black;
+  height: 2px !important;
 }
 
 /* Position and sizing of clickable cross button */
