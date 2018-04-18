@@ -140,11 +140,6 @@ module.exports = {
       iconClassName: "fa fa-github"
     },
     {
-      label: "Twitter",
-      url: "https://twitter.com/Vagr9K",
-      iconClassName: "fa fa-twitter"
-    },
-    {
       label: "Email",
       url: "mailto:vagr9k@gmail.com",
       iconClassName: "fa fa-envelope"
