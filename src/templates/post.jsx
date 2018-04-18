@@ -21,22 +21,9 @@ import {getCategoryName} from '../Utils'
 import {LOCAL_STORAGE_KEY_VIEWED} from '../Utils/common'
 
 export default class PostTemplate extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      phiGiaoHang: 0,
-      vitri: '--- Chọn ---'
-    }
-  }
-  
-  componentDidMount() {
-    const postNode = this.props.data.markdownRemark;
-    const post = postNode.frontmatter;
-    // Save to recent View
-    const {title, cover, id, price, salePrice, tags, path, date, excerpt} = post;
-    const RecentViewedProducts = JSON.parse(window.localStorage.getItem(LOCAL_STORAGE_KEY_VIEWED));
-    const newRecentViewdProducts = _.unionBy(RecentViewedProducts, [{title, cover, id, price, salePrice, tags, path, date, excerpt}], 'id' );
-    window.localStorage.setItem(LOCAL_STORAGE_KEY_VIEWED, JSON.stringify(newRecentViewdProducts));
+  state = {
+    phiGiaoHang: 0,
+    vitri: '--- Chọn ---'
   }
   _goBack = e => {
     this.props.history.goBack();
