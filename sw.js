@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["/sunshine/app-18cba59b0db2d8bb95f6.js","8400fb127946d840e7abd0549b4aeadb"],["/sunshine/app-4d4090c2da27dce21225.js","83496ea5713db73bba6e1fefa9f6856b"],["/sunshine/app-f2bfe9aec247b3f1020f.js","8f580f4ea6ac37e7bb116f9685b5288c"],["/sunshine/commons-506a7e685dca38d24e17.js","b2c7379c9b3abc9b98b68e8a965997bf"],["/sunshine/commons-e2af5d87409051cc6885.js","17696b65edc5629f3a512f877398625d"],["/sunshine/index.html","f5168a2063578029366979416633388c"],["/sunshine/offline-plugin-app-shell-fallback/index.html","e48e0987ede580cb80ef2b43a8f9d09e"]];
+var precacheConfig = [["/sunshine/app-18cba59b0db2d8bb95f6.js","8400fb127946d840e7abd0549b4aeadb"],["/sunshine/app-4d4090c2da27dce21225.js","83496ea5713db73bba6e1fefa9f6856b"],["/sunshine/app-f2bfe9aec247b3f1020f.js","8f580f4ea6ac37e7bb116f9685b5288c"],["/sunshine/commons-1e4e024c283fd87b48bb.js","ef3ae9a1f491c4dd63351dfca4e521b5"],["/sunshine/commons-506a7e685dca38d24e17.js","b2c7379c9b3abc9b98b68e8a965997bf"],["/sunshine/commons-e2af5d87409051cc6885.js","17696b65edc5629f3a512f877398625d"],["/sunshine/index.html","d94567176a05244d0c9dad29e6e3d208"],["/sunshine/offline-plugin-app-shell-fallback/index.html","df2ca4618cb037038593ba0042bc78f7"]];
 var cacheName = 'sw-precache-v3-gatsby-plugin-offline-' + (self.registration ? self.registration.scope : '');
 
 
