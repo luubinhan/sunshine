@@ -13,12 +13,12 @@
       "path---size-chuan-kich-thuoc-quan-ao-tre-em-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---categories-be-trai": [
-      "path---categories-be-trai-26b4a19039742b783226.js",
-      "path---categories-be-trai-26b4a19039742b783226.js.map"
+      "path---categories-be-trai-ce93a01557f2d5217a6c.js",
+      "path---categories-be-trai-ce93a01557f2d5217a6c.js.map"
     ],
     "path---2018-04-04-b-004145-bo-be-trai-yoyo-thun-cotton-hang-vn": [
-      "path---2018-04-04-b-004145-bo-be-trai-yoyo-thun-cotton-hang-vn-0e923d7b850166948d2f.js",
-      "path---2018-04-04-b-004145-bo-be-trai-yoyo-thun-cotton-hang-vn-0e923d7b850166948d2f.js.map"
+      "path---2018-04-04-b-004145-bo-be-trai-yoyo-thun-cotton-hang-vn-83ac91a6e7e2f544622d.js",
+      "path---2018-04-04-b-004145-bo-be-trai-yoyo-thun-cotton-hang-vn-83ac91a6e7e2f544622d.js.map"
     ],
     "path---tags-quan": [
       "path---tags-quan-caca8550c7e34fa3e5ed.js",
@@ -41,16 +41,16 @@
       "path---support-and-faq-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-layouts-index-jsx": [
-      "component---src-layouts-index-jsx-f4706b69b6070601fd45.js",
-      "component---src-layouts-index-jsx-f4706b69b6070601fd45.js.map"
+      "component---src-layouts-index-jsx-65b6d44b307f3bee20a2.js",
+      "component---src-layouts-index-jsx-65b6d44b307f3bee20a2.js.map"
     ],
     "component---node-modules-gatsby-plugin-offline-app-shell-js": [
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
     ],
     "path---tags-do-bo": [
-      "path---tags-do-bo-aa71a96a7ab4e015f1ce.js",
-      "path---tags-do-bo-aa71a96a7ab4e015f1ce.js.map"
+      "path---tags-do-bo-d0eb13358957bf14650d.js",
+      "path---tags-do-bo-d0eb13358957bf14650d.js.map"
     ],
     "path---tags-duoi-5-tuoi": [
       "path---tags-duoi-5-tuoi-29e6ec1bf2471ede67e3.js",
@@ -65,25 +65,25 @@
       "path---categories-be-gai-38af8db4c56406b4e0ad.js.map"
     ],
     "component---src-templates-category-jsx": [
-      "component---src-templates-category-jsx-e016be58fae85090d456.js",
-      "component---src-templates-category-jsx-e016be58fae85090d456.js.map"
+      "component---src-templates-category-jsx-5b6ec35792e5b591db4f.js",
+      "component---src-templates-category-jsx-5b6ec35792e5b591db4f.js.map"
     ],
     "path---lien-he": [
       "path---lien-he-a0e39f21c11f6a62c5ab.js",
       "path---lien-he-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---index": [
-      "path---index-e8bcd409cd54bc8b722e.js",
-      "path---index-e8bcd409cd54bc8b722e.js.map"
+      "path---index-0f328e6711c4563e80e4.js",
+      "path---index-0f328e6711c4563e80e4.js.map"
     ],
     "component---src-pages-about-jsx": [
       "component---src-pages-about-jsx-06a8c8dceba06f599859.js",
       "component---src-pages-about-jsx-06a8c8dceba06f599859.js.map"
     ],
     "commons": [
-      "commons-e2af5d87409051cc6885.js",
+      "commons-506a7e685dca38d24e17.js",
       "build-js-styles.css",
-      "commons-e2af5d87409051cc6885.js.map",
+      "commons-506a7e685dca38d24e17.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-pages-lien-he-jsx": [
@@ -103,33 +103,33 @@
       "component---src-pages-404-jsx-ac8d67d9e4856e9fc8a4.js.map"
     ],
     "component---src-templates-tag-jsx": [
-      "component---src-templates-tag-jsx-be46f6759abed64332d3.js",
-      "component---src-templates-tag-jsx-be46f6759abed64332d3.js.map"
+      "component---src-templates-tag-jsx-db6f13b2fb59b8c8dca1.js",
+      "component---src-templates-tag-jsx-db6f13b2fb59b8c8dca1.js.map"
     ],
     "path---offline-plugin-app-shell-fallback": [
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js",
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---2018-04-06-b-005125-do-bo-be-trai-batman-mau-xanh": [
-      "path---2018-04-06-b-005125-do-bo-be-trai-batman-mau-xanh-500b649016a092a1d659.js",
-      "path---2018-04-06-b-005125-do-bo-be-trai-batman-mau-xanh-500b649016a092a1d659.js.map"
+      "path---2018-04-06-b-005125-do-bo-be-trai-batman-mau-xanh-554d12bce2d1f459548c.js",
+      "path---2018-04-06-b-005125-do-bo-be-trai-batman-mau-xanh-554d12bce2d1f459548c.js.map"
     ],
     "component---src-templates-post-jsx": [
-      "component---src-templates-post-jsx-b0d50d0f86d1d8121959.js",
-      "component---src-templates-post-jsx-b0d50d0f86d1d8121959.js.map"
+      "component---src-templates-post-jsx-750b6c7caf86a55707ce.js",
+      "component---src-templates-post-jsx-750b6c7caf86a55707ce.js.map"
     ],
     "component---src-pages-index-jsx": [
-      "component---src-pages-index-jsx-7d1db460fd9968fff65a.js",
-      "component---src-pages-index-jsx-7d1db460fd9968fff65a.js.map"
+      "component---src-pages-index-jsx-e6ff5a14a0ffb55cb521.js",
+      "component---src-pages-index-jsx-e6ff5a14a0ffb55cb521.js.map"
     ],
     "path---tags-ao": [
       "path---tags-ao-68d39d5823e9b70d4784.js",
       "path---tags-ao-68d39d5823e9b70d4784.js.map"
     ],
     "app": [
-      "app-4d4090c2da27dce21225.js",
+      "app-18cba59b0db2d8bb95f6.js",
       "build-js-styles.css",
-      "app-4d4090c2da27dce21225.js.map",
+      "app-18cba59b0db2d8bb95f6.js.map",
       "build-js-styles.css.map"
     ],
     "path---ao-dai-gam-be-trai-in-hac-2": [
@@ -137,16 +137,16 @@
       "path---ao-dai-gam-be-trai-in-hac-2-015d9af4ca7bf1aac569.js.map"
     ],
     "component---src-pages-support-and-faq-jsx": [
-      "component---src-pages-support-and-faq-jsx-f71a75a0c9337657f50c.js",
-      "component---src-pages-support-and-faq-jsx-f71a75a0c9337657f50c.js.map"
+      "component---src-pages-support-and-faq-jsx-8cf8db70c884472cfb8c.js",
+      "component---src-pages-support-and-faq-jsx-8cf8db70c884472cfb8c.js.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
       "path---404-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---2018-04-06-b-005125-do-bo-be-trai-batman-mau-vang": [
-      "path---2018-04-06-b-005125-do-bo-be-trai-batman-mau-vang-727d48704740ec7ecf0b.js",
-      "path---2018-04-06-b-005125-do-bo-be-trai-batman-mau-vang-727d48704740ec7ecf0b.js.map"
+      "path---2018-04-06-b-005125-do-bo-be-trai-batman-mau-vang-3e6c8929bce5940dd2a1.js",
+      "path---2018-04-06-b-005125-do-bo-be-trai-batman-mau-vang-3e6c8929bce5940dd2a1.js.map"
     ],
     "path---ao-dai-gam-be-trai-in-hac-3": [
       "path---ao-dai-gam-be-trai-in-hac-3-4501c36a469733ce4ff1.js",
