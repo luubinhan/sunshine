@@ -118,8 +118,6 @@ class Footer extends Component {
                 </div>
               </Col>
             </Row>
-            
-            
           </Container>
         </div>
       </footer>

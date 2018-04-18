@@ -26,7 +26,7 @@ class AboutPage extends Component {
               <p>
               Cũng trong giai đoạn này, áo quần cho trẻ phải rộng, form, thoải mái do trẻ đang hình thành những phản xạ vận động đầu tiên của cuộc đời. Vì vậy, tiêu chuẩn hình thành size áo ngoại trừ độ tuổi còn được định theo chiều cao, cân nặng của bé ở thời điểm đó. Áo quần trẻ em ở tuổi này thướng bán nguyên bộ, do đó bàng thông số dưới đây đúng với cả bộ áo lẫn quần cho trẻ. Tuy nhiên vẫn có áo, quần bán lẻ tuỳ mục đích sử dụng của loại trang phục đó.
               </p>
-              <table className="table">
+              <table className="table table-responsive">
                 <thead>
                   <tr>
                     <th>Size</th>
@@ -113,7 +113,7 @@ class AboutPage extends Component {
                 Dưới đây là bảng thông số size áo quần nam, nữ dành cho bé trên 5 tuổi.
               </p>
               <small>Bảng thông số size áo quần cho bé  gái trên 5 tuổi</small>
-              <table className="table">
+              <table className="table table-responsive">
                 <tbody>
                   <tr>
                     <td>
@@ -328,7 +328,7 @@ class AboutPage extends Component {
               <small>
               Bảng thông số size áo quần cho bé trai trên 5 tuổi
               </small>
-              <table className="table">
+              <table className="table table-responsive">
                 <tbody>
                   <tr>
                     <td>

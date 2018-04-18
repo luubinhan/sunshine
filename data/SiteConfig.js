@@ -24,12 +24,12 @@ module.exports = {
   userLinks: [
     {
       label: 'Facebook',
-      url: '',
+      url: 'http://facebook.com/quanaotreem.mattroinho',
       iconClassName: 'ion-social-facebook'
     },
     {
       label: 'Instagram',
-      url: '',
+      url: '#',
       iconClassName: 'ion-social-instagram'
     },
   ],

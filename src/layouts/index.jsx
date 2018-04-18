@@ -1,6 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import GatsbyLink from 'gatsby-link';
+import GatsbyLink, {navigateTo, withPrefix} from 'gatsby-link';
 import { push as MenuBuger } from 'react-burger-menu';
 import {BackTop} from 'antd';
 import 'antd/dist/antd.css'
@@ -18,6 +18,13 @@ import Footer from '../components/Footer'
 import logoImg from './logo-shop-mat-troi-nho.png';
 
 export default class MainLayout extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      showBugger: false
+    }
+  }
+  
   getLocalTitle() {
     function capitalize(string) {
       return string.charAt(0).toUpperCase() + string.slice(1);
@@ -67,6 +74,10 @@ export default class MainLayout extends React.Component {
       </ul>
     )
   }
+  changeLink = (e, href) => {
+    this.setState({showBugger: false})
+    navigateTo(href);
+  }
   render() {
     const { children } = this.props;
     const pathArray = this.props.location.pathname;
@@ -78,15 +89,15 @@ export default class MainLayout extends React.Component {
           <meta name="description" content={config.siteDescription} />
         </Helmet>
         <div id="outer-container">
-          <MenuBuger pageWrapId="page-wrap" outerContainerId='outer-container' >
+          <MenuBuger pageWrapId="page-wrap" outerContainerId='outer-container' isOpen={this.state.showBugger} >
             {PRIMARY_NAVIGATION.map((menu, index) => {
               const hasChildrens = !!((menu.childrens !== undefined && menu.childrens.length !== 0))
               return (
                 <ul className="menu-mobile list-group list-group-flush" key={index}>
                   <li className="list-group-item list-group-item-primary">
-                    <GatsbyLink to={menu.href}>
+                    <span style={{cursor: 'pointer'}} onClick={(e) => this.changeLink(e, menu.href)}>
                       {menu.name}
-                    </GatsbyLink>
+                    </span>
                   </li>
                   { hasChildrens ? this.renderChildrenMenu(menu.childrens) : null }
                 </ul>
@@ -109,7 +120,7 @@ export default class MainLayout extends React.Component {
                       </Col>
                       <Col sm={4} xs={2}>
                         <div className="top-info-block">
-                          <a href="facebook.com/" className="link-facebook">
+                          <a href={config.facebook} target="_blank" className="link-facebook">
                             <i className="ion-social-facebook" />
                           </a>
                           <div className="hotline-badge hidden-xs">

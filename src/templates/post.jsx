@@ -187,10 +187,10 @@ export default class PostTemplate extends React.Component {
         <div className="product type-product has-post-thumbnail">
           <Container fluid>
             <Row>
-              <Col sm={8}>
+              <Col sm={8} xs={12}>
                 <PhotoGrid columns={3} photos={allPhotos} />
               </Col>
-              <Col sm={4}>
+              <Col sm={4} xs={12}>
                 <div className="summary entry-summary">
                   <Tag color="#f50">{cateName}</Tag>
                   <div className="product_meta">

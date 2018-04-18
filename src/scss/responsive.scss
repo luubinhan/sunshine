@@ -96,6 +96,28 @@
       }
     }
   }
+  .footer {
+    .widget {
+      padding: 10px 0 0;
+    }
+    .extra-zone {
+      padding-top: 0;
+    }
+  }
+  .btn.Facebook {
+    display: block;
+    background: $facebook; 
+    color: #fff;
+  }
+  .widget-body {
+    p {
+      margin-bottom: 0px;
+    }
+  }
+  .single-post-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 @media(max-width: $breakpoint-xs){
 }
