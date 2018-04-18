@@ -72,6 +72,9 @@
 }
 @media (max-width: 855px) {
   .bm-burger-button {
+    display: none;
+  }
+  .bugger-menu-control {
     display: block;
   }
   .primary-nav {

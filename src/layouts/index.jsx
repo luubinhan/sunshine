@@ -2,7 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import GatsbyLink, {navigateTo, withPrefix} from 'gatsby-link';
 import { push as MenuBuger } from 'react-burger-menu';
-import {BackTop} from 'antd';
+import {BackTop, Icon} from 'antd';
 import 'antd/dist/antd.css'
 
 import config from '../../data/SiteConfig';
@@ -74,9 +74,12 @@ export default class MainLayout extends React.Component {
       </ul>
     )
   }
-  changeLink = (e, href) => {
-    this.setState({showBugger: false})
+  changeLink = (href) => {
     navigateTo(href);
+    this.setState({showBugger: false})
+  }
+  toggleMenu = (e) => {
+    this.setState({showBugger: !this.state.showBugger})
   }
   render() {
     const { children } = this.props;
@@ -89,13 +92,16 @@ export default class MainLayout extends React.Component {
           <meta name="description" content={config.siteDescription} />
         </Helmet>
         <div id="outer-container">
+          <Button className="bugger-menu-control" onClick={this.toggleMenu}>
+            <Icon type="menu-fold" />
+          </Button>
           <MenuBuger pageWrapId="page-wrap" outerContainerId='outer-container' isOpen={this.state.showBugger} >
             {PRIMARY_NAVIGATION.map((menu, index) => {
               const hasChildrens = !!((menu.childrens !== undefined && menu.childrens.length !== 0))
               return (
                 <ul className="menu-mobile list-group list-group-flush" key={index}>
                   <li className="list-group-item list-group-item-primary">
-                    <span style={{cursor: 'pointer'}} onClick={(e) => this.changeLink(e, menu.href)}>
+                    <span style={{cursor: 'pointer'}} onClick={() => this.changeLink(menu.href)}>
                       {menu.name}
                     </span>
                   </li>
