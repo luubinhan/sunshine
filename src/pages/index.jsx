@@ -15,9 +15,9 @@ import {
 
 class Index extends React.Component {
   render() {
-    const postEdges = this.props.data.allMarkdownRemark.edges;
-    const beTraiPosts = this.props.data.beTraiPosts.edges;
-    const beGaiPosts = this.props.data.beGaiPosts.edges;
+    const postEdges = this.props.data.allMarkdownRemark ? this.props.data.allMarkdownRemark.edges : [];
+    const beTraiPosts = this.props.data.beTraiPosts ? this.props.data.beTraiPosts.edges : [];
+    const beGaiPosts = this.props.data.beGaiPosts ? this.props.data.beGaiPosts.edges : [];
 
     return (
       <div className="index-container">
