@@ -48,7 +48,9 @@ class Index extends React.Component {
             <div className="third-feature">
               <div className="grid-feature-1">
                 <div className="text-holder">
-                  <Button color="primary" size="sm">Dành cho Bé Trai</Button>
+                  <GatsbyLink className="btn btn-primary btn-sm" to="/categories/be-trai">
+                    Dành cho Bé Trai
+                  </GatsbyLink>
                 </div>
                 <img className="object-fit" src="https://images.unsplash.com/photo-1503975817393-b3891b7a3b81" alt="" />
               </div>
@@ -59,7 +61,9 @@ class Index extends React.Component {
               </div>
               <div className="grid-feature-3">
                 <div className="text-holder">
-                  <Button color="secondary" size="sm">Dành cho Bé Gái</Button>
+                  <GatsbyLink className="btn btn-secondary btn-sm" to="/categories/be-trai">
+                    Dành cho Bé Gái
+                  </GatsbyLink>
                 </div>
                 <img className="object-fit" src="https://images.unsplash.com/photo-1417976528056-3c9bbbb5456c" alt=""/>
               </div>
