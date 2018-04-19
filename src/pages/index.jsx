@@ -29,7 +29,7 @@ class Index extends React.Component {
               MẶT TRỜI NHỎ
             </div>
             <div className="img-holder">
-              <img className="object-fit" src="https://images.unsplash.com/photo-1485277531869-f71504d462e5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c6a0444526f6da20a3492a305b19846e&auto=format&fit=crop&w=1350&q=80" alt="chair" />
+              <img className="object-fit" src="https://c1.staticflickr.com/1/890/40829524224_e89b1afe9b_b.jpg" alt="chair" />
             </div>
           </div>
           <div className="second-group">
@@ -42,7 +42,7 @@ class Index extends React.Component {
                 </article>
               </div>
               <div className="img-holder">
-                <img className="object-fit" src="https://images.unsplash.com/photo-1496154077138-22d8a3b92e8b" alt="" />
+                <img className="object-fit" src="https://c1.staticflickr.com/1/789/39732250300_9bb077a4d8_b.jpg" alt="" />
               </div>
             </div>
             <div className="third-feature">
@@ -52,7 +52,7 @@ class Index extends React.Component {
                     Dành cho Bé Trai
                   </GatsbyLink>
                 </div>
-                <img className="object-fit" src="https://images.unsplash.com/photo-1503975817393-b3891b7a3b81" alt="" />
+                <img className="object-fit" src="https://c1.staticflickr.com/1/788/27671256978_818b215e99_b.jpg" alt="" />
               </div>
               <div className="grid-feature-2">
                 <div className="text-holder">
@@ -65,7 +65,7 @@ class Index extends React.Component {
                     Dành cho Bé Gái
                   </GatsbyLink>
                 </div>
-                <img className="object-fit" src="https://images.unsplash.com/photo-1417976528056-3c9bbbb5456c" alt=""/>
+                <img className="object-fit" src="https://c1.staticflickr.com/1/929/27671258418_f81769b6c1_b.jpg" alt=""/>
               </div>
             </div>
           </div>
