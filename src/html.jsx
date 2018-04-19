@@ -36,8 +36,8 @@ export default class HTML extends React.Component {
           />
           {this.props.headComponents}
           <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
-          <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
           <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&amp;subset=vietnamese" />
+          <link rel="stylesheet" type="text/css" href="https://luubinhan.github.io/sunshine/static/ionicons.min.css" />
           <link rel="shortcut icon" href={favicon} />
           {css}
         </head>
