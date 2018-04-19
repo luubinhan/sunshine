@@ -31,8 +31,26 @@
       }      
     }
   }
+  
 }
-@media (max-width: $breakpoint-ipad){
+@media (max-width: $breakpoint-ipad){  
+  .block-contact {
+    .d-flex{
+      flex-direction: column;
+    }
+    .contact-facebook,
+    .contact-chat,
+    .contact-zalo {
+      display: flex;
+      margin: 0;
+      margin-bottom: 10px;
+      width: 100%;
+      span {
+        text-align: center;
+        flex-grow: 1;
+      }
+    }
+  }
   .section {
     .section-inner{
       padding: 20px 0;
@@ -88,6 +106,11 @@
 @media(max-width: $breakpoint-sm){
   .ant-breadcrumb {
     display: none;
+  }
+  .footer {
+    .footer-nav {
+      text-align: center !important;      
+    }
   }
   .container-sidebar {
     .sidebar {

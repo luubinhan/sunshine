@@ -174,10 +174,10 @@ export default class PostTemplate extends React.Component {
         <div className="product type-product has-post-thumbnail">
           <Container fluid>
             <Row>
-              <Col sm={8} xs={12}>
+              <Col sm={7} xs={12}>
                 <PhotoGrid columns={3} photos={allPhotos} />
               </Col>
-              <Col sm={4} xs={12}>
+              <Col sm={5} xs={12}>
                 <div className="summary entry-summary">
                   <Tag color="#f50">{cateName}</Tag>
                   <div className="product_meta">
@@ -227,13 +227,17 @@ export default class PostTemplate extends React.Component {
                   </MyButton>
                   <div className="block-contact">
                     <div className="d-flex">
-                      <a className="contact-facebook" href="#">
+                      <a className="contact-facebook" target="_blank" href={`http://www.facebook.com/sharer.php?u=${slug}&ptitle=${post.title}`}>
                         <i className="ion-social-facebook" />
                         <span>Chia sẽ Facebook</span>
                       </a>
                       <a className="contact-chat" href="#">
                         <i className="ion-chatbubbles" />
                         <span>Gởi tin nhắn</span>
+                      </a>
+                      <a className="contact-zalo" href="#">
+                        <i className="ion-ios-chatboxes" />
+                        <span>Zalo Chat</span>
                       </a>
                     </div>
                     <div className="contact-phone">
@@ -245,9 +249,7 @@ export default class PostTemplate extends React.Component {
             </Row>
           </Container>
           <Container>
-            <div className="single-post-container">
-              <div className="post-content" dangerouslySetInnerHTML={{ __html: postNode.html }} />
-            </div>
+            <div className="product-content" dangerouslySetInnerHTML={{ __html: postNode.html }} />
           </Container>
         </div>
       </div>

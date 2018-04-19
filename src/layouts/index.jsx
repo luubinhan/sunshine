@@ -24,7 +24,9 @@ export default class MainLayout extends React.Component {
       showBugger: false
     }
   }
-  
+  componentWillReceiveProps(nextProps) {
+    this.setState({showBugger: false})
+  }
   getLocalTitle() {
     function capitalize(string) {
       return string.charAt(0).toUpperCase() + string.slice(1);
@@ -59,27 +61,29 @@ export default class MainLayout extends React.Component {
     }
     return title;
   }
+
+  
   renderChildrenMenu = (props) => {
     return (
       <ul className="list-group list-group-flush">
         {props.map((item, index) => {
           return (
             <li key={index} className="list-group-item">
-              <GatsbyLink to={item.href}>
+              <span style={{cursor: 'pointer'}} onClick={() => this.callChangeLink(item.href)}>
                 {item.name}
-              </GatsbyLink>
+              </span>
             </li>
           )
         })}
       </ul>
     )
   }
-  changeLink = (href) => {
+  callChangeLink = (href) => {
     navigateTo(href);
     this.setState({showBugger: false})
   }
   toggleMenu = (e) => {
-    this.setState({showBugger: true})
+    this.setState({showBugger: true});
   }
   render() {
     const { children } = this.props;
@@ -92,8 +96,8 @@ export default class MainLayout extends React.Component {
           <meta name="description" content={config.siteDescription} />
         </Helmet>
         <div id="outer-container">
-          <Button className="bugger-menu-control" onClick={this.toggleMenu}>
-            <Icon type="menu-fold" />
+          <Button className="bugger-menu-control" primary onClick={this.toggleMenu}>
+            <i className="ion-android-menu"/>
           </Button>
           <MenuBuger pageWrapId="page-wrap" outerContainerId='outer-container' isOpen={this.state.showBugger} >
             {PRIMARY_NAVIGATION.map((menu, index) => {
@@ -101,7 +105,7 @@ export default class MainLayout extends React.Component {
               return (
                 <ul className="menu-mobile list-group list-group-flush" key={index}>
                   <li className="list-group-item list-group-item-primary">
-                    <span style={{cursor: 'pointer'}} onClick={() => this.changeLink(menu.href)}>
+                    <span style={{cursor: 'pointer'}} onClick={() => this.callChangeLink(menu.href)}>
                       {menu.name}
                     </span>
                   </li>

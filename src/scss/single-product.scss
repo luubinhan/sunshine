@@ -43,7 +43,6 @@
       padding-left: 3%;
       margin-left: 3%;
       border-left: 1px solid $border-color;
-      margin-bottom: 50px;
       .woocommerce-product-rating {
         display: flex;
       }
@@ -238,71 +237,6 @@
           }
         }  
       }        
-    }
-  }
-}
-.block-contact {
-  .contact-facebook,
-  .contact-chat {
-    margin-bottom: 10px;
-    padding-right: 10px;
-    border: 1px solid $primary-color;
-    margin-right: 10px;
-    border-radius: 3px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    &:hover{
-      text-decoration: none;
-    }
-    i {
-      background: $primary-color;
-      color: #fff;
-      margin-right: 5px;
-      display: inline-block;
-      font-size: 20px;
-      width: 30px;
-      height: 30px;
-      line-height: 30px;
-      text-align: center;
-    }
-  }
-  .contact-facebook{
-    border-color: $facebook;
-    box-shadow: 0 3px 0 darken($facebook, 7%), 0 4px 4px 1px rgba(0,0,0,.2);
-    &:hover {
-      background: lighten($facebook, 50%);
-    }
-    &:active {
-      box-shadow: none;
-      top: 3px;
-    }
-    i {
-      background: $facebook;
-    }
-    
-  }
-  .contact-chat{
-    border-color: $orange;
-    box-shadow: 0 3px 0 darken($orange, 7%), 0 4px 4px 1px rgba(0,0,0,.2);
-    &:hover{
-      background: lighten($orange, 50%);
-    }
-    &:active {
-      box-shadow: none;      
-      top: 3px;
-    }
-    i {
-      background: $orange;
-    }
-  }
-  .contact-phone {
-    span {
-      color: $muted;
-      padding-right: 5px;
-    }
-    a {
-      font-weight: bold;
     }
   }
 }

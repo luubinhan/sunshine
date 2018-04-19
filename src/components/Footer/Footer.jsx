@@ -103,12 +103,12 @@ class Footer extends Component {
           </div>
           <Container>
             <Row>
-              <Col>
+              <Col sm={6} xs={12}>
                 <div className="copyright">
                   {copyright}
                 </div>
               </Col>
-              <Col>
+              <Col sm={6} xs={12}>
                 <div className="credit">
                   <ul className="footer-nav">
                     <li>

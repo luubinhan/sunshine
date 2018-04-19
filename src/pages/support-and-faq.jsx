@@ -24,7 +24,7 @@ class FAQs extends Component {
             <Container>
               <h3>Câu hỏi thường gặp</h3>
               <Row>
-                <Col sm={8}>
+                <Col md={8} sm={6} xs={12}>
                   <Collapse defaultActiveKey={['1']}>
                     <Panel header="Thời gian giao hàng là bao lâu" key="1">
                       <p>
@@ -73,7 +73,7 @@ class FAQs extends Component {
                     </Panel>
                   </Collapse>
                 </Col>
-                <Col sm={4}>
+                <Col md={4} sm={6} xs={12}>
                   <div className="text-center">
                     <DISPLAY4>
                       <i className="ion-chatboxes" />
@@ -81,7 +81,7 @@ class FAQs extends Component {
                     <h3>
                       Bạn có câu hỏi khác ?
                     </h3>
-                    <Button primary size="lg" href={config.facebook}>
+                    <Button primary block href={config.facebook}>
                       Nhắn qua Facebook
                     </Button>
                     <br />
