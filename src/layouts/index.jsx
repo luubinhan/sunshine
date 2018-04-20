@@ -79,7 +79,7 @@ export default class MainLayout extends React.Component {
     )
   }
   callChangeLink = (href) => {
-    navigateTo(href);
+    navigateTo(`${config.pathPrefix}${href}`);
     this.setState({showBugger: false})
   }
   toggleMenu = (e) => {
