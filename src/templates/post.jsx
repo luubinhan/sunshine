@@ -4,6 +4,7 @@ import GatsbyLink from 'gatsby-link'
 import _ from 'lodash'
 import {Popover, Tag, Menu, Dropdown, Button, Icon, Collapse, Breadcrumb } from 'antd'
 import PhotoGrid from 'react-photo-feed';
+import Lightbox from 'react-image-lightbox';
 import 'react-photo-feed/library/style.css';
 
 
@@ -23,7 +24,9 @@ import {LOCAL_STORAGE_KEY_VIEWED} from '../Utils/common'
 export default class PostTemplate extends React.Component {
   state = {
     phiGiaoHang: 0,
-    vitri: '--- Chọn ---'
+    vitri: '--- Chọn ---',
+    photoIndex: 0,
+    isOpen: false,
   }
   _goBack = e => {
     this.props.history.goBack();
@@ -135,11 +138,12 @@ export default class PostTemplate extends React.Component {
     }
     // ALL THE PHOTOS
     const allPhotos = [];
-    if (post.cover) allPhotos.push({id: 1, src: post.cover, bigSrc: post.cover});
-    if (post.thumb1) allPhotos.push({id: 2, src: post.thumb1, bigSrc: post.thumb1});
-    if (post.thumb2) allPhotos.push({id: 3, src: post.thumb2, bigSrc: post.thumb2});
-    if (post.thumb3) allPhotos.push({id: 4, src: post.thumb3, bigSrc: post.thumb3});
-    if (post.thumb4) allPhotos.push({id: 5, src: post.thumb4, bigSrc: post.thumb4});
+    if (post.cover) allPhotos.push(post.cover);
+    if (post.thumb1) allPhotos.push(post.thumb1);
+    if (post.thumb2) allPhotos.push(post.thumb2);
+    if (post.thumb3) allPhotos.push(post.thumb3);
+    if (post.thumb4) allPhotos.push(post.thumb4);
+    
     const menu = (
       <Menu onClick={this.handleMenuClick}>
         <Menu.Item key="1">Quận 1, 3, 5, 6, 8, 10, 11 - TP.HCM</Menu.Item>
@@ -147,6 +151,7 @@ export default class PostTemplate extends React.Component {
         <Menu.Item key="3">Các tỉnh khác</Menu.Item>
       </Menu>
     );
+    const { photoIndex, isOpen } = this.state;
     const cateName = getCategoryName(post.category);
     return (
       <div className="single-product">
@@ -171,11 +176,52 @@ export default class PostTemplate extends React.Component {
             </div>
           </Container>
         </div>
+        <div className="special-product">
+          <Container>
+            <div className="first-image">
+              <div className="img-holder">
+                <img src={post.cover} alt=""/>
+              </div>
+              <div className="txt-holder">
+                <div className="h3">
+                  {post.title}
+                </div>
+                <div className="product-content" dangerouslySetInnerHTML={{ __html: postNode.html }} />
+              </div>
+            </div>
+          </Container>
+        </div>
         <div className="product type-product has-post-thumbnail">
           <Container fluid>
             <Row>
               <Col sm={7} xs={12}>
-                <PhotoGrid columns={3} photos={allPhotos} />
+                <div className="product-photos">
+                {allPhotos.map((item, index) => {
+                  return (
+                    <div key={index} className="product-photo">
+                      <img src={item} alt={post.title} onClick={() => this.setState({ isOpen: true, photoIndex: index })} />
+                    </div>
+                  )
+                })}
+                </div>
+                {isOpen && (
+                  <Lightbox
+                    mainSrc={allPhotos[photoIndex]}
+                    nextSrc={allPhotos[(photoIndex + 1) % allPhotos.length]}
+                    prevSrc={allPhotos[(photoIndex + allPhotos.length - 1) % allPhotos.length]}
+                    onCloseRequest={() => this.setState({ isOpen: false })}
+                    onMovePrevRequest={() =>
+                      this.setState({
+                        photoIndex: (photoIndex + allPhotos.length - 1) % allPhotos.length,
+                      })
+                    }
+                    onMoveNextRequest={() =>
+                      this.setState({
+                        photoIndex: (photoIndex + 1) % allPhotos.length,
+                      })
+                    }
+                  />
+                )}
               </Col>
               <Col sm={5} xs={12}>
                 <div className="summary entry-summary">

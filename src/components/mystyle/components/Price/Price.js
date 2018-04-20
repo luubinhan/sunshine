@@ -1,5 +1,5 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 import './Price.css'
 
@@ -25,11 +25,7 @@ const Price = ({price, symbol, salePrice}) => {
   return (
     <span className="price-amount">
       <span className="current-price-block">
-        {salePrice ?
-          <span className="label">Giá bán:</span>
-          :
-          null
-        }
+        <span className="label">Giá bán:</span>
         <span className="amount">
           {currentPrice.toLocaleString(currentPrice, 'vi-VN')}
         </span>

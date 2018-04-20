@@ -144,6 +144,11 @@
     padding-left: 20px;
     padding-right: 20px;
   }
+  .sizes-row {
+    .btn-outline-secondary {
+      margin-bottom: 10px;
+    }
+  }
 }
 @media(max-width: $breakpoint-xs){
 }
