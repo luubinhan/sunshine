@@ -1,5 +1,5 @@
 ---
-slug: ''
+slug: ""
 title: ""
 cover: ""
 thumb1: ""

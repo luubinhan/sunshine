@@ -1,5 +1,5 @@
 ---
-slug: '2018-04-11-a007165-ao-phong-be-trai-hoa-tiet-chu-a'
+slug: "2018-04-11-a007165-ao-phong-be-trai-hoa-tiet-chu-a"
 title: "Áo phông bé trai họa tiết chữ A"
 cover: "https://c1.staticflickr.com/1/928/41500149612_1a71347719_b.jpg"
 thumb1: "https://c1.staticflickr.com/1/926/26672064777_288e6a2cb4_b.jpg"

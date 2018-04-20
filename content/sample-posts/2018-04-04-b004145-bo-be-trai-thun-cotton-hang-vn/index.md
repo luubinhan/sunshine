@@ -1,5 +1,5 @@
 ---
-slug: '2018-04-04-b004145-bo-be-trai-thun-cotton-hang-vn'
+slug: "2018-04-04-b004145-bo-be-trai-thun-cotton-hang-vn"
 title: "Bộ bé trai Yoyo thun cotton hàng VN"
 cover: "https://c1.staticflickr.com/1/853/39732247930_5f03f289bb_b.jpg"
 thumb1: "https://c1.staticflickr.com/1/843/39732248120_00362042f5_b.jpg"

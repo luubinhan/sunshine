@@ -1,5 +1,5 @@
 ---
-slug: '2018-04-10-a007165-ao-phong-be-trai-hang-qc'
+slug: "2018-04-10-a007165-ao-phong-be-trai-hang-qc"
 title: "Áo phông bé trai hàng QC"
 cover: "https://c1.staticflickr.com/1/827/40829524594_052c9a5ff0_b.jpg"
 thumb1: "https://c1.staticflickr.com/1/855/40829524094_00bdc00886_b.jpg"
