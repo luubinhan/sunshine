@@ -8,7 +8,7 @@ import Lightbox from 'react-image-lightbox';
 import 'react-photo-feed/library/style.css';
 
 
-import {Container, Price, Button as MyButton, Alert, Row, Col, H3, DISPLAY1} from '../components/mystyle'
+import {Container, Price, Button as MyButton, Alert, Row, Col, H3} from '../components/mystyle'
 
 import PostTags from '../components/PostTags/PostTags';
 import SocialLinks from '../components/SocialLinks/SocialLinks';
@@ -98,7 +98,7 @@ export default class PostTemplate extends React.Component {
     return (
       <div className="sizes-row">
         <div className="d-flex justify-content-between">
-          <div className="size-label">Size</div>
+          <div>Size</div>
           <div></div>
         </div>
         <div className="mt-3 size-collections">
@@ -128,8 +128,8 @@ export default class PostTemplate extends React.Component {
   }
   render() {
     const { slug } = this.props.pathContext;
-    const postNode = this.props.data ? this.props.data.markdownRemark : {};
-    const post = !_.isEmpty(postNode) ? postNode.frontmatter : {};
+    const postNode = this.props.data.markdownRemark;
+    const post = postNode.frontmatter;
     if (!post.id) {
       post.id = slug;
     }
@@ -214,120 +214,116 @@ export default class PostTemplate extends React.Component {
                   <GatsbyLink to='size-chuan-kich-thuoc-quan-ao-tre-em'>Bảng kích thước chuẩn <i className="ion-arrow-right-c" /></GatsbyLink>
                 </Col>
               </Row>
+              
             </div>
-            
           </Container>
-          <div className="section section-bang-gia">
-            <Container>
-              <Row>
-                <Col>
-                  <div>
-                    <img src={post.thumb3 || post.cover} alt=""/> 
-                  </div>
-                </Col>
-                <Col>
-                  <div className="price-form">
-                    <div className="price-block">
-                      <Price price={post.price} salePrice={post.salePrice}/>  
+        </div>
+        <div className="product type-product has-post-thumbnail">
+          <Container fluid>
+            <Row>
+              <Col sm={7} xs={12}>
+                <div className="product-photos">
+                {allPhotos.map((item, index) => {
+                  return (
+                    <div key={index} className="product-photo">
+                      <img src={item} alt={post.title} onClick={() => this.setState({ isOpen: true, photoIndex: index })} />
                     </div>
-                    <MyButton block size="lg" color="warning" style={{marginBottom: 30}}>
-                      <span style={{display: 'block', fontSize: 12}}>
-                        NHẮN TIN FACEBOOK
-                      </span>
-                      <span>
-                        ĐỂ MUA HÀNG
-                      </span>
-                    </MyButton>
-                    
+                  )
+                })}
+                </div>
+                {isOpen && (
+                  <Lightbox
+                    mainSrc={allPhotos[photoIndex]}
+                    nextSrc={allPhotos[(photoIndex + 1) % allPhotos.length]}
+                    prevSrc={allPhotos[(photoIndex + allPhotos.length - 1) % allPhotos.length]}
+                    onCloseRequest={() => this.setState({ isOpen: false })}
+                    onMovePrevRequest={() =>
+                      this.setState({
+                        photoIndex: (photoIndex + allPhotos.length - 1) % allPhotos.length,
+                      })
+                    }
+                    onMoveNextRequest={() =>
+                      this.setState({
+                        photoIndex: (photoIndex + 1) % allPhotos.length,
+                      })
+                    }
+                  />
+                )}
+              </Col>
+              <Col sm={5} xs={12}>
+                <div className="summary entry-summary">
+                  <Tag color="#f50">{cateName}</Tag>
+                  <div className="product_meta">
+                    <PostTags tags={post.tags} />
                   </div>
-                 
-                </Col>
-              </Row>
-            </Container>
-          </div>
-          <div className="block-contact">
-            <div className="d-flex">
-              <a className="contact-facebook" target="_blank" href={`http://www.facebook.com/sharer.php?u=${slug}&ptitle=${post.title}`}>
-                <i className="ion-social-facebook" />
-                <span>Chia sẽ Facebook</span>
-              </a>
-              <a className="contact-chat" href="#">
-                <i className="ion-chatbubbles" />
-                <span>Gởi tin nhắn</span>
-              </a>
-              <a className="contact-zalo" href="#">
-                <i className="ion-ios-chatboxes" />
-                <span>Zalo Chat</span>
-              </a>
-            </div>
-            <div className="contact-phone">
-              Thời Gian Làm Việc 9h:00 - 21:00
-            </div>
-          </div>
-          <div className="section section-giao-hang">
-            <div className="inner">
-              <Container>
-                <div className="section-header">
-                  <h2>
-                    Giao Hàng
-                  </h2>
-                  <h5>Miễn phí giao hàng với tất cả đơn hàng từ 500.000 đ</h5>
+                  <h1 className="product_title entry-title">{post.title}</h1>
+                  <Price price={post.price} salePrice={post.salePrice}/>
+                  <Collapse style={{marginBottom: 20}}>
+                    <Collapse.Panel header="Tính chi phí vận chuyển" key="1">
+                      <Alert color="success">
+                        <b>Miễn phí giao hàng</b> cho đơn hàng có giá trị từ <b>500.000₫</b>
+                      </Alert>
+                      <div className="d-flex justify-content-between">
+                        <div>
+                          Giao hàng tới
+                        </div>
+                        <div>
+                          <Dropdown overlay={menu}>
+                            <Button>
+                            {this.state.vitri}<Icon type="down" />
+                            </Button>
+                          </Dropdown>
+                        </div>
+                      </div>
+                      <hr/>
+                      <div className="d-flex justify-content-between">
+                        <div>
+                          Phí Vận Chuyển
+                        </div>
+                        <div>
+                          <h3>{this.state.phiGiaoHang.toLocaleString()} đ</h3>
+                        </div>
+                      </div>
+                    </Collapse.Panel>
+                  </Collapse>
+                  {!_.isEmpty(post.sizes)
+                    ? this.renderSizes(post.sizes)
+                    : null
+                  }
+                  <MyButton block size="lg" color="warning" style={{marginBottom: 30}}>
+                    <span style={{display: 'block', fontSize: 12}}>
+                      NHẮN TIN FACEBOOK
+                    </span>
+                    <span>
+                      ĐỂ MUA HÀNG
+                    </span>
+                  </MyButton>
+                  <div className="block-contact">
+                    <div className="d-flex">
+                      <a className="contact-facebook" target="_blank" href={`http://www.facebook.com/sharer.php?u=${slug}&ptitle=${post.title}`}>
+                        <i className="ion-social-facebook" />
+                        <span>Chia sẽ Facebook</span>
+                      </a>
+                      <a className="contact-chat" href="#">
+                        <i className="ion-chatbubbles" />
+                        <span>Gởi tin nhắn</span>
+                      </a>
+                      <a className="contact-zalo" href="#">
+                        <i className="ion-ios-chatboxes" />
+                        <span>Zalo Chat</span>
+                      </a>
+                    </div>
+                    <div className="contact-phone">
+                      <span>Gọi đặt mua</span> <a href="">{config.phone}</a> (9h:00 - 21:00)
+                    </div>
+                  </div>
                 </div>
-                <div className="section-body">
-                  <Row>
-                    <Col>
-                      <div className="pagraph-1">
-                        <span className="number">#1</span>
-                        <div className="main-desc">
-                          Quận 1, 3, 5, 6, 8, 10, 11 TP.HCM, thời gian giao hàng là 2 ngày làm việc.
-                        </div>
-                        <div className="phi-giao-hang">
-                          <p>
-                            Chi phí giao hàng
-                          </p>
-                          <p>
-                            <strong>20.000 đ</strong>
-                          </p>
-                        </div>
-                      </div>
-                    </Col>
-                    <Col>
-                      <div className="pagraph-1">
-                        <span className="number">#2</span>
-                        <div className="main-desc">
-                          Đối với các quận khác của TP.HCM, thời gian giao hàng là 3 ngày làm việc
-                        </div>
-                        <div className="phi-giao-hang">
-                          <p>
-                            Chi phí giao hàng
-                          </p>
-                          <p>
-                            <strong>30.000 đ</strong>
-                          </p>
-                        </div>
-                      </div>
-                    </Col>
-                    <Col>
-                      <div className="pagraph-1">
-                        <span className="number">#3</span>
-                        <div className="main-desc">
-                          Các tỉnh thành khác ngoài khu vực TP.HCM, thời gian giao hàng phụ thuộc vào khu vực của quý khách.
-                        </div>
-                        <div className="phi-giao-hang">
-                          <p>
-                            Chi phí giao hàng
-                          </p>
-                          <p>
-                            <strong>Giá tùy thuộc vào giá bưu điện</strong>
-                          </p>
-                        </div>
-                      </div>
-                    </Col>
-                  </Row>
-                </div>
-              </Container>
-            </div>
-          </div>
+              </Col>
+            </Row>
+          </Container>
+          <Container>
+            <div className="product-content" dangerouslySetInnerHTML={{ __html: postNode.html }} />
+          </Container>
         </div>
       </div>
     );

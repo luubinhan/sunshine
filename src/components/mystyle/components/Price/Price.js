@@ -25,15 +25,15 @@ const Price = ({price, symbol, salePrice}) => {
   return (
     <span className="price-amount">
       <span className="current-price-block">
-        <span className="label">Giá bán:</span>
+        <span className="label">Giá bán</span>
         <span className="amount">
           {currentPrice.toLocaleString(currentPrice, 'vi-VN')}
+          <span className="price-currency-symbol">{symbol}</span>
         </span>
-        <span className="price-currency-symbol">{symbol}</span>
       </span>
       {salePrice ?
         <span className="sale-price-block">
-          <span className="label">Giá chưa giảm:</span>
+          <span className="label">Giá chưa giảm</span>
           <Price price={price} />
         </span>
         : null
@@ -41,7 +41,7 @@ const Price = ({price, symbol, salePrice}) => {
 
       { salePrice ?
         <span className="discount-block">
-          <span className="label">Giảm:</span>
+          <span className="label">Giảm</span>
           <span className="sale-tag sale-tag-square">{downPrice}%</span>
         </span>
         : null

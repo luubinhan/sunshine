@@ -2203,6 +2203,12 @@ body .rc-select-dropdown {
 .product-content {
   padding: 20px;
   max-width: 720px;
+  line-height: 1.8;
+  ul {
+    li {
+      margin-bottom: 10px;
+    }
+  }
 }
 .product-photos {
   display: flex;
@@ -2224,6 +2230,21 @@ body .rc-select-dropdown {
   padding-top: 50px;
   .first-image {
     position: relative;
+    .cate-name {
+      position: absolute;
+      left: -150px;
+      text-transform: uppercase;
+      top: 200px;
+      -moz-transform: rotate(-90deg);
+      -webkit-transform: rotate(-90deg);
+      -o-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+      font-weight: bold;
+      color: #999;
+      font-size: 18px;
+      letter-spacing: 24px;
+    }
     .img-holder {
       max-width: 70%;
     }
@@ -2237,4 +2258,84 @@ body .rc-select-dropdown {
       background: rgba(255,255,255,.1);
     }
   }
+  .thumb1-image {
+    padding-top: 100px;
+    .img-holder {
+      text-align: right;
+      padding-top: 100px;
+      max-width: 70%;
+      float: right;
+      .tags {
+        margin-bottom: 20px;
+        text-align: left;
+        a {
+          font-size: 20px;
+          font-weight: bold;
+        }
+        .tag {
+          background: transparent;
+          color: #010101;
+          padding: 0;
+        }
+      }
+    }
+    .size-collections {
+      text-align: center;
+      .btn.btn-outline-secondary {
+        border: 0;
+        display: block;
+        margin-right: 0;
+        font-weight: bold;
+        color: #999;
+      }
+    }
+    .img-holder2 {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.section-bang-gia {
+  background: #fafafc;
+  margin-top: 120px;
+  .price-form {
+    margin: 50px 0 0;
+    background: #fff;
+    padding: 30px;
+    .price-block {
+      margin-bottom: 30px;
+    }
+  }
+}
+.section-giao-hang {
+  
+  padding-top: 60px;
+  padding-bottom: 60px;
+  .pagraph-1 {
+    position: relative;
+    padding-top: 30px;
+    .number {
+      position: absolute;
+      top: -30px;
+      left: -30px;
+      font-size: 72px;
+      color: rgba(51,51,51,0.1);
+      font-weight: bold;
+      z-index: 0;
+    }
+    .main-desc {
+      position: relative;
+      z-index: 2;
+      margin-bottom: 25px;
+    }
+    .phi-giao-hang {
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+.size-label {
+  color: #666;
+  letter-spacing: 8px;
 }

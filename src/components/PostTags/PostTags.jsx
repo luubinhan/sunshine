@@ -13,7 +13,7 @@ class PostTags extends Component {
               key={tag}
               to={`/tags/${_.kebabCase(tag)}`}
             >
-              <span className="tag">{tag}</span>
+              #<span className="tag">{tag}</span>
              </Link>))}
       </div>
     );
