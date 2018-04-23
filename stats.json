@@ -5,8 +5,8 @@
       "path---size-chuan-kich-thuoc-quan-ao-tre-em-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---categories-be-trai": [
-      "path---categories-be-trai-f7fb56012627ba9d3c4e.js",
-      "path---categories-be-trai-f7fb56012627ba9d3c4e.js.map"
+      "path---categories-be-trai-4918d38c30ddfa3b5afb.js",
+      "path---categories-be-trai-4918d38c30ddfa3b5afb.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
@@ -33,29 +33,29 @@
       "component---src-templates-category-jsx-84ad3138ead2fdf16644.js.map"
     ],
     "path---2018-04-11-a-007165-ao-phong-be-trai-hoa-tiet-chu-a": [
-      "path---2018-04-11-a-007165-ao-phong-be-trai-hoa-tiet-chu-a-8e60ace8d45ffa2ff5bc.js",
-      "path---2018-04-11-a-007165-ao-phong-be-trai-hoa-tiet-chu-a-8e60ace8d45ffa2ff5bc.js.map"
+      "path---2018-04-11-a-007165-ao-phong-be-trai-hoa-tiet-chu-a-55e7608765f5ba953154.js",
+      "path---2018-04-11-a-007165-ao-phong-be-trai-hoa-tiet-chu-a-55e7608765f5ba953154.js.map"
     ],
     "path---lien-he": [
       "path---lien-he-a0e39f21c11f6a62c5ab.js",
       "path---lien-he-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---index": [
-      "path---index-bdb37104251cf8dd769a.js",
-      "path---index-bdb37104251cf8dd769a.js.map"
+      "path---index-d3dba3201d349497c240.js",
+      "path---index-d3dba3201d349497c240.js.map"
     ],
     "component---src-pages-about-jsx": [
       "component---src-pages-about-jsx-06a8c8dceba06f599859.js",
       "component---src-pages-about-jsx-06a8c8dceba06f599859.js.map"
     ],
     "path---2018-04-10-a-007165-ao-phong-be-trai-hang-qc": [
-      "path---2018-04-10-a-007165-ao-phong-be-trai-hang-qc-7a6e7d747c36135eab30.js",
-      "path---2018-04-10-a-007165-ao-phong-be-trai-hang-qc-7a6e7d747c36135eab30.js.map"
+      "path---2018-04-10-a-007165-ao-phong-be-trai-hang-qc-18dd2ccab4d4053e781d.js",
+      "path---2018-04-10-a-007165-ao-phong-be-trai-hang-qc-18dd2ccab4d4053e781d.js.map"
     ],
     "commons": [
-      "commons-1e4e024c283fd87b48bb.js",
+      "commons-fc013eee30becbdcb0fe.js",
       "build-js-styles.css",
-      "commons-1e4e024c283fd87b48bb.js.map",
+      "commons-fc013eee30becbdcb0fe.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-pages-lien-he-jsx": [
@@ -79,20 +79,20 @@
       "component---src-templates-tag-jsx-ed24d0692fa3db48bd55.js.map"
     ],
     "path---2018-04-04-b-004145-bo-be-trai-thun-cotton-hang-vn": [
-      "path---2018-04-04-b-004145-bo-be-trai-thun-cotton-hang-vn-29e29892d75cedf7ed3b.js",
-      "path---2018-04-04-b-004145-bo-be-trai-thun-cotton-hang-vn-29e29892d75cedf7ed3b.js.map"
+      "path---2018-04-04-b-004145-bo-be-trai-thun-cotton-hang-vn-e6e0183515ff96ee27d8.js",
+      "path---2018-04-04-b-004145-bo-be-trai-thun-cotton-hang-vn-e6e0183515ff96ee27d8.js.map"
     ],
     "path---2018-04-10-b-004145-do-bo-be-trai-yoyo-hang-vn": [
-      "path---2018-04-10-b-004145-do-bo-be-trai-yoyo-hang-vn-102fec2cbaa896bea4f3.js",
-      "path---2018-04-10-b-004145-do-bo-be-trai-yoyo-hang-vn-102fec2cbaa896bea4f3.js.map"
+      "path---2018-04-10-b-004145-do-bo-be-trai-yoyo-hang-vn-151fc8ca8ea4744da3e2.js",
+      "path---2018-04-10-b-004145-do-bo-be-trai-yoyo-hang-vn-151fc8ca8ea4744da3e2.js.map"
     ],
     "path---offline-plugin-app-shell-fallback": [
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js",
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-templates-post-jsx": [
-      "component---src-templates-post-jsx-4a59a2673d3971ed0542.js",
-      "component---src-templates-post-jsx-4a59a2673d3971ed0542.js.map"
+      "component---src-templates-post-jsx-4f587fe222395da5f0cb.js",
+      "component---src-templates-post-jsx-4f587fe222395da5f0cb.js.map"
     ],
     "component---src-pages-index-jsx": [
       "component---src-pages-index-jsx-8041bddd6edb23a8ef58.js",
@@ -103,9 +103,9 @@
       "path---tags-ao-d165b05252b57c033120.js.map"
     ],
     "app": [
-      "app-c4c4d40ca5554e392015.js",
+      "app-2427be3048af3b89a78e.js",
       "build-js-styles.css",
-      "app-c4c4d40ca5554e392015.js.map",
+      "app-2427be3048af3b89a78e.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-pages-support-and-faq-jsx": [
