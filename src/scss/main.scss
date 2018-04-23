@@ -2339,3 +2339,13 @@ body .rc-select-dropdown {
   color: #666;
   letter-spacing: 8px;
 }
+.mystyle-products {
+  .price-block {
+    .current-price-block {
+      .label {
+        display: none;
+      }
+      color: #010101;
+    }
+  }
+}
