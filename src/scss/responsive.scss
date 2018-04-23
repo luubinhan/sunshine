@@ -149,8 +149,84 @@
       margin-bottom: 10px;
     }
   }
+  .section-giao-hang {
+    .pagraph-1 {
+      border-top: 1px solid $border-color;
+      display: flex;
+      .number {
+        flex-basis: 10%;
+        position: relative;
+        left: auto;
+        top: auto;
+        font-size: 24px;
+        margin-right: 20px;
+      }
+      .phi-giao-hang {
+        flex-basis: 40%;
+        min-width: 40%;
+        margin-left: 20px;
+      }
+    }
+  }
+  .special-product {
+    padding-top: 0;
+    .first-image {
+      display: flex;
+      .img-holder {
+        max-width: 60%;
+      }
+      .cate-name {
+        left: 0;
+        letter-spacing: 5px;
+      }
+      .txt-holder {
+        padding: 20px;
+        position: relative;
+        width: 40%;
+      }
+    }
+    .thumb1-image {
+      padding-top: 0;
+    }
+  }
+  .section-bang-gia {
+    margin-top: 50px;
+  }
 }
 @media(max-width: $breakpoint-xs){
+  .special-product {
+    .first-image {
+      flex-direction: column;
+      .img-holder {
+        max-width: 100%;
+      }
+      .cate-name {
+        top: 10px;
+        left: 0;
+        letter-spacing: 2px;
+      }
+      .txt-holder {
+        width: 100%;
+      }
+    }
+    .thumb1-image {
+      .img-holder {
+        padding-top: 10px;
+        float: none;
+        max-width: none;
+      }
+      .size-collections {
+        .btn.btn-outline-secondary {
+          display: inline-block;   
+        }
+      }
+    }
+    
+  }
+  .btn-lg {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 @media(max-width: $breakpoint-xxs){
 }

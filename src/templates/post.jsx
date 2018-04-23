@@ -193,13 +193,13 @@ export default class PostTemplate extends React.Component {
 
             <div className="thumb1-image">
               <Row>
-                <Col sm="6">
+                <Col sm="6" xs={12}>
                   <div className="img-holder">
                     <PostTags tags={post.tags} />
                     <img src={post.thumb1} alt=""/>
                   </div>
                 </Col>
-                <Col sm="1">
+                <Col sm="1" xs={12}>
                   <div className="txt-holder">
                     {!_.isEmpty(post.sizes)
                       ? this.renderSizes(post.sizes)
@@ -207,7 +207,7 @@ export default class PostTemplate extends React.Component {
                     } 
                   </div>
                 </Col>
-                <Col sm="5">
+                <Col sm="5" xs={12}>
                   <div className="img-holder2">
                     <img src={post.thumb2} alt=""/>
                   </div>
@@ -220,12 +220,12 @@ export default class PostTemplate extends React.Component {
           <div className="section section-bang-gia">
             <Container>
               <Row>
-                <Col>
-                  <div>
+                <Col sm={6} xs={12}>
+                  <div className="img-holder">
                     <img src={post.thumb3 || post.cover} alt=""/> 
                   </div>
                 </Col>
-                <Col>
+                <Col sm={6} xs={12}>
                   <div className="price-form">
                     <div className="price-block">
                       <Price price={post.price} salePrice={post.salePrice}/>  
@@ -245,25 +245,27 @@ export default class PostTemplate extends React.Component {
               </Row>
             </Container>
           </div>
-          <div className="block-contact">
-            <div className="d-flex">
-              <a className="contact-facebook" target="_blank" href={`http://www.facebook.com/sharer.php?u=${slug}&ptitle=${post.title}`}>
-                <i className="ion-social-facebook" />
-                <span>Chia sẽ Facebook</span>
-              </a>
-              <a className="contact-chat" href="#">
-                <i className="ion-chatbubbles" />
-                <span>Gởi tin nhắn</span>
-              </a>
-              <a className="contact-zalo" href="#">
-                <i className="ion-ios-chatboxes" />
-                <span>Zalo Chat</span>
-              </a>
+          <Container>
+            <div className="block-contact">
+              <div className="d-flex">
+                <a className="contact-facebook" target="_blank" href={`http://www.facebook.com/sharer.php?u=${slug}&ptitle=${post.title}`}>
+                  <i className="ion-social-facebook" />
+                  <span>Chia sẽ Facebook</span>
+                </a>
+                <a className="contact-chat" href="#">
+                  <i className="ion-chatbubbles" />
+                  <span>Gởi tin nhắn</span>
+                </a>
+                <a className="contact-zalo" href="#">
+                  <i className="ion-ios-chatboxes" />
+                  <span>Zalo Chat</span>
+                </a>
+              </div>
+              <div className="contact-phone">
+                Thời Gian Làm Việc 9h:00 - 21:00
+              </div>
             </div>
-            <div className="contact-phone">
-              Thời Gian Làm Việc 9h:00 - 21:00
-            </div>
-          </div>
+          </Container>
           <div className="section section-giao-hang">
             <div className="inner">
               <Container>
@@ -275,7 +277,7 @@ export default class PostTemplate extends React.Component {
                 </div>
                 <div className="section-body">
                   <Row>
-                    <Col>
+                    <Col sm={4} xs={12}>
                       <div className="pagraph-1">
                         <span className="number">#1</span>
                         <div className="main-desc">
@@ -291,7 +293,7 @@ export default class PostTemplate extends React.Component {
                         </div>
                       </div>
                     </Col>
-                    <Col>
+                    <Col sm={4} xs={12}>
                       <div className="pagraph-1">
                         <span className="number">#2</span>
                         <div className="main-desc">
@@ -307,7 +309,7 @@ export default class PostTemplate extends React.Component {
                         </div>
                       </div>
                     </Col>
-                    <Col>
+                    <Col sm={4} xs={12}>
                       <div className="pagraph-1">
                         <span className="number">#3</span>
                         <div className="main-desc">

@@ -11,7 +11,7 @@ module.exports = {
   googleAnalyticsID: '', // GA tracking ID.
   disqusShortname: '', // Disqus shortname.
   email: 'truongtomi0708@gmail.com',
-  facebook: "http://facebook.com/quanaotreem.mattroinho",
+  facebook: "https://facebook.com/quanaotreem.mattroinho",
   phone: '0939782728',
   address: '100/35/5 Bùi Minh Trực, P.5, Quận 8, HCM',
   postDefaultCategoryID: 'be-trai', // Default category for posts.
@@ -24,7 +24,7 @@ module.exports = {
   userLinks: [
     {
       label: 'Facebook',
-      url: 'http://facebook.com/quanaotreem.mattroinho',
+      url: 'https://facebook.com/quanaotreem.mattroinho',
       iconClassName: 'ion-social-facebook'
     },
     {
