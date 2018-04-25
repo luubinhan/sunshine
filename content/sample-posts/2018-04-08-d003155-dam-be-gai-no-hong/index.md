@@ -15,9 +15,13 @@ tags:
 mau:
     - hong
 sizes:
-    - S
-    - L
-    - XL
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
 ---
 
 - Đầm bé gái nơ Hồng thun cotton mềm hàng QC, Mặc cưng lắm ah.
