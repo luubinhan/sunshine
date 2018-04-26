@@ -33,8 +33,8 @@
       "path---2018-04-07-b-004145-bo-be-trai-captain-american-cotton-2ae2947d71a7a8c16e98.js.map"
     ],
     "path---categories-be-gai": [
-      "path---categories-be-gai-06979c2f8af56eebba15.js",
-      "path---categories-be-gai-06979c2f8af56eebba15.js.map"
+      "path---categories-be-gai-fb17d5c34495fbd39495.js",
+      "path---categories-be-gai-fb17d5c34495fbd39495.js.map"
     ],
     "component---src-templates-category-jsx": [
       "component---src-templates-category-jsx-84ad3138ead2fdf16644.js",
@@ -49,8 +49,8 @@
       "path---lien-he-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---index": [
-      "path---index-106790c91a3b298f1042.js",
-      "path---index-106790c91a3b298f1042.js.map"
+      "path---index-e48945323fec196acba4.js",
+      "path---index-e48945323fec196acba4.js.map"
     ],
     "component---src-pages-about-jsx": [
       "component---src-pages-about-jsx-06a8c8dceba06f599859.js",
@@ -67,8 +67,8 @@
       "build-js-styles.css.map"
     ],
     "path---2018-04-08-d-003155-dam-be-gai-no-hong": [
-      "path---2018-04-08-d-003155-dam-be-gai-no-hong-62989a58bb3be97f5422.js",
-      "path---2018-04-08-d-003155-dam-be-gai-no-hong-62989a58bb3be97f5422.js.map"
+      "path---2018-04-08-d-003155-dam-be-gai-no-hong-0e0502e01237aa1aba3e.js",
+      "path---2018-04-08-d-003155-dam-be-gai-no-hong-0e0502e01237aa1aba3e.js.map"
     ],
     "component---src-pages-lien-he-jsx": [
       "component---src-pages-lien-he-jsx-18b9316b7fbeb4f47348.js",
@@ -115,9 +115,9 @@
       "path---tags-ao-d165b05252b57c033120.js.map"
     ],
     "app": [
-      "app-ae8d041cd7dae99c8771.js",
+      "app-28e02da1f2fec6102060.js",
       "build-js-styles.css",
-      "app-ae8d041cd7dae99c8771.js.map",
+      "app-28e02da1f2fec6102060.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-pages-support-and-faq-jsx": [
@@ -141,8 +141,8 @@
       "path---2018-04-06-b-005125-bo-be-trai-batman-cotton-xanh-49768d9784d1cf871f7a.js.map"
     ],
     "path---tags-dam-vay": [
-      "path---tags-dam-vay-e9802a2c00e351e5628b.js",
-      "path---tags-dam-vay-e9802a2c00e351e5628b.js.map"
+      "path---tags-dam-vay-f7968cda48956a395e3c.js",
+      "path---tags-dam-vay-f7968cda48956a395e3c.js.map"
     ]
   }
 }
