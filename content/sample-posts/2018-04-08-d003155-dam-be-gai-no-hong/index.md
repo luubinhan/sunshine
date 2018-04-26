@@ -8,7 +8,7 @@ thumb3: "https://c1.staticflickr.com/1/887/40648008455_d26c6bdcc0_h.jpg"
 thumb4: "https://c1.staticflickr.com/1/811/40829525434_65d0576ad4_h.jpg"
 date: "08/04/2018"
 category: "be-gai"
-price: ""
+price: "155000"
 salePrice: ""
 tags:
     - dam-vay
