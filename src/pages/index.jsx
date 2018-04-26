@@ -61,11 +61,11 @@ class Index extends React.Component {
               </div>
               <div className="grid-feature-3">
                 <div className="text-holder">
-                  <GatsbyLink className="btn btn-secondary btn-sm" to="/categories/be-trai">
+                  <GatsbyLink className="btn btn-secondary btn-sm" to="/categories/be-gai">
                     Dành cho Bé Gái
                   </GatsbyLink>
                 </div>
-                <img className="object-fit" src="https://c1.staticflickr.com/1/929/27671258418_f81769b6c1_b.jpg" alt=""/>
+                <img className="object-fit" src="https://c1.staticflickr.com/1/929/27671258418_f81769b6c1_b.jpg" alt="" />
               </div>
             </div>
           </div>
@@ -85,11 +85,9 @@ class Index extends React.Component {
             <div className="h2"><GatsbyLink to="/categories/be-trai">Bé Trai</GatsbyLink></div>
             <div className="link-list">
               {
-                PRIMARY_NAVIGATION[0].childrens.map((nav, index) => {
-                  return (
-                    <GatsbyLink key={index} to={nav.href}>{nav.name}</GatsbyLink>
-                  )
-                })
+                PRIMARY_NAVIGATION[0].childrens.map((nav, index) => (
+                  <GatsbyLink key={index} to={nav.href}>{nav.name}</GatsbyLink>
+                  ))
               }
               <GatsbyLink to="/categories/be-trai"><b>Tất cả</b></GatsbyLink>
             </div>
@@ -105,11 +103,9 @@ class Index extends React.Component {
             <div className="h2"><GatsbyLink to="/categories/be-gai">Bé Gái</GatsbyLink></div>
             <div className="link-list">
               {
-                PRIMARY_NAVIGATION[1].childrens.map((nav, index) => {
-                  return (
-                    <GatsbyLink key={index} to={nav.href}>{nav.name}</GatsbyLink>
-                  )
-                })
+                PRIMARY_NAVIGATION[1].childrens.map((nav, index) => (
+                  <GatsbyLink key={index} to={nav.href}>{nav.name}</GatsbyLink>
+                  ))
               }
               <GatsbyLink to="/categories/be-gai"><b>Tất cả</b></GatsbyLink>
             </div>
@@ -127,7 +123,7 @@ class Index extends React.Component {
 
 export default Index;
 
-/* eslint no-undef: "off"*/
+/* eslint no-undef: "off" */
 export const pageQuery = graphql`
   query IndexQuery {
     allMarkdownRemark(
