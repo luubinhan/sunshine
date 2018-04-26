@@ -5,8 +5,8 @@
       "path---size-chuan-kich-thuoc-quan-ao-tre-em-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---categories-be-trai": [
-      "path---categories-be-trai-4918d38c30ddfa3b5afb.js",
-      "path---categories-be-trai-4918d38c30ddfa3b5afb.js.map"
+      "path---categories-be-trai-95c40165cfdef79573b4.js",
+      "path---categories-be-trai-95c40165cfdef79573b4.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
@@ -25,8 +25,16 @@
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
     ],
     "path---tags-do-bo": [
-      "path---tags-do-bo-aff33955eb1ed9dfe942.js",
-      "path---tags-do-bo-aff33955eb1ed9dfe942.js.map"
+      "path---tags-do-bo-e1c6c52d798bea3e3e2d.js",
+      "path---tags-do-bo-e1c6c52d798bea3e3e2d.js.map"
+    ],
+    "path---2018-04-07-b-004145-bo-be-trai-captain-american-cotton": [
+      "path---2018-04-07-b-004145-bo-be-trai-captain-american-cotton-2ae2947d71a7a8c16e98.js",
+      "path---2018-04-07-b-004145-bo-be-trai-captain-american-cotton-2ae2947d71a7a8c16e98.js.map"
+    ],
+    "path---categories-be-gai": [
+      "path---categories-be-gai-06979c2f8af56eebba15.js",
+      "path---categories-be-gai-06979c2f8af56eebba15.js.map"
     ],
     "component---src-templates-category-jsx": [
       "component---src-templates-category-jsx-84ad3138ead2fdf16644.js",
@@ -41,8 +49,8 @@
       "path---lien-he-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---index": [
-      "path---index-d3dba3201d349497c240.js",
-      "path---index-d3dba3201d349497c240.js.map"
+      "path---index-106790c91a3b298f1042.js",
+      "path---index-106790c91a3b298f1042.js.map"
     ],
     "component---src-pages-about-jsx": [
       "component---src-pages-about-jsx-06a8c8dceba06f599859.js",
@@ -57,6 +65,10 @@
       "build-js-styles.css",
       "commons-fc013eee30becbdcb0fe.js.map",
       "build-js-styles.css.map"
+    ],
+    "path---2018-04-08-d-003155-dam-be-gai-no-hong": [
+      "path---2018-04-08-d-003155-dam-be-gai-no-hong-62989a58bb3be97f5422.js",
+      "path---2018-04-08-d-003155-dam-be-gai-no-hong-62989a58bb3be97f5422.js.map"
     ],
     "component---src-pages-lien-he-jsx": [
       "component---src-pages-lien-he-jsx-18b9316b7fbeb4f47348.js",
@@ -103,9 +115,9 @@
       "path---tags-ao-d165b05252b57c033120.js.map"
     ],
     "app": [
-      "app-2427be3048af3b89a78e.js",
+      "app-ae8d041cd7dae99c8771.js",
       "build-js-styles.css",
-      "app-2427be3048af3b89a78e.js.map",
+      "app-ae8d041cd7dae99c8771.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-pages-support-and-faq-jsx": [
@@ -116,9 +128,21 @@
       "path---404-a0e39f21c11f6a62c5ab.js",
       "path---404-a0e39f21c11f6a62c5ab.js.map"
     ],
+    "path---2018-04-05-b-005125-bo-be-trai-batman-cotton-hang-vn": [
+      "path---2018-04-05-b-005125-bo-be-trai-batman-cotton-hang-vn-3c9dca1380f85e741c13.js",
+      "path---2018-04-05-b-005125-bo-be-trai-batman-cotton-hang-vn-3c9dca1380f85e741c13.js.map"
+    ],
     "path---about": [
       "path---about-a0e39f21c11f6a62c5ab.js",
       "path---about-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---2018-04-06-b-005125-bo-be-trai-batman-cotton-xanh": [
+      "path---2018-04-06-b-005125-bo-be-trai-batman-cotton-xanh-49768d9784d1cf871f7a.js",
+      "path---2018-04-06-b-005125-bo-be-trai-batman-cotton-xanh-49768d9784d1cf871f7a.js.map"
+    ],
+    "path---tags-dam-vay": [
+      "path---tags-dam-vay-e9802a2c00e351e5628b.js",
+      "path---tags-dam-vay-e9802a2c00e351e5628b.js.map"
     ]
   }
 }
