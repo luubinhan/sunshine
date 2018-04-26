@@ -211,7 +211,7 @@ export default class PostTemplate extends React.Component {
                   <div className="img-holder2">
                     <img src={post.thumb2} alt=""/>
                   </div>
-                  <GatsbyLink to='size-chuan-kich-thuoc-quan-ao-tre-em'>Bảng kích thước chuẩn <i className="ion-arrow-right-c" /></GatsbyLink>
+                  <a href='https://luubinhan.github.io/sunshine/size-chuan-kich-thuoc-quan-ao-tre-em/'>Bảng kích thước chuẩn <i className="ion-arrow-right-c" /></a>
                 </Col>
               </Row>
             </div>
@@ -248,7 +248,7 @@ export default class PostTemplate extends React.Component {
           <Container>
             <div className="block-contact">
               <div className="d-flex">
-                <a className="contact-facebook" target="_blank" href={`http://www.facebook.com/sharer.php?u=${slug}&ptitle=${post.title}`}>
+                <a className="contact-facebook" target="_blank" href={`http://www.facebook.com/sharer.php?u=${config.siteUrl}${config.pathPrefix}${slug}&ptitle=${post.title}`}>
                   <i className="ion-social-facebook" />
                   <span>Chia sẽ Facebook</span>
                 </a>
