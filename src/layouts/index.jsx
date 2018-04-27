@@ -120,15 +120,49 @@ export default class MainLayout extends React.Component {
                 <div className="header-inner">
                   <Container fluid>
                     <Row>
-                      <Col sm={5} xs={2}>
-                        <Nav selectedKey={selectedKey[0]} items={PRIMARY_NAVIGATION} className="primary-nav" />
+                      <Col>
+                        <div className="d-flex">
+                          <GatsbyLink to="/" className="navbar-brand">
+                            <img src={logoImg} alt={config.siteTitle} />
+                          </GatsbyLink>
+                          <Nav selectedKey={selectedKey[0]} items={PRIMARY_NAVIGATION} className="primary-nav" />
+                          <div className="hightlight-features">    
+                            <div className="highlight-item">
+                              <div className="img-holder">
+                                <i className="ion-bag"></i>
+                              </div>
+                              <div className="desc-block">
+                                <div className="">Giao hàng toàn quốc</div>
+                              </div>
+                            </div>
+                            <div className="highlight-item">        
+                              <div className="img-holder">
+                                <i className="ion-cash"></i>
+                              </div>
+                              <div className="desc-block">
+                                <div className="">Thanh toán khi nhận hàng</div>
+                              </div>
+                            </div>
+                            <div className="highlight-item">        
+                              <div className="img-holder">
+                                <i className="ion-happy-outline"></i>
+                              </div>
+                              <div className="desc-block">
+                                <div className="">Ưu đãi khách hàng thân thiết</div>
+                              </div>
+                            </div>
+                            <div className="highlight-item">        
+                              <div className="img-holder">
+                                <i className="ion-cube"></i>
+                              </div>
+                              <div className="desc-block">
+                                <div className="">Đổi trả hàng lỗi</div>
+                              </div>
+                            </div>    
+                          </div>
+                        </div>
                       </Col>
-                      <Col sm={3} xs={8}>
-                        <GatsbyLink to="/" className="navbar-brand">
-                          <img src={logoImg} alt={config.siteTitle} />
-                        </GatsbyLink>
-                      </Col>
-                      <Col sm={4} xs={2}>
+                      <Col className="ml-a">
                         <div className="top-info-block">
                           <a href={config.facebook} target="_blank" className="link-facebook">
                             <i className="ion-social-facebook" />

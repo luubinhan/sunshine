@@ -823,6 +823,8 @@ body {
 .navbar-brand {
   padding-top: 15px;
   padding-bottom: 15px;
+  min-width: 130px;
+  flex-basis: 130px;
 }
 .master {
   min-height: calc(100vh - 185px);
@@ -897,6 +899,8 @@ body {
 .primary-nav {
   padding-top: 0;
   padding-bottom: 0;
+  min-width: 250px;
+  flex-basis: 250px;
   .navbar-nav {
     justify-content: space-between;
     width: 100%;
@@ -2346,6 +2350,36 @@ body .rc-select-dropdown {
         display: none;
       }
       color: #010101;
+    }
+  }
+}
+.hightlight-features {
+  display: flex;
+}
+.highlight-item {
+  display: flex;
+  min-width: 150px;
+  flex-basis: 150px;
+  margin-right: 15px;
+  align-items: center;
+  .img-holder {
+    padding-right: 15px;
+    font-size: 30px;
+  }
+  .desc-block {
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: $breakpoint-xs) {
+  .hightlight-features {
+    flex-direction: column;
+    overflow: hidden;
+    .highlight-item {      
+      margin-bottom: 15px;
+      padding-top: 15px;
+      border-top: 1px solid $border-color;
+      margin-top: -1px;
     }
   }
 }

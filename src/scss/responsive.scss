@@ -1,6 +1,9 @@
 // Variables
 @import '_variables';
 @media(max-width: $breakpoint-laptop){
+  .hightlight-features {
+    display: none;
+  }
 }
 @media(max-width: $breakpoint-m){
   .awsome-features {
@@ -80,11 +83,15 @@
     display: block;
   }
   .primary-nav {
-    display: none;
-    
+    display: none;    
   } 
   .awsome-features{
     display: none;
+  }
+  .navbar-brand {
+    padding-left: 60px;
+    flex-basis: 190px;
+    min-width: 190px;
   }
 }
 @media(max-width: $breakpoint-sm){

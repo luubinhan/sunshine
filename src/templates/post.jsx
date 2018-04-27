@@ -73,6 +73,30 @@ export default class PostTemplate extends React.Component {
           </ul>
         </div>
       );
+    case 6:
+      return (
+        <div className="pl-3">
+          <ul>
+            <li>Nặng từ 17 đến 19</li>
+          </ul>
+        </div>
+      );
+    case 7:
+      return (
+        <div className="pl-3">
+          <ul>
+            <li>Nặng từ 19 đến 22</li>
+          </ul>
+        </div>
+      );
+    case 8:
+      return (
+        <div className="pl-3">
+          <ul>
+            <li>Nặng từ 22 đến 26</li>
+          </ul>
+        </div>
+      );
     default:
       return (
         <div className="pl-3">
@@ -211,7 +235,7 @@ export default class PostTemplate extends React.Component {
                   <div className="img-holder2">
                     <img src={post.thumb2} alt=""/>
                   </div>
-                  <a href='https://luubinhan.github.io/sunshine/size-chuan-kich-thuoc-quan-ao-tre-em/'>Bảng kích thước chuẩn <i className="ion-arrow-right-c" /></a>
+                  <GatsbyLink to='size-chuan-kich-thuoc-quan-ao-tre-em/'>Bảng kích thước chuẩn <i className="ion-arrow-right-c" /></GatsbyLink>
                 </Col>
               </Row>
             </div>
@@ -273,7 +297,7 @@ export default class PostTemplate extends React.Component {
                   <h2>
                     Giao Hàng
                   </h2>
-                  <h5>Miễn phí giao hàng với tất cả đơn hàng từ 500.000 đ</h5>
+                  <h5>Miễn phí giao hàng với tất cả đơn hàng từ 500.000 đ trên toàn quốc. Riêng TP.HCM miễn phí cho đơn hàng từ 250.000 đ. Đổi trả nếu sản phầm không giống hình.</h5>
                 </div>
                 <div className="section-body">
                   <Row>
