@@ -181,8 +181,10 @@ export default class PostTemplate extends React.Component {
       <div className="single-product">
         <Helmet>
           <title>{`${post.title} | ${config.siteTitle}`}</title>
+          <script src="https://luubinhan.github.io/blog/facebookcomment.js" defer="true" />
         </Helmet>
         <SEO postPath={slug} postNode={postNode} postSEO />
+        <div id="fb-root"></div>
         <div style={{ backgroundColor: '#f7f7f7', paddingTop: 10, paddingBottom: 10, marginBottom: 20 }}>
           <Container fluid>
             <div className="d-flex justify-content-between">
@@ -270,25 +272,7 @@ export default class PostTemplate extends React.Component {
             </Container>
           </div>
           <Container>
-            <div className="block-contact">
-              <div className="d-flex">
-                <a className="contact-facebook" target="_blank" href={`http://www.facebook.com/sharer.php?u=${config.siteUrl}${config.pathPrefix}${slug}&ptitle=${post.title}`}>
-                  <i className="ion-social-facebook" />
-                  <span>Chia sẽ Facebook</span>
-                </a>
-                <a className="contact-chat" href="#">
-                  <i className="ion-chatbubbles" />
-                  <span>Gởi tin nhắn</span>
-                </a>
-                <a className="contact-zalo" href="#">
-                  <i className="ion-ios-chatboxes" />
-                  <span>Zalo Chat</span>
-                </a>
-              </div>
-              <div className="contact-phone">
-                Thời Gian Làm Việc 9h:00 - 21:00
-              </div>
-            </div>
+            <div className="fb-comments" data-href={`${config.fullURL}${post.frontmatter.path}`} data-width="720" data-numposts="10"></div>
           </Container>
           <div className="section section-giao-hang">
             <div className="inner">

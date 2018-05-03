@@ -7,6 +7,7 @@ module.exports = {
   pathPrefix: '/sunshine', // Prefixes all links. For cases when deployed to example.github.io/sunshine/.
   siteDescription: 'Shop chuyên cung cấp quần áo trẻ em - Mặt Trời Nhỏ', // Website description used for RSS feeds/meta description tag.
   siteRss: '/rss.xml', // Path to the RSS file.
+  fullURL: 'https://luubinhan.github.io/sunshine',
   siteFBAppID: '', // FB Application ID for using app insights
   googleAnalyticsID: '', // GA tracking ID.
   disqusShortname: '', // Disqus shortname.
