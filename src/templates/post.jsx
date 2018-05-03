@@ -272,7 +272,7 @@ export default class PostTemplate extends React.Component {
             </Container>
           </div>
           <Container>
-            <div className="fb-comments" data-href={`${config.fullURL}${post.frontmatter.path}`} data-width="720" data-numposts="10"></div>
+            <div className="fb-comments" data-href={`${config.fullURL}${post.slug}`} data-width="720" data-numposts="10"></div>
           </Container>
           <div className="section section-giao-hang">
             <div className="inner">
