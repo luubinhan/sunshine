@@ -22,3 +22,6 @@ sizes:
     - 5
 ---
 
+- Set bé gái nơ Hồng hàng QC
+- Size S đến size XL
+- Tương đương từ 06m đến 2y. 7kg đến 15kg .

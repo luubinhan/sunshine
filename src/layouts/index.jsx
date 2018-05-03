@@ -2,7 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import GatsbyLink, {navigateTo, withPrefix} from 'gatsby-link';
 import { push as MenuBuger } from 'react-burger-menu';
-import {BackTop, Icon} from 'antd';
+import {BackTop, Icon, Popover} from 'antd';
 import 'antd/dist/antd.css'
 
 import config from '../../data/SiteConfig';
@@ -61,8 +61,42 @@ export default class MainLayout extends React.Component {
     }
     return title;
   }
-
-  
+  contentGiaoHang = () => {
+    return (
+      <div>
+        <ul className="pl-30">
+          <li>Giao hàng tiết kiệm</li>
+          <li>Giao hàng qua Viettel Post</li>
+          <li>Giao hàng nhanh trong ngày</li>
+        </ul>
+      </div>
+    )
+  }
+  contentThanhToan = () => {
+    return (
+      <div>
+        <p>Thanh toán sau khi nhận và kiểm tra hàng, áp dụng cho các quận ở TP.HCM</p>
+        <p>Chuyển khoản 50% hóa đơn cho các tỉnh khác.</p>
+      </div>
+    )
+  }
+  contentUuDai = () => {
+    return (
+      <div>
+        <p>Giảm theo % trên từng đơn hàng cho khách hàng thân thiết</p>
+      </div>
+    )
+  }
+  contentDoiTra = () => {
+    return (
+      <div>
+        <ul className="pl-30">
+          <li>Sản phẩm bị lỗi do sản xuất</li>
+          <li>Không vừa size, đổi size miễn phí</li>
+        </ul>
+      </div>
+    )
+  }
   renderChildrenMenu = (props) => {
     return (
       <ul className="list-group list-group-flush">
@@ -127,12 +161,14 @@ export default class MainLayout extends React.Component {
                           </GatsbyLink>
                           <Nav selectedKey={selectedKey[0]} items={PRIMARY_NAVIGATION} className="primary-nav" />
                           <div className="hightlight-features">    
-                            <div className="highlight-item">
+                            <div className="highlight-item">                              
                               <div className="img-holder">
                                 <i className="ion-bag"></i>
                               </div>
                               <div className="desc-block">
-                                <div className="">Giao hàng toàn quốc</div>
+                                <Popover content={this.contentGiaoHang()} title="Giao hàng tận nơi" trigger="hover">
+                                  <div className="">Giao hàng toàn quốc</div>
+                                </Popover>
                               </div>
                             </div>
                             <div className="highlight-item">        
@@ -140,7 +176,9 @@ export default class MainLayout extends React.Component {
                                 <i className="ion-cash"></i>
                               </div>
                               <div className="desc-block">
-                                <div className="">Thanh toán khi nhận hàng</div>
+                                <Popover content={this.contentThanhToan()} title="Đa dạng hình thức thanh toán" trigger="hover">
+                                  <div className="">Thanh toán khi nhận hàng</div>
+                                </Popover>
                               </div>
                             </div>
                             <div className="highlight-item">        
@@ -148,7 +186,9 @@ export default class MainLayout extends React.Component {
                                 <i className="ion-happy-outline"></i>
                               </div>
                               <div className="desc-block">
-                                <div className="">Ưu đãi khách hàng thân thiết</div>
+                                <Popover content={this.contentUuDai()} title="Ưu đãi" trigger="hover">
+                                  <div className="">Ưu đãi khách hàng thân thiết</div>
+                                </Popover>
                               </div>
                             </div>
                             <div className="highlight-item">        
@@ -156,7 +196,9 @@ export default class MainLayout extends React.Component {
                                 <i className="ion-cube"></i>
                               </div>
                               <div className="desc-block">
-                                <div className="">Đổi trả hàng lỗi</div>
+                                <Popover content={this.contentDoiTra()} title="Chính sách đổi trả" trigger="hover">
+                                  <div className="">Đổi trả hàng lỗi</div>
+                                </Popover>
                               </div>
                             </div>    
                           </div>
