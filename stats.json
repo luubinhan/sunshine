@@ -16,29 +16,33 @@
       "path----557518bd178906f8d58a.js",
       "path----557518bd178906f8d58a.js.map"
     ],
+    "path---2018-04-12-b-013165-set-bet-gai-no-hong-hang-qc": [
+      "path---2018-04-12-b-013165-set-bet-gai-no-hong-hang-qc-c76ef0a9e24f712e56ba.js",
+      "path---2018-04-12-b-013165-set-bet-gai-no-hong-hang-qc-c76ef0a9e24f712e56ba.js.map"
+    ],
     "path---support-and-faq": [
       "path---support-and-faq-a0e39f21c11f6a62c5ab.js",
       "path---support-and-faq-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-layouts-index-jsx": [
-      "component---src-layouts-index-jsx-99ad7c8807d3a809ca1d.js",
-      "component---src-layouts-index-jsx-99ad7c8807d3a809ca1d.js.map"
+      "component---src-layouts-index-jsx-b376ec09a966f639f478.js",
+      "component---src-layouts-index-jsx-b376ec09a966f639f478.js.map"
     ],
     "component---node-modules-gatsby-plugin-offline-app-shell-js": [
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
     ],
     "path---tags-do-bo": [
-      "path---tags-do-bo-38a4b9c7fc8a704c9979.js",
-      "path---tags-do-bo-38a4b9c7fc8a704c9979.js.map"
+      "path---tags-do-bo-8e555ef05d8453e380a0.js",
+      "path---tags-do-bo-8e555ef05d8453e380a0.js.map"
     ],
     "path---2018-04-07-b-004145-bo-be-trai-captain-american-cotton": [
       "path---2018-04-07-b-004145-bo-be-trai-captain-american-cotton-2ae2947d71a7a8c16e98.js",
       "path---2018-04-07-b-004145-bo-be-trai-captain-american-cotton-2ae2947d71a7a8c16e98.js.map"
     ],
     "path---categories-be-gai": [
-      "path---categories-be-gai-7a4b8a6590e2c863ccf8.js",
-      "path---categories-be-gai-7a4b8a6590e2c863ccf8.js.map"
+      "path---categories-be-gai-3a8019cf5c415516e62c.js",
+      "path---categories-be-gai-3a8019cf5c415516e62c.js.map"
     ],
     "component---src-templates-category-jsx": [
       "component---src-templates-category-jsx-84ad3138ead2fdf16644.js",
@@ -53,8 +57,8 @@
       "path---lien-he-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---index": [
-      "path---index-ad92b509317016915bd8.js",
-      "path---index-ad92b509317016915bd8.js.map"
+      "path---index-9c832262232e76a38bb7.js",
+      "path---index-9c832262232e76a38bb7.js.map"
     ],
     "component---src-pages-about-jsx": [
       "component---src-pages-about-jsx-06a8c8dceba06f599859.js",
@@ -63,6 +67,10 @@
     "path---2018-04-10-a-007165-ao-phong-be-trai-hang-qc": [
       "path---2018-04-10-a-007165-ao-phong-be-trai-hang-qc-18dd2ccab4d4053e781d.js",
       "path---2018-04-10-a-007165-ao-phong-be-trai-hang-qc-18dd2ccab4d4053e781d.js.map"
+    ],
+    "path---2018-04-13-b-014165-set-be-gai-2-day-hinh-no": [
+      "path---2018-04-13-b-014165-set-be-gai-2-day-hinh-no-51cb4ca0018e600b7cd5.js",
+      "path---2018-04-13-b-014165-set-be-gai-2-day-hinh-no-51cb4ca0018e600b7cd5.js.map"
     ],
     "commons": [
       "commons-6b5d1ea509f701be4207.js",
@@ -123,9 +131,9 @@
       "path---tags-ao-d165b05252b57c033120.js.map"
     ],
     "app": [
-      "app-438aa6b39d7fb5fb7720.js",
+      "app-61c69f6959311d63c883.js",
       "build-js-styles.css",
-      "app-438aa6b39d7fb5fb7720.js.map",
+      "app-61c69f6959311d63c883.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-pages-support-and-faq-jsx": [
@@ -153,8 +161,8 @@
       "path---2018-04-06-b-005125-bo-be-trai-batman-cotton-xanh-f9a4785522b3d3565c1b.js.map"
     ],
     "path---tags-dam-vay": [
-      "path---tags-dam-vay-f1a1abab7ccc4ecb30f0.js",
-      "path---tags-dam-vay-f1a1abab7ccc4ecb30f0.js.map"
+      "path---tags-dam-vay-9bd88c67339dad02ebb7.js",
+      "path---tags-dam-vay-9bd88c67339dad02ebb7.js.map"
     ]
   }
 }
