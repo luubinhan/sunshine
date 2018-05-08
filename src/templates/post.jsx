@@ -140,7 +140,7 @@ export default class PostTemplate extends React.Component {
       vitri = "Quận 1,3,5,6,8,10,11";
       break;
     case '2':
-      phiGiaoHang = 30000;
+      phiGiaoHang = 20000;
       vitri = "Quận khác";
       break;
     default:
@@ -312,7 +312,7 @@ export default class PostTemplate extends React.Component {
                             Chi phí giao hàng
                           </p>
                           <p>
-                            <strong>30.000 đ</strong>
+                            <strong>20.000 đ</strong>
                           </p>
                         </div>
                       </div>
