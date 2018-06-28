@@ -66,6 +66,7 @@
   "scripts": {
     "develop": "gatsby develop",
     "dev": "npm run develop",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "start": "npm run develop --hot",
     "serve": "gatsby serve",
     "build": "gatsby build",
