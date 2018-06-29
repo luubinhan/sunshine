@@ -256,7 +256,7 @@ export default class PostTemplate extends React.Component {
                     <div className="price-block">
                       <Price price={post.price} salePrice={post.salePrice}/>  
                     </div>
-                    <MyButton block size="lg" color="warning" style={{marginBottom: 30}}>
+                    <MyButton block size="lg" color="warning" href="http://m.me/quanaotreem.mattroinho" style={{marginBottom: 30}}>
                       <span style={{display: 'block', fontSize: 12}}>
                         NHẮN TIN FACEBOOK
                       </span>
