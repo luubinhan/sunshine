@@ -70,6 +70,25 @@ class Index extends React.Component {
             </div>
           </div>
         </div>
+        
+        <Section className="pink-bg">
+          <Section.Header>
+            <div className="h2"><GatsbyLink to="/categories/be-gai">Bé Gái</GatsbyLink></div>
+            <div className="link-list">
+              {
+                PRIMARY_NAVIGATION[1].childrens.map((nav, index) => (
+                  <GatsbyLink key={index} to={nav.href}>{nav.name}</GatsbyLink>
+                  ))
+              }
+              <GatsbyLink to="/categories/be-gai"><b>Tất cả</b></GatsbyLink>
+            </div>
+          </Section.Header>
+          <Section.Body>
+            <Container>
+              <ProductListing postEdges={beGaiPosts} />
+            </Container>
+          </Section.Body>
+        </Section>
         <Section className="yellow-bg">
           <Section.Header>
             <div className="h2">Khuyến mãi</div>
@@ -95,24 +114,6 @@ class Index extends React.Component {
           <Section.Body>
             <Container>
               <ProductListing postEdges={beTraiPosts} />
-            </Container>
-          </Section.Body>
-        </Section>
-        <Section className="pink-bg">
-          <Section.Header>
-            <div className="h2"><GatsbyLink to="/categories/be-gai">Bé Gái</GatsbyLink></div>
-            <div className="link-list">
-              {
-                PRIMARY_NAVIGATION[1].childrens.map((nav, index) => (
-                  <GatsbyLink key={index} to={nav.href}>{nav.name}</GatsbyLink>
-                  ))
-              }
-              <GatsbyLink to="/categories/be-gai"><b>Tất cả</b></GatsbyLink>
-            </div>
-          </Section.Header>
-          <Section.Body>
-            <Container>
-              <ProductListing postEdges={beGaiPosts} />
             </Container>
           </Section.Body>
         </Section>
