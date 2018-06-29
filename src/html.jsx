@@ -2,7 +2,6 @@
 /* eslint import/extensions:"off" */
 /* eslint global-require:"off" */
 import React from "react";
-import favicon from "./favicon.png";
 
 let inlinedStyles = "";
 if (process.env.NODE_ENV === "production") {
@@ -10,7 +9,7 @@ if (process.env.NODE_ENV === "production") {
     /* eslint import/no-webpack-loader-syntax: off */
     inlinedStyles = require("!raw-loader!../public/styles.css");
   } catch (e) {
-    /* eslint no-console: "off"*/
+    /* eslint no-console: "off" */
     console.log(e);
   }
 }
@@ -38,13 +37,13 @@ export default class HTML extends React.Component {
           <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
           <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&amp;subset=vietnamese" />
           <link rel="stylesheet" type="text/css" href="https://shopmattroinho.com/css/ionicons.min.css" />
-          <link rel="shortcut icon" href={favicon} />
+          <link rel="shortcut icon" href='https://shopmattroinho.com/favi.png' />
           {css}
         </head>
         <body>
-          <div className="zalo-chat-widget" data-oaid="271604692846173383" data-welcome-message="Rất vui khi được hỗ trợ bạn!" data-autopopup="0" data-width="350" data-height="420"></div>
+          <div className="zalo-chat-widget" data-oaid="271604692846173383" data-welcome-message="Rất vui khi được hỗ trợ bạn!" data-autopopup="0" data-width="350" data-height="420" />
 
-          <script src="https://sp.zalo.me/plugins/sdk.js"></script>
+          <script src="https://sp.zalo.me/plugins/sdk.js" />
           <div
             id="___gatsby"
             dangerouslySetInnerHTML={{ __html: this.props.body }}
