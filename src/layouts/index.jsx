@@ -128,6 +128,7 @@ export default class MainLayout extends React.Component {
         <Helmet>
           <title>{`${config.siteTitle} |  ${this.getLocalTitle()}`}</title>
           <meta name="description" content={config.siteDescription} />
+          <script src="https://shopmattroinho.com/facebook.js" defer="true" />
         </Helmet>
         <div id="outer-container">
           <Button className="bugger-menu-control" primary onClick={this.toggleMenu}>
@@ -160,8 +161,8 @@ export default class MainLayout extends React.Component {
                             <img src={logoImg} alt={config.siteTitle} />
                           </GatsbyLink>
                           <Nav selectedKey={selectedKey[0]} items={PRIMARY_NAVIGATION} className="primary-nav" />
-                          <div className="hightlight-features">    
-                            <div className="highlight-item">                              
+                          <div className="hightlight-features">
+                            <div className="highlight-item">
                               <div className="img-holder">
                                 <i className="ion-bag"></i>
                               </div>
@@ -171,7 +172,7 @@ export default class MainLayout extends React.Component {
                                 </Popover>
                               </div>
                             </div>
-                            <div className="highlight-item">        
+                            <div className="highlight-item">
                               <div className="img-holder">
                                 <i className="ion-cash"></i>
                               </div>
@@ -181,7 +182,7 @@ export default class MainLayout extends React.Component {
                                 </Popover>
                               </div>
                             </div>
-                            <div className="highlight-item">        
+                            <div className="highlight-item">
                               <div className="img-holder">
                                 <i className="ion-happy-outline"></i>
                               </div>
@@ -191,7 +192,7 @@ export default class MainLayout extends React.Component {
                                 </Popover>
                               </div>
                             </div>
-                            <div className="highlight-item">        
+                            <div className="highlight-item">
                               <div className="img-holder">
                                 <i className="ion-cube"></i>
                               </div>
@@ -200,7 +201,7 @@ export default class MainLayout extends React.Component {
                                   <div className="">Đổi trả hàng lỗi</div>
                                 </Popover>
                               </div>
-                            </div>    
+                            </div>
                           </div>
                         </div>
                       </Col>

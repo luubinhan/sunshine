@@ -1,14 +1,14 @@
 ---
 slug: "2018-04-14-b013165-set-be-gai-no-hong"
 title: "Set bé gái nơ hồng, hàng QC"
-cover: "https://c1.staticflickr.com/1/869/41045344015_3b8f71dfa2_c.jpg"
-thumb1: "https://c1.staticflickr.com/1/980/28073377888_ef9686f6cd_b.jpg"
-thumb2: "https://c1.staticflickr.com/1/907/41045343885_5951a0fafb_b.jpg"
-thumb3: "https://c1.staticflickr.com/1/967/41045344465_3bbb7da969_c.jpg"
-thumb4: ""
-date: "13/04/2018"
+cover: "https://cf.shopee.vn/file/cf392d06010cd98f20bb5a21100f395e"
+thumb1: "https://cf.shopee.vn/file/af3db1ba865905dd39c8bfc5479fa4a6"
+thumb2: "https://cf.shopee.vn/file/8ce2d2fcd4ce1a46d2c53339c6100165"
+thumb3: "https://cf.shopee.vn/file/16ca87e8cc4509bec784c2ebd0771d99"
+thumb4: "https://cf.shopee.vn/file/8fb3ba9b115d6b9188ad2b6308e9740b"
+date: "14/04/2018"
 category: "be-gai"
-price: "165000"
+price: "155000"
 salePrice: ""
 tags:
     - do-bo
@@ -22,6 +22,15 @@ sizes:
     - 5
 ---
 
-- Set bé gái nơ Hồng hàng QC, nhìn la thấy cưng rồi ah.
-- Size S đến size XL
-- Tương đương từ 6 tháng đến 2 tuổi. 7kg đến 15kg.
+Đầm bé gái màu hồng, hàng QC.
+Váy + quần cho bé gái
+
+> Size: S đến XL ( 7kg - 15kg )
+
+Mặt trời nhỏ nhận ship #COD toàn quốc - check hàng, thanh toán tận nhà.  🚚🚚🚚
+
+CÁC BẠN Ở TỈNH CÓ THỂ ORDER HÀNG TRÊN #SHOPEE (https://shopee.vn/truongtomi0708) ĐỂ TIẾT KIỆM TIỀN SHIP NHÉ
+
+<div class="hidden">
+shopmattroinho.com quanaotreem dambegai quanaochobe
+</div>

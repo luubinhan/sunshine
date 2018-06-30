@@ -1,14 +1,14 @@
 ---
 slug: "2018-04-08-d003155-dam-be-gai-no-hong"
-title: "Đầm bé gái nơ Hồng thun cotton mềm hàng QC"
-cover: "https://c1.staticflickr.com/1/897/39732193070_5562ec4687_b.jpg"
-thumb1: "https://c1.staticflickr.com/1/903/40829522984_f71090ed9c_b.jpg"
-thumb2: "https://c1.staticflickr.com/1/915/40829522754_d5e4eff3ef_b.jpg"
-thumb3: "https://c1.staticflickr.com/1/887/40648008455_d26c6bdcc0_h.jpg"
-thumb4: "https://c1.staticflickr.com/1/811/40829525434_65d0576ad4_h.jpg"
+title: "Đầm yếm bé gái thun cotton"
+cover: "https://cf.shopee.vn/file/f93f20af438c7f9db8f0d8fc46462c4d"
+thumb1: "https://cf.shopee.vn/file/44c7e22c11a2a587150a3f2b6fc338ad"
+thumb2: "https://cf.shopee.vn/file/02c53ec1ab84dcae4cead1e3c91a2cfb"
+thumb3: "https://cf.shopee.vn/file/e76c50c8852e41b11d6993e0a287619d"
+thumb4: "https://cf.shopee.vn/file/62954075c784a74e8255f00628d3834d"
 date: "08/04/2018"
 category: "be-gai"
-price: "155000"
+price: "135000"
 salePrice: ""
 tags:
     - dam-vay
@@ -18,12 +18,16 @@ sizes:
     - 2
     - 3
     - 4
-    - 5
-    - 6
-    - 7
-    - 8
 ---
 
-- Đầm bé gái nơ Hồng thun cotton mềm hàng QC, Mặc cưng lắm ah.
-- Size S đến size Xl
-- Tương đương từ 06m đến 3y. 7kg đến 17kg .
+Đầm yếm bé gái thun cotton, thấm hút mồ hôi
+
+> Size S
+
+Mặt trời nhỏ nhận ship #COD toàn quốc - check hàng, thanh toán tận nhà.  🚚🚚🚚
+
+CÁC BẠN Ở TỈNH CÓ THỂ ORDER HÀNG TRÊN #SHOPEE (https://shopee.vn/truongtomi0708) ĐỂ TIẾT KIỆM TIỀN SHIP NHÉ
+
+<div class="hidden">
+shopmattroinho.com quanaotreem dambegai quanaochobe
+</div>

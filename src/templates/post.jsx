@@ -167,7 +167,7 @@ export default class PostTemplate extends React.Component {
     if (post.thumb2) allPhotos.push(post.thumb2);
     if (post.thumb3) allPhotos.push(post.thumb3);
     if (post.thumb4) allPhotos.push(post.thumb4);
-    
+
     const menu = (
       <Menu onClick={this.handleMenuClick}>
         <Menu.Item key="1">Quận 1, 3, 5, 6, 8, 10, 11 - TP.HCM</Menu.Item>
@@ -182,6 +182,7 @@ export default class PostTemplate extends React.Component {
         <Helmet>
           <title>{`${post.title} | ${config.siteTitle}`}</title>
           <script src="https://luubinhan.github.io/blog/facebookcomment.js" defer="true" />
+          <script src="https://shopmattroinho.com/facebook.js" defer="true" />
         </Helmet>
         <SEO postPath={slug} postNode={postNode} postSEO />
         <div id="fb-root"></div>
@@ -207,7 +208,7 @@ export default class PostTemplate extends React.Component {
             <div className="first-image">
               <div className="cate-name">{cateName}</div>
               <div className="img-holder">
-                <img src={post.cover} alt=""/>
+                <img src={post.cover} alt="ShopMatTroiNho.com - Shop chuyên bán quần áo trẻ em"/>
               </div>
               <div className="txt-holder">
                 <div className="h3">
@@ -222,7 +223,7 @@ export default class PostTemplate extends React.Component {
                 <Col sm="6" xs={12}>
                   <div className="img-holder">
                     <PostTags tags={post.tags} />
-                    <img src={post.thumb1} alt=""/>
+                    <img src={post.thumb1} alt="ShopMatTroiNho.com - Shop chuyên bán quần áo trẻ em"/>
                   </div>
                 </Col>
                 <Col sm="1" xs={12}>
@@ -230,31 +231,37 @@ export default class PostTemplate extends React.Component {
                     {!_.isEmpty(post.sizes)
                       ? this.renderSizes(post.sizes)
                       : null
-                    } 
+                    }
                   </div>
                 </Col>
                 <Col sm="5" xs={12}>
                   <div className="img-holder2">
-                    <img src={post.thumb2} alt=""/>
+                    <img src={post.thumb2} alt="ShopMatTroiNho.com - Shop chuyên bán quần áo trẻ em"/>
                   </div>
                   <GatsbyLink to='size-chuan-kich-thuoc-quan-ao-tre-em/'>Bảng kích thước chuẩn <i className="ion-arrow-right-c" /></GatsbyLink>
                 </Col>
               </Row>
             </div>
-            
+
           </Container>
           <div className="section section-bang-gia">
             <Container>
               <Row>
                 <Col sm={6} xs={12}>
                   <div className="img-holder">
-                    <img src={post.thumb3 || post.cover} alt=""/> 
+                    <img src={post.thumb3 || post.cover} alt="ShopMatTroiNho.com - Shop chuyên bán quần áo trẻ em"/>
+
                   </div>
                 </Col>
+                {post.thumb4 &&
+                  <Col sm={6} xs={12}>
+                    <img src={post.thumb4} alt="ShopMatTroiNho.com - Shop chuyên bán quần áo trẻ em"/>
+                  </Col>
+                }
                 <Col sm={6} xs={12}>
                   <div className="price-form">
                     <div className="price-block">
-                      <Price price={post.price} salePrice={post.salePrice}/>  
+                      <Price price={post.price} salePrice={post.salePrice}/>
                     </div>
                     <MyButton block size="lg" color="warning" href="http://m.me/quanaotreem.mattroinho" style={{marginBottom: 30}}>
                       <span style={{display: 'block', fontSize: 12}}>
@@ -264,9 +271,9 @@ export default class PostTemplate extends React.Component {
                         ĐỂ MUA HÀNG
                       </span>
                     </MyButton>
-                    
+
                   </div>
-                 
+
                 </Col>
               </Row>
             </Container>

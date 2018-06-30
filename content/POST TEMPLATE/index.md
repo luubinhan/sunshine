@@ -34,7 +34,15 @@ sizes:
     - 8
 ---
 
-- Bộ bé trai Batman cotton, thâm hút mồ hôi , mặc nhà thoải mái lắm , hàng bao đẹp nha các mom .
-- Size 75 đến size 80
-- Tương đương từ 4 đến 7 tuổi. 
-- Nhanh tay inbox để đươc giá tốt nhất ah.
+Đầm bé gái 2 dây họa tiết kẹo, hàng QC.
+Kiểu dáng suông, mặc thoải mái.
+
+> Size: S đến XL ( 10kg - 23kg)
+
+Mặt trời nhỏ nhận ship #COD toàn quốc - check hàng, thanh toán tận nhà.  🚚🚚🚚
+
+CÁC BẠN Ở TỈNH CÓ THỂ ORDER HÀNG TRÊN #SHOPEE (https://shopee.vn/truongtomi0708) ĐỂ TIẾT KIỆM TIỀN SHIP NHÉ
+
+<div class="hidden">
+shopmattroinho.com quanaotreem dambegai quanaochobe
+</div>

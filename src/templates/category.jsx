@@ -24,7 +24,7 @@ export default class CategoryTemplate extends React.Component {
   render() {
     const category = this.props.pathContext.category;
     const postEdges = this.props.data.allMarkdownRemark.edges;
-    const cateObj = _.find(PRIMARY_NAVIGATION, (item) => { return item.key === category });
+    const cateObj = _.find(PRIMARY_NAVIGATION, (item) => item.key === category);
     const {
       filteredUnpagedData,
     } = this.state;
@@ -59,7 +59,7 @@ export default class CategoryTemplate extends React.Component {
   }
 }
 
-/* eslint no-undef: "off"*/
+/* eslint no-undef: "off" */
 export const pageQuery = graphql`
   query CategoryPage($category: String) {
     allMarkdownRemark(

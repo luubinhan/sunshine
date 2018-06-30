@@ -662,7 +662,7 @@ table.normal tr td {
   &.btn-primary {
     background-color: $primary-color;
     border-color: darken($primary-color, 3%);
-    box-shadow: inset 0 1px 0 0 lighten($primary-color,12%);    
+    box-shadow: inset 0 1px 0 0 lighten($primary-color,12%);
     &:hover,
     &:focus,
     &:active{
@@ -711,7 +711,7 @@ table.normal tr td {
       background-image: -o-linear-gradient(top,#edeff3 0,#e7eaef 100%);
       background-image: linear-gradient(top,#edeff3 0,#e7eaef 100%);
     }
-  }  
+  }
 }
 .btn-lg {
   padding: 0.7rem 5rem;
@@ -963,7 +963,7 @@ body {
   box-shadow: inset 0 -1px 0 #fff, inset 0 -5px 14px rgba(229,229,229,0.2), 0 2px 5px rgba(0,0,0,0.1);
   border-bottom: 1px solid #d7dae0;
   border-top: 1px solid #e1e3ea;
-  
+
 }
 .right-nav {
   li{
@@ -1652,7 +1652,7 @@ body .rc-select-dropdown {
       border-bottom: 2px solid hsla(45,92%,91%,.5);
     }
   }
-  
+
 }
 .home-hero {
   background: url('https://d3u67r7pp2lrq5.cloudfront.net/storenvy_features/features/2/original/lovejunkee_bg_copy.jpg') no-repeat center top;
@@ -1677,7 +1677,7 @@ body .rc-select-dropdown {
 .about-container {
   background: #f7f7f7;
 }
-.single-post-container { 
+.single-post-container {
   padding-bottom: 80px;
   padding-top: 60px;
   background: #fff;
@@ -1686,11 +1686,11 @@ body .rc-select-dropdown {
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  .single-post-title {      
+  .single-post-title {
       letter-spacing: -.02em;
       font-weight: 700;
       font-style: normal;
-      font-size: 2.6rem;      
+      font-size: 2.6rem;
       line-height: 1.2;
       letter-spacing: -.028em;
       text-align: center;
@@ -1706,10 +1706,10 @@ body .rc-select-dropdown {
   }
   h2 {
     code {
-    
+
       font-size: inherit;
       border-radius: 0;
-      line-height: 0.7;      
+      line-height: 0.7;
       border: none;
       padding: 0 4px;
       color: #fff;
@@ -1723,13 +1723,13 @@ body .rc-select-dropdown {
     right: -135px;
 
     .share-social-component {
-      text-align: center;      
+      text-align: center;
       border: none;
       padding: 0;
       margin: 0;
       .ssc-label {
         font-family: $monospace;
-        float: none;     
+        float: none;
         padding: 0;
         margin-bottom: 7px;
         text-transform: uppercase;
@@ -1763,7 +1763,7 @@ body .rc-select-dropdown {
     position: relative;
     &:before {
       content: '...';
-      display: inline-block;      
+      display: inline-block;
       color: rgba(0,0,0,.6);
       position: relative;
       top: -30px;
@@ -1792,7 +1792,7 @@ body .rc-select-dropdown {
     h2, h1 {
       margin-top: 56px;
       --x-height-multiplier: 0.363;
-      --baseline-multiplier: 0.157;     
+      --baseline-multiplier: 0.157;
       font-weight: 700;
       font-style: normal;
       font-size: 32px;
@@ -1825,7 +1825,7 @@ body .rc-select-dropdown {
         width: 100%;
         background: $muted;
         position: absolute;
-        bottom: 2px;        
+        bottom: 2px;
       }
       &:after {
         position: absolute;
@@ -1853,9 +1853,9 @@ body .rc-select-dropdown {
     border-left: none;
     max-width: 70%;
     margin: 0 auto 50px;
-    text-align: center;        
+    text-align: center;
     font-style: normal;
-    font-size: 2.5rem;      
+    font-size: 2.5rem;
     padding-top: 15px;
     line-height: 1.2;
     letter-spacing: -.028em;
@@ -1886,7 +1886,7 @@ body .rc-select-dropdown {
       h2 {
         font-size: 1.3rem;
         margin-top: 1rem;
-      }  
+      }
       p {
         font-size: 1rem;
       }
@@ -1897,7 +1897,7 @@ body .rc-select-dropdown {
           padding-bottom: 0;
         }
       }
-    }    
+    }
     .blog-post {
       padding-top: 20px;
       &:before {
@@ -1988,11 +1988,11 @@ body .rc-select-dropdown {
     min-width: 50%;
   }
   .second-feature {
-    background: #a56a44;
+    background: #d06e3f;
     display: flex;
     color: #fff;
     height: 40vh;
-    
+
     .transform {
       position: absolute;
       top: 10px;
@@ -2022,7 +2022,7 @@ body .rc-select-dropdown {
     .grid-feature-2 {
       flex-basis: 33%;
       min-width: 33%;
-      background: #898979;
+      background: #69bd45;
       color: #fff;
       .text-holder {
         padding: 30px;
@@ -2164,7 +2164,7 @@ body .rc-select-dropdown {
     i {
       background: $facebook;
     }
-    
+
   }
   .contact-chat{
     border-color: $orange;
@@ -2173,7 +2173,7 @@ body .rc-select-dropdown {
       background: lighten($orange, 50%);
     }
     &:active {
-      box-shadow: none;      
+      box-shadow: none;
       top: 3px;
     }
     i {
@@ -2187,7 +2187,7 @@ body .rc-select-dropdown {
       background: lighten(#028ee3, 50%);
     }
     &:active {
-      box-shadow: none;      
+      box-shadow: none;
       top: 3px;
     }
     i {
@@ -2312,7 +2312,7 @@ body .rc-select-dropdown {
   }
 }
 .section-giao-hang {
-  
+
   padding-top: 60px;
   padding-bottom: 60px;
   .pagraph-1 {
@@ -2375,11 +2375,19 @@ body .rc-select-dropdown {
   .hightlight-features {
     flex-direction: column;
     overflow: hidden;
-    .highlight-item {      
+    .highlight-item {
       margin-bottom: 15px;
       padding-top: 15px;
       border-top: 1px solid $border-color;
       margin-top: -1px;
     }
+  }
+}
+
+
+#zoa_widget {
+  .zs-wrap-widget {
+    right: auto !important;
+    left: 5px !important;
   }
 }

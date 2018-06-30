@@ -29,7 +29,7 @@ class Index extends React.Component {
               MẶT TRỜI NHỎ
             </div>
             <div className="img-holder">
-              <img className="object-fit" src="https://c1.staticflickr.com/1/890/40829524224_e89b1afe9b_b.jpg" alt="chair" />
+              <img className="object-fit" src="https://cf.shopee.vn/file/97aef1a578c940eb70697dae3817b9f7" alt="chair" />
             </div>
           </div>
           <div className="second-group">
@@ -42,17 +42,18 @@ class Index extends React.Component {
                 </article>
               </div>
               <div className="img-holder">
-                <img className="object-fit" src="https://c1.staticflickr.com/1/789/39732250300_9bb077a4d8_b.jpg" alt="" />
+                <img className="object-fit" src="https://cf.shopee.vn/file/ef0ee383a12628e7c5a17a63833e2581" alt="" />
               </div>
             </div>
             <div className="third-feature">
               <div className="grid-feature-1">
                 <div className="text-holder">
-                  <GatsbyLink className="btn btn-primary btn-sm" to="/categories/be-trai">
-                    Dành cho Bé Trai
+                  <GatsbyLink className="btn btn-warning btn-sm" to="/categories/be-gai">
+                    Dành cho Bé Gái
                   </GatsbyLink>
                 </div>
-                <img className="object-fit" src="https://c1.staticflickr.com/1/788/27671256978_818b215e99_b.jpg" alt="" />
+                <img className="object-fit" src="https://cf.shopee.vn/file/cf392d06010cd98f20bb5a21100f395e" alt="" />
+
               </div>
               <div className="grid-feature-2">
                 <div className="text-holder">
@@ -61,16 +62,16 @@ class Index extends React.Component {
               </div>
               <div className="grid-feature-3">
                 <div className="text-holder">
-                  <GatsbyLink className="btn btn-secondary btn-sm" to="/categories/be-gai">
-                    Dành cho Bé Gái
+                  <GatsbyLink className="btn btn-primary btn-sm" to="/categories/be-trai">
+                    Dành cho Bé Trai
                   </GatsbyLink>
                 </div>
-                <img className="object-fit" src="https://c1.staticflickr.com/1/929/27671258418_f81769b6c1_b.jpg" alt="" />
+                <img className="object-fit" src="https://cf.shopee.vn/file/67390656d17a5e3890da07fc7df52f47" alt="" />
               </div>
             </div>
           </div>
         </div>
-        
+
         <Section className="pink-bg">
           <Section.Header>
             <div className="h2"><GatsbyLink to="/categories/be-gai">Bé Gái</GatsbyLink></div>
@@ -86,16 +87,6 @@ class Index extends React.Component {
           <Section.Body>
             <Container>
               <ProductListing postEdges={beGaiPosts} />
-            </Container>
-          </Section.Body>
-        </Section>
-        <Section className="yellow-bg">
-          <Section.Header>
-            <div className="h2">Khuyến mãi</div>
-          </Section.Header>
-          <Section.Body>
-            <Container>
-              <ProductListing postEdges={beTraiPosts} />
             </Container>
           </Section.Body>
         </Section>

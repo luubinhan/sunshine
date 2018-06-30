@@ -1,14 +1,14 @@
 ---
 slug: "2018-04-10-b010175-set-be-gai-caro-kem-tui-gia"
-title: "Set bé gái caro kèm túi giả"
-cover: "https://c1.staticflickr.com/1/979/42010677331_9a2c15a79b_c.jpg"
-thumb1: "https://c1.staticflickr.com/1/910/27141208907_f563ee2431_b.jpg"
-thumb2: "https://c1.staticflickr.com/1/911/27141209127_1fa053efd2_c.jpg"
-thumb3: "https://c1.staticflickr.com/1/979/42010677331_9a2c15a79b_c.jpg"
-thumb4: "https://c1.staticflickr.com/1/955/27141209337_1db398e43a_b.jpg"
+title: "Đầm bé gái sọc caro kèm túi giả"
+cover: "https://cf.shopee.vn/file/ef0ee383a12628e7c5a17a63833e2581"
+thumb1: "https://cf.shopee.vn/file/df8c4b91a717996c287c54da7950494b"
+thumb2: "https://cf.shopee.vn/file/1de2ed08fba81d54bc84aa5dc16f9ab2"
+thumb3: "https://cf.shopee.vn/file/0c7399c8b86fdbbd249f90b65ca807f4"
+thumb4: "https://cf.shopee.vn/file/c5a11d2665181d5e9c11af7152e4d6b8"
 date: "10/04/2018"
 category: "be-gai"
-price: "175000"
+price: "165000"
 salePrice: ""
 tags:
     - do-bo
@@ -22,7 +22,14 @@ sizes:
     - 4
 ---
 
-- Set bé gái caro kèm túi giả hàng QC, cute lắm các mom ơi.
-- Size 1 đến size 4
-- Tương đương từ 6 tháng đến 3 tuổi. 7kg đến 15kg .
-- Nhanh tay inbox để được giá tốt nhất ah.
+Set bé gái 3 chi tiết, chất xô mềm mịn.
+
+> Dành cho bé từ 7kg - 15kg
+
+Mặt trời nhỏ nhận ship #COD toàn quốc - check hàng, thanh toán tận nhà.  🚚🚚🚚
+
+CÁC BẠN Ở TỈNH CÓ THỂ ORDER HÀNG TRÊN #SHOPEE (https://shopee.vn/truongtomi0708) ĐỂ TIẾT KIỆM TIỀN SHIP NHÉ
+
+<div class="hidden">
+shopmattroinho.com quanaotreem dambegai quanaochobe
+</div>

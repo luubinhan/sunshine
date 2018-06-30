@@ -1,12 +1,12 @@
 ---
 slug: "2018-04-13-b014165-set-be-gai-2-day-hinh-no"
 title: "Set bé gái 2 dây hình nơ"
-cover: "https://c1.staticflickr.com/1/905/40137512900_a03517bb79_c.jpg"
-thumb1: "https://c1.staticflickr.com/1/868/40137512850_ab9c11e6ac_c.jpg"
-thumb2: "https://c1.staticflickr.com/1/869/28073293468_3faacf3852_c.jpg"
-thumb3: "https://c1.staticflickr.com/1/952/40137512590_b916e1be89_c.jpg"
-thumb4: ""
-date: "12/04/2018"
+cover: "https://cf.shopee.vn/file/9a00a07f1ce8e7d3f17cb9ec30b605a0"
+thumb1: "https://cf.shopee.vn/file/f137d44b00f2cfda107afce1882c2b03"
+thumb2: "https://cf.shopee.vn/file/490ee6e87dfc35d9e1d8bff747573ec4"
+thumb3: "https://cf.shopee.vn/file/3b9de393e79285a8e85453c1cdbb5b4a"
+thumb4: "https://cf.shopee.vn/file/551deb5510935c3d3f29b943f64d9cf3"
+date: "13/04/2018"
 category: "be-gai"
 price: "175000"
 salePrice: ""
@@ -22,6 +22,16 @@ sizes:
     - 5
 ---
 
-- Set bé gái nơ Hồng hàng QC
-- Size S đến size XL
-- Tương đương từ 06m đến 2y. 7kg đến 15kg.
+Set bé gái hai dây hoa văn hình nơ
+
+Xuất xứ: Quảng Châu
+
+> Size: 1 đến 4 ( 7kg - 17kg)
+
+Mặt trời nhỏ nhận ship #COD toàn quốc - check hàng, thanh toán tận nhà.  🚚🚚🚚
+
+CÁC BẠN Ở TỈNH CÓ THỂ ORDER HÀNG TRÊN #SHOPEE (https://shopee.vn/truongtomi0708) ĐỂ TIẾT KIỆM TIỀN SHIP NHÉ
+
+<div class="hidden">
+shopmattroinho.com quanaotreem dambegai quanaochobe
+</div>
