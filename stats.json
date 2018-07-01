@@ -13,12 +13,16 @@
       "path---size-chuan-kich-thuoc-quan-ao-tre-em-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---categories-be-trai": [
-      "path---categories-be-trai-ba85439798edd87da2d1.js",
-      "path---categories-be-trai-ba85439798edd87da2d1.js.map"
+      "path---categories-be-trai-35d7700ded68e9a04bf1.js",
+      "path---categories-be-trai-35d7700ded68e9a04bf1.js.map"
     ],
     "path---2018-04-14-b-013165-set-be-gai-no-hong": [
-      "path---2018-04-14-b-013165-set-be-gai-no-hong-c0b7211eb43dbb59919d.js",
-      "path---2018-04-14-b-013165-set-be-gai-no-hong-c0b7211eb43dbb59919d.js.map"
+      "path---2018-04-14-b-013165-set-be-gai-no-hong-cffee1dc6373c7d58810.js",
+      "path---2018-04-14-b-013165-set-be-gai-no-hong-cffee1dc6373c7d58810.js.map"
+    ],
+    "path---tags-quan": [
+      "path---tags-quan-a412fae6707e98b424df.js",
+      "path---tags-quan-a412fae6707e98b424df.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
@@ -32,21 +36,25 @@
       "component---src-layouts-index-jsx-bdcfb11fa6ff73af663f.js",
       "component---src-layouts-index-jsx-bdcfb11fa6ff73af663f.js.map"
     ],
+    "path---2018-06-03-b-015135-do-bo-be-trai-thun-mac-nha": [
+      "path---2018-06-03-b-015135-do-bo-be-trai-thun-mac-nha-61e1b884381df58c7631.js",
+      "path---2018-06-03-b-015135-do-bo-be-trai-thun-mac-nha-61e1b884381df58c7631.js.map"
+    ],
     "component---node-modules-gatsby-plugin-offline-app-shell-js": [
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
     ],
     "path---tags-do-bo": [
-      "path---tags-do-bo-baf55144167e8cf379f4.js",
-      "path---tags-do-bo-baf55144167e8cf379f4.js.map"
+      "path---tags-do-bo-125a88bb7e131d3ecc8e.js",
+      "path---tags-do-bo-125a88bb7e131d3ecc8e.js.map"
     ],
     "path---2018-04-07-b-004145-bo-be-trai-captain-american-cotton": [
       "path---2018-04-07-b-004145-bo-be-trai-captain-american-cotton-ff3134fe21cf9f1600d7.js",
       "path---2018-04-07-b-004145-bo-be-trai-captain-american-cotton-ff3134fe21cf9f1600d7.js.map"
     ],
     "path---categories-be-gai": [
-      "path---categories-be-gai-28fca05bc836a17aa01b.js",
-      "path---categories-be-gai-28fca05bc836a17aa01b.js.map"
+      "path---categories-be-gai-ddd2e20bb78c4f2a00f8.js",
+      "path---categories-be-gai-ddd2e20bb78c4f2a00f8.js.map"
     ],
     "path---2018-04-16-b-005135-bo-be-trai-spider-man": [
       "path---2018-04-16-b-005135-bo-be-trai-spider-man-9bd9ff3e6ffc74a78bb0.js",
@@ -65,8 +73,8 @@
       "path---lien-he-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---index": [
-      "path---index-b36b2059117cf22c62f7.js",
-      "path---index-b36b2059117cf22c62f7.js.map"
+      "path---index-8cb3bfcf0b48427470a7.js",
+      "path---index-8cb3bfcf0b48427470a7.js.map"
     ],
     "component---src-pages-about-jsx": [
       "component---src-pages-about-jsx-06a8c8dceba06f599859.js",
@@ -75,6 +83,10 @@
     "path---2018-04-17-b-006165-bo-be-trai-hinh-hoa-tiet-dai-bang": [
       "path---2018-04-17-b-006165-bo-be-trai-hinh-hoa-tiet-dai-bang-f8ec28c9b927cb33980e.js",
       "path---2018-04-17-b-006165-bo-be-trai-hinh-hoa-tiet-dai-bang-f8ec28c9b927cb33980e.js.map"
+    ],
+    "path---2018-07-03-d-021125-dam-be-gai-soc-trang-xanh": [
+      "path---2018-07-03-d-021125-dam-be-gai-soc-trang-xanh-b4c10435cd132bfd1098.js",
+      "path---2018-07-03-d-021125-dam-be-gai-soc-trang-xanh-b4c10435cd132bfd1098.js.map"
     ],
     "path---2018-04-10-a-007165-ao-phong-be-trai-hang-qc": [
       "path---2018-04-10-a-007165-ao-phong-be-trai-hang-qc-3a943b6be4bc86e6b499.js",
@@ -85,14 +97,22 @@
       "path---2018-04-15-b-018160-bo-be-trai-angry-duck-ef30db63837fe81e234d.js.map"
     ],
     "path---2018-04-13-b-014165-set-be-gai-2-day-hinh-no": [
-      "path---2018-04-13-b-014165-set-be-gai-2-day-hinh-no-d67fdded9a1fa08159ee.js",
-      "path---2018-04-13-b-014165-set-be-gai-2-day-hinh-no-d67fdded9a1fa08159ee.js.map"
+      "path---2018-04-13-b-014165-set-be-gai-2-day-hinh-no-825969b5828a1a6a52e3.js",
+      "path---2018-04-13-b-014165-set-be-gai-2-day-hinh-no-825969b5828a1a6a52e3.js.map"
+    ],
+    "path---2018-07-04-b-020205-dam-be-gai-chat-so-mem-min": [
+      "path---2018-07-04-b-020205-dam-be-gai-chat-so-mem-min-d21029f7bffeb0dffe1b.js",
+      "path---2018-07-04-b-020205-dam-be-gai-chat-so-mem-min-d21029f7bffeb0dffe1b.js.map"
     ],
     "commons": [
       "commons-d129fbec62fb4b224ab6.js",
       "build-js-styles.css",
       "commons-d129fbec62fb4b224ab6.js.map",
       "build-js-styles.css.map"
+    ],
+    "path---2018-06-01-b-016135-do-bo-be-trai-nguoi-nhen-cotton": [
+      "path---2018-06-01-b-016135-do-bo-be-trai-nguoi-nhen-cotton-c7ce25238f5ebe82f269.js",
+      "path---2018-06-01-b-016135-do-bo-be-trai-nguoi-nhen-cotton-c7ce25238f5ebe82f269.js.map"
     ],
     "path---2018-04-08-d-003155-dam-be-gai-no-hong": [
       "path---2018-04-08-d-003155-dam-be-gai-no-hong-1d2dbcfc169d78dd35ab.js",
@@ -123,16 +143,12 @@
       "path---2018-04-04-b-004145-bo-be-trai-thun-cotton-hang-vn-bf032f25d7df2fa4deb5.js.map"
     ],
     "path---2018-04-10-b-010175-set-be-gai-caro-kem-tui-gia": [
-      "path---2018-04-10-b-010175-set-be-gai-caro-kem-tui-gia-5ce2bb7d17e28114e7fa.js",
-      "path---2018-04-10-b-010175-set-be-gai-caro-kem-tui-gia-5ce2bb7d17e28114e7fa.js.map"
-    ],
-    "path---2018-04-10-b-004145-do-bo-be-trai-yoyo-hang-vn": [
-      "path---2018-04-10-b-004145-do-bo-be-trai-yoyo-hang-vn-a0d09ecd9f4dbdab3b4d.js",
-      "path---2018-04-10-b-004145-do-bo-be-trai-yoyo-hang-vn-a0d09ecd9f4dbdab3b4d.js.map"
+      "path---2018-04-10-b-010175-set-be-gai-caro-kem-tui-gia-4bca74459f2dd216a842.js",
+      "path---2018-04-10-b-010175-set-be-gai-caro-kem-tui-gia-4bca74459f2dd216a842.js.map"
     ],
     "path---2018-07-01-d-018160-dam-be-gai-vai-ren-trang": [
-      "path---2018-07-01-d-018160-dam-be-gai-vai-ren-trang-8f58feaf029ed09dc48f.js",
-      "path---2018-07-01-d-018160-dam-be-gai-vai-ren-trang-8f58feaf029ed09dc48f.js.map"
+      "path---2018-07-01-d-018160-dam-be-gai-vai-ren-trang-09e1a2ece29e85edceff.js",
+      "path---2018-07-01-d-018160-dam-be-gai-vai-ren-trang-09e1a2ece29e85edceff.js.map"
     ],
     "path---offline-plugin-app-shell-fallback": [
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js",
@@ -147,14 +163,18 @@
       "component---src-pages-index-jsx-13ca4e4cd3a836c8d6c1.js.map"
     ],
     "path---tags-ao": [
-      "path---tags-ao-35dc2df54268d6ea1ff5.js",
-      "path---tags-ao-35dc2df54268d6ea1ff5.js.map"
+      "path---tags-ao-480b9808b28b2591e333.js",
+      "path---tags-ao-480b9808b28b2591e333.js.map"
     ],
     "app": [
-      "app-b706743ab512f968af0b.js",
+      "app-0cd4f885d28ff726ab76.js",
       "build-js-styles.css",
-      "app-b706743ab512f968af0b.js.map",
+      "app-0cd4f885d28ff726ab76.js.map",
       "build-js-styles.css.map"
+    ],
+    "path---2018-06-02-q-017135-quan-lung-kaki-jean-mau-xanh": [
+      "path---2018-06-02-q-017135-quan-lung-kaki-jean-mau-xanh-a2916b49f45258563a84.js",
+      "path---2018-06-02-q-017135-quan-lung-kaki-jean-mau-xanh-a2916b49f45258563a84.js.map"
     ],
     "component---src-pages-support-and-faq-jsx": [
       "component---src-pages-support-and-faq-jsx-699b8dae1e7a3c1d22ef.js",
@@ -169,8 +189,8 @@
       "path---2018-04-18-d-012160-dam-be-gai-hoa-tiet-keo-2844883f97cf0f91b389.js.map"
     ],
     "path---2018-04-11-b-001165-set-bet-gai-hoa-van-trai-cay": [
-      "path---2018-04-11-b-001165-set-bet-gai-hoa-van-trai-cay-d016cfce593df2473b62.js",
-      "path---2018-04-11-b-001165-set-bet-gai-hoa-van-trai-cay-d016cfce593df2473b62.js.map"
+      "path---2018-04-11-b-001165-set-bet-gai-hoa-van-trai-cay-ca916e104d1f35e60f20.js",
+      "path---2018-04-11-b-001165-set-bet-gai-hoa-van-trai-cay-ca916e104d1f35e60f20.js.map"
     ],
     "path---2018-04-05-b-005125-bo-be-trai-batman-cotton-hang-vn": [
       "path---2018-04-05-b-005125-bo-be-trai-batman-cotton-hang-vn-5cedc796ed56ad60f88e.js",
@@ -185,8 +205,8 @@
       "path---2018-04-06-b-005125-bo-be-trai-batman-cotton-xanh-27a032c8db46e2b3f881.js.map"
     ],
     "path---tags-dam-vay": [
-      "path---tags-dam-vay-03cec3d417ca5c04e617.js",
-      "path---tags-dam-vay-03cec3d417ca5c04e617.js.map"
+      "path---tags-dam-vay-988f3d7416caec19f46b.js",
+      "path---tags-dam-vay-988f3d7416caec19f46b.js.map"
     ]
   }
 }
