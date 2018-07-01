@@ -1,19 +1,20 @@
 ---
 slug: "2018-04-17-b006165-bo-be-trai-hinh-hoa-tiet-dai-bang"
-title: "Bộ bé trai họa tiết đại bàng"
-cover: "https://c1.staticflickr.com/1/904/26672069067_8a2f8998e8_c.jpg"
-thumb1: "https://c1.staticflickr.com/1/831/39732245570_1202ed60be_c.jpg"
-thumb2: "https://c1.staticflickr.com/1/869/41500153812_c4906d8fd8_b.jpg"
-thumb3: "https://c1.staticflickr.com/1/792/41500155082_7d54533a2e_c.jpg"
+title: "Đô bộ bé trai - hình đại bàng - chất liệu cotton"
+cover: "https://cf.shopee.vn/file/da3de904a422af16bc5496dd54473747"
+thumb1: "https://cf.shopee.vn/file/5fd5114af79bb019897c2a71df676741"
+thumb2: "https://cf.shopee.vn/file/d1de10aab5fa62868b8bf55a6ba02477"
+thumb3: "https://cf.shopee.vn/file/eb4cd0197dd41e102a53b928ebcf8433"
 thumb4: ""
 date: "17/04/2018"
 category: "be-trai"
-price: "165"
+price: "160000"
 salePrice: ""
 tags:
     - do-bo
 mau:
     - trang
+    - den
 sizes:
     - 2
     - 3
@@ -24,6 +25,17 @@ sizes:
     - 8
 ---
 
-- Bộ bé trai đại bàng cotton, hàng QC, thấm hút mồ hôi, mặc nhà thoải mái lắm , hàng bao đẹp nha các mom.
-- Size S đến size Xl
-- Tương đương từ 1 đến 5 tuổi. 
+Bộ bé trai đại bàng cotton, hàng Quảng Châu, thấm hút mồ hôi, mặc nhà thoải mái
+
+Xuất xứ: Việt Nam
+
+> Size 1 đến size 4
+> Tương đương từ 1 đến 4 tuổi. 
+
+Mặt trời nhỏ nhận ship #COD toàn quốc - check hàng, thanh toán tận nhà.  🚚🚚🚚
+
+CÁC BẠN Ở TỈNH CÓ THỂ ORDER HÀNG TRÊN #SHOPEE (https://shopee.vn/truongtomi0708) ĐỂ TIẾT KIỆM TIỀN SHIP NHÉ
+
+<div class="hidden">
+shopmattroinho.com quanaotreem dambegai quanaochobe
+</div>

@@ -141,9 +141,9 @@ export const pageQuery = graphql`
       }
     }
     beTraiPosts: allMarkdownRemark(
-      limit: 8
+      limit: 6
       filter: {frontmatter: {category: {eq: "be-trai"}}}
-      sort: {fields: [frontmatter___date], order: DESC}
+      sort: {fields: [frontmatter___date], order: ASC}
     ) {
       edges {
         node {
@@ -163,9 +163,9 @@ export const pageQuery = graphql`
       }
     }
     beGaiPosts: allMarkdownRemark(
-      limit: 20
+      limit: 6
       filter: {frontmatter: {category: {eq: "be-gai"}}}
-      sort: {fields: [frontmatter___date], order: DESC}
+      sort: {fields: [frontmatter___date], order: ASC}
     ) {
       edges {
         node {

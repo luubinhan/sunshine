@@ -3,9 +3,6 @@ import Helmet from 'react-helmet';
 import GatsbyLink from 'gatsby-link'
 import _ from 'lodash'
 import {Popover, Tag, Menu, Dropdown, Button, Icon, Collapse, Breadcrumb } from 'antd'
-import PhotoGrid from 'react-photo-feed';
-import Lightbox from 'react-image-lightbox';
-import 'react-photo-feed/library/style.css';
 
 
 import {Container, Price, Button as MyButton, Alert, Row, Col, H3, DISPLAY1} from '../components/mystyle'
@@ -121,7 +118,7 @@ export default class PostTemplate extends React.Component {
   renderSizes = (sizes) => {
     return (
       <div className="sizes-row">
-        <div className="d-flex justify-content-between">
+        <div className="d-flex justify-content-between" >
           <div className="size-label">Size</div>
           <div></div>
         </div>
@@ -188,7 +185,7 @@ export default class PostTemplate extends React.Component {
         <div id="fb-root"></div>
         <div style={{ backgroundColor: '#f7f7f7', paddingTop: 10, paddingBottom: 10, marginBottom: 20 }}>
           <Container fluid>
-            <div className="d-flex justify-content-between">
+            <div className="d-flex justify-content-between" style={{alignItems: 'center'}}>
               <Button role="button" onClick={this._goBack}>
                 <i className="ion-android-arrow-back"/>
                 <span style={{paddingLeft: 5}}>
@@ -288,7 +285,7 @@ export default class PostTemplate extends React.Component {
                   <h2>
                     Giao Hàng
                   </h2>
-                  <h5>Miễn phí giao hàng với tất cả đơn hàng từ 500.000 đ trên toàn quốc. Riêng TP.HCM miễn phí cho đơn hàng từ 250.000 đ. Đổi trả nếu sản phầm không giống hình.</h5>
+                  <h5><strong>Miễn phí giao hàng</strong> với tất cả đơn hàng từ <strong>500.000đ</strong> trên toàn quốc. Riêng TP.HCM miễn phí cho đơn hàng từ <strong>250.000đ</strong>. Đổi trả nếu sản phẩm không giống hình.</h5>
                 </div>
                 <div className="section-body">
                   <Row>

@@ -20,34 +20,10 @@ export const PRIMARY_NAVIGATION = [
         href: '/tags/ao?categories=be-gai',
       },
       {
-        key: 'ao-khoac',
-        name: 'Áo khoác',
-        icon: '',
-        href: '/tags/ao-khoac?categories=be-gai',
-      },
-      {
-        key: 'ao-lien-quan',
-        name: 'Áo liền quần',
-        icon: '',
-        href: '/tags/ao-lien-quan?categories=be-gai',
-      },
-      {
-        key: 'quan',
-        name: 'Quần',
-        icon: '',
-        href: '/tags/quan?categories=be-gai',
-      },
-      {
         key: 'dam-vay',
         name: 'Đầm váy',
         icon: '',
         href: '/tags/dam-vay?categories=be-gai',
-      },
-      {
-        key: 'do-ngu',
-        name: 'Đồ ngủ',
-        icon: '',
-        href: '/tags/do-ngu?categories=be-gai',
       },
     ]
   },
@@ -72,32 +48,14 @@ export const PRIMARY_NAVIGATION = [
         href: '/tags/ao?categories=be-trai',
       },
       {
-        key: 'ao-khoac',
-        name: 'Áo khoác',
-        icon: '',
-        href: '/tags/ao-khoac?categories=be-trai',
-      },
-      {
-        key: 'ao-lien-quan',
-        name: 'Áo liền quần',
-        icon: '',
-        href: '/tags/ao-lien-quan?categories=be-trai',
-      },
-      {
         key: 'quan',
         name: 'Quần',
         icon: '',
         href: '/tags/quan?categories=be-trai',
       },
-      {
-        key: 'do-ngu',
-        name: 'Đồ ngủ',
-        icon: '',
-        href: '/tags/do-ngu?categories=be-trai',
-      },
     ]
   },
-  
+
 ]
 
 export const RIGHT_NAV = [
