@@ -34,9 +34,10 @@ export default class HTML extends React.Component {
             content="width=device-width, initial-scale=1.0"
           />
           {this.props.headComponents}
-          <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />  
+          <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
           <link rel="stylesheet" type="text/css" href="https://shopmattroinho.com/css/ionicons.min.css" />
           <link rel="shortcut icon" href='https://shopmattroinho.com/favi.png' />
+          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-57945917-2" />
           {css}
         </head>
         <body>

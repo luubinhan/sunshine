@@ -180,6 +180,14 @@ export default class PostTemplate extends React.Component {
           <title>{`${post.title} | ${config.siteTitle}`}</title>
           <script src="https://luubinhan.github.io/blog/facebookcomment.js" defer="true" />
           <script src="https://shopmattroinho.com/facebook.js" defer="true" />
+
+          <meta name="description" content={post.title} />
+          <meta property="og:title" content={post.title} />
+          <meta property="og:type" content="article" />
+          <meta property="og:url" content={`https://shopmattroinho.com/${post.slug}`}/>
+          <meta property="og:image" content={post.cover} />
+          <meta property="og:description" content={post.title} /> 
+          <meta property="og:site_name" content="Shop Quần Áo Trẻ Em - Mặt Trời Nhỏ - Hồ Chí Minh" />
         </Helmet>
         <SEO postPath={slug} postNode={postNode} postSEO />
         <div id="fb-root"></div>

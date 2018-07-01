@@ -8,8 +8,8 @@ module.exports = {
   siteDescription: 'Shop chuyên cung cấp quần áo trẻ em - Mặt Trời Nhỏ', // Website description used for RSS feeds/meta description tag.
   siteRss: '/rss.xml', // Path to the RSS file.
   fullURL: 'http://shopmattroinho.com',
-  siteFBAppID: '', // FB Application ID for using app insights
-  googleAnalyticsID: '', // GA tracking ID.
+  siteFBAppID: '419885841755075', // FB Application ID for using app insights
+  googleAnalyticsID: 'UA-57945917-2', // GA tracking ID.
   disqusShortname: '', // Disqus shortname.
   email: 'truongtomi0708@gmail.com',
   facebook: "https://facebook.com/quanaotreem.mattroinho",
