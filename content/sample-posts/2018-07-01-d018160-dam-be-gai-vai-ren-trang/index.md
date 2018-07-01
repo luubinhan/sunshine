@@ -11,8 +11,6 @@ category: "be-gai"
 price: "160000"
 salePrice: ""
 tags:
-    - do-bo
-    - ao
     - dam-vay
 mau:
     - xanh

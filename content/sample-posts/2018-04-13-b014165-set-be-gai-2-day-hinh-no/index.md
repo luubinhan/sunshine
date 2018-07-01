@@ -11,7 +11,6 @@ category: "be-gai"
 price: "175000"
 salePrice: ""
 tags:
-    - do-bo
     - dam-vay
 mau:
     - trang
