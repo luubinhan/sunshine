@@ -2,10 +2,10 @@ module.exports = {
   blogPostDir: 'sample-posts', // The name of directory that contains your posts.
   siteTitle: 'Shop chuyên cung cấp quần áo trẻ em - Mặt Trời Nhỏ', // Site title.
   siteTitleAlt: 'Shop chuyên cung cấp quần áo trẻ em - Mặt Trời Nhỏ', // Alternative site title for SEO.
-  siteLogo: '/logos/logo-1024.png', // Logo used for SEO and manifest.
+  siteLogo: '/logo.jpg', // Logo used for SEO and manifest.
   siteUrl: 'http://shopmattroinho.com', // Domain of your website without pathPrefix.
   pathPrefix: '/', // Prefixes all links. For cases when deployed to example.github.io/sunshine/.
-  siteDescription: 'Shop chuyên cung cấp quần áo trẻ em - Mặt Trời Nhỏ', // Website description used for RSS feeds/meta description tag.
+  siteDescription: 'Shop chuyên bán quần áo thời trang trẻ em, các sản phẩm Quảng Châu, Thái Lan, hàng VNXK, Hàn Quốc', // Website description used for RSS feeds/meta description tag.
   siteRss: '/rss.xml', // Path to the RSS file.
   fullURL: 'http://shopmattroinho.com',
   siteFBAppID: '419885841755075', // FB Application ID for using app insights
@@ -34,7 +34,7 @@ module.exports = {
       iconClassName: 'ion-social-instagram'
     },
   ],
-  copyright: '© 2018 Quần Áo Trẻ Em - Mặt Trời Nhỏ.', // Copyright string for the footer of the website and RSS feed.
+  copyright: '© 2018 Quần Áo Trẻ Em - Mặt Trời Nhỏ. Shop chuyên bán quần áo thời trang trẻ em, các sản phẩm Quảng Châu, Thái Lan, hàng VNXK, Hàn Quốc', // Copyright string for the footer of the website and RSS feed.
   themeColor: '#c62828', // Used for setting manifest and progress theme colors.
   backgroundColor: '#e0e0e0' // Used for setting manifest background color.
 };

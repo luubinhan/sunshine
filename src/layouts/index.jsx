@@ -225,7 +225,6 @@ export default class MainLayout extends React.Component {
               {children()}
             </Master>
             <Footer config={config} />
-            <BackTop />
           </main>
         </div>
       </div>
