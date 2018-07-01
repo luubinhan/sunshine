@@ -3,11 +3,11 @@ module.exports = {
   siteTitle: 'Shop chuyên cung cấp quần áo trẻ em - Mặt Trời Nhỏ', // Site title.
   siteTitleAlt: 'Shop chuyên cung cấp quần áo trẻ em - Mặt Trời Nhỏ', // Alternative site title for SEO.
   siteLogo: '/logo.jpg', // Logo used for SEO and manifest.
-  siteUrl: 'http://shopmattroinho.com', // Domain of your website without pathPrefix.
+  siteUrl: 'https://shopmattroinho.com', // Domain of your website without pathPrefix.
   pathPrefix: '/', // Prefixes all links. For cases when deployed to example.github.io/sunshine/.
   siteDescription: 'Shop chuyên bán quần áo thời trang trẻ em, các sản phẩm Quảng Châu, Thái Lan, hàng VNXK, Hàn Quốc', // Website description used for RSS feeds/meta description tag.
   siteRss: '/rss.xml', // Path to the RSS file.
-  fullURL: 'http://shopmattroinho.com',
+  fullURL: 'https://shopmattroinho.com',
   siteFBAppID: '419885841755075', // FB Application ID for using app insights
   googleAnalyticsID: 'UA-57945917-2', // GA tracking ID.
   disqusShortname: '', // Disqus shortname.
