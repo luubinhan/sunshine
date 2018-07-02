@@ -55,7 +55,36 @@ export const PRIMARY_NAVIGATION = [
       },
     ]
   },
+]
 
+export const CATE_BE_GAI = [
+  {
+    key: 'do-bo',
+    name: 'Đồ bộ'
+  },
+  {
+    key: 'ao',
+    name: 'Áo'
+  },
+  {
+    key: 'dam-vay',
+    name: 'Đầm váy'
+  },
+]
+
+export const CATE_BE_TRAI = [
+  {
+    key: 'do-bo',
+    name: 'Đồ bộ'
+  },
+  {
+    key: 'ao',
+    name: 'Áo'
+  },
+  {
+    key: 'quan',
+    name: 'Quần'
+  },
 ]
 
 export const RIGHT_NAV = [

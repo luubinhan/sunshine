@@ -9,15 +9,8 @@ import {
   Search
 } from '../mystyle'
 
-import {PRIMARY_NAVIGATION} from '../../../data/data';
+import {PRIMARY_NAVIGATION, CATE_BE_GAI, CATE_BE_TRAI} from '../../../data/data';
 import './FilterSidebar.css'
-
-const ALL_TAGS = PRIMARY_NAVIGATION[1].childrens.map(item => {
-  return {
-    label: item.name,
-    value: item.key,
-  }
-});
 
 class Filter extends Component {
   constructor(props) {
@@ -40,7 +33,7 @@ class Filter extends Component {
       default:
         break;
     }
-    
+
   }
   _handleReset = () => {
     this.filterBy.keywords = '';
@@ -51,7 +44,16 @@ class Filter extends Component {
     this.props.onFilter(this.filterBy)
   }
   render() {
-    const {defaultSelectedTags} = this.props;
+    const {defaultSelectedTags, cate} = this.props;
+    let filterOptions = [];
+    switch (cate.key) {
+    case 'be-gai':
+      filterOptions = CATE_BE_GAI.map(item => ({label: item.name, value: item.key}));
+      break;
+    default:
+      filterOptions = CATE_BE_TRAI.map(item => ({label: item.name, value: item.key}));
+      break;
+    }
     return (
       <div className="filter">
         <Widget className="widget-filter">
@@ -72,7 +74,7 @@ class Filter extends Component {
           </Widget.Header>
           <Widget.Body>
             <div className="filters-group">
-              <Checkbox.Group options={ALL_TAGS} defaultValue={defaultSelectedTags} onChange={this._changeTag} />
+              <Checkbox.Group options={filterOptions} defaultValue={defaultSelectedTags} onChange={this._changeTag} />
             </div>
           </Widget.Body>
         </Widget>

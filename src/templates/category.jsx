@@ -28,6 +28,7 @@ export default class CategoryTemplate extends React.Component {
     const {
       filteredUnpagedData,
     } = this.state;
+    
     return (
       <div className="category-container">
         <Helmet

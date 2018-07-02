@@ -45,7 +45,7 @@ export default class TagTemplate extends React.Component {
     if (tagObj) {
       tagKey = tagObj.key;
     }
-    
+
     const {
       filteredUnpagedData
     } = this.state;
@@ -62,7 +62,11 @@ export default class TagTemplate extends React.Component {
         <Container fluid>
           <div className="container-sidebar">
             <div className="sidebar">
-              <FilterSidebar onFilter={this._onFilter} defaultSelectedTags={[tagKey]} />
+              <FilterSidebar
+                onFilter={this._onFilter}
+                cate={cateObj}
+                defaultSelectedTags={[tagKey]}
+              />
             </div>
             <div className="right-wrapper">
               <div className="muted pt-30 pb-30">
