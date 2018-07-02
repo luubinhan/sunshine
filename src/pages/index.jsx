@@ -42,7 +42,7 @@ class Index extends React.Component {
                 </article>
               </div>
               <div className="img-holder">
-                <img className="object-fit" src="https://cf.shopee.vn/file/ef0ee383a12628e7c5a17a63833e2581" alt="" />
+                <img className="object-fit" src="https://cf.shopee.vn/file/ef0ee383a12628e7c5a17a63833e2581" alt="ShopMatTroiNho.com - Shop chuyên bán quần áo trẻ em" />
               </div>
             </div>
             <div className="third-feature">
@@ -52,7 +52,7 @@ class Index extends React.Component {
                     Dành cho Bé Gái
                   </GatsbyLink>
                 </div>
-                <img className="object-fit" src="https://cf.shopee.vn/file/cf392d06010cd98f20bb5a21100f395e" alt="" />
+                <img className="object-fit" src="https://cf.shopee.vn/file/cf392d06010cd98f20bb5a21100f395e" alt="ShopMatTroiNho.com - Shop chuyên bán quần áo trẻ em" />
 
               </div>
               <div className="grid-feature-2">
@@ -66,7 +66,7 @@ class Index extends React.Component {
                     Dành cho Bé Trai
                   </GatsbyLink>
                 </div>
-                <img className="object-fit" src="https://cf.shopee.vn/file/67390656d17a5e3890da07fc7df52f47" alt="" />
+                <img className="object-fit" src="https://cf.shopee.vn/file/67390656d17a5e3890da07fc7df52f47" alt="ShopMatTroiNho.com - Shop chuyên bán quần áo trẻ em" />
               </div>
             </div>
           </div>
@@ -77,8 +77,8 @@ class Index extends React.Component {
             <div className="h2"><GatsbyLink to="/categories/be-gai">Bé Gái</GatsbyLink></div>
             <div className="link-list">
               {
-                PRIMARY_NAVIGATION[1].childrens.map((nav, index) => (
-                  <GatsbyLink key={index} to={nav.href}>{nav.name}</GatsbyLink>
+                PRIMARY_NAVIGATION[0].childrens.map((nav) => (
+                  <GatsbyLink key={nav.key} to={nav.href}>{nav.name}</GatsbyLink>
                   ))
               }
               <GatsbyLink to="/categories/be-gai"><b>Tất cả</b></GatsbyLink>
@@ -95,8 +95,8 @@ class Index extends React.Component {
             <div className="h2"><GatsbyLink to="/categories/be-trai">Bé Trai</GatsbyLink></div>
             <div className="link-list">
               {
-                PRIMARY_NAVIGATION[0].childrens.map((nav, index) => (
-                  <GatsbyLink key={index} to={nav.href}>{nav.name}</GatsbyLink>
+                PRIMARY_NAVIGATION[1].childrens.map((nav) => (
+                  <GatsbyLink key={nav.key} to={nav.href}>{nav.name}</GatsbyLink>
                   ))
               }
               <GatsbyLink to="/categories/be-trai"><b>Tất cả</b></GatsbyLink>
