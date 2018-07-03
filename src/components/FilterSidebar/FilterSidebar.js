@@ -22,7 +22,7 @@ class Filter extends Component {
     }
   }
   _handleSearch = (newkeywords) => {
-    this.filterBy.keywords = newkeywords;
+    this.filterBy.keywords = newkeywords.trim();
     switch (true) {
       case newkeywords.length > 2:
         this.props.onFilter(this.filterBy);
@@ -33,7 +33,6 @@ class Filter extends Component {
       default:
         break;
     }
-
   }
   _handleReset = () => {
     this.filterBy.keywords = '';
