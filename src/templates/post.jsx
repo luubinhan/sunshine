@@ -297,7 +297,7 @@ export default class PostTemplate extends React.Component {
                 </div>
                 <div className="section-body">
                   <Row>
-                    <Col sm={4} xs={12}>
+                    <Col md={4} sm={6} xs={12}>
                       <div className="pagraph-1">
                         <span className="number">#1</span>
                         <div className="main-desc">
@@ -313,7 +313,7 @@ export default class PostTemplate extends React.Component {
                         </div>
                       </div>
                     </Col>
-                    <Col sm={4} xs={12}>
+                    <Col md={4} sm={6} xs={12}>
                       <div className="pagraph-1">
                         <span className="number">#2</span>
                         <div className="main-desc">
@@ -329,7 +329,7 @@ export default class PostTemplate extends React.Component {
                         </div>
                       </div>
                     </Col>
-                    <Col sm={4} xs={12}>
+                    <Col md={4} sm={6} xs={12}>
                       <div className="pagraph-1">
                         <span className="number">#3</span>
                         <div className="main-desc">

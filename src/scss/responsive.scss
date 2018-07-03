@@ -202,6 +202,7 @@
   }
 }
 @media(max-width: $breakpoint-xs){
+  #zalo-chat-widget {display: none !important;}
   .special-product {
     .first-image {
       flex-direction: column;
