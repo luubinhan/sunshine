@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
-import PropTypes from 'prop-types';
+
+import config from '../../data/SiteConfig';
 
 class NoProduct extends PureComponent {
   render() {
@@ -14,19 +15,15 @@ class NoProduct extends PureComponent {
         </div>
         <hr/>
         <div>
-          <a href="mailto:truongtomi0708@gmail.com">truongtomi0708@gmail.com</a>
+          <a href={`mailto:${config.email}`}>{config.email}</a>
         </div>
         <div>
-          <h2>866.374.8747</h2>
+          <h2>{config.phone}</h2>
         </div>
         Thời gian làm việc: Thứ 2 đến Thứ 6 từ 6SA-6CH • Thứ 7 - Chủ Nhật từ 7SA - 1CH
       </div>
     );
   }
 }
-
-NoProduct.propTypes = {
-
-};
 
 export default NoProduct;
