@@ -6,26 +6,6 @@ export const PRIMARY_NAVIGATION = [
     href: '/categories/be-gai',
     isActive: false,
     icon: '',
-    childrens: [
-      {
-        key: 'do-bo',
-        name: 'Đồ bộ',
-        icon: '',
-        href: '/tags/do-bo?categories=be-gai',
-      },
-      {
-        key: 'ao',
-        name: 'Áo',
-        icon: '',
-        href: '/tags/ao?categories=be-gai',
-      },
-      {
-        key: 'dam-vay',
-        name: 'Đầm váy',
-        icon: '',
-        href: '/tags/dam-vay?categories=be-gai',
-      },
-    ]
   },
   {
     key: 'be-trai',
@@ -33,30 +13,20 @@ export const PRIMARY_NAVIGATION = [
     name: 'Bé Trai',
     href: '/categories/be-trai',
     isActive: false,
-    icon: '',
-    childrens: [
-      {
-        key: 'do-bo',
-        name: 'Đồ Bộ',
-        icon: '',
-        href: '/tags/do-bo?categories=be-trai',
-      },
-      {
-        key: 'ao',
-        name: 'Áo',
-        icon: '',
-        href: '/tags/ao?categories=be-trai',
-      },
-      {
-        key: 'quan',
-        name: 'Quần',
-        icon: '',
-        href: '/tags/quan?categories=be-trai',
-      },
-    ]
+    icon: '',    
   },
 ]
 
+export const CATEGORIES = [
+  {
+    key: 'be-gai',
+    name: 'Bé Gái'
+  },
+  {
+    key: 'be-trai',
+    name: 'Bé Trai'
+  }
+]
 export const CATE_BE_GAI = [
   {
     key: 'do-bo',

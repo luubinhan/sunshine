@@ -1,61 +1,62 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import Select, {Option} from 'rc-select';
 import _ from 'lodash'
 
-import PostListing from '../components/PostListing/PostListing';
 import FilterSidebar from '../components/FilterSidebar'
 import config from '../../data/SiteConfig';
 
 import {
   Container,
-  Row,
-  Col,
-  CustomCheckbox,
-  Card,
-  Widget,
-  HEADLINE,
   CAPTION
 } from '../components/mystyle'
 import ProductListing from '../components/ProductListing';
-import {onFilter} from '../Utils/common'
+import {getCategoryFromQuery, filterProducts} from '../Utils/common'
 
 import {PRIMARY_NAVIGATION} from '../../data/data';
+import { filter } from 'minimatch';
 
-export default class TagTemplate extends React.Component {
+class TagTemplate extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      filteredUnpagedData: this.props.data.allMarkdownRemark.edges
+      filterBy: {
+        keywords: '',
+        selectedCates: [],
+        selectedTags: []
+      }
     }
-    this._onFilter = onFilter.bind(this);
   }
-  getCategoryName = (search) => {
-    while (search.charAt(0) === '?') {
-      search = search.substr(1);
-    }
-    const arraySearch = search.split('=');
-    return _.find(PRIMARY_NAVIGATION, (item) => { return item.key === arraySearch[1] });
+  onFilter = (filterBy) => {
+    this.setState({filterBy})
   }
   render() {
-    const tag = _.kebabCase(this.props.pathContext.tag);
-    const postEdges = this.props.data.allMarkdownRemark.edges;
-    const tagObj = _.find(PRIMARY_NAVIGATION[0].childrens, (item) => { return item.key === tag });
+    const {
+      filterBy
+    } = this.state;
+    const {
+      location,
+      pathContext
+    } = this.props;
+    // all data
+    const allData = this.props.data.allMarkdownRemark.edges;
+    const tag = _.kebabCase(pathContext.tag);
+    const tagObj = _.find(PRIMARY_NAVIGATION[0].childrens, (item) => (item.key === tag) );
     let tagKey = '';
     if (tagObj) {
       tagKey = tagObj.key;
-    }
-
-    const {
-      filteredUnpagedData
-    } = this.state;
-    const {
-      location
-    } = this.props;
+    }    
+    // get categories from query search
     let cateObj = {};
     if (location.search) {
-      cateObj = this.getCategoryName(location.search);
+      cateObj = getCategoryFromQuery(location.search);
     }
+    //const tagsSelected = _.union([...filterBy.selectedTags, tagKey]);
+    const catesSelected = _.union([...filterBy.selectedCates, cateObj.key]);
+    const filteredData = filterProducts({
+      keywords: filterBy.keywords,
+      selectedCates: catesSelected,
+      selectedTags: filterBy.selectedTags || []
+    }, allData);
     return (
       <div className="tag-container">
         <Helmet title={`Quần áo trẻ em trong mục "${tag}" | ${config.siteTitle}`} />
@@ -63,21 +64,21 @@ export default class TagTemplate extends React.Component {
           <div className="container-sidebar">
             <div className="sidebar">
               <FilterSidebar
-                onFilter={this._onFilter}
+                onFilter={this.onFilter}
                 cate={cateObj}
                 defaultSelectedTags={[tagKey]}
               />
             </div>
             <div className="right-wrapper">
               <div className="muted pt-30 pb-30">
-                Quần áo  {cateObj && cateObj.name} ({filteredUnpagedData.length} sản phẩm)
+                Quần áo  {cateObj && cateObj.name} ({filteredData.length} sản phẩm)
               </div>
               <CAPTION style={{display: 'none'}}>
                 Quần áo  đẹp, nhiều mẫu thời trang mới, cập nhật thường xuyên.
                 <br />
                 Mặt Trời Nhỏ là nơi chọn mua đồ cho bé tin cậy nhất tại Tp.HCM.
               </CAPTION>
-              <ProductListing postEdges={filteredUnpagedData} />
+              <ProductListing postEdges={filteredData} />
             </div>
           </div>
         </Container>
@@ -85,6 +86,8 @@ export default class TagTemplate extends React.Component {
     );
   }
 }
+export default TagTemplate;
+
 
 /* eslint no-undef: "off" */
 export const pageQuery = graphql`
@@ -115,6 +118,7 @@ export const pageQuery = graphql`
             date
             price
             salePrice
+            category
           }
         }
       }

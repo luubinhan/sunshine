@@ -1587,52 +1587,6 @@ body {
     margin-bottom: 2px;
   }
 }
-
-.rc-select {
-  width: 100%;
-  .rc-select-selection--single {
-    @include defaultInput;
-    height: auto;
-    padding: 4px .75rem;
-  }
-  .rc-select-arrow {
-    top: 5px;
-  }
-}
-body .rc-select-enabled  {
-  .rc-select-selection--single {
-    &:active,
-    &:hover,
-    &:focus {
-      @include defaultInputFocus;
-      box-shadow: none;
-    }
-  }
-}
-
-body .rc-select-dropdown {
-  box-shadow: none;
-  border: 1px solid rgba(0,0,0,.15);
-  padding: .5rem 0;
-  border-radius: .25rem;
-  max-height: 150px;
-  overflow-y: auto;
-  li.rc-select-dropdown-menu-item {
-    display: block;
-    width: 100%;
-    padding: .25rem 1.5rem;
-    clear: both;
-    font-weight: 400;
-    color: #212529;
-    text-align: inherit;
-    white-space: nowrap;
-    background: 0 0;
-    border: 0;
-    &:hover {
-      color: $primary-color;
-    }
-  }
-}
 .section{
   &.gray-bg{
     background: $bg-gray;
