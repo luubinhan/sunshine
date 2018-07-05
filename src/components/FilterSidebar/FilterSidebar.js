@@ -16,6 +16,7 @@ class Filter extends Component {
   constructor(props) {
     super(props);
     this.filterBy = {
+      selectedCates: [],
       selectedTags: [],
       keywords: ''
     }
@@ -38,11 +39,11 @@ class Filter extends Component {
     this.props.onFilter(this.filterBy)
   }
   _changeTag = e => {
-    this.filterBy.selectedTags = e.filter(String);
+    this.filterBy.selectedTags = e;
     this.props.onFilter(this.filterBy)
   }
   render() {
-    const {selectedTags, cate} = this.props;
+    const {defaultSelectedTags, cate} = this.props;
     let filterOptions = [];
     switch (cate.key) {
     case 'be-gai':
@@ -72,7 +73,7 @@ class Filter extends Component {
           </Widget.Header>
           <Widget.Body>
             <div className="filters-group">
-              <Checkbox.Group options={filterOptions} value={selectedTags} onChange={this._changeTag} />
+              <Checkbox.Group options={filterOptions} defaultValue={defaultSelectedTags} onChange={this._changeTag} />
             </div>
           </Widget.Body>
         </Widget>
@@ -86,12 +87,12 @@ Filter.propTypes = {
   // current selected cate
   cate: PropTypes.object,
   // current selected tags,
-  selectedTags: PropTypes.array
+  defaultSelectedTags: PropTypes.array
 };
 
 Filter.defaultProps = {
   cate: {},
-  selectedTags: []
+  defaultSelectedTags: []
 }
 
 export default Filter;

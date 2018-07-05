@@ -9,81 +9,49 @@ import {
 } from '../components/mystyle'
 import ProductListing from '../components/ProductListing';
 import FilterSidebar from '../components/FilterSidebar'
-import {onFilter, filterProducts, getTagFromQuery} from '../Utils/common'
+import {onFilter} from '../Utils/common'
 
 import {PRIMARY_NAVIGATION} from '../../data/data';
-
-const DEFAULT_FILTERS = {
-  keywords: '',
-  selectedTags: []
-}
 
 export default class CategoryTemplate extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      defaultTag: '',
-      ...DEFAULT_FILTERS
+      filteredUnpagedData: this.props.data.allMarkdownRemark.edges,
     }
-  }
-  static getDerivedStateFromProps(nextProps, prevState) {
-    const tagFilter = getTagFromQuery(nextProps.location.search);
-    
-    if (tagFilter) {
-      return {defaultTag: tagFilter}
-    }
-    return null;
-  }
-  componentDidMount() {
-    const {location} = this.props;
-    const tagFilter = getTagFromQuery(location.search);
-    if (tagFilter) {
-      this.state.selectedTags = [tagFilter];
-    }
-  }
-  componentDidUpdate(prevProps, prevState) {
-    
-  }
-  onFilter = ({keywords, selectedTags}) => {    
-    this.setState({keywords, selectedTags})
+    this._onFilter = onFilter.bind(this)
   }
   render() {
-    const {keywords, selectedTags} = this.state;
-
-    // Find category name from pathContext
-    const currentCategory = this.props.pathContext.category;
-    const cateObj = _.find(PRIMARY_NAVIGATION, (item) => item.key === currentCategory);
-
-    // issue of antd, remove empty string
-    let selectedTagsNoEmpty = selectedTags.filter(String);
+    const category = this.props.pathContext.category;
+    const postEdges = this.props.data.allMarkdownRemark.edges;
+    const cateObj = _.find(PRIMARY_NAVIGATION, (item) => item.key === category);
+    const {
+      filteredUnpagedData,
+    } = this.state;
     
-    // allData
-    const allProducts = this.props.data.allMarkdownRemark.edges;
-    const filteredData = filterProducts(allProducts, keywords, selectedTagsNoEmpty);
     return (
       <div className="category-container">
         <Helmet
-          title={`Quần áo trẻ em trong mục "${currentCategory}" | ${config.siteTitle}`}
+          title={`Quần áo trẻ em trong mục "${category}" | ${config.siteTitle}`}
         />
         <Container fluid>
           <div className="container-sidebar">
             <div className="sidebar">
               <FilterSidebar
-                onFilter={this.onFilter}
+                onFilter={this._onFilter}
                 cate={cateObj}
-                selectedTags={selectedTagsNoEmpty}
               />
             </div>
             <div className="right-wrapper">
               <div className="muted pt-30 pb-30">
-                Quần áo { cateObj.name } (tìm thấy {filteredData.length} sản phẩm)
+                Quần áo { cateObj.name } (tìm thấy {filteredUnpagedData.length} sản phẩm)
               </div>
               <CAPTION style={{display: 'none'}}>
                 Quần áo { cateObj.name } đẹp, nhiều mẫu thời trang mới, cập nhật thường xuyên.
                 <br />
                 Quần Áo Trẻ Em - Mặt Trời Nhỏ là nơi chọn mua đồ cho bé tin cậy nhất tại Tp.HCM.
               </CAPTION>
-              <ProductListing postEdges={filteredData} />
+              <ProductListing postEdges={filteredUnpagedData} />
             </div>
           </div>
         </Container>

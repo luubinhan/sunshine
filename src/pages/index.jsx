@@ -4,7 +4,7 @@ import Helmet from 'react-helmet';
 
 import SEO from '../components/SEO/SEO';
 import config from '../../data/SiteConfig';
-import {PRIMARY_NAVIGATION, CATE_BE_GAI, CATE_BE_TRAI} from '../../data/data';
+import {PRIMARY_NAVIGATION} from '../../data/data';
 import ProductListing from '../components/ProductListing';
 
 import {
@@ -77,8 +77,8 @@ class Index extends React.Component {
             <div className="h2"><GatsbyLink to="/categories/be-gai">Bé Gái</GatsbyLink></div>
             <div className="link-list">
               {
-                CATE_BE_GAI.map((nav) => (
-                  <GatsbyLink key={nav.key} to={`/categories/be-gai?tags=${nav.key}`}>{nav.name}</GatsbyLink>
+                PRIMARY_NAVIGATION[0].childrens.map((nav) => (
+                  <GatsbyLink key={nav.key} to={nav.href}>{nav.name}</GatsbyLink>
                   ))
               }
               <GatsbyLink to="/categories/be-gai"><b>Tất cả</b></GatsbyLink>
@@ -95,8 +95,8 @@ class Index extends React.Component {
             <div className="h2"><GatsbyLink to="/categories/be-trai">Bé Trai</GatsbyLink></div>
             <div className="link-list">
               {
-                CATE_BE_TRAI.map((nav) => (
-                  <GatsbyLink key={nav.key} to={`/categories/be-trai?tags=${nav.key}`}>{nav.name}</GatsbyLink>
+                PRIMARY_NAVIGATION[1].childrens.map((nav) => (
+                  <GatsbyLink key={nav.key} to={nav.href}>{nav.name}</GatsbyLink>
                   ))
               }
               <GatsbyLink to="/categories/be-trai"><b>Tất cả</b></GatsbyLink>
