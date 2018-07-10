@@ -24,7 +24,7 @@ class Footer extends Component {
             <div className="inner">
               <Container>
                 <div className="footer-widgets row">
-                  <div className="col-xs-12 col-md-3 footer-widget-1">
+                  <div className="col-xs-12 col-md-4 footer-widget-1">
                     <div className="widget widget-container">
                       <div className="widget-body">
                         <div className="textwidget">
@@ -54,7 +54,7 @@ class Footer extends Component {
                       </div>
                     </div>
                   </div>
-                  <div className="col-xs-12 col-md-3 footer-widget-2">
+                  <div className="col-xs-12 col-md-4 footer-widget-2">
                     <div className="widget widget-container">
                       <div className="widget-body">
                         <div className="menu">
@@ -70,25 +70,7 @@ class Footer extends Component {
                       </div>
                     </div>
                   </div>
-                  <div className="col-xs-12 col-md-3 footer-widget-3">
-                    <div className="widget widget-container">
-                      <div className="widget-body">
-                        <div className="menu">
-                          <dl>
-                            <dt>Vietcombank</dt>
-                            <dd>Lưu Bình An</dd>
-                            <dd>0181-003-023-502</dd>
-                          </dl>
-                          <dl>
-                            <dt>ACB</dt>
-                            <dd>Trương Thị Tố Mi</dd>
-                            <dd>0181-003-023-502</dd>
-                          </dl>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-xs-12 col-md-3 footer-widget-4">
+                  <div className="col-xs-12 col-md-4 footer-widget-4">
                     <div className="widget widget-container">
                       <div className="widget-body">
                         <div className="menu">
