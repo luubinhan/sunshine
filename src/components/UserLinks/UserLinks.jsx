@@ -7,7 +7,7 @@ class UserLinks extends Component {
     const { labeled } = this.props;
     return userLinks.map(link => (
       <p key={link.label}>
-        <a target="_blank" href={link.url} className={`btn ${link.label}`}>
+        <a target="_blank" rel="noopener noreferrer" aria-label="Facebook của shopmattroinho.com" href={link.url} className={`btn ${link.label}`}>
           {link.iconClassName !== '' &&
             <i className={`${link.iconClassName} pr-2`} />
           }

@@ -47,7 +47,7 @@ class Footer extends Component {
                               <span className="pr-10">
                                 <i className="ion-android-mail" />
                               </span>
-                              <a href={`mailto:${config.email}`} target="_blank">{config.email}</a>
+                              <a href={`mailto:${config.email}`} target="_blank" rel="noopener noreferrer" aria-label="Email cho shopmattroinho.com">{config.email}</a>
                             </p>
                           </div>
                         </div>

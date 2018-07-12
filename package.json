@@ -64,7 +64,7 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "develop": "gatsby develop",
+    "develop": "gatsby develop --host localhost --port 3000 --open",
     "dev": "npm run develop",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "start": "npm run develop --hot",

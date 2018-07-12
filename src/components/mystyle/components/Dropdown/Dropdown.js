@@ -117,9 +117,7 @@ export default class Dropdown extends Component {
             <i className="ion-ios-arrow-down" style={{paddingLeft: 5}} />
           </Button>
         }
-        <div className={`dropdown-menu ${open} ${pullRight}`}
-          aria-labelledby="dropdownMenuButton"
-        >
+        <div className={`dropdown-menu ${open} ${pullRight}`}>
           <div className="pl-2 pr-2">
             {childrenWithProps}
           </div>

@@ -207,7 +207,7 @@ export default class MainLayout extends React.Component {
                       </Col>
                       <Col className="ml-a">
                         <div className="top-info-block">
-                          <a href={config.facebook} target="_blank" className="link-facebook">
+                          <a href={config.facebook} target="_blank" className="link-facebook" rel="noopener noreferrer" aria-label="Facebook của shopmattroinho.com">
                             <i className="ion-social-facebook" />
                           </a>
                           <div className="hotline-badge hidden-xs">

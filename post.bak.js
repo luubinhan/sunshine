@@ -300,7 +300,7 @@ export default class PostTemplate extends React.Component {
                   </MyButton>
                   <div className="block-contact">
                     <div className="d-flex">
-                      <a className="contact-facebook" target="_blank" href={`http://www.facebook.com/sharer.php?u=${slug}&ptitle=${post.title}`}>
+                      <a className="contact-facebook" target="_blank" href={`http://www.facebook.com/sharer.php?u=${slug}&ptitle=${post.title}`} rel="noopener noreferrer" aria-label="Facebook của shopmattroinho.com">
                         <i className="ion-social-facebook" />
                         <span>Chia sẽ Facebook</span>
                       </a>

@@ -18,12 +18,12 @@ export default class SocialShare extends PureComponent {
         </div>
         <div className="ssc-buttons">
           <div className="social-link-container">
-            <a target="_blank" href={`http://www.facebook.com/sharer.php?u=${href}&ptitle=${title}`} className="s-link s-facebook">
+            <a target="_blank" rel="noopener noreferrer" aria-label="Facebook của shopmattroinho.com" href={`http://www.facebook.com/sharer.php?u=${href}&ptitle=${title}`} className="s-link s-facebook">
               <i className="ion-social-facebook" />
               <span className="s-name">Facebook</span>
             </a>
-            <a target="_blank" href={`http://twitter.com/share?text=${encodeURI(title)}&url=${href}`} className="s-link s-twitter"><i className="ion-social-twitter"></i> <span className="s-name">Twitter</span></a>     
-            <a target="_blank" href={`mailto:?subject=${title}&amp;body=${href}`} className="s-link s-email">
+            <a target="_blank" rel="noopener noreferrer" aria-label="Facebook của shopmattroinho.com" href={`http://twitter.com/share?text=${encodeURI(title)}&url=${href}`} className="s-link s-twitter"><i className="ion-social-twitter"></i> <span className="s-name">Twitter</span></a>     
+            <a target="_blank" rel="noopener noreferrer" aria-label="Facebook của shopmattroinho.com"  href={`mailto:?subject=${title}&amp;body=${href}`} className="s-link s-email">
               <i className="ion-android-mail" />
               <span className="s-name">Email</span>
             </a>

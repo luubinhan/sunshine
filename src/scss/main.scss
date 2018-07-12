@@ -4,11 +4,10 @@
 /* List - Text - Link
 -------------------------------------------------------------- */
 html {
-  font-size: 100.01%;
   height: 100%;
 }
 body {
-  font-size: 14px;
+  font-size: $font-size-base;
   height: 100%;
   color: $primary-text-color;
   line-height: 1.6;
@@ -1006,7 +1005,7 @@ body {
     background: url('./images/home-footer-front-bg.gif') no-repeat center bottom;
   }
   .copyright {
-    font-size: 12px;
+    font-size: 14px;
     color: #fff;
     a {
       text-decoration: underline;
@@ -1014,7 +1013,7 @@ body {
     }
   }
   .credit {
-    font-size: 12px;
+    font-size: 14px;
     color: #fff;
     a {
       color: #fff;
@@ -1042,7 +1041,6 @@ body {
   a {
     padding: 0 10px;
     color: $muted;
-    font-size: 13px;
   }
 }
 .box-be-trai {
