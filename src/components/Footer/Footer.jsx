@@ -31,13 +31,13 @@ class Footer extends Component {
                           <div className="group-icons">
                             <p className="home-icon">
                               <span className="pr-10">
-                                <i className="ion-android-pin" />
+                                <i className="ion-android-pin"/>
                               </span>
                               {config.address}
                             </p>
                             <p className="phone-icon">
                               <span className="pr-10">
-                                <i className="ion-android-call" />
+                                <i className="ion-android-call"/>
                               </span>
                               <a href="tel:0988 990 168">
                                 {phone}
@@ -45,7 +45,7 @@ class Footer extends Component {
                             </p>
                             <p className="email-icon">
                               <span className="pr-10">
-                                <i className="ion-android-mail" />
+                                <i className="ion-android-mail"/>
                               </span>
                               <a href={`mailto:${config.email}`} target="_blank" rel="noopener noreferrer" aria-label="Email cho shopmattroinho.com">{config.email}</a>
                             </p>
