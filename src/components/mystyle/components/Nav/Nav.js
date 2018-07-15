@@ -33,9 +33,7 @@ export default class Nav extends Component {
   }
   renderChildrenMenu = (props) => {
     return (
-      <div className="dropdown-menu"
-        aria-labelledby="navbarDropdownMenuLink"
-      >
+      <div className="dropdown-menu">
         {
           props.map((item, index) => {
             return (
