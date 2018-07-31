@@ -6,7 +6,7 @@ thumb1: "https://cf.shopee.vn/file/ecdfd0319d2e6f2ad52ca628aed10968"
 thumb2: "https://cf.shopee.vn/file/ee667808b46c0ac29ee0470397a852a8"
 date: "11/04/2018"
 category: "be-trai"
-price: "165000"
+price: "156000"
 salePrice: ""
 tags:
     - ao
