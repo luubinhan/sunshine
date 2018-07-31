@@ -8,7 +8,7 @@ thumb3: "https://cf.shopee.vn/file/a9b02abad110a11deb6925f3456a5455"
 thumb4: "https://cf.shopee.vn/file/2cb4682d3f4cfddf48d3b75edff0d3d6"
 date: "04/04/2018"
 category: "be-trai"
-price: "145000"
+price: "125000"
 salePrice: ""
 tags:
     - do-bo

@@ -6,7 +6,7 @@ thumb1: "https://cf.shopee.vn/file/6e63f10a2a25ab069193e2f07ec1a1a4"
 thumb2: "https://cf.shopee.vn/file/60cebb13520d481ae80fb6b3652f5746"
 date: "04/06/2018"
 category: "be-trai"
-price: "125000"
+price: "97000"
 salePrice: ""
 tags:
     - do-bo

@@ -7,7 +7,7 @@ thumb2: "https://cf.shopee.vn/file/59fb00b0994a924a14c4b316238b11a2"
 thumb3: "https://cf.shopee.vn/file/394531db89ae3c43a33de4bd156f1be3"
 date: "09/04/2018"
 category: "be-gai"
-price: "155000"
+price: "136000"
 salePrice: ""
 tags:
     - dam-vay
